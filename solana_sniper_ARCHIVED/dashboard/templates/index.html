@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solana Sniper Bot | Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-crosshairs"></i>
+                <span>SNIPER<span class="accent">.BOT</span></span>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-bullseye"></i>
+                    <span>Positions</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-history"></i>
+                    <span>History</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+            
+            <div class="bot-status">
+                <div class="status-indicator online"></div>
+                <span>Bot Online</span>
+                <div class="mode-badge">DRY RUN</div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search tokens...">
+                </div>
+                <div class="header-actions">
+                    <button class="btn-icon">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </button>
+                    <button class="btn-icon">
+                        <i class="fas fa-wallet"></i>
+                    </button>
+                    <div class="user-profile">
+                        <span>James</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Stats Cards -->
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon blue">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="scanned-count">0</h3>
+                        <p>Pairs Scanned</p>
+                        <span class="stat-change positive">+0%</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon purple">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="filtered-count">0</h3>
+                        <p>Passed Filters</p>
+                        <span class="stat-change" id="filter-rate">0%</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon green">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="inferred-count">0</h3>
+                        <p>AI Signals</p>
+                        <span class="stat-change positive">Active</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon orange">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="safety-count">0</h3>
+                        <p>Safety Checks</p>
+                        <span class="stat-change negative" id="safety-fail">0 blocked</span>
+                    </div>
+                </div>
+
+                <div class="stat-card highlight">
+                    <div class="stat-icon gold">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="trades-count">0</h3>
+                        <p>Trades Executed</p>
+                        <span class="stat-change" id="success-rate">0% success</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon teal">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="balance-sol">0.00 SOL</h3>
+                        <p>Wallet Balance</p>
+                        <span class="stat-change positive" id="available-sol">0.00 available</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main Chart Section -->
+            <section class="chart-section">
+                <div class="chart-header">
+                    <h2>Detection Activity</h2>
+                    <div class="chart-controls">
+                        <button class="btn-time active">1H</button>
+                        <button class="btn-time">24H</button>
+                        <button class="btn-time">7D</button>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="activityChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Bottom Grid -->
+            <section class="bottom-grid">
+                <!-- Active Positions -->
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3><i class="fas fa-bullseye"></i> Active Positions</h3>
+                        <span class="badge-count" id="positions-count">0</span>
+                    </div>
+                    <div class="panel-content">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Token</th>
+                                    <th>Entry</th>
+                                    <th>Size</th>
+                                    <th>PnL</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="positions-table">
+                                <tr class="empty-state">
+                                    <td colspan="5">No active positions</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3><i class="fas fa-list"></i> Recent Signals</h3>
+                        <button class="btn-clear">Clear</button>
+                    </div>
+                    <div class="panel-content">
+                        <div class="activity-list" id="activity-list">
+                            <div class="activity-item">
+                                <div class="activity-icon scan">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="activity-info">
+                                    <p>Bot started in DRY RUN mode</p>
+                                    <span class="time">Just now</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Top Opportunities -->
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3><i class="fas fa-fire"></i> Top Signals</h3>
+                        <span class="live-indicator">● LIVE</span>
+                    </div>
+                    <div class="panel-content">
+                        <div class="token-list" id="top-signals">
+                            <div class="empty-state">
+                                <i class="fas fa-chart-line"></i>
+                                <p>Waiting for high-confidence signals...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html>

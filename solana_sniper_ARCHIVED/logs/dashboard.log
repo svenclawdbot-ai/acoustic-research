@@ -1,0 +1,2 @@
+/home/james/.openclaw/workspace/solana_sniper/dashboard_real.py:71: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.age_seconds = (datetime.utcnow().timestamp() - created / 1000) if created else None
