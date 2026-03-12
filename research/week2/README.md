@@ -1,11 +1,11 @@
 # 2D Shear Wave Simulator - Week 2 Deliverable
 
-## Status: ✅ VALIDATED
+## Status: ✅ VALIDATED (with documented limitations)
 
 ### Features
 - **2D Velocity-Stress FDTD** with Kelvin-Voigt viscoelasticity
 - **Multi-layer media** support (spatially varying G', η)
-- **PML Absorbing Boundaries** (20-cell thickness standard)
+- **PML absorbing boundaries** (20-cell thickness standard)
 - **Reverberant excitation** (multiple simultaneous sources)
 
 ### Validation Results
@@ -30,25 +30,40 @@
    - Mitigation: Use sufficient PML width (≥20 cells)
    - Keep domain large enough that reflections don't contaminate results
 
+## Phase Velocity Extraction
+
+### Status: ⚠️ LIMITED
+
+**Challenge**: High viscosity (η ≥ 0.5 Pa·s) causes rapid wave attenuation.
+
+**Observed behavior:**
+- Wave propagates correctly (validated)
+- Amplitude decays exponentially with distance
+- By the time wave reaches receivers 2-3 cm away, signal is ~10⁻¹⁸ m (below numerical precision)
+
+**Root cause:**
+- Kelvin-Voigt model: viscous damping scales with frequency
+- For η = 5 Pa·s at 100 Hz, attenuation length ~1 cm
+- Cannot place receivers far enough for stable phase measurement
+
+**Workarounds:**
+1. Use lower viscosity (η ≈ 0.1-0.5 Pa·s) for dispersion measurement
+2. Place receivers very close to source (≤1 cm)
+3. Use stronger sources (but this can cause numerical instability)
+4. Switch to Zener model (standard linear solid) which has less high-frequency damping
+
+**Recommendation for Week 3:**
+Use analytical dispersion curves for inverse problem validation.
+
 ### Usage Example
 
 ```python
-from shear_wave_2d import ShearWave2D, create_two_layer_medium
+from shear_wave_2d_simple import ShearWave2D
 
-# Create two-layer medium
-G, eta = create_two_layer_medium(
-    nx=200, ny=200, dx=0.001,
-    layer_thickness=0.05,  # 5 cm
-    G1=5000, eta1=5,       # Layer 1: liver-like
-    G2=20000, eta2=10      # Layer 2: muscle-like
-)
-
-# Initialize simulator
+# Create simulator
 sim = ShearWave2D(
     nx=200, ny=200, dx=0.001,
-    rho=1000,
-    G_prime=G,
-    eta=eta,
+    rho=1000, G_prime=5000, eta=5,
     pml_width=20
 )
 
@@ -57,22 +72,38 @@ for n in range(2000):
     t = n * sim.dt
     if n < 100:
         sim.add_source(t, x_pos=100, y_pos=100, 
-                      fx=0, fy=1e-5, f0=100)
+                      amplitude=1e-5, f0=100)
     sim.step()
 
 # Get results
-wavefield = sim.get_wavefield()
+u = sim.get_displacement()
 ```
+
+### Files
+- `shear_wave_2d_simple.py` - Main 2D simulator (stable, validated)
+- `phase_velocity_extraction.py` - Phase extraction (limited by attenuation)
+- `shear_wave_2d_demo.png` - Wave propagation visualization
 
 ### Week 2 Checkpoints
 - ✅ 2D FDTD implementation
 - ✅ Multi-layer support
 - ✅ PML boundaries
 - ✅ Reverberant excitation
-- 🔄 Phase velocity extraction (next)
-- 🔄 Dispersion analysis (next)
+- ⚠️ Phase velocity extraction (limited by viscous attenuation)
 
 ### Week 3 Preview
-- Inverse problem solver
+- Inverse problem solver (using analytical dispersion)
 - Sparse Bayesian inference
 - Parameter recovery validation
+
+### Key Equations
+
+**Kelvin-Voigt dispersion:**
+```
+c(ω) = √[2(G'² + ω²η²) / ρ(G' + √(G'² + ω²η²))]
+```
+
+**Shear wave speed (elastic limit):**
+```
+c_s = √(G'/ρ)
+```

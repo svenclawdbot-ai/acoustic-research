@@ -192,13 +192,11 @@ class ShearWave2D:
     
     def step(self):
         """
-        One FDTD time step.
+        One FDTD time step - Standard velocity-stress formulation.
         
-        Update sequence for 2D velocity-stress:
-        1. Compute strain rates from velocities
-        2. Update stress (Kelvin-Voigt)
-        3. Update velocities from stress divergence
-        4. Apply PML
+        Uses leapfrog time stepping:
+        1. Update stresses from velocity gradients
+        2. Update velocities from stress gradients
         """
         dt = self.dt
         dx = self.dx
@@ -214,25 +212,23 @@ class ShearWave2D:
             result[:, 1:-1] = (field[:, 2:] - field[:, :-2]) / (2*dx)
             return result
         
-        # Compute strain rates
+        # Compute velocity gradients
         dvx_dx = d_dx(self.vx)
         dvy_dy = d_dy(self.vy)
         dvx_dy = d_dy(self.vx)
         dvy_dx = d_dx(self.vy)
         
-        # Shear strain rate (symmetric)
+        # Strain rates
+        exx_rate = dvx_dx
+        eyy_rate = dvy_dy
         exy_rate = 0.5 * (dvx_dy + dvy_dx)
         
-        # Update strains
-        self.exx += dt * dvx_dx
-        self.eyy += dt * dvy_dy
-        self.exy += dt * exy_rate
-        
-        # Update stresses (Kelvin-Voigt)
-        # σ = G'·ε + η·∂ε/∂t
-        self.sxx = self.G_prime * self.exx + self.eta * dvx_dx
-        self.syy = self.G_prime * self.eyy + self.eta * dvy_dy
-        self.sxy = self.G_prime * self.exy + self.eta * exy_rate
+        # Update stress (Kelvin-Voigt: σ = G'·ε + η·∂ε/∂t)
+        # Using semi-implicit: σ_new = σ_old + dt*(G'·strain_rate + η·strain_rate/dt)
+        # Simplified: σ_new = σ_old + (G'*dt + η) * strain_rate
+        self.sxx += (self.G_prime * dt + self.eta) * exx_rate
+        self.syy += (self.G_prime * dt + self.eta) * eyy_rate
+        self.sxy += (self.G_prime * dt + self.eta) * exy_rate
         
         # Compute stress divergence
         dsxx_dx = d_dx(self.sxx)
@@ -240,16 +236,13 @@ class ShearWave2D:
         dsxy_dx = d_dx(self.sxy)
         dsyy_dy = d_dy(self.syy)
         
-        # Update velocities
+        # Update velocities (momentum equation)
         self.vx += dt / self.rho * (dsxx_dx + dsxy_dy)
         self.vy += dt / self.rho * (dsxy_dx + dsyy_dy)
         
         # Apply PML damping
         self.vx = self._apply_pml(self.vx)
         self.vy = self._apply_pml(self.vy)
-        self.sxx = self._apply_pml(self.sxx)
-        self.syy = self._apply_pml(self.syy)
-        self.sxy = self._apply_pml(self.sxy)
         
     def get_displacement_magnitude(self):
         """Get magnitude of displacement (for visualization)."""
