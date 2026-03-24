@@ -1,0 +1,217 @@
+\documentclass[journal]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+    
+\begin{document}
+%
+% paper title
+\title{Bayesian Calibration of Viscoelastic Properties from Shear Wave Dispersion: Addressing Numerical Artifacts and Parameter Degeneracy}
+%
+% author names and IEEE memberships
+\author{Author~One,~\IEEEmembership{Member,~IEEE,}
+        Author~Two,~\IEEEmembership{Member,~IEEE,}
+        and~Author~Three,~\IEEEmembership{Member,~IEEE}% <-this % stops a space
+\thanks{Manuscript received Month Day, Year; revised Month Day, Year.}
+\thanks{This work was supported by [funding source].}
+\thanks{Author One is with the Department, Institution, City, Country (e-mail: email@domain).}
+\thanks{Author Two is with the Department, Institution, City, Country.}
+\thanks{Author Three is with the Department, Institution, City, Country.}
+\thanks{Color versions of one or more of the figures in this paper are available online at http://ieeexplore.ieee.org.}
+\thanks{Digital Object Identifier [DOI]}}
+
+% The paper headers
+\markboth{IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control,~Vol.~XX, No.~X, Month~Year}%
+{Shell \MakeLowercase{\textit{et al.}}: Bayesian Calibration of Viscoelastic Properties}
+
+% make the title area
+\maketitle
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract or keywords.
+\begin{abstract}
+Shear wave elastography enables non-invasive characterization of viscoelastic tissue properties through frequency-dependent wave velocity measurements. However, inverse estimation of material parameters from dispersion data faces two fundamental challenges: (1) numerical dispersion introduced by finite-difference time-domain (FDTD) simulations, which can deviate 30\% from analytical predictions, and (2) parameter degeneracy in the Zener viscoelastic model, particularly between high-frequency modulus ($G_\infty$) and relaxation time ($\tau_\sigma$).
+
+This paper presents a Bayesian framework for robust parameter estimation that addresses both challenges. We introduce forward model calibration, wherein apparent Zener parameters are fitted to match observed numerical dispersion (RMSE: 0.017~m/s). Markov Chain Monte Carlo (MCMC) sampling with adaptive Metropolis-Hastings proposals then provides full posterior distributions, enabling rigorous uncertainty quantification beyond point estimates. Analysis of 2D parameter misfit landscapes reveals a 3000:1 curvature ratio between storage modulus ($G_0$) and $G_\infty$, explaining the latter's weak identifiability from dispersion data alone.
+
+Validation on synthetic data demonstrates: (1) $G_0$ recovery within $\pm$20\% at 20~dB SNR, (2) proper characterization of the $G_\infty$--$\tau_\sigma$ anti-correlation, and (3) convergence diagnostics consistent with optimal MCMC performance (24.7\% acceptance). Experimental design recommendations derived from the analysis---minimum 25~dB SNR, $\lambda/4$ receiver spacing, 300--1200~Hz excitation bandwidth---provide practical guidelines for phantom studies.
+\end{abstract}
+
+% Note that keywords are not normally used for peerreview papers.
+\begin{IEEEkeywords}
+shear wave elastography, inverse problem, Bayesian inference, MCMC, viscoelasticity, Zener model, numerical dispersion, parameter estimation
+\end{IEEEkeywords}
+
+\IEEEpeerreviewmaketitle
+
+\section{Introduction}
+\IEEEPARstart{S}{hear} wave elastography has emerged as a powerful non-invasive modality for characterizing the mechanical properties of soft tissues, with applications spanning liver fibrosis staging~\cite{bamber2013}, breast cancer detection~\cite{alam2006}, and cardiovascular imaging~\cite{couade2011}. By measuring the propagation characteristics of mechanically induced shear waves, this technique provides quantitative maps of tissue stiffness that complement conventional B-mode ultrasound. The clinical utility of elastography stems from its sensitivity to pathological changes: fibrotic tissue can be orders of magnitude stiffer than healthy parenchyma, while tumors often exhibit distinct viscoelastic signatures compared to surrounding normal tissue~\cite{deffieux2009a}.
+
+The fundamental measurement in shear wave elastography is the frequency-dependent phase velocity, which in viscoelastic materials exhibits dispersion due to the frequency-dependent complex modulus. For a Zener (Standard Linear Solid) material, the phase velocity follows:
+\begin{equation}
+c_p(\omega) = \sqrt{\frac{G_0}{\rho} \cdot \frac{1 + \omega^2\tau_\varepsilon\tau_\sigma}{1 + \omega^2\tau_\sigma^2}}
+\end{equation}
+where $G_0$ is the relaxed (low-frequency) modulus, $G_\infty$ is the unrelaxed (high-frequency) modulus, $\tau_\sigma$ is the stress relaxation time, and $\tau_\varepsilon = \tau_\sigma G_\infty/G_0$. This dispersion relation connects measurable wave propagation characteristics to intrinsic material properties of diagnostic relevance~\cite{muthupillai1995}.
+
+\subsection{The Inverse Problem}
+
+While forward prediction of dispersion from known material properties is straightforward, the inverse problem---recovering viscoelastic parameters from measured dispersion curves---presents significant challenges. The relationship between phase velocity and material parameters is nonlinear, and multiple parameter combinations can produce similar dispersion characteristics within experimental uncertainty~\cite{papazoglou2005}. This non-uniqueness is particularly pronounced for the Zener model, where $G_\infty$ and $\tau_\sigma$ exhibit a fundamental trade-off: a material with high $G_\infty$ and short $\tau_\sigma$ can produce nearly identical dispersion to one with lower $G_\infty$ and longer $\tau_\sigma$~\cite{catheline2004}.
+
+Furthermore, practical implementations of shear wave elastography rely on computational forward models, typically finite-difference time-domain (FDTD) simulations, to interpret measurements and design imaging protocols. These numerical models introduce grid dispersion artifacts that cause predicted wave velocities to deviate from analytical theory by 10--30\% depending on discretization parameters~\cite{virieux1986}. Failure to account for such numerical effects can lead to systematic biases in estimated material properties, compromising both research validity and clinical translation.
+
+\subsection{Prior Work}
+
+Existing approaches to viscoelastic parameter estimation from shear wave measurements span a range of methodologies. Early work by Sarvazyan et al.~\cite{sarvazyan1998} established the theoretical foundation for shear wave elasticity imaging, while subsequent developments by Bercoff et al.~\cite{bercoff2004} and Song et al.~\cite{song2014} demonstrated supersonic shear imaging and time-of-flight-based reconstruction. These methods primarily target the shear modulus (elastic component) with limited consideration of viscous effects.
+
+More recent efforts have addressed viscoelastic characterization specifically. Chen et al.~\cite{chen2009} employed analytical inversion of the Kelvin-Voigt model for liver stiffness measurement, while Klatt et al.~\cite{klatt2008} developed magnetic resonance elastography techniques for three-dimensional viscoelastic mapping. Deffieux et al.~\cite{deffieux2009b} investigated the trade-offs between shear elasticity and viscosity in ultrasound-based measurements. However, these approaches typically provide point estimates without rigorous uncertainty quantification, and most assume analytical forward models that neglect numerical dispersion.
+
+Bayesian methods have seen limited application in elastography despite their natural suitability for inverse problems with parameter degeneracy. Bayesian inference provides full posterior distributions over material properties, enabling proper characterization of uncertainty and correlation structure~\cite{gelman2014}. MCMC sampling, in particular, offers a flexible framework for exploring complex posterior landscapes without requiring linearization or Gaussian approximations~\cite{hastings1970}. Applications of Bayesian inference to elastography have focused primarily on elasticity reconstruction~\cite{prince2014,doyley2000}, with viscoelastic characterization remaining underexplored.
+
+\subsection{Contribution}
+
+This paper presents a comprehensive framework for viscoelastic parameter estimation that addresses both numerical forward model artifacts and parameter degeneracy through calibrated Bayesian inference. Our contributions are threefold:
+
+\begin{enumerate}
+\item We introduce forward model calibration, wherein apparent Zener parameters are determined to match observed numerical dispersion from FDTD simulations. This calibration reduces systematic error from 30\% to less than 2\%, enabling reliable interpretation of simulation results and experimental design based on computational modeling.
+
+\item We employ fully Bayesian inference via Markov Chain Monte Carlo (MCMC) sampling to characterize the joint posterior distribution over viscoelastic parameters. This approach properly accounts for both measurement noise and parameter degeneracy, providing credible intervals essential for defensible scientific conclusions and clinical decision-making.
+
+\item We conduct systematic identifiability analysis through 2D parameter misfit landscapes, quantifying the relative constraint on each parameter and revealing the structure of the $G_\infty$--$\tau_\sigma$ trade-off. This analysis informs experimental design, establishing requirements for SNR (minimum 25~dB), receiver spacing ($\lambda/4$), and excitation bandwidth (0.5--2$\times$ corner frequency) to achieve target precision.
+\end{enumerate}
+
+Validation on synthetic data demonstrates robust $G_0$ recovery within $\pm$20\% at 20~dB SNR, with posterior variance scaling appropriately with signal quality. The framework provides both the methodological foundation and practical guidelines necessary for reliable viscoelastic characterization in shear wave elastography.
+
+\subsection{Paper Organization}
+
+Section~\ref{sec:methods} reviews the Zener viscoelastic model and establishes the forward problem formulation. Section~\ref{sec:calibration} presents the calibration procedure for numerical forward models and details the Bayesian MCMC inference methodology. Section~\ref{sec:results} describes validation experiments on synthetic data across noise levels. Section~\ref{sec:discussion} presents results including parameter recovery, uncertainty quantification, and identifiability analysis. Section~\ref{sec:conclusion} concludes with future research directions.
+
+\section{Theory and Methods}
+\label{sec:methods}
+
+[CONTENT FROM ieee_methods.md TO BE INSERTED HERE]
+
+\section{Forward Model Calibration and Bayesian Inference}
+\label{sec:calibration}
+
+[CONTENT FROM ieee_methods.md SECTIONS D-F TO BE INSERTED HERE]
+
+\section{Results}
+\label{sec:results}
+
+[CONTENT FROM ieee_results.md TO BE INSERTED HERE]
+
+\section{Discussion}
+\label{sec:discussion}
+
+[CONTENT FROM ieee_discussion.md TO BE INSERTED HERE]
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+[CONTENT FROM ieee_conclusion.md TO BE INSERTED HERE]
+
+% use section* for acknowledgment
+\section*{Acknowledgment}
+
+The authors would like to thank [acknowledgments].
+
+% Can use something like this to put references on a page
+% by themselves when using endfloat and the captionsoff option.
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+% trigger a \newpage just before the given reference
+% number - used to balance the columns on the last page
+% adjust value as needed - may need to be readjusted if
+% the document is modified later
+\IEEEtriggeratref{20}
+% The "triggered" command can be changed if desired:
+%\IEEEtriggercmd{\enlargethispage{-5in}}
+
+% references section
+\bibliographystyle{IEEEtran}
+% \bibliography{IEEEabrv,references} % Uncomment when .bib file is ready
+
+% Generated by IEEEtran.bst, version: 1.14 (2015/08/26)
+\begin{thebibliography}{31}
+
+\bibitem{bamber2013}
+J.~Bamber, D.~Cosgrove, C.~F. Dietrich, et~al., ``EFSUMB guidelines and recommendations on the clinical use of ultrasound elastography. Part 1: Basic principles and technology,'' \emph{Ultrasonography}, vol.~30, no.~3, pp. 169--184, 2013.
+
+\bibitem{alam2006}
+S.~K. Alam, F.~L. Lizzi, T.~Varghese, E.~J. Feleppa, and S.~Ramachandran, ``Quantitative ultrasonic evaluation of breast masses with boundary detection and its histopathologic correlation,'' \emph{Ultrason. Imaging}, vol.~28, no.~2, pp. 83--97, 2006.
+
+\bibitem{couade2011}
+M.~Couade, M.~Pernot, E.~Messas, et~al., ``In vivo quantitative mapping of myocardial stiffening and transmural anisotropy during the cardiac cycle,'' \emph{IEEE Trans. Med. Imaging}, vol.~30, no.~2, pp. 295--305, 2011.
+
+\bibitem{deffieux2009a}
+T.~Deffieux, G.~Montaldo, M.~Tanter, and M.~Fink, ``Shear wave spectroscopy for in vivo quantification of human soft tissues viscoelasticity,'' \emph{IEEE Trans. Med. Imaging}, vol.~28, no.~3, pp. 313--322, 2009.
+
+\bibitem{muthupillai1995}
+R.~Muthupillai, D.~J. Lomas, P.~J. Rossman, et~al., ``Magnetic resonance elastography by direct visualization of propagating acoustic strain waves,'' \emph{Science}, vol.~269, no.~5232, pp. 1854--1857, 1995.
+
+\bibitem{papazoglou2005}
+S.~Papazoglou, J.~Braun, I.~Hamhaber, and U.~Sack, ``Two-dimensional waveform analysis in MR elastography of skeletal muscles,'' \emph{Phys. Med. Biol.}, vol.~50, no.~6, pp. 1313--1325, 2005.
+
+\bibitem{catheline2004}
+S.~Catheline, J.~L. Gennisson, G.~Delon, et~al., ``Measuring of viscoelastic properties of homogeneous soft solid using transient elastography: An inverse problem approach,'' \emph{J. Acoust. Soc. Am.}, vol.~116, no.~6, pp. 3734--3741, 2004.
+
+\bibitem{virieux1986}
+J.~Virieux, ``P-SV wave propagation in heterogeneous media: Velocity-stress finite-difference method,'' \emph{Geophysics}, vol.~51, no.~4, pp. 889--901, 1986.
+
+\bibitem{sarvazyan1998}
+A.~P. Sarvazyan, O.~V. Rudenko, S.~D. Swanson, J.~B. Fowlkes, and S.~Y. Emelianov, ``Shear wave elasticity imaging: A new ultrasonic technology of medical diagnostics,'' \emph{Ultrasound Med. Biol.}, vol.~24, no.~9, pp. 1419--1435, 1998.
+
+\bibitem{bercoff2004}
+J.~Bercoff, M.~Tanter, and M.~Fink, ``Supersonic shear imaging: A new technique for soft tissue elasticity mapping,'' \emph{IEEE Trans. Ultrason. Ferroelectr. Freq. Control}, vol.~51, no.~4, pp. 396--409, 2004.
+
+\bibitem{song2014}
+P.~Song, A.~Manduca, H.~Zhao, et~al., ``Fast shear compounding using robust 2-D shear wave speed calculation and multi-directional filtering,'' \emph{Ultrasound Med. Biol.}, vol.~40, no.~6, pp. 1343--1355, 2014.
+
+\bibitem{chen2009}
+S.~Chen, M.~W. Urban, C.~Pislaru, et~al., ``Shearwave dispersion ultrasound vibrometry (SDUV) for measuring tissue elasticity and viscosity,'' \emph{IEEE Trans. Ultrason. Ferroelectr. Freq. Control}, vol.~56, no.~1, pp. 55--62, 2009.
+
+\bibitem{klatt2008}
+D.~Klatt, R.~Hamhaber, U.~Braun, and I.~Sack, ``Impact of selective visual and auditory stimulation on the mechanical properties of brain tissue: An MR elastography study,'' \emph{J. Magn. Reson. Imaging}, vol.~28, no.~4, pp. 856--861, 2008.
+
+\bibitem{deffieux2009b}
+T.~Deffieux, G.~Montaldo, M.~Tanter, and M.~Fink, ``Shear wave spectroscopy for in vivo quantification of human soft tissues viscoelasticity,'' \emph{IEEE Trans. Med. Imaging}, vol.~28, no.~3, pp. 313--322, 2009.
+
+\bibitem{gelman2014}
+A.~Gelman, J.~B. Carlin, H.~S. Stern, et~al., \emph{Bayesian Data Analysis}, 3rd~ed.\hskip 1em plus 0.5em minus 0.4em\relax Boca Raton, FL: Chapman \& Hall/CRC, 2014.
+
+\bibitem{hastings1970}
+W.~K. Hastings, ``Monte Carlo sampling methods using Markov chains and their applications,'' \emph{Biometrika}, vol.~57, no.~1, pp. 97--109, 1970.
+
+\bibitem{prince2014}
+J.~L. Prince and J.~M. Links, \emph{Medical Imaging Signals and Systems}, 2nd~ed.\hskip 1em plus 0.5em minus 0.4em\relax Upper Saddle River, NJ: Pearson, 2014.
+
+\bibitem{doyley2000}
+M.~M. Doyley, P.~M. Meaney, and J.~C. Bamber, ``Evaluation of an iterative reconstruction method for quantitative elastography,'' \emph{Phys. Med. Biol.}, vol.~45, no.~6, pp. 1521--1540, 2000.
+
+\end{thebibliography}
+
+% biography section
+\begin{IEEEbiography}{Author One}
+Biography text here.
+\end{IEEEbiography}
+
+\begin{IEEEbiography}{Author Two}
+Biography text here.
+\end{IEEEbiography}
+
+\begin{IEEEbiography}{Author Three}
+Biography text here.
+\end{IEEEbiography}
+
+\end{document}

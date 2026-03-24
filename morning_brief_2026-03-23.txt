@@ -1,0 +1,78 @@
+======================================================================
+MORNING BRIEF — Monday, March 23, 2026
+======================================================================
+Sources: 19 feeds | Articles: 89 | AI Summary: ✗
+
+📰 TOP STORIES
+----------------------------------------------------------------------
+
+[WORLD] BBC World
+→ Colombian military plane with 125 people crashes
+  Colombia's defence minister says it was a "tragic accident" but the cause is not yet clear....
+  🔗 https://www.bbc.com/news/articles/c8dlmrjn1l2o?at_medium=RSS&at_campai...
+
+[FINANCE] Financial Times
+→ Traders placed $580mn in oil bets ahead of Trump post on Iran talks
+  Thousands of Brent and WTI contracts changed hands 15 minutes before president’s message on Truth Social...
+  🔗 https://www.ft.com/content/1171d623-3709-4f6e-8ded-a5df4ec57696...
+
+[AI_ML] BBC World
+→ ICE agents deploy to major US airports as security queues stretch for hours
+  Hundreds of ICE agents have been deployed to 14 airports, in cities including New York, Atlanta and Houston....
+  🔗 https://www.bbc.com/news/articles/cx298j7xg0yo?at_medium=RSS&at_campai...
+
+[TECH] TechCrunch
+→ Someone has publicly leaked an exploit kit that can hack millions of iPhones
+  Leaked "DarkSword" exploits published to GitHub allow hackers and cybercriminals to target iPhone users running old versions of iOS with spyware, according to cybersecurity researchers....
+  🔗 https://techcrunch.com/2026/03/23/someone-has-publicly-leaked-an-explo...
+
+[SCIENCE] Medscape
+→ Floaters May Signal Urgent Need for Specialty Attention
+  The risk for retinal detachment is particularly strong in people with at least 10 floaters, Dutch researchers have found. Medscape Medical News...
+  🔗 https://www.medscape.com/viewarticle/floaters-may-signal-urgent-need-s...
+
+======================================================================
+📊 CATEGORY BREAKDOWN
+======================================================================
+  WORLD          : 10 articles
+  FINANCE        : 14 articles
+  AI_ML          : 40 articles
+  TECH           :  8 articles
+  SCIENCE        :  5 articles
+  ENGINEERING    :  2 articles
+  MEDICAL        :  4 articles
+  GENERAL        :  6 articles
+
+📌 WORLD HIGHLIGHTS
+----------------------------------------------------------------------
+• BBC World: Colombian military plane with 125 people crashes
+• BBC World: Referendum defeat leaves Italy's Meloni looking more vulnerable
+• Financial Times: Can Trump do a deal with Iran?
+
+📌 FINANCE HIGHLIGHTS
+----------------------------------------------------------------------
+• Financial Times: Traders placed $580mn in oil bets ahead of Trump post on Iran talks
+• BBC World: Oil falls and shares rebound after Trump says talks have been held to 
+• Financial Times: Trump plays up prospect of diplomatic end to Iran war
+
+📌 AI/ML HIGHLIGHTS
+----------------------------------------------------------------------
+• BBC World: ICE agents deploy to major US airports as security queues stretch for 
+• BBC World: 'Like the plane got cut in half': LaGuardia crash that killed two pilo
+• TechCrunch: Bernie Sanders’ AI ‘gotcha’ video flops, but the memes are great
+
+📌 TECH HIGHLIGHTS
+----------------------------------------------------------------------
+• TechCrunch: Someone has publicly leaked an exploit kit that can hack millions of i
+• TechCrunch: Zipline snaps up another $200M to fuel its drone delivery expansion
+• Ars Technica: LG Display starts mass-producing LTPO-like 1 Hz LCD displays for lapto
+
+📌 SCIENCE HIGHLIGHTS
+----------------------------------------------------------------------
+• Medscape: Floaters May Signal Urgent Need for Specialty Attention
+• Medscape: Higher Mortality Risk Seen in axSpA, PsA in Real-World Study
+• New Scientist: 'Zombie' cells created by transplanting genomes into dead bacteria
+
+======================================================================
+End of Brief
+======================================================================

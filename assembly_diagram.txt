@@ -1,0 +1,197 @@
+╔══════════════════════════════════════════════════════════════════════════╗
+║           FLEXURAL BEAM PROBE - ASSEMBLY OVERVIEW                        ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+EXPLODED VIEW (Side)
+════════════════════
+
+        ↑ Spring preload adjustment
+        │
+    ┌───┴───┐
+    │ CAP   │  ← 3D printed, PETG
+    │  ◯    │     (M3 adjustment screw)
+    └───┬───┘
+        │
+    ┌───┴───┐
+    │SPRING │  ← Compression, 0.5 N/mm
+    │ ════  │
+    └───┬───┘
+        │
+    ┌───┴───┐
+    │ PIEZO │  ← Stack, 10×10×20mm
+    │ ████  │     (150V max, epoxy bonded)
+    └───┬───┘
+        │
+    ┌───┴───────────────────────────────────────┐
+    │ HOUSING                                   │  ← 3D printed, PETG
+    │  ┌─────────────────────────────────────┐  │
+    │  │ BEAM CAVITY                         │  │
+    │  │  ┌─────────────────────────────┐    │  │
+    │  │  │  ALUMINUM BEAM              │    │  │  ← 60×15×2mm, 6061-T6
+    │  │  │  ═══════════════════════    │    │  │     (200 Hz resonance)
+    │  │  │  │ SILICONE MATCHING │       │    │  │  ← 1mm, Shore A30
+    │  │  │  │ ═════════════════ │       │    │  │
+    │  │  │  │    R5 TIP         │───────┼────┼──┼────→ Tissue contact
+    │  │  │  └───────────────────┘       │    │  │
+    │  │  └───────────────────────────────┘    │  │
+    │  └───────────────────────────────────────┘  │
+    │  [Mounting flanges ◯     ◯]               │  ← M4 clearance
+    └─────────────────────────────────────────────┘
+        │
+    ┌───┴─────────────────────┐
+    │ ELECTRONICS MODULE      │  ← DIY HV amp or PiezoDrive
+    │  ┌─────────────────┐    │
+    │  │ Raspberry Pi    │    │
+    │  │ Pico / ESP32    │    │
+    │  │                 │    │
+    │  │ HV Amplifier    │    │
+    │  │ (150V output)   │    │
+    │  └─────────────────┘    │
+    │  [BNC ◯]  [USB-C ◯]    │
+    └─────────────────────────┘
+
+
+CROSS-SECTION (Front)
+════════════════════
+
+    ┌─────────────────────────────┐
+    │         HOUSING             │
+    │   ┌─────────────────────┐   │
+    │   │    BEAM CAVITY      │   │
+    │   │  ┌───────────────┐  │   │
+    │   │  │  ALUMINUM     │  │   │
+    │   │  │  ┌─────────┐  │  │   │
+    │   │  │  │ SILICONE│  │  │   │
+    │   │  │  │ ═══════ │  │  │   │
+    │   │  │  │  TIP    │──┼──┼───┼──→ Tissue
+    │   │  │  └─────────┘  │  │   │
+    │   │  │      ▲        │  │   │
+    │   │  │      │ Shear   │  │   │
+    │   │  └──────┼─────────┘  │   │
+    │   │         │             │   │
+    │   │    Piezo excitation   │   │
+    │   └───────────────────────┘   │
+    │              ▲                │
+    │              │                │
+    │         ┌────┴────┐           │
+    │         │  PIEZO  │           │
+    │         │  STACK  │           │
+    │         └────┬────┘           │
+    │              │                │
+    │         ┌────┴────┐           │
+    │         │ SPRING  │           │
+    │         │  preload│           │
+    │         └────┬────┘           │
+    │              │                │
+    └──────────────┼────────────────┘
+                   │
+              Adjustment cap
+
+
+ASSEMBLY SEQUENCE
+═════════════════
+
+Step 1: Print Components
+   ├─ Main housing (PETG, 3h 20m)
+   ├─ Beam clamp (PETG, 45m)
+   ├─ Spring cap (PETG, 20m)
+   └─ Silicone mold (PLA, 1h 10m)
+
+Step 2: Fabricate Beam
+   ├─ Cut aluminum: 60×15×2 mm
+   ├─ Drill mounting hole: 4mm @ 10mm from end
+   ├─ File tip to R5 radius
+   ├─ Sand to 400 grit
+   └─ Clean with isopropanol
+
+Step 3: Cast Silicone Tip
+   ├─ Mix EcoFlex 00-30 (1:1 ratio)
+   ├─ Pour into mold
+   ├─ Cure 4 hours @ 25°C
+   └─ Bond to beam tip
+
+Step 4: Prepare Piezo
+   ├─ Mark polarity (+ electrode)
+   ├─ Tin wires with solder
+   ├─ Clean bonding surfaces
+   └─ Mix epoxy (5-minute work time)
+
+Step 5: Bond Assembly
+   ├─ Apply epoxy to beam base
+   ├─ Position piezo stack
+   ├─ Clamp gently, maintain alignment
+   ├─ Cure 24 hours @ room temp
+   └─ Do not disturb during cure!
+
+Step 6: Install in Housing
+   ├─ Slide beam into cavity
+   ├─ Install beam clamp (M3 screws)
+   ├─ Insert spring
+   ├─ Install spring cap
+   └─ Adjust preload (0.5-1 N)
+
+Step 7: Electronics Integration
+   ├─ Solder HV amplifier board
+   ├─ Connect to piezo (observe polarity!)
+   ├─ Install microcontroller
+   ├─ Connect USB and power
+   └─ Test with oscilloscope
+
+Step 8: Validation
+   ├─ Measure resonant frequency (target: 200 Hz)
+   ├─ Verify tip displacement (>100 μm)
+   ├─ Check for shorts (>10 MΩ)
+   └─ Test on phantom
+
+
+BILL OF MATERIALS - QUICK REFERENCE
+════════════════════════════════════
+
+Printed Parts:
+  • Main housing: 80g PETG
+  • Beam clamp: 17g PETG  
+  • Spring cap: 8g PETG
+  • Silicone mold: 28g PLA
+  
+Mechanical:
+  • Aluminum 6061-T6: 60×15×2 mm
+  • Piezo stack: 10×10×20 mm, 150V
+  • Compression spring: 0.5 N/mm, 8mm OD
+  • Silicone sheet: Shore A30, 1mm
+  • Hardware: M3 screws, brass tip mass
+  
+Electronics:
+  • Raspberry Pi Pico or ESP32
+  • HV amplifier: DIY or PiezoDrive PDm200
+  • DC-DC boost: 12V → 150V
+  • Passives: Resistors, caps, MOSFET, etc.
+  
+Total Cost: £161 (DIY) or £298 (pre-built amp)
+
+
+TROUBLESHOOTING
+═══════════════
+
+Problem: No resonance
+→ Check: Piezo bonded properly? Preload correct?
+
+Problem: Resonance at wrong frequency
+→ Fix: Trim beam length (shorter = higher freq)
+
+Problem: Low displacement
+→ Check: HV voltage reaching piezo? Drive at resonance?
+
+Problem: Electrical noise
+→ Fix: Shield HV cable, ground properly
+
+Problem: Inconsistent contact
+→ Fix: Increase spring preload, check surface prep
+
+
+CONTACT & SUPPORT
+═════════════════
+
+CAD Files: ./cad_output/
+BOM: BOM_flexural_beam_probe.md
+Design Theory: flexural_beam_design.md
+Generated: 2026-03-16
