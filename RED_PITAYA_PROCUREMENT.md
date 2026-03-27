@@ -9,15 +9,25 @@
 
 | # | Item | Spec | Supplier | Cost | Lead |
 |---|------|------|----------|------|------|
-| 1 | **STEMlab 125-14** | 2×ADC/DAC 125 MSa/s 14-bit, Zynq 7010 | redpitaya.com | **£200** | 3-5 days |
+| 1 | **STEMlab 125-14 Gen 2** | 2×ADC/DAC 125 MSa/s 14-bit, Zynq 7010 | redpitaya.com | **£250** | 3-5 days |
 
-**Model:** STEMlab 125-14 (standard) — the Z7020 upgrade (£300) isn't needed for 8 elements.
+**Model:** STEMlab 125-14 Gen 2 (standard) — **CONFIRMED**
 
 **Direct link:** https://redpitaya.com/product/stemlab-125-14/
 
 **What it gives you:**
-- 2× RF inputs (ADC): 125 MSa/s, 14-bit, ±1V / ±20V (selectable)
-- 2× RF outputs (DAC): 125 MSa/s, 14-bit, ±1V
+- 2× RF inputs (ADC): 125 MSa/s, 14-bit, ±1V / ±20V (selectable), **-75 dB noise floor**
+- 2× RF outputs (DAC): 125 MSa/s, 14-bit, **±2V @ Hi-Z** (Gen 2 improvement)
+- USB-C connector (3A power delivery)
+- 16× DIO (3.3V) on extension connectors E1/E2
+- Xilinx Zynq 7010 FPGA (dual ARM Cortex-A9 + FPGA fabric)
+- Ethernet + USB for host connection
+- Runs Linux (can SSH in, run Python directly on-board)
+
+**Gen 2 advantages for this project:**
+- ±2V output swing = stronger drive, no pre-amp stage needed
+- Lower noise floor = relaxed LNA requirements
+- USB-C = simpler power, modern interface
 - 16× DIO (3.3V) on extension connectors E1/E2
 - Xilinx Zynq 7010 FPGA (dual ARM Cortex-A9 + FPGA fabric)
 - Ethernet + USB for host connection
@@ -65,13 +75,13 @@
 
 | Category | Amount |
 |----------|--------|
-| Red Pitaya STEMlab 125-14 | £200.00 |
+| Red Pitaya STEMlab 125-14 Gen 2 | £250.00 |
 | Active ICs | £17.80 |
 | Passives & Protection | £4.80 |
 | Connectors & Mechanical | £28.80 |
-| **TOTAL** | **£251.40** |
-| Contingency (+10%) | £25.14 |
-| **GRAND TOTAL** | **£276.54** |
+| **TOTAL** | **£301.40** |
+| Contingency (+10%) | £30.14 |
+| **GRAND TOTAL** | **£331.54** |
 
 ---
 
