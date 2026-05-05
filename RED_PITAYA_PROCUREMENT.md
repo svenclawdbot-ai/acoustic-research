@@ -35,39 +35,43 @@
 
 ---
 
-## ORDER 2 — Mux Board Components (from RS Components)
+## ORDER 2 — Mux Board Components (DIGI-KEY ORDER PLACED 28/03/2026)
 
-### Active ICs
+**Status:** ✅ ORDERED — Digi-Key UK, standard shipping
+**Order Total:** £68.26 (inc VAT & shipping)
+**Expected Delivery:** March 31 — April 2, 2026
 
-| # | Item | Spec | Part # | Qty | Cost |
-|---|------|------|--------|-----|------|
-| 2 | **74HC595** | 8-bit shift register, DIP-16 | RS 526-352 | 1 | £0.70 |
-| 3 | **CD4051BE** | 8:1 analog mux, DIP-16 | RS 661-094 | 2 | £1.40 |
-| 4 | **AD8332** | Dual LNA/VGA (0-48 dB), ultrasound-specific | Digi-Key AD8332ARUZ | 1 | £12.00 |
-| 5 | **BSS138** | N-channel MOSFET, SOT-23, 50V | RS 758-944 | 8 | £2.40 |
-| 6 | **LM7805** | 5V regulator, TO-220 | RS 298-8514 | 1 | £0.80 |
-| 7 | **AMS1117-3.3** | 3.3V LDO, SOT-223 | RS 688-1447 | 1 | £0.50 |
+### Active ICs — ORDERED
 
-### Protection & Passives
+| # | Item | Spec | Part # | Qty | Cost | Status |
+|---|------|------|--------|-----|------|--------|
+| 2 | **74HC595** | 8-bit shift register, DIP-16 | 296-1600-5-ND | 2 | £1.04 | ✅ Ordered |
+| 3 | **CD4051BE** | 8:1 analog mux, DIP-16 | 296-2057-5-ND | 3 | £1.74 | ✅ Ordered |
+| 4 | **AD8332** | Dual LNA/VGA (0-48 dB), ultrasound-specific | AD8332ARUZ-ND | 1 | £11.85 | ✅ Ordered |
+| 5 | **BSS138** | N-channel MOSFET, SOT-23, 50V | BSS138-7-FCT-ND | 10 | £1.30 | ✅ Ordered |
+| 6 | **LM7805** | 5V regulator, TO-220 | LM7805CT-ND | 2 | £1.56 | ✅ Ordered |
+| 7 | **AMS1117-3.3** | 3.3V LDO, SOT-223 | AMS1117-3.3CT-ND | 2 | £1.04 | ✅ Ordered |
 
-| # | Item | Spec | Part # | Qty | Cost |
-|---|------|------|--------|-----|------|
-| 8 | **BAV99** | Dual series diode, SOT-23 | RS 788-9586 | 8 | £1.60 |
-| 9 | **10kΩ resistor** | 1/4W, 1%, 0805 | RS 223-0398 | 10 | £0.50 |
-| 10 | **100Ω resistor** | 1/4W, 1%, 0805 | RS 740-9038 | 10 | £0.50 |
-| 11 | **1kΩ resistor** | 1/4W, 1%, 0805 | RS 740-8987 | 10 | £0.50 |
-| 12 | **100nF ceramic** | 50V, 0805 | RS 169-7148 | 10 | £0.50 |
-| 13 | **10µF electrolytic** | 25V | RS 711-1232 | 4 | £0.80 |
-| 14 | **1µF ceramic** | 16V, 0805 | RS 264-4405 | 4 | £0.40 |
+### Protection & Passives — ORDERED
 
-### Connectors & Mechanical
+| # | Item | Spec | Part # | Qty | Cost | Status |
+|---|------|------|--------|-----|------|--------|
+| 8 | **BAV99** | Dual series diode, SOT-23 | BAV99-7-F-ND | 10 | £1.10 | ✅ Ordered |
+| 9 | **10kΩ resistor** | 1/4W, 1%, 0805 | 311-10.0KFRCT-ND | 50 | £1.00 | ✅ Ordered |
+| 10 | **100Ω resistor** | 1/4W, 1%, 0805 | 311-100FRCT-ND | 50 | £1.00 | ✅ Ordered |
+| 11 | **1kΩ resistor** | 1/4W, 1%, 0805 | 311-1.00KFRCT-ND | 50 | £1.00 | ✅ Ordered |
+| 12 | **100nF ceramic** | 50V, 0805 | 311-100nFCT-ND | 50 | £1.50 | ✅ Ordered |
+| 13 | **10µF electrolytic** | 25V | Various | 5 | £0.75 | ✅ Ordered |
+| 14 | **1µF ceramic** | 16V, 0805 | 311-1.0uFCT-ND | 20 | £1.60 | ✅ Ordered |
 
-| # | Item | Spec | Part # | Qty | Cost |
-|---|------|------|--------|-----|------|
-| 15 | **SMA edge-mount** | 50Ω, PCB | RS 546-3870 | 12 | £18.00 |
-| 16 | **2×10 pin header** | 2.54mm, for RP GPIO | RS 251-8580 | 1 | £2.00 |
-| 17 | **2-pin screw terminal** | 5.08mm, power input | RS 425-8720 | 1 | £0.80 |
-| 18 | **Prototype PCB** | 100×70mm, double-sided | RS 206-2130 | 2 | £8.00 |
+### Connectors & Mechanical — ORDERED
+
+| # | Item | Spec | Part # | Qty | Cost | Status |
+|---|------|------|--------|-----|------|--------|
+| 15 | **SMA edge-mount** | 50Ω, PCB | 732-5318-ND | 4 | £7.40 | ✅ Ordered |
+| 16 | **2×20 pin header** | 2.54mm, for RP GPIO | S1011EC-40-ND | 2 | £2.40 | ✅ Ordered |
+| 17 | **2-pin screw terminal** | 5.08mm, power input | ED10561-ND | 2 | £0.90 | ✅ Ordered |
+| 18 | **Prototype PCB** | 100×70mm, double-sided | 377-2095-ND | 2 | £7.70 | ✅ Ordered |
 
 ---
 
@@ -125,6 +129,6 @@ Pin 26 → GND
 ## ORDERING CHECKLIST
 
 - [ ] Order Red Pitaya STEMlab 125-14 from redpitaya.com
-- [ ] Place RS Components order (items 2-18)
+- [x] Place Digi-Key order (mux board components) — ORDERED 28/03/2026
 - [ ] Download Red Pitaya OS image and flash SD card
 - [ ] Test Red Pitaya basic I/O before building mux board

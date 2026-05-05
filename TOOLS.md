@@ -37,25 +37,4 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
-## Wolfram Alpha
-
-**App ID:** `LHQJ395EVU`
-
-**Usage:**
-```bash
-python3 /home/james/.openclaw/workspace/wolfram_query.py "your query"
-```
-
-**Examples:**
-```bash
-python3 wolfram_query.py "integrate x^2 dx"
-python3 wolfram_query.py "thermal conductivity of steel"
-python3 wolfram_query.py "convert 500 W/cm2 to W/m2"
-python3 wolfram_query.py "solve x^2 + 3x - 7 = 0"
-```
-
-**Quota:** 2,000 non-commercial queries/month (free tier)
-
----
-
 Add whatever helps you do your job. This is your cheat sheet.

@@ -293,3 +293,90 @@ For questions or issues:
 ---
 
 *Last updated: March 14, 2026*
+
+---
+
+## TurboQuant Hardware System
+
+This project now includes a complete high-speed data acquisition system for ultrasound arrays.
+
+### Quick Start (Hardware)
+
+```bash
+# Using Make
+make help                 # Show all commands
+make install             # Install dependencies
+make firmware            # Build ESP32 firmware
+make flash               # Flash to device
+make display             # Launch visualization
+
+# Or using the unified CLI
+./turboquant.py device scan
+./turboquant.py acquire --duration 60 --output session.h5
+./turboquant.py display --mode advanced
+./turboquant.py analyze session.h5 --spectrogram
+```
+
+### System Components
+
+| Component | Description | File |
+|-----------|-------------|------|
+| **DMA Firmware** | ESP32-S3 high-speed acquisition | `dma_acquisition.c/h` |
+| **Display** | Real-time PyQtGraph visualization | `advanced_display.py` |
+| **Recording** | Multi-format data logging | `data_recorder.py` |
+| **Streaming** | Network ZeroMQ streaming | `network_stream.py` |
+| **Analysis** | HDF5 spectrogram/FFT tools | `data_analysis.py` |
+| **CLI** | Unified command interface | `turboquant.py` |
+
+### Build System
+
+```bash
+# Firmware
+make firmware            # Build ESP32 firmware
+make flash               # Flash to device
+make monitor             # Serial monitor
+
+# Software
+make check               # Code quality checks
+make test                # Run test suite
+make format              # Format code
+
+# Operations
+make acquire             # Record test data
+make display             # Launch display (demo)
+make analyze             # Analyze recordings
+make stream              # Start streaming
+
+# CI/CD
+make ci-test             # Run CI tests
+make ci-build            # Build release artifacts
+```
+
+### Docker Support
+
+```bash
+# Build and run
+docker-compose up -d server    # Start streaming server
+docker-compose --profile gui up client  # Start GUI client
+docker-compose up notebook     # Jupyter analysis
+
+# Or manually
+docker build -t turboquant:latest .
+docker run --rm turboquant:latest --help
+```
+
+### Documentation
+
+- `DMA_IMPLEMENTATION.md` - Firmware technical details
+- `DMA_INTEGRATION_GUIDE.md` - Integration instructions
+- `TURBOQUANT_GUIDE.md` - CLI usage guide
+- `PYQTGRAPH_GUIDE.md` - Visualization development
+- `CICD_GUIDE.md` - Build and CI/CD documentation
+
+### CI/CD Status
+
+[![CI/CD](https://github.com/svenclawdbot-ai/Engineering-Learning/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/svenclawdbot-ai/Engineering-Learning/actions)
+
+---
+
+*Last updated: April 9, 2026*

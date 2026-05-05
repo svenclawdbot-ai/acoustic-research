@@ -1,0 +1,78 @@
+======================================================================
+MORNING BRIEF — Thursday, April 09, 2026
+======================================================================
+Sources: 19 feeds | Articles: 108 | AI Summary: ✗
+
+📰 TOP STORIES
+----------------------------------------------------------------------
+
+[WORLD] BBC World
+→ He's Australia's most decorated soldier. Now he's at the centre of a historic war crimes case
+  Ben Roberts-Smith's case is not only unprecedented for Australia but "extraordinary" for the globe too, scholars say....
+  🔗 https://www.bbc.com/news/articles/czjwp1vjn9lo?at_medium=RSS&at_campai...
+
+[FINANCE] Financial Times
+→ Investors sought to pull $20bn from private credit funds in first quarter
+  Big groups including Apollo, Ares and Blackstone were hit with redemption requests at start of 2026...
+  🔗 https://www.ft.com/content/3513f9df-18dd-4ea4-ae20-3523988c106c...
+
+[AI_ML] Medscape
+→ When Should Hyperglycemia in Early Pregnancy Be Treated?
+  First-trimester hyperglycemia is rising and linked to adverse outcomes, but uncertainty persists over diagnostic thresholds and timing of treatment decisions. Medscape News Europe...
+  🔗 https://www.medscape.com/viewarticle/when-should-hyperglycemia-early-p...
+
+[TECH] Hackaday
+→ You’ve All Seen A Hackintosh, But Have You Seen One On A Wii?
+  The Intel era of Apple Macs led to so-called “Hackintoshes”, more normal PCs running x86 MacOS X. Now Bryan Keller proves that a Hackintosh isn’t restricted to the x86 era, …read more...
+  🔗 https://hackaday.com/2026/04/08/youve-all-seen-a-hackintosh-but-have-y...
+
+[SCIENCE] Medscape
+→ Neuroimmunome Predicts Viral Hepatitis Severity
+  A neuroimmune gene signature detectable in blood and liver predicts viral hepatitis severity, suggesting nervous-immune crosstalk drives disease progression and informs monitoring. Medscape News Europ...
+  🔗 https://www.medscape.com/viewarticle/neuroimmunome-predicts-viral-hepa...
+
+======================================================================
+📊 CATEGORY BREAKDOWN
+======================================================================
+  WORLD          : 14 articles
+  FINANCE        :  6 articles
+  AI_ML          : 49 articles
+  TECH           : 10 articles
+  SCIENCE        : 15 articles
+  ENGINEERING    :  1 articles
+  MEDICAL        :  7 articles
+  GENERAL        :  6 articles
+
+📌 WORLD HIGHLIGHTS
+----------------------------------------------------------------------
+• BBC World: He's Australia's most decorated soldier. Now he's at the centre of a h
+• Financial Times: Shipping stalls as Tehran dictates terms in Hormuz
+• Financial Times: Iran war has exposed the weakness of the dollar
+
+📌 FINANCE HIGHLIGHTS
+----------------------------------------------------------------------
+• Financial Times: Investors sought to pull $20bn from private credit funds in first quar
+• Financial Times: Ackman in talks to launch fund to bet on investor complacency
+• Financial Times: The case for trade, remade
+
+📌 AI/ML HIGHLIGHTS
+----------------------------------------------------------------------
+• Medscape: When Should Hyperglycemia in Early Pregnancy Be Treated?
+• BBC World: Artemis crew returning to Earth with 'all the good stuff' from Moon di
+• Financial Times: Reform UK donor runs company linked to sanctioned Iranian conglomerate
+
+📌 TECH HIGHLIGHTS
+----------------------------------------------------------------------
+• Hackaday: You’ve All Seen A Hackintosh, But Have You Seen One On A Wii?
+• Ars Technica: The Moon is already on Google Maps—did Artemis II really tell us anyth
+• Hackaday: Nissan Shuts Down NissanConnect App for Older Leaf EVs
+
+📌 SCIENCE HIGHLIGHTS
+----------------------------------------------------------------------
+• Medscape: Neuroimmunome Predicts Viral Hepatitis Severity
+• Nature News: Liquid or solid? Oobleck droplets are both
+• New Scientist: Stunning photographs show the dynamic patterns of the natural world
+
+======================================================================
+End of Brief
+======================================================================

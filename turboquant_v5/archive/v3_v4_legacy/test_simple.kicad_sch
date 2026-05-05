@@ -1,0 +1,50 @@
+(kicad_sch
+  (version 20231120)
+  (generator "eeschema")
+  (uuid "e63e39d7-6ac0-4ffd-8aa3-1841a4541b3a")
+  (paper "A4")
+  (title_block
+    (title "Red Pitaya 8-Element Ultrasound Mux Board")
+    (date "2026-03-29")
+    (rev "1.0")
+    (company "Home Workshop")
+  )
+  
+  (lib_symbols
+    (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0))
+      (property "Reference" "R" (at 2.032 0 90) (effects (font (size 1.27 1.27))))
+      (property "Value" "R" (at 0 0 90) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (effects hide))
+      (symbol "R_0_1"
+        (rectangle (start -1.016 -2.54) (end 1.016 2.54) (stroke (width 0.254)) (fill (type none)))
+        (pin passive line (at 0 3.81 270) (length 1.27) (name "~") (number "1"))
+        (pin passive line (at 0 -3.81 90) (length 1.27) (name "~") (number "2"))
+      )
+    )
+    (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0))
+      (property "Reference" "C" (at 0.635 0 90) (effects (font (size 1.27 1.27))))
+      (property "Value" "C" (at 0 0 90) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (effects hide))
+      (symbol "C_0_1"
+        (polyline (pts (xy -2.032 -0.762) (xy 2.032 -0.762)) (stroke (width 0.254)))
+        (polyline (pts (xy -2.032 0.762) (xy 2.032 0.762)) (stroke (width 0.254)))
+        (pin passive line (at 0 3.81 270) (length 2.794) (name "~") (number "1"))
+        (pin passive line (at 0 -3.81 90) (length 2.794) (name "~") (number "2"))
+      )
+    )
+  )
+  
+  (symbol (lib_id "Device:R") (at 100 100 0) (unit 1) (in_bom yes) (on_board yes)
+    (uuid "test-uuid-001")
+    (property "Reference" "R1" (at 102.032 100 90) (effects (font (size 1.27 1.27))))
+    (property "Value" "10k" (at 100 100 90) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 100 100 0) (effects hide))
+  )
+  
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+  (symbol_instances
+    (path "/test-uuid-001" (reference "R1") (unit 1))
+  )
+)

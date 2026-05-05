@@ -1,0 +1,1810 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-05T06:30:12.365Z",
+  "entries": {
+    "memory:memory/2026-04-12.md:132:156": {
+      "key": "memory:memory/2026-04-12.md:132:156",
+      "path": "memory/2026-04-12.md",
+      "startLine": 132,
+      "endLine": 156,
+      "source": "memory",
+      "snippet": "| `memory/2026-04-12.md` | Daily log | 3.1 KB | | `engineering_challenges/2026-04-12.md` | Challenge | 1.7 KB | | `challenges/2026-04-12_learning.md` | Challenge | 400 B | ### 🔄 Git Commits - No commits today ### 🎯 Next Steps **Tomorrow (Monday 2026-04-13)** - Engineering challenge: Acoustic NDE focus - Sniper bot: Review if restart needed - Research: Continue shear wave simulation work --- ## 📝 User Notes *[Pending user input — any additional notes for today?]* --- *Brief generated at 7:06 AM | Learning challenge at 8:00 AM | Evening log at 10:00 PM*",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-29T18:28:44.208Z",
+      "lastRecalledAt": "2026-05-05T06:00:10.378Z",
+      "queryHashes": [
+        "95074464c94c",
+        "b148806eb67a",
+        "ac0513f6779d"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-05-04",
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "memory/2026-04-12.md",
+        "3.1",
+        "1.7",
+        "log",
+        "engineering-challenges",
+        "challenge",
+        "challenges",
+        "12-learning.md"
+      ]
+    },
+    "memory:memory/2026-04-12.md:89:144": {
+      "key": "memory:memory/2026-04-12.md:89:144",
+      "path": "memory/2026-04-12.md",
+      "startLine": 89,
+      "endLine": 144,
+      "source": "memory",
+      "snippet": "2. Explore a tangential topic that sparked curiosity 3. Catch up on any missed challenges from the week 4. Free creative work (blog post, visualization, tool) 5. Rest and reflect on the week's learning **Success Criteria:** - Deep engagement with material (2+ hours focused work) - Written notes/derivations - Connection to prior learning established **Deliverable:** Whatever you find valuable ⏱️ Time Budget: 2-3 hours focused work 🎯 Focus: Deep work, not shallow completion --- ## 🌙 Evening Session Log — 22:00 ### 📋 Key Actions Today **Automated Tasks (Cron)** - ✅ 07:00 — Morning brief generated (21 articles from 5 RSS sources) - ✅ 08:00 — Daily learning challenge generated (Open R",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-29T18:28:44.208Z",
+      "lastRecalledAt": "2026-05-05T06:30:05.664Z",
+      "queryHashes": [
+        "95074464c94c",
+        "b13f45baaad2"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "notes/derivations",
+        "2-3",
+        "explore",
+        "tangential",
+        "topic",
+        "sparked",
+        "curiosity",
+        "catch"
+      ]
+    },
+    "memory:memory/2026-04-11.md:1:35": {
+      "key": "memory:memory/2026-04-11.md:1:35",
+      "path": "memory/2026-04-11.md",
+      "startLine": 1,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "# Daily Log — 2026-04-11 (Saturday) ## Morning Brief Delivered - Fetched 41 articles from RSS feeds (BBC World, Reuters, TechCrunch, Ars Technica) - Generated engineering challenge for today: FMC/TFM imaging - Delivered summary to main session ## Engineering Challenge: FMC & TFM Following the progression: - Apr 9: Performance optimization - Apr 10: Phased array beamforming (PAUT) - Apr 11: Full Matrix Capture & Total Focusing Method Today's challenge advances to state-of-the-art industrial ultrasonic imaging. ## Learning Challenge: Open Research (Saturday) Weekend focus on deep, unstructured learning: - **Option A:** Paper deep dive (3-pass method) - **Option B:** Tangential exploration",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-29T18:28:44.208Z",
+      "lastRecalledAt": "2026-04-30T06:06:35.524Z",
+      "queryHashes": [
+        "95074464c94c",
+        "6722783fb565",
+        "c9579f4b945b",
+        "5636cdf96ba2"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "fmc/tfm",
+        "state-of-the-art",
+        "3-pass",
+        "log",
+        "saturday",
+        "morning",
+        "brief",
+        "delivered"
+      ]
+    },
+    "memory:memory/2026-04-20.md:1:49": {
+      "key": "memory:memory/2026-04-20.md:1:49",
+      "path": "memory/2026-04-20.md",
+      "startLine": 1,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "# 2026-04-20 — Monday Daily Log **Evening Summary** | 21:00 UTC --- ## 📋 Key Actions Today ### Research & Engineering - **04:08** — Heartbeat check: no actions required - **07:03** — Morning brief delivered (news + Acoustic NDE challenge) - **Challenge verification** — Confirmed all 4 engineering tasks already complete in codebase: 1. ✅ 1D parameter sweep: `zener_parameter_sweep.py` (4 parameter sets, 1D/2D/3D comparison) 2. ✅ 2D FDTD Zener: `shear_wave_2d_zener.py` (velocity-stress + memory variables) 3. ✅ Absorbing BCs: Mur 1st and 2nd order implemented 4. ✅ Dispersion curves: `dispersion_validation_2d()` with cross-correlation extraction - **Smoke test** — Verified 2D Zener s",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-29T18:28:44.208Z",
+      "lastRecalledAt": "2026-04-29T18:28:44.208Z",
+      "queryHashes": [
+        "95074464c94c"
+      ],
+      "recallDays": [
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "zener-parameter-sweep.py",
+        "1d/2d/3d",
+        "shear-wave-2d-zener.py",
+        "velocity-stress",
+        "dispersion-validation-2d",
+        "cross-correlation",
+        "monday",
+        "log"
+      ]
+    },
+    "memory:memory/2026-03-12.md:108:157": {
+      "key": "memory:memory/2026-03-12.md:108:157",
+      "path": "memory/2026-03-12.md",
+      "startLine": 108,
+      "endLine": 157,
+      "source": "memory",
+      "snippet": "### Visualizations - `shear_wave_2d_demo.png` (355 KB) - `shear_wave_2d_simple.png` (122 KB) - `zener_2d_simulation.png` (118 KB) - `zener_model_properties.png` (150 KB) - `dispersion_single_layer.png` (45 KB) - `dispersion_two_layer.png` (58 KB) - `model_comparison.png` (73 KB) - `dispersion_theoretical.png` — Added - `parameter_sweep_G.png` — Added - `parameter_sweep_eta.png` — Added ### Root Workspace - `wolfram_query.py` — Wolfram Alpha interface (1,778 bytes) - `generate_learning_challenge.sh` — Updated daily challenge script (4,571 bytes) ### Memory - `memory/2026-03-12.md` — This log --- ## 🔄 Git Commits 1. **d6d9608** — Add Week 2 parameter sweep and summary documentation 2. *",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-29T18:28:44.208Z",
+      "lastRecalledAt": "2026-04-30T06:05:54.053Z",
+      "queryHashes": [
+        "95074464c94c",
+        "6722783fb565",
+        "6b5af3fe85b3"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "shear-wave-2d-demo.png",
+        "shear-wave-2d-simple.png",
+        "zener-2d-simulation.png",
+        "zener-model-properties.png",
+        "dispersion-single-layer.png",
+        "dispersion-two-layer.png",
+        "model-comparison.png",
+        "dispersion-theoretical.png"
+      ]
+    },
+    "memory:memory/2026-04-13.md:1:33": {
+      "key": "memory:memory/2026-04-13.md:1:33",
+      "path": "memory/2026-04-13.md",
+      "startLine": 1,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "# Morning Log — 2026-04-13 ## Morning Brief Completed (07:03 UTC) ### RSS Summary Delivered - **23 articles** fetched from 5 sources (BBC, Reuters, TechCrunch, Ars Technica) - **World:** Hungary election — Orbán era ends, Péter Magyar landslide victory - **Tech:** Kepler orbital GPUs (40 in orbit), Apple smart glasses update, Anthropic Mythos banking tests - **Finance:** Oil back above $100 (Iran blockade), US energy dominance challenges - **Conflicts:** Iran naval blockade plans, Ukraine-Russia ceasefire violations ### Engineering Challenge Generated - **Topic:** Acoustic NDE / Bayesian Inversion - **Focus:** Limited aperture array effects on parameter identifiability - **File:** `engine",
+      "recallCount": 5,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 5,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-29T18:28:44.208Z",
+      "lastRecalledAt": "2026-04-30T06:06:35.524Z",
+      "queryHashes": [
+        "95074464c94c",
+        "6722783fb565",
+        "6b5af3fe85b3",
+        "7808c24e6ad1",
+        "5636cdf96ba2"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "ukraine-russia",
+        "morning",
+        "log",
+        "brief",
+        "completed",
+        "utc",
+        "rss",
+        "summary"
+      ]
+    },
+    "memory:memory/2026-04-12.md:44:97": {
+      "key": "memory:memory/2026-04-12.md:44:97",
+      "path": "memory/2026-04-12.md",
+      "startLine": 44,
+      "endLine": 97,
+      "source": "memory",
+      "snippet": "- Blog post tackles questions about trustworthiness - Source: TechCrunch **RISC-V AI Chips** - Nvidia-backed SiFive hits $3.65B valuation for open AI chip designs - Based on RISC-V architecture (not x86 or ARM) - Source: TechCrunch **AI Soccer Betting Fail** - Google, OpenAI, Anthropic, and xAI models terrible at Premier League predictions - xAI's Grok performs especially poorly - Source: Ars Technica --- ## 💰 FINANCE _No major finance stories in today's feed._ --- ## 🎯 TODAY'S ENGINEERING CHALLENGE **Open Research: Acoustic NDE Literature Deep Dive** Since no challenge existed for today, I've generated one based on acoustic NDE research progress: - **Focus**: Shear wave propagat",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-29T18:28:44.216Z",
+      "lastRecalledAt": "2026-04-30T06:05:54.053Z",
+      "queryHashes": [
+        "2a6020f69a79",
+        "6722783fb565",
+        "6b5af3fe85b3"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "openai",
+        "risc-v",
+        "nvidia-backed",
+        "3.65b",
+        "blog",
+        "post",
+        "tackles",
+        "questions"
+      ]
+    },
+    "memory:memory/2026-04-28.md:1:35": {
+      "key": "memory:memory/2026-04-28.md:1:35",
+      "path": "memory/2026-04-28.md",
+      "startLine": 1,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "# Daily Log — 2026-04-28 ## Morning Brief - 07:00 GMT+1 — Automated morning brief triggered - RSS feeds fetched successfully - Top stories: Jimmy Kimmel/White House, Mali insurgents, GTFOBins tech, Wall Street Treasury holdings ## Learning Challenge — Physics/Mathematics - **Topic:** Fourier Analysis of Ultrasonic Pulse Propagation - **Focus:** Pulse decomposition, dispersion in steel, sampling theory, Python modelling - **File:** `challenges/2026-04-28_learning.md` - **Status:** Generated, awaiting completion ## TurboQuant V5 — No Active Work Today - PCB routing deferred — waiting for user to get home - No new files created for V5 hardware - BoM and layout plan remain current ## Pending",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-29T18:28:44.216Z",
+      "lastRecalledAt": "2026-05-01T04:58:12.319Z",
+      "queryHashes": [
+        "2a6020f69a79",
+        "7808c24e6ad1",
+        "9b4de8250496",
+        "3841485ae148"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-30",
+        "2026-05-01"
+      ],
+      "conceptTags": [
+        "kimmel/white",
+        "physics/mathematics",
+        "log",
+        "morning",
+        "brief",
+        "gmt",
+        "automated",
+        "triggered"
+      ]
+    },
+    "memory:memory/2026-04-02.md:1:43": {
+      "key": "memory:memory/2026-04-02.md:1:43",
+      "path": "memory/2026-04-02.md",
+      "startLine": 1,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "## PCB Design Session - turboquant_mux_lna_v3 **Time:** Morning session, ~07:00-08:00 UTC **Context:** Restarting PCB design from scratch with clean hierarchical structure ### Actions Taken 1. **Reviewed existing projects** in `/kicad/` directory: - Found 3 prior iterations (red_pitaya_mux_board, turboquant_mux_lna, turboquant_mux_lna_2) - Previous power sheet was complete but digital/analog were empty 2. **Created turboquant_mux_lna_v3** from scratch: - KiCad 9.0 compatible project structure - 4-sheet hierarchical schematic: - Root sheet with hierarchical blocks - POWER_SUPPLIES (complete with 12V→5V→3.3V regulation) - DIGITAL_CONTROL (framework for 74HC595)",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-29T18:28:44.216Z",
+      "lastRecalledAt": "2026-05-02T07:04:25.655Z",
+      "queryHashes": [
+        "2a6020f69a79",
+        "3841485ae148",
+        "93bf9c30ecb0",
+        "13152ad8625c"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-05-01",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "turboquant-mux-lna-v3",
+        "00-08",
+        "red-pitaya-mux-board",
+        "turboquant-mux-lna",
+        "turboquant-mux-lna-2",
+        "digital/analog",
+        "9.0",
+        "4-sheet"
+      ]
+    },
+    "memory:memory/2026-03-27.md:1:38": {
+      "key": "memory:memory/2026-03-27.md:1:38",
+      "path": "memory/2026-03-27.md",
+      "startLine": 1,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "# 2026-03-27 — Daily Session Log (Draft) **Generated:** 22:00 GMT **Day:** Friday --- ## 📰 Morning Brief — RSS Summary (43 articles) **WORLD:** Oscars moving to YouTube (2029), Iran war impacts African fuel supplies, Hungary election concerns **TECH:** Netflix price hike ($19.99 standard), Google Search Live global launch, Gemini 3.1 Flash Live, Wikipedia AI crackdown, Shield AI $12.7B valuation **FINANCE:** Anthropic wins injunction vs Trump admin, Trump signature on US currency --- ## 🔬 Research & Engineering — Red Pitaya Hardware Project ### Major Progress: KiCad Mux Board Design **Created complete 8-element ultrasound interface specification:** | Component | Design | Sta",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-29T18:28:44.216Z",
+      "lastRecalledAt": "2026-05-02T07:04:25.655Z",
+      "queryHashes": [
+        "2a6020f69a79",
+        "13152ad8625c"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "19.99",
+        "3.1",
+        "12.7b",
+        "8-element",
+        "log",
+        "draft",
+        "generated",
+        "gmt"
+      ]
+    },
+    "memory:memory/2026-03-27.md:33:74": {
+      "key": "memory:memory/2026-03-27.md:33:74",
+      "path": "memory/2026-03-27.md",
+      "startLine": 33,
+      "endLine": 74,
+      "source": "memory",
+      "snippet": "- `kicad/red_pitaya_mux_board/red_pitaya_mux_board.kicad_pro` — Project file - `kicad/red_pitaya_mux_board/red_pitaya_mux_board.kicad_sch` — 76KB schematic (36 components, 128 net labels) - `kicad/red_pitaya_mux_board/generate_schematic.py` — Python schematic generator **Procurement Status:** - Red Pitaya STEMlab 125-14: £200 (3-5 day lead) — **NOT YET ORDERED** - Mux board components: ~£52 from RS/Digi-Key — **NOT YET ORDERED** - PCB fabrication: JLCPCB ~£30 (1 week) — **NOT YET ORDERED** ### Comparison: Original DIY Piezo Driver vs Red Pitaya Path | Path | Cost | Lead Time | Status | |------|------|-----------|--------| | DIY Piezo + HV supplies (PROCUREMENT_LIST.md) | £203 | 2 weeks (C",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-29T18:28:44.216Z",
+      "lastRecalledAt": "2026-05-02T07:04:25.655Z",
+      "queryHashes": [
+        "2a6020f69a79",
+        "13152ad8625c"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "125-14",
+        "3-5",
+        "rs/digi-key",
+        "procurement-list.md",
+        "kicad",
+        "red-pitaya-mux-board",
+        "red-pitaya-mux-board.kicad-pro",
+        "project"
+      ]
+    },
+    "memory:memory/2026-03-31.md:82:111": {
+      "key": "memory:memory/2026-03-31.md:82:111",
+      "path": "memory/2026-03-31.md",
+      "startLine": 82,
+      "endLine": 111,
+      "source": "memory",
+      "snippet": "2. Test with actual TurboQuant board when hardware arrives 3. Write Python control script for element scanning 4. Implement software beamforming algorithm (delay-and-sum in Python/numpy) --- ## 🏗️ Project Structure ``` workspace/ ├── fpga/ # FPGA Verilog source │ ├── turboquant_top.v # Current design │ ├── turboquant_controller.v │ └── red_pitaya.xdc # Pin constraints ├── kicad/ │ ├── red_pitaya_mux_board/ # Original design (parallel) │ └── turboquant_mux_lna/ # Selected design (sequential) └── memory/ └── 2026-03-31.md # This file ``` --- ## 🤖 Agent Notes - User (James) prefers practical working solutions over theoretical perfect",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-29T18:28:44.216Z",
+      "lastRecalledAt": "2026-05-02T07:01:34.880Z",
+      "queryHashes": [
+        "2a6020f69a79",
+        "5636cdf96ba2",
+        "93bf9c30ecb0"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-30",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "delay-and-sum",
+        "python/numpy",
+        "turboquant-top.v",
+        "turboquant-controller.v",
+        "red-pitaya.xdc",
+        "red-pitaya-mux-board",
+        "turboquant-mux-lna",
+        "test"
+      ]
+    },
+    "memory:memory/2026-03-16.md:1:34": {
+      "key": "memory:memory/2026-03-16.md:1:34",
+      "path": "memory/2026-03-16.md",
+      "startLine": 1,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "# Daily Log — Monday, March 16, 2026 ## Summary Productive day advancing acoustic NDE research from simulation through to hardware design. Completed theoretical work on boundary conditions, implemented Bayesian inverse problem with MCMC, compared viscoelastic models, and designed a field-deployable shear wave probe. --- ## Morning: News & Challenge Setup - **07:00** — Ran morning briefing (RSS feed, 23 articles) - **07:05** — Generated engineering challenge: extend 1D simulator to 2D with ABCs --- ## Research Progress ### 1. 2D Shear Wave Simulator with Boundary Conditions - Implemented FDTD for 2D viscoelastic Kelvin-Voigt model - **Mur 1st and 2nd order** absorbing boundary condition",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:05:46.492Z",
+      "lastRecalledAt": "2026-04-30T06:06:35.524Z",
+      "queryHashes": [
+        "6722783fb565",
+        "6b5af3fe85b3",
+        "c9579f4b945b",
+        "5636cdf96ba2"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "field-deployable",
+        "kelvin-voigt",
+        "log",
+        "monday",
+        "march",
+        "summary",
+        "productive",
+        "day"
+      ]
+    },
+    "memory:memory/2026-03-28.md:1:10": {
+      "key": "memory:memory/2026-03-28.md:1:10",
+      "path": "memory/2026-03-28.md",
+      "startLine": 1,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "# 2026-03-28 — Saturday ## Morning Brief - RSS feed fetched: 39 articles across sources - Learning challenge generated: Open Research (weekend format) - Brief delivered at ~08:00 UTC ## Learning Challenge **Weekend Open Research** — free exploration, 2-3 hours focused work",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:05:46.492Z",
+      "lastRecalledAt": "2026-04-30T06:06:04.398Z",
+      "queryHashes": [
+        "6722783fb565",
+        "6b5af3fe85b3",
+        "7808c24e6ad1"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "2-3",
+        "saturday",
+        "morning",
+        "brief",
+        "rss",
+        "feed",
+        "fetched",
+        "articles"
+      ]
+    },
+    "memory:memory/2026-04-04.md:1:42": {
+      "key": "memory:memory/2026-04-04.md:1:42",
+      "path": "memory/2026-04-04.md",
+      "startLine": 1,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "# 2026-04-04 - Daily Log ## 🌅 Morning Brief (7:00 AM) - RSS feed fetched: 38 articles across WORLD, TECH, FINANCE - Engineering challenge generated: Digital Twin integration ## 🎯 Weekend Learning Challenge (8:00 AM) **Topic:** Open Research / Free Exploration Choose your own adventure: 1. Deep dive into a paper from the bibliography 2. Explore a tangential topic that sparked curiosity 3. Catch up on any missed challenges from the week 4. Free creative work (blog post, visualization, tool) 5. Rest and reflect on the week's learning **Deliverable:** Whatever you find valuable **Time Budget:** 2-3 hours focused work **Focus:** Deep work, not shallow completion --- ## Engineering Chal",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:05:46.492Z",
+      "lastRecalledAt": "2026-04-30T06:05:59.061Z",
+      "queryHashes": [
+        "6722783fb565",
+        "6b5af3fe85b3",
+        "c9579f4b945b"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "2-3",
+        "log",
+        "morning",
+        "brief",
+        "rss",
+        "feed",
+        "fetched",
+        "articles"
+      ]
+    },
+    "memory:memory/2026-03-23.md:1:38": {
+      "key": "memory:memory/2026-03-23.md:1:38",
+      "path": "memory/2026-03-23.md",
+      "startLine": 1,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "# Daily Log — March 23, 2026 ## Morning Brief - RSS feed reviewed: UN climate warning, Asia stocks slide on Iran tensions, Cursor admits Kimi base model - Engineering challenge: Extend 1D shear wave simulator to 2D/3D with Zener model ## Work Completed ### 1. 3D Zener Simulation Framework (3 hours) - ✅ Created `shear_wave_2d_zener.py` — 2D FDTD with Zener viscoelasticity - ✅ Created `shear_wave_3d_zener.py` — 3D FDTD, memory-optimized (~60 MB) - ✅ Implemented memory variable formulation for anelastic strain tracking - ✅ Added Mur 1st/2nd order absorbing boundary conditions - ✅ Validated amplitude decay (~1/r in 3D) ### 2. Dispersion Extraction Methods (2 hours) - Evaluated k-ω transform,",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:05:46.492Z",
+      "lastRecalledAt": "2026-04-30T06:07:29.386Z",
+      "queryHashes": [
+        "6722783fb565",
+        "6b5af3fe85b3",
+        "9846b7ee9d44"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "2d/3d",
+        "shear-wave-2d-zener.py",
+        "shear-wave-3d-zener.py",
+        "memory-optimized",
+        "1st/2nd",
+        "1/r",
+        "k-ω",
+        "log"
+      ]
+    },
+    "memory:memory/2026-04-24.md:1:35": {
+      "key": "memory:memory/2026-04-24.md:1:35",
+      "path": "memory/2026-04-24.md",
+      "startLine": 1,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "# Daily Log — 2026-04-24 ## Morning Brief - 07:00 GMT+1 — Automated morning brief triggered - Weather: London ⛅ +7°C (feels +5°C), ↙11km/h wind, 93% humidity - RSS issue diagnosed: `feedparser` module missing, backup script works - Friday learning challenge: Humanities — Ethics of surveillance technology ## RSS Issue - Main script `morning_brief_rss.py` fails due to missing `feedparser` dependency - Backup script `/scripts/morning_brief_rss.py` works (uses stdlib only) - Fix pending: install feedparser or rewrite main script ## TurboQuant V5 — Evening Session - **Ultrasound pulser voltage confirmed**: 100-200V range for steel NDE (100-400mm depth) - **T/R diode bridge validated**: 32× MUR",
+      "recallCount": 6,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 6,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:05:54.053Z",
+      "lastRecalledAt": "2026-05-05T06:00:10.378Z",
+      "queryHashes": [
+        "6b5af3fe85b3",
+        "7808c24e6ad1",
+        "13152ad8625c",
+        "ca58d2d8a0b0",
+        "b148806eb67a",
+        "ac0513f6779d"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-05-02",
+        "2026-05-04",
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "backup",
+        "11km/h",
+        "morning-brief-rss.py",
+        "scripts/morning-brief-rss.py",
+        "100-200v",
+        "100-400mm",
+        "t/r",
+        "log"
+      ]
+    },
+    "memory:memory/2026-04-19.md:1:34": {
+      "key": "memory:memory/2026-04-19.md:1:34",
+      "path": "memory/2026-04-19.md",
+      "startLine": 1,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "# 2026-04-19 — Sunday ## 07:00 UTC — Morning Brief Executed ### RSS News Summary - **World:** Australia war crimes charges, French peacekeeper killed in Lebanon, DR Congo deportations, Kyiv supermarket shooting - **Tech:** Tesla robotaxi expansion (Dallas/Houston), Cerebras IPO filing, App Store AI boom, Anthropic/Trump thaw - **Finance:** No major headlines ### Engineering Challenge Progress - **Topic:** Guided Wave Defect Detection (Acoustic NDE) - **Focus:** Frequency-wavenumber (f-k) analysis for defect localization - **File:** `challenges/2026-04-19.md` #### Parts Completed: | Part | Status | Deliverable | |------|--------|-------------| | 1. Dispersion Curves | ✅ Complete | `disper",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:05:54.053Z",
+      "lastRecalledAt": "2026-04-30T06:05:54.053Z",
+      "queryHashes": [
+        "6b5af3fe85b3"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "dallas/houston",
+        "anthropic/trump",
+        "frequency-wavenumber",
+        "f-k",
+        "challenges/2026-04-19.md",
+        "sunday",
+        "utc",
+        "morning"
+      ]
+    },
+    "memory:memory/2026-04-18.md:1:21": {
+      "key": "memory:memory/2026-04-18.md:1:21",
+      "path": "memory/2026-04-18.md",
+      "startLine": 1,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "# Morning Brief — 2026-04-18 ## RSS Summary Delivered - **WORLD:** Oil prices plunge (Iran Strait open), Israel-Lebanon ceasefire, Meta contract loss in Kenya, Tunisia/Algeria hail - **TECH:** Disjoint interval calculator (HN), Claude Design, Stripe vs Airwallex, World verification expansion, sanctioned exchange heist - **FINANCE:** Starmer vetting fiasco, Lufthansa centenary, Bangladesh IMF talks, Hormuz unblocked ## Engineering Challenge Generated **Topic:** Open Research (Weekend) **Focus:** Literature Deep Dive **Tasks:** 1. Read one key paper from 50-paper bibliography 2. Summarize methodology and findings 3. Connect to current research 4. Update problem statement if needed **Output:",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:05:54.053Z",
+      "lastRecalledAt": "2026-04-30T06:05:54.053Z",
+      "queryHashes": [
+        "6b5af3fe85b3"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "israel-lebanon",
+        "tunisia/algeria",
+        "50-paper",
+        "morning",
+        "brief",
+        "rss",
+        "summary",
+        "delivered"
+      ]
+    },
+    "memory:memory/2026-03-22.md:33:56": {
+      "key": "memory:memory/2026-03-22.md:33:56",
+      "path": "memory/2026-03-22.md",
+      "startLine": 33,
+      "endLine": 56,
+      "source": "memory",
+      "snippet": "- **Array Firmware:** 🔄 In progress — phase calibration challenge issued - **BOM Flexural Probe:** 📋 Documented in `BOM_flexural_beam_probe.md` --- ## Learning Challenge (08:00) **Topic:** Open Research — Weekend Exploration **Type:** Self-directed deep learning **Options:** 1. Deep dive into a paper from the bibliography 2. Explore a tangential topic that sparked curiosity 3. Catch up on any missed challenges from the week 4. Free creative work (blog post, visualization, tool) 5. Rest and reflect on the week's learning **Time Budget:** 2-3 hours focused work **Focus:** Deep work, not shallow completion --- *Log generated: 2026-03-22 07:00 UTC*",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:05:59.061Z",
+      "lastRecalledAt": "2026-04-30T06:05:59.061Z",
+      "queryHashes": [
+        "c9579f4b945b"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "bom-flexural-beam-probe.md",
+        "self-directed",
+        "2-3",
+        "array",
+        "firmware",
+        "progress",
+        "phase",
+        "calibration"
+      ]
+    },
+    "memory:memory/2026-03-17.md:1:37": {
+      "key": "memory:memory/2026-03-17.md:1:37",
+      "path": "memory/2026-03-17.md",
+      "startLine": 1,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "# Daily Log: 2026-03-17 ## Engineering Challenge (Thermal) **Status:** Not started **Focus:** Electronics cooling analysis — 500W/cm² thermal stack with heat pipe optimization ## Morning Brief Summary ### WORLD - **Iran conflict escalation:** UAE oil port and Dubai airport hit; global supply concerns - **South Sudan:** 50,000 displaced, military offensive in Jonglei state - **Ecuador:** 75,000 troops deployed against drug gangs - **India energy:** LPG squeeze concerns, potential piped gas impact ### TECH - **Nvidia GTC 2026:** Jensen Huang keynote today; $1T sales projection for Blackwell/Vera Rubin chips - **Nvidia NeMoClaw:** New enterprise AI agent platform (OpenClaw derivative) - *",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:06:04.398Z",
+      "lastRecalledAt": "2026-04-30T06:06:04.398Z",
+      "queryHashes": [
+        "7808c24e6ad1"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "500w/cm2",
+        "blackwell/vera",
+        "log",
+        "engineering",
+        "challenge",
+        "thermal",
+        "status",
+        "not"
+      ]
+    },
+    "memory:memory/2026-04-16.md:23:47": {
+      "key": "memory:memory/2026-04-16.md:23:47",
+      "path": "memory/2026-04-16.md",
+      "startLine": 23,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "2. Envelope detection is more robust for dispersive signals with overlapping frequency components 3. Frequency-domain phase extraction works best with isolated frequency bins 4. 2D FDTD simulation has numerical stability issues with soft tissue parameters (G'=2000 Pa, low viscosity) ### Fundamental Insight For reliable dispersion extraction: - Use sequential narrowband simulations (one frequency at a time), OR - Use well-separated tone bursts in synthetic data where each frequency arrives at a different time ### Files in Workspace - `subsample_gcc.py` - GCC-PHAT implementation (already existed) - `wavelet_denoising.py` - Wavelet denoising module (already existed) - `shear_wave_2d_simulator",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:06:04.398Z",
+      "lastRecalledAt": "2026-04-30T06:06:04.398Z",
+      "queryHashes": [
+        "7808c24e6ad1"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "frequency-domain",
+        "well-separated",
+        "subsample-gcc.py",
+        "gcc-phat",
+        "wavelet-denoising.py",
+        "shear-wave-2d-simulator",
+        "envelope",
+        "detection"
+      ]
+    },
+    "memory:memory/2026-03-25.md:18:63": {
+      "key": "memory:memory/2026-03-25.md:18:63",
+      "path": "memory/2026-03-25.md",
+      "startLine": 18,
+      "endLine": 63,
+      "source": "memory",
+      "snippet": "- **Google TV adds Gemini features** for sports updates and visual answers - **Claude Code gets \"auto mode\"** — Anthropic balances more autonomous execution with built-in safeguards ### FINANCE - **Oil at $150 would trigger global recession**, warns BlackRock CEO Larry Fink - **Australia and EU sign sweeping trade and security deals** after years of negotiations - **ABC journalists in Australia strike** for first time in 20 years over below-inflation pay offer --- ## 🎯 Today's Engineering Challenge: Wednesday (Mechanical Design) **Focus:** Ultrasonic Transducer Design **Tasks:** 1. Design 3.5 MHz focused transducer for phantom imaging 2. Calculate focal depth and beam width 3. Select b",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:06:35.524Z",
+      "lastRecalledAt": "2026-04-30T06:06:35.524Z",
+      "queryHashes": [
+        "5636cdf96ba2"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "built-in",
+        "below-inflation",
+        "3.5",
+        "google",
+        "adds",
+        "gemini",
+        "features",
+        "sports"
+      ]
+    },
+    "memory:memory/2026-03-31.md:1:47": {
+      "key": "memory:memory/2026-03-31.md:1:47",
+      "path": "memory/2026-03-31.md",
+      "startLine": 1,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "# 2026-03-31 — Daily Session Log **Time:** 10:30 AM GMT **Focus:** FPGA Development for Acoustic NDE --- ## 🎯 Major Achievement: FPGA Controller Architecture Decision After reviewing both PCB designs: - **Red Pitaya Mux Board**: Has CD4051B analog muxes, requires parallel 8-channel ADC interface - **TurboQuant Mux LNA**: Uses 74HC595 shift register for sequential element selection **Decision**: Use **TurboQuant board** with **sequential scanning approach**. Rationale: - Switching time ~10μs (8 bits @ 1MHz SPI) is fast enough for ultrasound scanning - Reduces FPGA complexity from 8 parallel ADC inputs to 3 digital control lines - Uses Red Pitaya's built-in fast ADCs (IN1/IN2 at 125 M",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:06:35.524Z",
+      "lastRecalledAt": "2026-05-02T07:07:38.253Z",
+      "queryHashes": [
+        "5636cdf96ba2",
+        "93bf9c30ecb0",
+        "e13036da2ade"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "8-channel",
+        "built-in",
+        "in1/in2",
+        "log",
+        "time",
+        "gmt",
+        "focus",
+        "fpga"
+      ]
+    },
+    "memory:memory/2026-04-23.md:34:59": {
+      "key": "memory:memory/2026-04-23.md:34:59",
+      "path": "memory/2026-04-23.md",
+      "startLine": 34,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "- 09:49 GMT+1 — Decision: Start with CW Doppler proof-of-concept - **BUILT:** Full development stack in `radar/cw_doppler/`: - `rp_sdr_client.py` — Red Pitaya SDR transceiver TCP client - `cw_doppler.py` — Real-time acquisition + processing (4 modes) - `hardware_setup.md` — Phased hardware guide (baseband → through-wall) - `requirements.txt` — Python deps - `README.md` — Quick start guide - **09:55 GMT+1 — BUILT 2.4 GHz hardware stack:** - `hardware_2.4ghz.md` — Complete frontend design (ADF4351 + LT5560 + SPF5189Z) - `bom_2.4ghz.csv` — Shopping list (~£73 additional cost) - `schematic_2.4ghz.md` — One-page signal flow + build checklist - **10:00 GMT+1 — BUILT testing regime",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:06:35.524Z",
+      "lastRecalledAt": "2026-04-30T06:06:35.524Z",
+      "queryHashes": [
+        "5636cdf96ba2"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "proof-of-concept",
+        "radar/cw-doppler",
+        "rp-sdr-client.py",
+        "cw-doppler.py",
+        "real-time",
+        "hardware-setup.md",
+        "through-wall",
+        "requirements.txt"
+      ]
+    },
+    "memory:memory/2026-03-27.md:99:125": {
+      "key": "memory:memory/2026-03-27.md:99:125",
+      "path": "memory/2026-03-27.md",
+      "startLine": 99,
+      "endLine": 125,
+      "source": "memory",
+      "snippet": "| 🔴 High | Order Red Pitaya STEMlab 125-14 | 10 min | | 🔴 High | Order Priority 1 parts (original list) if still pursuing dual path | 15 min | | 🟡 Medium | Open KiCad schematic, complete wire routing | 2 hrs | | 🟡 Medium | Generate Gerber files for JLCPCB | 30 min | | 🟢 Low | Draft FPGA sequencer module (Verilog) | 2 hrs | --- ## 🗣️ User Notes - **Confirmed: Red Pitaya Gen 2** (STEMlab 125-14 Gen 2, £250) — stronger ±2V drive, no pre-amp needed - **Going with Red Pitaya path** as primary hardware approach - **Ordering tomorrow (Saturday) morning — early!** - Decision made: single hardware path (Red Pitaya mux board), not dual --- ## 📈 Session Metrics - **Active session time:** ~",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:06:35.524Z",
+      "lastRecalledAt": "2026-04-30T06:08:10.660Z",
+      "queryHashes": [
+        "5636cdf96ba2",
+        "9b4de8250496"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "125-14",
+        "pre-amp",
+        "high",
+        "order",
+        "red",
+        "pitaya",
+        "stemlab",
+        "min"
+      ]
+    },
+    "memory:memory/2026-04-26.md:37:74": {
+      "key": "memory:memory/2026-04-26.md:37:74",
+      "path": "memory/2026-04-26.md",
+      "startLine": 37,
+      "endLine": 74,
+      "source": "memory",
+      "snippet": "- **`PCB_LAYOUT_PLAN.md`** — detailed floorplan - **`turboquant_mux_lna_v5.kicad_pcb`** — initial placement - 4-layer, 100×80mm - GND plane (In1), +5V/+12V planes (In2) - HV clearances >2mm - Component placements for all zones ### Design Verification Updated - `V5_DESIGN_VERIFICATION.md` — all issues marked ✅ FIXED - Added schematic status table - Updated action items ## Files Created/Modified - `kicad/turboquant_mux_lna_v5/analog.kicad_sch` — Regenerated (clean) - `kicad/turboquant_mux_lna_v5/tx_switch.kicad_sch` — NEW - `kicad/turboquant_mux_lna_v5/turboquant_mux_lna_v5.kicad_pcb` — NEW - `kicad/turboquant_mux_lna_v5/PCB_LAYOUT_PLAN.md` — NEW - `V5_DESIGN_VERIFICATION.md` — Updat",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:08:10.660Z",
+      "lastRecalledAt": "2026-05-02T07:01:34.880Z",
+      "queryHashes": [
+        "9b4de8250496",
+        "3841485ae148",
+        "93bf9c30ecb0"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-05-01",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "pcb-layout-plan.md",
+        "turboquant-mux-lna-v5.kicad-pcb",
+        "4-layer",
+        "v5-design-verification.md",
+        "created/modified",
+        "detailed",
+        "floorplan",
+        "turboquant-mux-lna-v5"
+      ]
+    },
+    "memory:memory/2026-04-27.md:37:77": {
+      "key": "memory:memory/2026-04-27.md:37:77",
+      "path": "memory/2026-04-27.md",
+      "startLine": 37,
+      "endLine": 77,
+      "source": "memory",
+      "snippet": "- **`PCB_LAYOUT_PLAN.md`** — detailed floorplan - **`turboquant_mux_lna_v5.kicad_pcb`** — initial placement - 4-layer, 100×80mm - GND plane (In1), +5V/+12V planes (In2) - HV clearances >2mm - Component placements for all zones ### Design Verification Updated - `V5_DESIGN_VERIFICATION.md` — all issues marked ✅ FIXED - Added schematic status table - Updated action items ## Files Created/Modified - `kicad/turboquant_mux_lna_v5/analog.kicad_sch` — Regenerated (clean) - `kicad/turboquant_mux_lna_v5/tx_switch.kicad_sch` — NEW - `kicad/turboquant_mux_lna_v5/turboquant_mux_lna_v5.kicad_pcb` — NEW - `kicad/turboquant_mux_lna_v5/PCB_LAYOUT_PLAN.md` — NEW - `V5_DESIGN_VERIFICATION.md` — Updat",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:08:10.660Z",
+      "lastRecalledAt": "2026-05-02T07:01:34.880Z",
+      "queryHashes": [
+        "9b4de8250496",
+        "3841485ae148",
+        "93bf9c30ecb0"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-05-01",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "pcb-layout-plan.md",
+        "turboquant-mux-lna-v5.kicad-pcb",
+        "4-layer",
+        "v5-design-verification.md",
+        "created/modified",
+        "detailed",
+        "floorplan",
+        "turboquant-mux-lna-v5"
+      ]
+    },
+    "memory:memory/2026-03-27.md:66:108": {
+      "key": "memory:memory/2026-03-27.md:66:108",
+      "path": "memory/2026-03-27.md",
+      "startLine": 66,
+      "endLine": 108,
+      "source": "memory",
+      "snippet": "create mode 100644 RED_PITAYA_PROCUREMENT.md create mode 100644 kicad/red_pitaya_mux_board/DESIGN.md create mode 100644 kicad/red_pitaya_mux_board/generate_schematic.py create mode 100644 kicad/red_pitaya_mux_board/red_pitaya_mux_board.kicad_pro create mode 100644 kicad/red_pitaya_mux_board/red_pitaya_mux_board.kicad_sch ``` --- ## 💡 Key Insights & Decisions 1. **Hardware bottleneck identified:** No orders placed yet for either procurement path. March 25 Priority 1 parts (piezo stack, HV supplies ×2, ESP32-S3, ADXL355) still pending — now 2+ days behind schedule. 2. **Red Pitaya advantages:** - 125 MSa/s ADC/DAC vs discrete ADC approach - Zynq FPGA for real-time sequencing",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:08:10.660Z",
+      "lastRecalledAt": "2026-05-02T07:04:25.655Z",
+      "queryHashes": [
+        "9b4de8250496",
+        "13152ad8625c"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "red-pitaya-procurement.md",
+        "esp32-s3",
+        "msa/s",
+        "adc/dac",
+        "real-time",
+        "create",
+        "mode",
+        "kicad"
+      ]
+    },
+    "memory:memory/2026-04-20.md:66:86": {
+      "key": "memory:memory/2026-04-20.md:66:86",
+      "path": "memory/2026-04-20.md",
+      "startLine": 66,
+      "endLine": 86,
+      "source": "memory",
+      "snippet": "4. **Middle East & Africa Horizons** — 4/20/2026 market outlook --- ## 🎯 Engineering Challenge (Monday — Acoustic NDE) **Focus:** Extend the 1D Shear Wave Simulator **Tasks:** 1. Run existing 1D simulation with different (G', η) pairs 2. Implement 2D FDTD version for realistic wave propagation 3. Add absorbing boundary conditions (PML or Mur 2nd order) 4. Generate dispersion curves from simulated wave fields **Deliverable:** Working 2D simulation with visualization **Time Budget:** 2-3 hours focused work --- *Generated: Monday, April 20, 2026 | 07:00 UTC*",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:08:10.660Z",
+      "lastRecalledAt": "2026-04-30T06:08:10.660Z",
+      "queryHashes": [
+        "9b4de8250496"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "4/20/2026",
+        "2-3",
+        "middle",
+        "east",
+        "africa",
+        "horizons",
+        "market",
+        "outlook"
+      ]
+    },
+    "memory:memory/2026-03-15.md:1:73": {
+      "key": "memory:memory/2026-03-15.md:1:73",
+      "path": "memory/2026-03-15.md",
+      "startLine": 1,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "# 2026-03-15 — Daily Session Log **Generated:** 22:00 GMT **Day:** Sunday --- ## 📋 Key Actions Today ### Research & Engineering *To be filled during evening summary* ### Sniper Bot Operations - Solana dashboard status - Base dashboard status - Grass rewards update ### Files & Code *Git commits and file changes* --- ## 💡 Findings & Insights ### Engineering Research *Key discoveries from today's challenge* ### Other Notes *Miscellaneous insights* --- ## 📁 Files Created/Modified ### Research Blog (2026/03/15) - (No research blog entry today) ### Workspace Folder (2026-03-15) - (No workspace folder for today) --- ## 🔄 Git Commits - No git commits today --- ## 📊 Sniper B",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-01T04:57:32.895Z",
+      "lastRecalledAt": "2026-05-05T06:30:12.365Z",
+      "queryHashes": [
+        "210d98a9bda7",
+        "b13f45baaad2",
+        "3d8f06a0b4be"
+      ],
+      "recallDays": [
+        "2026-05-01",
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "created/modified",
+        "2026/03/15",
+        "log",
+        "generated",
+        "gmt",
+        "day",
+        "sunday",
+        "key"
+      ]
+    },
+    "memory:memory/2026-03-18.md:1:73": {
+      "key": "memory:memory/2026-03-18.md:1:73",
+      "path": "memory/2026-03-18.md",
+      "startLine": 1,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "# 2026-03-18 — Daily Session Log **Generated:** 22:00 GMT **Day:** Wednesday --- ## 📋 Key Actions Today ### Research & Engineering *To be filled during evening summary* ### Sniper Bot Operations - Solana dashboard status - Base dashboard status - Grass rewards update ### Files & Code *Git commits and file changes* --- ## 💡 Findings & Insights ### Engineering Research *Key discoveries from today's challenge* ### Other Notes *Miscellaneous insights* --- ## 📁 Files Created/Modified ### Research Blog (2026/03/18) - (No research blog entry today) ### Workspace Folder (2026-03-18) - (No workspace folder for today) --- ## 🔄 Git Commits - No git commits today --- ## 📊 Snipe",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-01T04:57:32.895Z",
+      "lastRecalledAt": "2026-05-05T06:30:12.365Z",
+      "queryHashes": [
+        "210d98a9bda7",
+        "b13f45baaad2",
+        "3d8f06a0b4be"
+      ],
+      "recallDays": [
+        "2026-05-01",
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "created/modified",
+        "2026/03/18",
+        "log",
+        "generated",
+        "gmt",
+        "day",
+        "wednesday",
+        "key"
+      ]
+    },
+    "memory:memory/2026-03-20.md:1:73": {
+      "key": "memory:memory/2026-03-20.md:1:73",
+      "path": "memory/2026-03-20.md",
+      "startLine": 1,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "# 2026-03-20 — Daily Session Log **Generated:** 22:00 GMT **Day:** Friday --- ## 📋 Key Actions Today ### Research & Engineering *To be filled during evening summary* ### Sniper Bot Operations - Solana dashboard status - Base dashboard status - Grass rewards update ### Files & Code *Git commits and file changes* --- ## 💡 Findings & Insights ### Engineering Research *Key discoveries from today's challenge* ### Other Notes *Miscellaneous insights* --- ## 📁 Files Created/Modified ### Research Blog (2026/03/20) - (No research blog entry today) ### Workspace Folder (2026-03-20) - (No workspace folder for today) --- ## 🔄 Git Commits - No git commits today --- ## 📊 Sniper B",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-01T04:57:32.895Z",
+      "lastRecalledAt": "2026-05-05T06:30:12.365Z",
+      "queryHashes": [
+        "210d98a9bda7",
+        "b13f45baaad2",
+        "3d8f06a0b4be"
+      ],
+      "recallDays": [
+        "2026-05-01",
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "created/modified",
+        "2026/03/20",
+        "log",
+        "generated",
+        "gmt",
+        "day",
+        "friday",
+        "key"
+      ]
+    },
+    "memory:memory/2026-03-21.md:1:73": {
+      "key": "memory:memory/2026-03-21.md:1:73",
+      "path": "memory/2026-03-21.md",
+      "startLine": 1,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "# 2026-03-21 — Daily Session Log **Generated:** 22:00 GMT **Day:** Saturday --- ## 📋 Key Actions Today ### Research & Engineering *To be filled during evening summary* ### Sniper Bot Operations - Solana dashboard status - Base dashboard status - Grass rewards update ### Files & Code *Git commits and file changes* --- ## 💡 Findings & Insights ### Engineering Research *Key discoveries from today's challenge* ### Other Notes *Miscellaneous insights* --- ## 📁 Files Created/Modified ### Research Blog (2026/03/21) - (No research blog entry today) ### Workspace Folder (2026-03-21) - (No workspace folder for today) --- ## 🔄 Git Commits - No git commits today --- ## 📊 Sniper",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-01T04:57:32.895Z",
+      "lastRecalledAt": "2026-05-05T06:30:12.365Z",
+      "queryHashes": [
+        "210d98a9bda7",
+        "b13f45baaad2",
+        "3d8f06a0b4be"
+      ],
+      "recallDays": [
+        "2026-05-01",
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "created/modified",
+        "2026/03/21",
+        "log",
+        "generated",
+        "gmt",
+        "day",
+        "saturday",
+        "key"
+      ]
+    },
+    "memory:memory/2026-03-26.md:1:73": {
+      "key": "memory:memory/2026-03-26.md:1:73",
+      "path": "memory/2026-03-26.md",
+      "startLine": 1,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "# 2026-03-26 — Daily Session Log **Generated:** 22:01 GMT **Day:** Thursday --- ## 📋 Key Actions Today ### Research & Engineering *To be filled during evening summary* ### Sniper Bot Operations - Solana dashboard status - Base dashboard status - Grass rewards update ### Files & Code *Git commits and file changes* --- ## 💡 Findings & Insights ### Engineering Research *Key discoveries from today's challenge* ### Other Notes *Miscellaneous insights* --- ## 📁 Files Created/Modified ### Research Blog (2026/03/26) - (No research blog entry today) ### Workspace Folder (2026-03-26) - (No workspace folder for today) --- ## 🔄 Git Commits - No git commits today --- ## 📊 Sniper",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-01T04:57:32.895Z",
+      "lastRecalledAt": "2026-05-05T06:30:12.365Z",
+      "queryHashes": [
+        "210d98a9bda7",
+        "3d8f06a0b4be"
+      ],
+      "recallDays": [
+        "2026-05-01",
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "created/modified",
+        "2026/03/26",
+        "log",
+        "generated",
+        "gmt",
+        "day",
+        "thursday",
+        "key"
+      ]
+    },
+    "memory:memory/2026-04-01.md:1:73": {
+      "key": "memory:memory/2026-04-01.md:1:73",
+      "path": "memory/2026-04-01.md",
+      "startLine": 1,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "# 2026-04-01 — Daily Session Log **Generated:** 22:00 GMT **Day:** Wednesday --- ## 📋 Key Actions Today ### Research & Engineering *To be filled during evening summary* ### Sniper Bot Operations - Solana dashboard status - Base dashboard status - Grass rewards update ### Files & Code *Git commits and file changes* --- ## 💡 Findings & Insights ### Engineering Research *Key discoveries from today's challenge* ### Other Notes *Miscellaneous insights* --- ## 📁 Files Created/Modified ### Research Blog (2026/04/01) - (No research blog entry today) ### Workspace Folder (2026-04-01) - (No workspace folder for today) --- ## 🔄 Git Commits - No git commits today --- ## 📊 Snipe",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-01T04:57:32.895Z",
+      "lastRecalledAt": "2026-05-01T04:57:32.895Z",
+      "queryHashes": [
+        "210d98a9bda7"
+      ],
+      "recallDays": [
+        "2026-05-01"
+      ],
+      "conceptTags": [
+        "created/modified",
+        "2026/04/01",
+        "log",
+        "generated",
+        "gmt",
+        "day",
+        "wednesday",
+        "key"
+      ]
+    },
+    "memory:memory/2026-04-26.md:1:45": {
+      "key": "memory:memory/2026-04-26.md:1:45",
+      "path": "memory/2026-04-26.md",
+      "startLine": 1,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "# Daily Log — 2026-04-26 ## Morning Brief - 07:00 GMT+1 — Automated morning brief triggered - RSS feeds fetched successfully (backup script working) - Engineering challenge: TX switch protection circuit for IRF830 - Learning challenge: T/R bridge dynamic resistance + signal chain gain ## TurboQuant V5 — Major Progress ### Schematic Completion - **Regenerated `analog.kicad_sch`** — complete 8-channel T/R bridge topology - 32× MUR120 diodes, 8× BZX84C5V1 zeners - 2× DG408 MUX, 2× OPA1641 LNA - Input protection: DC block + 10:1 attenuator + BAV99 clamp - Clean structure, no duplicates ### Top-Level Hierarchy Updated - Updated analog sheet pins: +12V, MUX_A/B/C/EN, TX_BUS - Added +12",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-01T04:58:12.319Z",
+      "lastRecalledAt": "2026-05-01T04:58:12.319Z",
+      "queryHashes": [
+        "3841485ae148"
+      ],
+      "recallDays": [
+        "2026-05-01"
+      ],
+      "conceptTags": [
+        "backup",
+        "t/r",
+        "analog.kicad-sch",
+        "8-channel",
+        "top-level",
+        "mux-a/b/c/en",
+        "tx-bus",
+        "log"
+      ]
+    },
+    "memory:memory/2026-04-27.md:1:45": {
+      "key": "memory:memory/2026-04-27.md:1:45",
+      "path": "memory/2026-04-27.md",
+      "startLine": 1,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "# Daily Log — 2026-04-27 ## Morning Brief - 07:32 GMT+1 — Automated morning brief triggered - RSS feeds fetched successfully (backup script working) - Engineering challenge: TX switch protection circuit for IRF830 - Learning challenge: T/R bridge dynamic resistance + signal chain gain ## TurboQuant V5 — Major Progress ### Schematic Completion - **Regenerated `analog.kicad_sch`** — complete 8-channel T/R bridge topology - 32× MUR120 diodes, 8× BZX84C5V1 zeners - 2× DG408 MUX, 2× OPA1641 LNA - Input protection: DC block + 10:1 attenuator + BAV99 clamp - Clean structure, no duplicates ### Top-Level Hierarchy Updated - Updated analog sheet pins: +12V, MUX_A/B/C/EN, TX_BUS - Added +12",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-01T04:58:12.319Z",
+      "lastRecalledAt": "2026-05-01T04:58:12.319Z",
+      "queryHashes": [
+        "3841485ae148"
+      ],
+      "recallDays": [
+        "2026-05-01"
+      ],
+      "conceptTags": [
+        "backup",
+        "t/r",
+        "analog.kicad-sch",
+        "8-channel",
+        "top-level",
+        "mux-a/b/c/en",
+        "tx-bus",
+        "log"
+      ]
+    },
+    "memory:memory/2026-04-23.md:1:39": {
+      "key": "memory:memory/2026-04-23.md:1:39",
+      "path": "memory/2026-04-23.md",
+      "startLine": 1,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "# Daily Log — 2026-04-23 ## Morning Brief Request - 07:14 GMT+1 — Requested daily brief + log save - Weather: London ⛅ +6°C (feels +4°C), ↙11km/h wind, 93% humidity ## Carried Forward from 2026-04-22 ### Red Pitaya FPGA Integration (V5 Hardware) - Block design script (`fpga/v5_red_pitaya_bd.tcl`) - Verilog MUX controller (`fpga/v5_mux_controller.v`) - Pin constraints (`fpga/v5_red_pitaya.xdc`) - Python API (`fpga/v5_api.py`) - README with build instructions ### Performance Targets - SCPI mode: ~80ms scan (12 Hz) - DMA mode (target): ~35ms scan (28 Hz) ### Procurement Status (Pending) - Red Pitaya: £250 (not yet ordered) - Digi-Key PCB components: ~£84 - PicoScope 2206B + bench tools: ~£6",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-01T07:00:53.884Z",
+      "lastRecalledAt": "2026-05-02T07:01:34.838Z",
+      "queryHashes": [
+        "051b7f3f1a09",
+        "bd9c9f8c524b"
+      ],
+      "recallDays": [
+        "2026-05-01",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "11km/h",
+        "fpga/v5-red-pitaya-bd.tcl",
+        "fpga/v5-mux-controller.v",
+        "fpga/v5-red-pitaya.xdc",
+        "fpga/v5-api.py",
+        "digi-key",
+        "log",
+        "morning"
+      ]
+    },
+    "memory:memory/2026-04-25.md:33:52": {
+      "key": "memory:memory/2026-04-25.md:33:52",
+      "path": "memory/2026-04-25.md",
+      "startLine": 33,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "- `kicad/turboquant_mux_lna_v5/analog.kicad_sch` — **Complete rewrite** (V5) - 32,155 bytes, new symbols, wiring, hierarchical pins ## Pending Actions - [ ] Copy CH0 T/R bridge to CH1-CH7 (7 more channels) - [ ] Wire LNA1 (copy LNA0 for MUX1 → RX1_OUT) - [ ] Add BAV99 clamping diodes - [ ] Create `tx_switch.kicad_sch` (8× IRF830) - [ ] Update top-level sheet with new hierarchical pins - [ ] Run ERC once all sheets complete ## Research Notes - MUR120 reverse recovery: 50ns, Qrr ≈ 50nC - DG408 signal range: VSS to VDD (0V to 12V with current supply) - OPA1641 on 5V single supply: common-mode 0-3.5V, output 0.2-4.8V - LNA gain=10 with 1kΩ/9.09kΩ feedback → adequate for <350mV echoes --- *F",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-02T06:03:46.584Z",
+      "lastRecalledAt": "2026-05-05T06:00:10.378Z",
+      "queryHashes": [
+        "2823a2a3cac4",
+        "b148806eb67a",
+        "ac0513f6779d"
+      ],
+      "recallDays": [
+        "2026-05-02",
+        "2026-05-04",
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "t/r",
+        "ch1-ch7",
+        "rx1-out",
+        "tx-switch.kicad-sch",
+        "top-level",
+        "common-mode",
+        "0-3.5v",
+        "0.2-4.8v"
+      ]
+    },
+    "memory:memory/2026-03-12.md:35:83": {
+      "key": "memory:memory/2026-03-12.md:35:83",
+      "path": "memory/2026-03-12.md",
+      "startLine": 35,
+      "endLine": 83,
+      "source": "memory",
+      "snippet": "- README.md — Usage guides for all simulators - 8 visualization figures generated ### Infrastructure Updates **Wolfram Alpha:** - ✅ Restored from backup workspace - ✅ Verified working with mathematical symbols - ✅ Quota: 2,000 queries/month **CRON Jobs:** - ✅ Morning Brief RSS (7:00 AM) - ✅ Daily Learning Challenge (8:00 AM) — Updated with varied topics - ✅ Daily Log Generator (10:00 PM) — Just triggered **Learning Challenge Rotation:** - Monday: Engineering (Acoustic NDE) - Tuesday: Physics & Mathematics - Wednesday: Engineering (DSP) - Thursday: Language & Communication ← Today - Friday: Humanities & Society - Weekend: Open Research ### Solana Sniper Bot **Status:** 📦 ARCHIVED",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-02T06:03:46.584Z",
+      "lastRecalledAt": "2026-05-02T06:03:46.584Z",
+      "queryHashes": [
+        "2823a2a3cac4"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "backup",
+        "readme.md",
+        "queries/month",
+        "usage",
+        "guides",
+        "all",
+        "simulators",
+        "visualization"
+      ]
+    },
+    "memory:memory/2026-03-12.md:1:47": {
+      "key": "memory:memory/2026-03-12.md:1:47",
+      "path": "memory/2026-03-12.md",
+      "startLine": 1,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "# 2026-03-12 — Daily Session Log **Generated:** 22:01 GMT **Day:** Thursday — Language & Communication Challenge --- ## 📋 Key Actions Today ### Research & Engineering — Week 2 COMPLETED ✅ **Acoustic NDE / Shear Wave Elastography:** 1. **2D Shear Wave Simulator — UNIFIED** - Created unified interface supporting both Kelvin-Voigt and Zener models - Implemented multi-layer viscoelastic media support - Added PML absorbing boundaries (20-cell thickness) - Reverberant excitation with multiple simultaneous sources - Automatic time-step selection based on stability constraints 2. **Zener Model (Standard Linear Solid)** - Implemented analytical Zener model with complex mod",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-02T06:03:46.584Z",
+      "lastRecalledAt": "2026-05-02T06:03:46.584Z",
+      "queryHashes": [
+        "2823a2a3cac4"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "kelvin-voigt",
+        "multi-layer",
+        "20-cell",
+        "time-step",
+        "log",
+        "generated",
+        "gmt",
+        "day"
+      ]
+    },
+    "memory:memory/2026-04-25.md:1:41": {
+      "key": "memory:memory/2026-04-25.md:1:41",
+      "path": "memory/2026-04-25.md",
+      "startLine": 1,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "# Daily Log — 2026-04-25 ## Morning Brief - 07:00 GMT+1 — Automated morning brief triggered - Weather: London ⛅ +7°C (feels +5°C), ↙11km/h wind, 93% humidity - RSS issue diagnosed: `feedparser` module missing, backup script works - Saturday learning challenge: Open research (acoustic NDE focus) ## TurboQuant V5 — Major Progress ### Schematic Redraw - **Created new `analog.kicad_sch`** — complete V5 topology - 8× T/R diode bridge blocks (MUR120 ×4 + bias each) - 2× DG408 8:1 MUX (SOIC-16, 100V capable) - 2× OPA1641 LNA (gain=10, JFET input) - Input protection: 10:1 attenuator + BAV99 clamping - Power: +5V (logic/OPA1641), +12V (DG408 VDD) ### T/R Bridge Wiring Complete - CH0 tem",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-02T06:03:46.584Z",
+      "lastRecalledAt": "2026-05-02T07:07:38.253Z",
+      "queryHashes": [
+        "2823a2a3cac4",
+        "e13036da2ade"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "backup",
+        "11km/h",
+        "analog.kicad-sch",
+        "t/r",
+        "soic-16",
+        "logic/opa1641",
+        "log",
+        "morning"
+      ]
+    },
+    "memory:memory/2026-03-31.md:35:93": {
+      "key": "memory:memory/2026-03-31.md:35:93",
+      "path": "memory/2026-03-31.md",
+      "startLine": 35,
+      "endLine": 93,
+      "source": "memory",
+      "snippet": "9. `Makefile`, `sim.sh` — Build automation --- ## 🔧 TurboQuant Interface Specification ### Control Signals (E1 Connector) | Signal | Pin | Description | |--------|-----|-------------| | SER | DIO0_P (G18) | Serial data to 74HC595 | | SRCLK | DIO0_N (G17) | Shift register clock | | RCLK | DIO1_P (H17) | Latch clock | ### Timing - SPI Clock: 1 MHz (derived from 125 MHz system clock) - Shift out: 8 bits × 1 μs = 8 μs - Latch: < 1 μs - **Total switch time: ~10 μs** - **Max scan rate: 100,000 elements/second** ### Data Flow ``` Python Host → [element_select: 0-7] → FPGA Controller → 74HC595 → GATE0-7 → TurboQuant ↓ Red Pitaya ADC IN1/IN2 ←───────────",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-02T07:01:34.880Z",
+      "lastRecalledAt": "2026-05-02T07:01:34.880Z",
+      "queryHashes": [
+        "93bf9c30ecb0"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "sim.sh",
+        "dio0-p",
+        "dio0-n",
+        "dio1-p",
+        "elements/second",
+        "element-select",
+        "0-7",
+        "gate0-7"
+      ]
+    },
+    "memory:memory/2026-04-21.md:26:55": {
+      "key": "memory:memory/2026-04-21.md:26:55",
+      "path": "memory/2026-04-21.md",
+      "startLine": 26,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "- **Switched to Kimi K2.6** as primary model (released April 20, 2026) - **Confirmed 100-200V pulser voltage** — requires T/R switch in design - **Selected PicoScope 2206B** for bring-up (12-bit, 4-ch) ### V5 Schematic Updates - **Digital:** Updated 74HC595 → 74HCT595 in `digital.kicad_sch` - **Power:** Updated LM7805 footprint TO-220 → DPAK (TO-252) in `power.kicad_sch` - **Main:** Updated title/revision to v5.0 (2026-04-21) - **Analog:** Still needs full redraw — now includes **8× T/R diode bridge blocks** (MUR120, 200V) - **TX Switch:** IRF830 + gate protection confirmed ### Design Verification — Issues Found & Fixed 1. **🔴 HV pulser vs. DG408 limit** — T/R switch added (32× MUR120 dio",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-02T07:04:25.655Z",
+      "lastRecalledAt": "2026-05-04T13:31:50.842Z",
+      "queryHashes": [
+        "13152ad8625c",
+        "ca58d2d8a0b0"
+      ],
+      "recallDays": [
+        "2026-05-02",
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "k2.6",
+        "100-200v",
+        "t/r",
+        "bring-up",
+        "12-bit",
+        "4-ch",
+        "digital.kicad-sch",
+        "to-220"
+      ]
+    },
+    "memory:memory/2026-04-23.md:102:125": {
+      "key": "memory:memory/2026-04-23.md:102:125",
+      "path": "memory/2026-04-23.md",
+      "startLine": 102,
+      "endLine": 125,
+      "source": "memory",
+      "snippet": "- VNA add-on cost: ~£20–50 (coupler + cal kit + extra SD cards) - Comparison: RP VNA vs NanoVNA vs Rigol vs Keysight FieldFox - **20:11 GMT+1 — BUILT Logic Analyzer guide:** - `LOGIC_ANALYZER.md` — Complete guide to Red Pitaya's built-in 16-channel LA - 125 MSps, 16 channels, free with standard OS (no extra hardware) - Use cases: ADF4351 SPI debug, servo PWM verification, TurboQuant MUX timing, FMCW sync - Python SPI decoder included (ADF4351 register extraction) - Triggered capture script for automated testing - Comparison: RP LA vs £10 USB LA vs £400 Saleae ## Summary of Today's Deliverables - **19 files created** in `radar/cw_doppler/` (~6,000 lines total) - Complete rada",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-02T07:07:38.253Z",
+      "lastRecalledAt": "2026-05-02T07:07:38.253Z",
+      "queryHashes": [
+        "e13036da2ade"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "add-on",
+        "logic-analyzer.md",
+        "built-in",
+        "16-channel",
+        "radar/cw-doppler",
+        "vna",
+        "add",
+        "cost"
+      ]
+    },
+    "memory:memory/2026-03-02.md:34:60": {
+      "key": "memory:memory/2026-03-02.md:34:60",
+      "path": "memory/2026-03-02.md",
+      "startLine": 34,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "- FM playbook iteration based on user feedback - Complete 48-hour sniper comparison analysis - Virtue Poker deep research (sub-agent timed out) - PokerNow live testing of Taleb-AI bot ## Dashboard URLs - Solana: http://192.168.0.48:8080 - Base: http://192.168.0.48:8081 - Comparison: http://192.168.0.48:8082 ## Poker Bot - Taleb-AI - Built core engine with Active Inference + Taleb principles - Components created: - `active_inference.py`: Bayesian belief updating, free energy minimization - `opponent_model.py`: SQLite DB, VPIP/PFR tracking, exploit generation - `hand_eval.py`: Hand evaluation, equity calculation - `bot.py`: Main bot class with session management - `pokernow.py`: Pl",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-02T07:07:38.253Z",
+      "lastRecalledAt": "2026-05-02T07:07:38.253Z",
+      "queryHashes": [
+        "e13036da2ade"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "48-hour",
+        "sub-agent",
+        "taleb-ai",
+        "192.168.0.48",
+        "active-inference.py",
+        "opponent-model.py",
+        "vpip/pfr",
+        "hand-eval.py"
+      ]
+    },
+    "memory:memory/2026-04-23.md:86:106": {
+      "key": "memory:memory/2026-04-23.md:86:106",
+      "path": "memory/2026-04-23.md",
+      "startLine": 86,
+      "endLine": 106,
+      "source": "memory",
+      "snippet": "- Key insight: **Zero hardware changes** — same 2.4 GHz frontend, just reprogram FPGA + new Python - **11:29 GMT+1 — BUILT hardware alignment analysis:** - `HARDWARE_ALIGNMENT.md` — Complete crossover guide between radar and TurboQuant - Shared: Red Pitaya (£250), PicoScope, bench tools, soldering gear, passives (~£125) - FPGA reuse: 60% of Vivado block design transferable (AXI, DMA, GPIO, clocking) - Python API: Could unify into single `RedPitayaAPI` class with mode switching - Radar-unique cost: ~£93 (RF frontend + servo) if RP + tools already owned - TurboQuant-unique: ~£610 (PCB + transducers + HV pulser + scope) - Combined total from nothing: ~£1,126 (saves ~£100–200 vs",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-02T07:07:38.253Z",
+      "lastRecalledAt": "2026-05-02T07:07:38.253Z",
+      "queryHashes": [
+        "e13036da2ade"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "2.4",
+        "hardware-alignment.md",
+        "radar-unique",
+        "turboquant-unique",
+        "key",
+        "insight",
+        "zero",
+        "hardware"
+      ]
+    },
+    "memory:memory/2026-04-22.md:1:36": {
+      "key": "memory:memory/2026-04-22.md:1:36",
+      "path": "memory/2026-04-22.md",
+      "startLine": 1,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "## Red Pitaya FPGA Integration (Evening) ### Files Created for V5 Hardware 1. **`fpga/v5_red_pitaya_bd.tcl`** — Vivado block design script 2. **`fpga/v5_mux_controller.v`** — Verilog MUX controller (AXI-Lite state machine) 3. **`fpga/v5_red_pitaya.xdc`** — Pin constraints for STEMlab 125-14 4. **`fpga/v5_api.py`** — Python API (SCPI + DMA modes, DSP utilities) 5. **`fpga/README.md`** — Build instructions ### FPGA Architecture - Zynq PS + HP0 AXI + AXI Interconnect - ADC/DAC interfaces (Pavel Demin's cores) - AXI GPIO for DG408 MUX control (S0,S1,S2,/EN) - AXI DMA S2MM for ADC data transfer - BRAM for DAC waveform storage - MUX controller state machine with auto-scan ### API Test Results",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-02T07:07:38.253Z",
+      "lastRecalledAt": "2026-05-02T07:07:38.253Z",
+      "queryHashes": [
+        "e13036da2ade"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "fpga/v5-red-pitaya-bd.tcl",
+        "fpga/v5-mux-controller.v",
+        "axi-lite",
+        "fpga/v5-red-pitaya.xdc",
+        "125-14",
+        "fpga/v5-api.py",
+        "fpga/readme.md",
+        "adc/dac"
+      ]
+    },
+    "memory:memory/2026-04-23.md:54:75": {
+      "key": "memory:memory/2026-04-23.md:54:75",
+      "path": "memory/2026-04-23.md",
+      "startLine": 54,
+      "endLine": 75,
+      "source": "memory",
+      "snippet": "- FMCW upgrade: 2D range-speed → range-Doppler maps + SAR wall slices - Dual antenna: 2.5D range-angle → polar sector plots - MIMO array: Full 3D point cloud + voxel grids + Open3D - Target tracking: Kalman filter trajectories in 3D - Building reconstruction: SAR back-projection for interior mapping - Real-time tools: PyVista, Open3D, PyQtGraph GL, Three.js web dashboard - Code stubs for voxel grid, Kalman tracker, PyQtGraph 3D scatter - **10:14 GMT+1 — BUILT 2D polar scanning integration:** - `servo_controller.py` — Red Pitaya GPIO PWM for pan/tilt servos - `polar_scanner.py` — Complete scanning application (radar + servo + polar plot) - `INTEGRATION.md` — Hardware wirin",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-04T13:31:50.842Z",
+      "lastRecalledAt": "2026-05-04T13:31:50.842Z",
+      "queryHashes": [
+        "ca58d2d8a0b0"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "range-speed",
+        "range-doppler",
+        "2.5d",
+        "range-angle",
+        "back-projection",
+        "real-time",
+        "three.js",
+        "servo-controller.py"
+      ]
+    },
+    "memory:memory/2026-04-28.md:1:39": {
+      "key": "memory:memory/2026-04-28.md:1:39",
+      "path": "memory/2026-04-28.md",
+      "startLine": 1,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "# Daily Log — 2026-04-28 ## Morning Brief - 07:00 GMT+1 — Automated morning brief triggered - RSS feeds fetched successfully - Top stories: Jimmy Kimmel/White House, Mali insurgents, GTFOBins tech, Wall Street Treasury holdings ## Learning Challenge — Physics/Mathematics - **Topic:** Fourier Analysis of Ultrasonic Pulse Propagation - **Focus:** Pulse decomposition, dispersion in steel, sampling theory, Python modelling - **File:** `challenges/2026-04-28_learning.md` - **Status:** Generated, awaiting completion ## TurboQuant V5 — PCB Layout Status - **Board:** 100×80mm, 4-layer - **Placement:** All zones populated (Power, Digital, Analog, TX Switch) - **Planes:** GND (In1), +5V/+12V (In2)",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-04T21:05:02.065Z",
+      "lastRecalledAt": "2026-05-05T06:00:10.378Z",
+      "queryHashes": [
+        "b148806eb67a",
+        "ac0513f6779d"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "kimmel/white",
+        "physics/mathematics",
+        "4-layer",
+        "log",
+        "morning",
+        "brief",
+        "gmt",
+        "automated"
+      ]
+    },
+    "memory:memory/2026-03-04.md:1:38": {
+      "key": "memory:memory/2026-03-04.md:1:38",
+      "path": "memory/2026-03-04.md",
+      "startLine": 1,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "# 2026-03-04 — Session Log ## Engineering Research Program Setup - Created daily research challenge system (Mon-Fri) - 7:30 AM: Morning problem drop - 6:30 PM: Evening theory check - Topics rotate: materials, thermal/fluids, structures, manufacturing, biomechanics, robotics, sustainability, emerging tech - Set up monthly deep research framework - 4-week cycles (literature → theory → implementation → writing) - Python scripts + full paper deliverables - Iterative style matching for writing voice ## Sniper Bot Updates - Reduced filter conservatism: - MAX_ENTRY_DELAY: 30s → 120s - Score threshold: 0.5 → 0.35 - Trade threshold: 0.75 → 0.65 - Confidence threshold kept at 0.7 - R",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-04T21:05:02.065Z",
+      "lastRecalledAt": "2026-05-05T06:00:10.378Z",
+      "queryHashes": [
+        "b148806eb67a",
+        "ac0513f6779d"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "mon-fri",
+        "thermal/fluids",
+        "4-week",
+        "max-entry-delay",
+        "0.5",
+        "0.35",
+        "0.75",
+        "0.65"
+      ]
+    },
+    "memory:memory/2026-04-24.md:28:48": {
+      "key": "memory:memory/2026-04-24.md:28:48",
+      "path": "memory/2026-04-24.md",
+      "startLine": 28,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "- `TURBOQUANT_V5_HARDWARE.md` — Consolidated BOM - `V5_DESIGN_VERIFICATION.md` — Design sanity check ## Pending Actions - [ ] Fix RSS script (install feedparser or rewrite) - [ ] Order TurboQuant V5 parts (Digi-Key) — ~£15-20 for ICs - [ ] Order Red Pitaya STEMlab 125-14 — £250 - [ ] Redraw analog schematic (DG408 + OPA1641 + T/R bridge) - [ ] Create TX switch sheet (8× IRF830) - [ ] PCB layout once schematics complete - [ ] Friday humanities challenge: Surveillance ethics essay ## Notes - User confirmed 100-200V pulser range from previous ultrasound work - T/R diode bridge is the critical protection element for DG408 survival - IRF830 gate pull-down should be 1kΩ (not 10kΩ) for faster swi",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-04T21:05:02.065Z",
+      "lastRecalledAt": "2026-05-05T06:00:10.378Z",
+      "queryHashes": [
+        "b148806eb67a",
+        "ac0513f6779d"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "turboquant-v5-hardware.md",
+        "v5-design-verification.md",
+        "digi-key",
+        "15-20",
+        "125-14",
+        "t/r",
+        "100-200v",
+        "pull-down"
+      ]
+    },
+    "memory:memory/2026-03-25.md:187:206": {
+      "key": "memory:memory/2026-03-25.md:187:206",
+      "path": "memory/2026-03-25.md",
+      "startLine": 187,
+      "endLine": 206,
+      "source": "memory",
+      "snippet": "Productive day on the acoustic NDE project. Deep dive into DSP algorithms, phone-based measurement system design, and hardware procurement planning. User confirmed daily activities are captured accurately. ### Key Decisions Made 1. **Proceed with DIY piezo driver** (~£184) vs commercial (£225+) 2. **Use phone IMU as primary receiver** — zero additional hardware cost 3. **React Native app** for acquisition interface with ESP32-S3 backend 4. **Order Priority 1 parts immediately** — 2-week lead on HV supplies ### Action Items for Tomorrow - [ ] Order Priority 1 components (piezo, HV supplies ×2, ESP32-S3, ADXL355) - [ ] Start 3D printing phone cradle and housing - [ ] Review ESP32 firmware fo",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-05T06:30:05.664Z",
+      "lastRecalledAt": "2026-05-05T06:30:05.664Z",
+      "queryHashes": [
+        "b13f45baaad2"
+      ],
+      "recallDays": [
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "phone-based",
+        "esp32-s3",
+        "2-week",
+        "productive",
+        "day",
+        "acoustic",
+        "nde",
+        "project"
+      ]
+    },
+    "memory:memory/2026-03-03.md:33:56": {
+      "key": "memory:memory/2026-03-03.md:33:56",
+      "path": "memory/2026-03-03.md",
+      "startLine": 33,
+      "endLine": 56,
+      "source": "memory",
+      "snippet": "- Started Phase 2: File carving (foremost/photorec) — paused for later ### Sniper Bot Status - 8,550 tokens scanned (as of 11:55 AM) - Watchdog running every 15 minutes - 31 hours remaining on extended trial (ends March 5) - Grass: 100,000 points (£23.70) ### Daily Recipes Delivered (2:30 PM) - Greek Yogurt Power Bowl (Mediterranean) - Asian Turkey Lettuce Wraps (Asian) - Lemon Herb Baked Cod (Nordic) - All recipes: 12+ g protein per 100cal - User reviewed turkey wraps recipe ## Active Tasks - Forensics: Resume photorec file carving when ready - Sniper bots: Continue monitoring until March 5 - Jazz guitar practice (user to start 10-15 min routine) ## Files Created Today - `/home/james/.o",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-05T06:30:12.365Z",
+      "lastRecalledAt": "2026-05-05T06:30:12.365Z",
+      "queryHashes": [
+        "3d8f06a0b4be"
+      ],
+      "recallDays": [
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "foremost/photorec",
+        "23.70",
+        "10-15",
+        "home/james",
+        "started",
+        "phase",
+        "carving",
+        "foremost"
+      ]
+    }
+  }
+}

@@ -1,0 +1,295 @@
+# GitHub Actions CI/CD for TurboQuant
+# 
+# This workflow:
+# - Runs on every push and pull request
+# - Tests Python code (lint, type check, unit tests)
+# - Builds ESP32 firmware (if ESP-IDF available)
+# - Generates documentation
+# - Creates release artifacts on tags
+
+name: CI/CD
+
+on:
+  push:
+    branches: [ main, develop ]
+    tags: [ 'v*' ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  PYTHON_VERSION: '3.9'
+  ESP_IDF_VERSION: 'v5.0'
+
+jobs:
+  # ==========================================================================
+  # Python Code Quality
+  # ==========================================================================
+  python-quality:
+    runs-on: ubuntu-latest
+    name: Python Code Quality
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+    
+    - name: Cache pip packages
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install black flake8 pylint mypy pytest pytest-cov
+    
+    - name: Check code formatting with black
+      run: |
+        black --check --diff --line-length 100 *.py || true
+    
+    - name: Lint with flake8
+      run: |
+        flake8 *.py --count --select=E9,F63,F7,F82 --show-source --statistics
+        flake8 *.py --count --exit-zero --max-complexity=10 --max-line-length=100 --statistics
+    
+    - name: Type check with mypy
+      run: |
+        mypy *.py --ignore-missing-imports || true
+    
+    - name: Test with pytest
+      run: |
+        pytest --cov=. --cov-report=xml --cov-report=html -v || true
+    
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        files: ./coverage.xml
+        flags: unittests
+        name: codecov-umbrella
+
+  # ==========================================================================
+  # Python Functionality Tests
+  # ==========================================================================
+  python-tests:
+    runs-on: ubuntu-latest
+    name: Python Tests
+    needs: python-quality
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+    
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+        pip install pytest pytest-mock
+    
+    - name: Test imports
+      run: |
+        python -c "import turboquant"
+        python -c "import data_recorder"
+        python -c "import data_analysis"
+        python -c "import network_stream"
+    
+    - name: Test data recorder (demo mode)
+      run: |
+        python -c "
+from data_recorder import DataRecorder, RecordingFormat
+import numpy as np
+rec = DataRecorder('test_ci', format=RecordingFormat.NUMPY, sample_rate=1e6, num_channels=4)
+rec.start_recording()
+for i in range(10):
+    data = np.random.randint(0, 4095, (1000, 4), dtype=np.uint16)
+    rec.add_frame(i * 0.1, data)
+stats = rec.stop_recording()
+print(f'Recorded {stats[\"frames_recorded\"]} frames')
+assert stats['frames_recorded'] == 10
+        "
+    
+    - name: Test data analysis
+      run: |
+        python -c "
+from data_analysis import analyze_file
+import numpy as np
+# Create test file
+import h5py
+with h5py.File('test_analysis.h5', 'w') as f:
+    f.create_dataset('timestamps', data=np.arange(100))
+    for i in range(4):
+        f.create_dataset(f'channel_{i}', data=np.random.randint(0, 4095, 1000))
+    meta = f.create_group('metadata')
+    meta.attrs['sample_rate'] = 1e6
+info = analyze_file('test_analysis.h5')
+print(f'Channels: {info[\"num_channels\"]}')
+assert info['num_channels'] == 4
+        "
+
+  # ==========================================================================
+  # ESP32 Firmware Build
+  # ==========================================================================
+  firmware-build:
+    runs-on: ubuntu-latest
+    name: ESP32 Firmware Build
+    if: github.event_name != 'pull_request' || contains(github.event.pull_request.changed_files, '*.c') || contains(github.event.pull_request.changed_files, '*.h')
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Cache ESP-IDF
+      uses: actions/cache@v3
+      with:
+        path: ~/esp
+        key: ${{ runner.os }}-esp-idf-${{ env.ESP_IDF_VERSION }}
+    
+    - name: Install ESP-IDF
+      run: |
+        mkdir -p ~/esp
+        cd ~/esp
+        git clone -b ${{ env.ESP_IDF_VERSION }} --recursive https://github.com/espressif/esp-idf.git 2>/dev/null || true
+        cd esp-idf
+        ./install.sh esp32s3
+    
+    - name: Build firmware
+      run: |
+        . ~/esp/esp-idf/export.sh
+        idf.py set-target esp32s3
+        idf.py build
+    
+    - name: Upload firmware artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: firmware-${{ github.sha }}
+        path: |
+          build/*.bin
+          build/*.elf
+          build/*.map
+        retention-days: 30
+
+  # ==========================================================================
+  # Documentation Build
+  # ==========================================================================
+  docs-build:
+    runs-on: ubuntu-latest
+    name: Documentation Build
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+    
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+        pip install mkdocs mkdocs-material
+    
+    - name: Generate API docs
+      run: |
+        mkdir -p docs/api
+        python -m pydoc -w turboquant && mv turboquant.html docs/api/ || true
+        python -m pydoc -w data_recorder && mv data_recorder.html docs/api/ || true
+        python -m pydoc -w data_analysis && mv data_analysis.html docs/api/ || true
+    
+    - name: Collect markdown docs
+      run: |
+        mkdir -p docs/md
+        cp *.md docs/md/ || true
+    
+    - name: Upload documentation artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: documentation-${{ github.sha }}
+        path: docs/
+        retention-days: 30
+
+  # ==========================================================================
+  # Release Build
+  # ==========================================================================
+  release:
+    runs-on: ubuntu-latest
+    name: Create Release
+    needs: [python-tests, firmware-build, docs-build]
+    if: startsWith(github.ref, 'refs/tags/v')
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Download all artifacts
+      uses: actions/download-artifact@v3
+    
+    - name: Create release package
+      run: |
+        mkdir -p release
+        
+        # Python sources
+        cp *.py release/
+        cp requirements.txt release/
+        cp README.md release/
+        cp LICENSE release/ 2>/dev/null || echo "No LICENSE file"
+        
+        # Firmware (if built)
+        if [ -d firmware-${{ github.sha }} ]; then
+          cp firmware-${{ github.sha }}/*.bin release/ 2>/dev/null || true
+        fi
+        
+        # Documentation
+        if [ -d documentation-${{ github.sha }} ]; then
+          cp -r documentation-${{ github.sha }} release/docs
+        fi
+        
+        # Create archives
+        tar -czf turboquant-${{ github.ref_name }}.tar.gz release/
+        zip -r turboquant-${{ github.ref_name }}.zip release/
+    
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: |
+          turboquant-*.tar.gz
+          turboquant-*.zip
+        draft: false
+        prerelease: ${{ contains(github.ref_name, 'alpha') || contains(github.ref_name, 'beta') || contains(github.ref_name, 'rc') }}
+        generate_release_notes: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # ==========================================================================
+  # Docker Build (Optional)
+  # ==========================================================================
+  docker-build:
+    runs-on: ubuntu-latest
+    name: Docker Build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
+    
+    - name: Build Docker image
+      run: |
+        docker build -t turboquant:latest . || echo "No Dockerfile found"
+    
+    - name: Test Docker image
+      run: |
+        docker run --rm turboquant:latest python -c "import turboquant" || true

@@ -3,18 +3,19 @@
 Enhanced Morning Brief RSS Fetcher
 ==================================
 
-Fetches news from expanded RSS sources with optional AI summarization
-via Moonshot API (Kimi).
+Fetches news from expanded RSS sources with optional AI summarization.
+Uses stdlib only — no external dependencies for RSS parsing.
 
 Environment Variables:
     MOONSHOT_API_KEY: API key for AI summarization (optional)
     
 Usage:
-    export MOONSHOT_API_KEY="your-key-here"
+    export MOONSHOT_API_KEY="your_key"
     python3 morning_brief_rss_enhanced.py
 """
 
-import feedparser
+import xml.etree.ElementTree as ET
+import urllib.request
 import json
 import os
 import re
@@ -50,20 +51,10 @@ FEEDS = {
     # Finance / Business
     "Bloomberg": "https://feeds.bloomberg.com/bloomberg/news",
     "Financial Times": "https://www.ft.com/?format=rss",
-    "WSJ Markets": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
-    
-    # Alternative / Investigative
-    "Mother Jones": "https://www.motherjones.com/feed/",
-    "Consortium News": "https://consortiumnews.com/feed/",
     
     # AI / Research
     "AI News": "https://www.artificialintelligence-news.com/feed/",
-    "Papers With Code": "http://paperswithcode.com/rss",
     "MIT Tech Review": "https://www.technologyreview.com/feed/",
-    
-    # Medical
-    "Medscape": "https://www.medscape.com/cx/rssfeeds/2700.xml",
-    "Medical News Today": "https://www.medicalnewstoday.com/news.rss",
 }
 
 
@@ -81,32 +72,50 @@ def clean_text(text: str, max_length: int = 500) -> str:
 
 
 def fetch_feed(name: str, url: str) -> List[Dict]:
-    """Fetch and parse a single RSS feed."""
+    """Fetch and parse a single RSS feed using stdlib."""
     try:
-        feed = feedparser.parse(url)
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req, timeout=10) as r:
+            xml_content = r.read()
+        
+        root = ET.fromstring(xml_content)
         articles = []
         
-        for entry in feed.entries[:10]:  # Get last 10 entries
-            # Parse published date
-            published = None
-            if hasattr(entry, 'published_parsed') and entry.published_parsed:
-                published = datetime(*entry.published_parsed[:6])
-            elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
-                published = datetime(*entry.updated_parsed[:6])
+        # Find all item elements (works for RSS 2.0)
+        for item in root.findall('.//item'):
+            title = item.find('title')
+            link = item.find('link')
+            desc = item.find('description')
+            pub_date = item.find('pubDate')
             
-            # Skip articles older than 48 hours (expanded window for more sources)
-            if published and published < datetime.now() - timedelta(hours=48):
-                continue
+            if title is not None and link is not None:
+                # Parse published date
+                published = None
+                if pub_date is not None and pub_date.text:
+                    try:
+                        # Try common RSS date formats
+                        published = datetime.strptime(pub_date.text[:25], '%a, %d %b %Y %H:%M:%S')
+                    except ValueError:
+                        published = None
+                
+                # Skip articles older than 48 hours
+                if published and published < datetime.now() - timedelta(hours=48):
+                    continue
+                
+                raw_content = desc.text if desc is not None else ""
+                
+                article = {
+                    "title": clean_text(title.text or "", 200),
+                    "link": link.text or "",
+                    "summary": clean_text(raw_content, 400),
+                    "published": published.isoformat() if published else None,
+                    "source": name,
+                    "raw_content": raw_content[:2000]
+                }
+                articles.append(article)
             
-            article = {
-                "title": clean_text(entry.get("title", ""), 200),
-                "link": entry.get("link", ""),
-                "summary": clean_text(entry.get("summary", entry.get("description", "")), 400),
-                "published": published.isoformat() if published else None,
-                "source": name,
-                "raw_content": entry.get("summary", entry.get("description", ""))[:2000]
-            }
-            articles.append(article)
+            if len(articles) >= 10:  # Limit to last 10 entries
+                break
         
         return articles
     except Exception as e:
@@ -157,14 +166,7 @@ def categorize_article(title: str, summary: str) -> str:
     ]):
         return "ENGINEERING"
     
-    # Medical/Health
-    elif any(word in text for word in [
-        "medical", "health", "drug", "fda", "clinical", "patient", "doctor",
-        "hospital", "disease", "cancer", "therapy", "treatment", "vaccine"
-    ]):
-        return "MEDICAL"
-    
-    # Politics/World (expanded for Mother Jones, Consortium News)
+    # Politics/World
     elif any(word in text for word in [
         "war", "ukraine", "israel", "iran", "china", "russia", "trump", 
         "election", "president", "minister", "government", "sanction", 
@@ -251,7 +253,7 @@ def generate_brief(categorized: Dict, total_articles: int, use_ai: bool) -> str:
         "=" * 70
     ])
     
-    for cat in ["WORLD", "FINANCE", "AI_ML", "TECH", "SCIENCE", "ENGINEERING", "MEDICAL", "GENERAL"]:
+    for cat in ["WORLD", "FINANCE", "AI_ML", "TECH", "SCIENCE", "ENGINEERING", "GENERAL"]:
         count = len(categorized[cat])
         if count > 0:
             lines.append(f"  {cat:15s}: {count:2d} articles")
@@ -306,7 +308,6 @@ def main():
         "TECH": [],
         "SCIENCE": [],
         "ENGINEERING": [],
-        "MEDICAL": [],
         "GENERAL": []
     }
     

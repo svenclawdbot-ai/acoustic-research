@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib
+    (name "turboquant") (type "KiCad") (uri "${KIPRJMOD}/turboquant_library.kicad_sym") (options "") (descr "TurboQuant Custom Library")
+  )
+)

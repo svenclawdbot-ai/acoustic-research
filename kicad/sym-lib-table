@@ -1,0 +1,5 @@
+(sym_lib_tables
+  (lib
+    (name "turboquant") (type "KiCad") (uri "/home/james/.openclaw/workspace/kicad/turboquant_library.kicad_sym") (options "") (descr "TurboQuant Custom Library")
+  )
+)

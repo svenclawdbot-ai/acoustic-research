@@ -1,0 +1,252 @@
+(kicad_sch
+  (version 20250114)
+  (generator "eeschema")
+  (generator_version "9.0")
+  (uuid "power-0000-0000-0000-000000000001")
+  (paper "A4")
+  (title_block
+    (title "Power Supplies")
+    (date "2026-05-02")
+    (rev "5.0")
+    (company "TurboQuant")
+  )
+  
+  (lib_symbols
+    (symbol "power:+12V" (power)
+      (property "Reference" "#PWR" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Value" "+12V" (at 0 3.556 0) (effects (font (size 1.27 1.27))))
+      (symbol "+12V_1_1" (pin power_in line (at 0 0 90) (length 0) hide
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27)))))))
+    
+    (symbol "power:+5V" (power)
+      (property "Reference" "#PWR" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Value" "+5V" (at 0 3.556 0) (effects (font (size 1.27 1.27))))
+      (symbol "+5V_1_1" (pin power_in line (at 0 0 90) (length 0) hide
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27)))))))
+    
+    (symbol "power:+3V3" (power)
+      (property "Reference" "#PWR" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Value" "+3V3" (at 0 3.556 0) (effects (font (size 1.27 1.27))))
+      (symbol "+3V3_1_1" (pin power_in line (at 0 0 90) (length 0) hide
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27)))))))
+    
+    (symbol "power:GND" (power)
+      (property "Reference" "#PWR" (at 0 -6.35 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Value" "GND" (at 0 -3.81 0) (effects (font (size 1.27 1.27))))
+      (symbol "GND_1_1" (pin power_in line (at 0 0 270) (length 0) hide
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27)))))))
+    
+    (symbol "Device:Polyfuse" (in_bom yes) (on_board yes)
+      (property "Reference" "F" (at 0 -2.54 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "Polyfuse" (at 0 2.54 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "Fuse:Fuse_1206_3216Metric" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "Polyfuse_0_1"
+        (rectangle (start -1.27 -1.27) (end 1.27 1.27) (stroke (width 0.254)) (fill (type none)))
+        (polyline (pts (xy -1.27 0) (xy 1.27 0)) (stroke (width 0.254)) (fill (type none))))
+      (symbol "Polyfuse_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))))
+        (pin passive line (at 3.81 0 180) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))))))
+    
+    (symbol "Device:D_Schottky" (in_bom yes) (on_board yes)
+      (property "Reference" "D" (at 0 -2.54 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "D_Schottky" (at 0 2.54 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "Diode_SMD:D_SMA" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "D_Schottky_0_1"
+        (polyline (pts (xy -1.27 -1.27) (xy -1.27 1.27)) (stroke (width 0.254)) (fill (type none)))
+        (polyline (pts (xy 1.27 -1.27) (xy 1.27 1.27)) (stroke (width 0.254)) (fill (type none)))
+        (polyline (pts (xy -1.27 0) (xy 1.27 0)) (stroke (width 0.254)) (fill (type none)))
+        (polyline (pts (xy -1.27 -1.27) (xy 0 -1.27)) (stroke (width 0.254)) (fill (type none))))
+      (symbol "D_Schottky_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) (name "A" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))))
+        (pin passive line (at 3.81 0 180) (length 2.54) (name "K" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))))))
+    
+    (symbol "Regulator_Linear:LM7805_TO220" (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at 0 -5.08 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "LM7805" (at 0 5.08 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "LM7805_0_1"
+        (rectangle (start -5.08 -3.81) (end 5.08 3.81) (stroke (width 0.254)) (fill (type background))))
+      (symbol "LM7805_1_1"
+        (pin power_in line (at -7.62 2.54 0) (length 2.54) (name "VI" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))))
+        (pin power_in line (at 0 -6.35 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))))
+        (pin power_out line (at 7.62 2.54 180) (length 2.54) (name "VO" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))))))
+    
+    (symbol "Regulator_Linear:AMS1117-3.3" (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at 0 -5.08 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "AMS1117-3.3" (at 0 5.08 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "AMS1117_0_1"
+        (rectangle (start -5.08 -3.81) (end 5.08 3.81) (stroke (width 0.254)) (fill (type background))))
+      (symbol "AMS1117_1_1"
+        (pin power_in line (at -7.62 2.54 0) (length 2.54) (name "VI" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))))
+        (pin power_in line (at 0 -6.35 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))))
+        (pin power_out line (at 7.62 2.54 180) (length 2.54) (name "VO" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))))))
+    
+    (symbol "Device:C" (in_bom yes) (on_board yes)
+      (property "Reference" "C" (at 0.635 2.54 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "C" (at 0.635 -2.54 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 0 -5.842 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "C_0_0"
+        (polyline (pts (xy -2.032 -0.762) (xy 2.032 -0.762)) (stroke (width 0.254)) (fill (type none)))
+        (polyline (pts (xy -2.032 0.762) (xy 2.032 0.762)) (stroke (width 0.254)) (fill (type none))))
+      (symbol "C_1_1"
+        (pin passive line (at 0 3.81 270) (length 2.794) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))))
+        (pin passive line (at 0 -3.81 90) (length 2.794) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))))))
+    
+    (symbol "Device:R" (in_bom yes) (on_board yes)
+      (property "Reference" "R" (at 2.032 0 90) (effects (font (size 1.27 1.27))))
+      (property "Value" "R" (at 0 0 90) (effects (font (size 1.27 1.27)) hide))
+      (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at -1.778 0 90) (effects (font (size 1.27 1.27)) hide))
+      (symbol "R_0_1"
+        (rectangle (start -1.016 -2.54) (end 1.016 2.54) (stroke (width 0.254)) (fill (type none))))
+      (symbol "R_1_1"
+        (pin passive line (at 0 3.81 270) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))))
+        (pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))))))
+    
+    (symbol "Connector:Screw_Terminal_01x02" (in_bom yes) (on_board yes)
+      (property "Reference" "J" (at 0 -3.81 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "Screw_Terminal_01x02" (at 0 3.81 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "Screw_Terminal_01x02_1_1"
+        (rectangle (start -2.54 -2.54) (end 2.54 2.54) (stroke (width 0.254)) (fill (type none))))
+      (symbol "Screw_Terminal_01x02_1_1"
+        (pin passive line (at -5.08 1.27 0) (length 2.54) (name "Pin_1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))))
+        (pin passive line (at -5.08 -1.27 0) (length 2.54) (name "Pin_2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))))))
+  )
+  
+  ; Hierarchical pins
+  (hierarchical_label "+12V_IN" (shape input) (at 25.4 25.4 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "hier-12v-in"))
+  (hierarchical_label "+5V" (shape output) (at 152.4 50.8 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "hier-5v-out"))
+  (hierarchical_label "+3V3" (shape output) (at 152.4 63.5 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "hier-3v3-out"))
+  (hierarchical_label "GND" (shape input) (at 152.4 76.2 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "hier-gnd"))
+  
+  ; Input connector
+  (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 38.1 25.4 0) (unit 1)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+    (uuid "j1-power-in")
+    (property "Reference" "J1" (at 38.1 21.59 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "12V_IN" (at 38.1 29.21 0) (effects (font (size 1.27 1.27))))
+    (pin "1" (uuid "j1-p1")) (pin "2" (uuid "j1-p2")))
+  
+  ; Polyfuse
+  (symbol (lib_id "Device:Polyfuse") (at 63.5 25.4 0) (unit 1)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+    (uuid "f1-polyfuse")
+    (property "Reference" "F1" (at 63.5 21.59 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "MF-NSMF200-2" (at 63.5 29.21 0) (effects (font (size 1.27 1.27))))
+    (pin "1" (uuid "f1-p1")) (pin "2" (uuid "f1-p2")))
+  
+  ; Schottky diode
+  (symbol (lib_id "Device:D_Schottky") (at 88.9 25.4 0) (unit 1)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+    (uuid "d1-schottky")
+    (property "Reference" "D1" (at 88.9 21.59 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "SS34" (at 88.9 29.21 0) (effects (font (size 1.27 1.27))))
+    (pin "1" (uuid "d1-p1")) (pin "2" (uuid "d1-p2")))
+  
+  ; TVS diode
+  (symbol (lib_id "Device:D_Zener") (at 114.3 25.4 90) (unit 1)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+    (uuid "d2-tvs")
+    (property "Reference" "D2" (at 110.49 25.4 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "SMAJ15A" (at 118.11 25.4 0) (effects (font (size 1.27 1.27))))
+    (pin "1" (uuid "d2-p1")) (pin "2" (uuid "d2-p2")))
+  
+  ; LM7805
+  (symbol (lib_id "Regulator_Linear:LM7805_TO220") (at 76.2 50.8 0) (unit 1)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+    (uuid "u1-lm7805")
+    (property "Reference" "U1" (at 76.2 45.72 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "LM7805" (at 76.2 55.88 0) (effects (font (size 1.27 1.27))))
+    (pin "1" (uuid "u1-p1")) (pin "2" (uuid "u1-p2")) (pin "3" (uuid "u1-p3")))
+  
+  ; AMS1117-3.3
+  (symbol (lib_id "Regulator_Linear:AMS1117-3.3") (at 127 50.8 0) (unit 1)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+    (uuid "u2-ams1117")
+    (property "Reference" "U2" (at 127 45.72 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "AMS1117-3.3" (at 127 55.88 0) (effects (font (size 1.27 1.27))))
+    (pin "1" (uuid "u2-p1")) (pin "2" (uuid "u2-p2")) (pin "3" (uuid "u2-p3")))
+  
+  ; Capacitors
+  (symbol (lib_id "Device:C") (at 63.5 76.2 0) (unit 1)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+    (uuid "c1-100uf")
+    (property "Reference" "C1" (at 63.5 72.39 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "100µF" (at 63.5 80.01 0) (effects (font (size 1.27 1.27))))
+    (pin "1" (uuid "c1-p1")) (pin "2" (uuid "c1-p2")))
+  
+  (symbol (lib_id "Device:C") (at 88.9 76.2 0) (unit 1)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+    (uuid "c2-100nf")
+    (property "Reference" "C2" (at 88.9 72.39 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "100nF" (at 88.9 80.01 0) (effects (font (size 1.27 1.27))))
+    (pin "1" (uuid "c2-p1")) (pin "2" (uuid "c2-p2")))
+  
+  (symbol (lib_id "Device:C") (at 114.3 76.2 0) (unit 1)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+    (uuid "c3-10uf")
+    (property "Reference" "C3" (at 114.3 72.39 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "10µF" (at 114.3 80.01 0) (effects (font (size 1.27 1.27))))
+    (pin "1" (uuid "c3-p1")) (pin "2" (uuid "c3-p2")))
+  
+  ; Power symbols
+  (symbol (lib_id "power:+12V") (at 25.4 25.4 0) (unit 1)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+    (uuid "pwr-12v-01")
+    (property "Reference" "#PWR01" (at 25.4 21.59 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "+12V" (at 25.4 29.21 0) (effects (font (size 1.27 1.27))))
+    (pin "1" (uuid "pwr-12v-p1")))
+  
+  (symbol (lib_id "power:+5V") (at 152.4 50.8 0) (unit 1)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+    (uuid "pwr-5v-01")
+    (property "Reference" "#PWR02" (at 152.4 47.01 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "+5V" (at 152.4 54.61 0) (effects (font (size 1.27 1.27))))
+    (pin "1" (uuid "pwr-5v-p1")))
+  
+  (symbol (lib_id "power:+3V3") (at 152.4 63.5 0) (unit 1)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+    (uuid "pwr-3v3-01")
+    (property "Reference" "#PWR03" (at 152.4 59.69 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "+3V3" (at 152.4 67.31 0) (effects (font (size 1.27 1.27))))
+    (pin "1" (uuid "pwr-3v3-p1")))
+  
+  (symbol (lib_id "power:GND") (at 152.4 76.2 0) (unit 1)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+    (uuid "pwr-gnd-01")
+    (property "Reference" "#PWR04" (at 152.4 72.39 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 152.4 80.01 0) (effects (font (size 1.27 1.27))))
+    (pin "1" (uuid "pwr-gnd-p1")))
+  
+  ; Wire connections
+  (wire (pts (xy 25.4 25.4) (xy 33.02 25.4)) (stroke (width 0) (type default)) (uuid "w1"))
+  (wire (pts (xy 43.18 25.4) (xy 50.8 25.4)) (stroke (width 0) (type default)) (uuid "w2"))
+  (wire (pts (xy 76.2 25.4) (xy 81.28 25.4)) (stroke (width 0) (type default)) (uuid "w3"))
+  (wire (pts (xy 96.52 25.4) (xy 101.6 25.4)) (stroke (width 0) (type default)) (uuid "w4"))
+  (wire (pts (xy 127 25.4) (xy 139.7 25.4)) (stroke (width 0) (type default)) (uuid "w5"))
+  
+  (wire (pts (xy 76.2 50.8) (xy 76.2 40.64)) (stroke (width 0) (type default)) (uuid "w6"))
+  (wire (pts (xy 76.2 40.64) (xy 63.5 40.64)) (stroke (width 0) (type default)) (uuid "w7"))
+  (wire (pts (xy 63.5 40.64) (xy 63.5 25.4)) (stroke (width 0) (type default)) (uuid "w8"))
+  
+  (wire (pts (xy 127 50.8) (xy 127 40.64)) (stroke (width 0) (type default)) (uuid "w9"))
+  (wire (pts (xy 127 40.64) (xy 114.3 40.64)) (stroke (width 0) (type default)) (uuid "w10"))
+  (wire (pts (xy 114.3 40.64) (xy 114.3 25.4)) (stroke (width 0) (type default)) (uuid "w11"))
+  
+  (wire (pts (xy 76.2 60.96) (xy 76.2 76.2)) (stroke (width 0) (type default)) (uuid "w12"))
+  (wire (pts (xy 127 60.96) (xy 127 76.2)) (stroke (width 0) (type default)) (uuid "w13"))
+  (wire (pts (xy 63.5 76.2) (xy 152.4 76.2)) (stroke (width 0) (type default)) (uuid "w14"))
+  
+  (wire (pts (xy 76.2 50.8) (xy 101.6 50.8)) (stroke (width 0) (type default)) (uuid "w15"))
+  (wire (pts (xy 101.6 50.8) (xy 101.6 63.5)) (stroke (width 0) (type default)) (uuid "w16"))
+  (wire (pts (xy 101.6 63.5) (xy 127 63.5)) (stroke (width 0) (type default)) (uuid "w17"))
+  
+  (junction (at 76.2 50.8) (diameter 0) (color 0 0 0 0) (uuid "j1"))
+  (junction (at 127 50.8) (diameter 0) (color 0 0 0 0) (uuid "j2"))
+  (junction (at 63.5 76.2) (diameter 0) (color 0 0 0 0) (uuid "j3"))
+)

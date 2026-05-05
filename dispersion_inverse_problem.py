@@ -59,7 +59,7 @@ class ShearWaveExperiment:
         
         # Initialize simulator
         self.sim = ShearWave2DZener(nx, ny, dx, rho=self.rho,
-                                     G0=G0, G_inf=G_inf, tau_sigma=tau_sigma)
+                                     G_r=G0, G_inf=G_inf, tau_sigma=tau_sigma)
         self.nx = nx
         self.ny = ny
         self.dx = dx
@@ -105,7 +105,7 @@ class ShearWaveExperiment:
             t = n * self.sim.dt
             if n < source_duration:
                 # Multi-frequency Ricker for broadband excitation
-                self.sim.add_source(t, sx, sy, amplitude=amplitude, 
+                self.sim.add_source(t, location=(sx, sy), amplitude=amplitude, 
                                    f0=f0, source_type='ricker')
             self.sim.step()
             
@@ -287,7 +287,12 @@ class ZenerDispersionModel:
         return c_p
     
     def residuals(self, params, omega, c_p_measured):
-        """Compute residuals for optimization."""
+        """Compute residuals for optimization.
+        
+        Uses uniform weighting with robust Huber-like clipping to avoid
+        outlier-dominated fits. Low frequencies are NOT overweighted —
+        in practice they're often the noisiest part of the spectrum.
+        """
         G0, G_inf, tau_sigma = params
         
         # Physical constraints
@@ -296,10 +301,16 @@ class ZenerDispersionModel:
         
         c_p_model = self.phase_velocity(omega, G0, G_inf, tau_sigma)
         
-        # Weighted residuals (higher weight at low frequencies)
-        weights = 1.0 / (omega + 1e-6)
+        # Uniform weighting + soft clip for robustness
+        raw_residual = c_p_model - c_p_measured
+        sigma = 0.05  # Expected velocity noise floor (~5 cm/s)
         
-        return weights * (c_p_model - c_p_measured)
+        # Pseudo-Huber: smooth transition from quadratic to linear
+        # Reduces influence of outliers without hard thresholding
+        u = raw_residual / sigma
+        residuals = sigma * np.sqrt(1 + u**2) - sigma  # Approx Huber
+        
+        return residuals
     
     def fit(self, f_data, c_p_data, method='least_squares'):
         """

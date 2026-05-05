@@ -1,0 +1,2471 @@
+(export 
+  (version "D")
+  (design
+    (source "turboquant_mux_lna_skidl.py")
+    (date "04/06/2026 12:25 PM")
+    (tool "SKiDL (2.2.2)")
+    (sheet
+      (number 1)
+      (name "/MUX_B/")
+      (tstamps "/705ca3de-d1f7-57eb-a7e3-36b952da7a26/")
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source "turboquant_mux_lna_skidl.py")
+        (comment
+          (number "1")
+          (value ""))
+        (comment
+          (number "2")
+          (value ""))
+        (comment
+          (number "3")
+          (value ""))
+        (comment
+          (number "4")
+          (value ""))
+        (comment
+          (number "5")
+          (value ""))
+        (comment
+          (number "6")
+          (value ""))
+        (comment
+          (number "7")
+          (value ""))
+        (comment
+          (number "8")
+          (value ""))
+        (comment
+          (number "9")
+          (value ""))))
+    (sheet
+      (number 2)
+      (name "/TX3/")
+      (tstamps "/d75df8aa-1993-5bab-981e-949655bb0dc8/")
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source "turboquant_mux_lna_skidl.py")
+        (comment
+          (number "1")
+          (value ""))
+        (comment
+          (number "2")
+          (value ""))
+        (comment
+          (number "3")
+          (value ""))
+        (comment
+          (number "4")
+          (value ""))
+        (comment
+          (number "5")
+          (value ""))
+        (comment
+          (number "6")
+          (value ""))
+        (comment
+          (number "7")
+          (value ""))
+        (comment
+          (number "8")
+          (value ""))
+        (comment
+          (number "9")
+          (value ""))))
+    (sheet
+      (number 3)
+      (name "/DigitalControl1/")
+      (tstamps "/fd74cd59-89a3-5d81-b794-c44cad988d29/")
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source "turboquant_mux_lna_skidl.py")
+        (comment
+          (number "1")
+          (value ""))
+        (comment
+          (number "2")
+          (value ""))
+        (comment
+          (number "3")
+          (value ""))
+        (comment
+          (number "4")
+          (value ""))
+        (comment
+          (number "5")
+          (value ""))
+        (comment
+          (number "6")
+          (value ""))
+        (comment
+          (number "7")
+          (value ""))
+        (comment
+          (number "8")
+          (value ""))
+        (comment
+          (number "9")
+          (value ""))))
+    (sheet
+      (number 4)
+      (name "/TX5/")
+      (tstamps "/90e29eca-1605-5b34-90ea-7e1fcf9d5748/")
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source "turboquant_mux_lna_skidl.py")
+        (comment
+          (number "1")
+          (value ""))
+        (comment
+          (number "2")
+          (value ""))
+        (comment
+          (number "3")
+          (value ""))
+        (comment
+          (number "4")
+          (value ""))
+        (comment
+          (number "5")
+          (value ""))
+        (comment
+          (number "6")
+          (value ""))
+        (comment
+          (number "7")
+          (value ""))
+        (comment
+          (number "8")
+          (value ""))
+        (comment
+          (number "9")
+          (value ""))))
+    (sheet
+      (number 5)
+      (name "/TX2/")
+      (tstamps "/efcecec9-1ad2-5153-9325-42b39bea4ba3/")
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source "turboquant_mux_lna_skidl.py")
+        (comment
+          (number "1")
+          (value ""))
+        (comment
+          (number "2")
+          (value ""))
+        (comment
+          (number "3")
+          (value ""))
+        (comment
+          (number "4")
+          (value ""))
+        (comment
+          (number "5")
+          (value ""))
+        (comment
+          (number "6")
+          (value ""))
+        (comment
+          (number "7")
+          (value ""))
+        (comment
+          (number "8")
+          (value ""))
+        (comment
+          (number "9")
+          (value ""))))
+    (sheet
+      (number 6)
+      (name "/")
+      (tstamps "/")
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source "turboquant_mux_lna_skidl.py")
+        (comment
+          (number "1")
+          (value ""))
+        (comment
+          (number "2")
+          (value ""))
+        (comment
+          (number "3")
+          (value ""))
+        (comment
+          (number "4")
+          (value ""))
+        (comment
+          (number "5")
+          (value ""))
+        (comment
+          (number "6")
+          (value ""))
+        (comment
+          (number "7")
+          (value ""))
+        (comment
+          (number "8")
+          (value ""))
+        (comment
+          (number "9")
+          (value ""))))
+    (sheet
+      (number 7)
+      (name "/TX6/")
+      (tstamps "/e1aa1776-2844-5d4d-a4f0-24d3b688f6f2/")
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source "turboquant_mux_lna_skidl.py")
+        (comment
+          (number "1")
+          (value ""))
+        (comment
+          (number "2")
+          (value ""))
+        (comment
+          (number "3")
+          (value ""))
+        (comment
+          (number "4")
+          (value ""))
+        (comment
+          (number "5")
+          (value ""))
+        (comment
+          (number "6")
+          (value ""))
+        (comment
+          (number "7")
+          (value ""))
+        (comment
+          (number "8")
+          (value ""))
+        (comment
+          (number "9")
+          (value ""))))
+    (sheet
+      (number 8)
+      (name "/LNA_A/")
+      (tstamps "/0ea4fd01-1e09-5517-9e52-801ec01553ce/")
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source "turboquant_mux_lna_skidl.py")
+        (comment
+          (number "1")
+          (value ""))
+        (comment
+          (number "2")
+          (value ""))
+        (comment
+          (number "3")
+          (value ""))
+        (comment
+          (number "4")
+          (value ""))
+        (comment
+          (number "5")
+          (value ""))
+        (comment
+          (number "6")
+          (value ""))
+        (comment
+          (number "7")
+          (value ""))
+        (comment
+          (number "8")
+          (value ""))
+        (comment
+          (number "9")
+          (value ""))))
+    (sheet
+      (number 9)
+      (name "/TX7/")
+      (tstamps "/39f47f43-a7f5-519f-b95d-ad013f4055dd/")
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source "turboquant_mux_lna_skidl.py")
+        (comment
+          (number "1")
+          (value ""))
+        (comment
+          (number "2")
+          (value ""))
+        (comment
+          (number "3")
+          (value ""))
+        (comment
+          (number "4")
+          (value ""))
+        (comment
+          (number "5")
+          (value ""))
+        (comment
+          (number "6")
+          (value ""))
+        (comment
+          (number "7")
+          (value ""))
+        (comment
+          (number "8")
+          (value ""))
+        (comment
+          (number "9")
+          (value ""))))
+    (sheet
+      (number 10)
+      (name "/TX0/")
+      (tstamps "/03d8ed7e-2fea-540a-82b2-931f19d834a1/")
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source "turboquant_mux_lna_skidl.py")
+        (comment
+          (number "1")
+          (value ""))
+        (comment
+          (number "2")
+          (value ""))
+        (comment
+          (number "3")
+          (value ""))
+        (comment
+          (number "4")
+          (value ""))
+        (comment
+          (number "5")
+          (value ""))
+        (comment
+          (number "6")
+          (value ""))
+        (comment
+          (number "7")
+          (value ""))
+        (comment
+          (number "8")
+          (value ""))
+        (comment
+          (number "9")
+          (value ""))))
+    (sheet
+      (number 11)
+      (name "/PowerSupplies1/")
+      (tstamps "/cef0e8a6-4fbe-5cde-8ff5-0ab8f05d06d0/")
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source "turboquant_mux_lna_skidl.py")
+        (comment
+          (number "1")
+          (value ""))
+        (comment
+          (number "2")
+          (value ""))
+        (comment
+          (number "3")
+          (value ""))
+        (comment
+          (number "4")
+          (value ""))
+        (comment
+          (number "5")
+          (value ""))
+        (comment
+          (number "6")
+          (value ""))
+        (comment
+          (number "7")
+          (value ""))
+        (comment
+          (number "8")
+          (value ""))
+        (comment
+          (number "9")
+          (value ""))))
+    (sheet
+      (number 12)
+      (name "/TX1/")
+      (tstamps "/021e19be-a4d5-5b94-87a4-27558ad65fa5/")
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source "turboquant_mux_lna_skidl.py")
+        (comment
+          (number "1")
+          (value ""))
+        (comment
+          (number "2")
+          (value ""))
+        (comment
+          (number "3")
+          (value ""))
+        (comment
+          (number "4")
+          (value ""))
+        (comment
+          (number "5")
+          (value ""))
+        (comment
+          (number "6")
+          (value ""))
+        (comment
+          (number "7")
+          (value ""))
+        (comment
+          (number "8")
+          (value ""))
+        (comment
+          (number "9")
+          (value ""))))
+    (sheet
+      (number 13)
+      (name "/TX4/")
+      (tstamps "/93b8c274-e17d-5ecc-b9ea-ac95c16328cd/")
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source "turboquant_mux_lna_skidl.py")
+        (comment
+          (number "1")
+          (value ""))
+        (comment
+          (number "2")
+          (value ""))
+        (comment
+          (number "3")
+          (value ""))
+        (comment
+          (number "4")
+          (value ""))
+        (comment
+          (number "5")
+          (value ""))
+        (comment
+          (number "6")
+          (value ""))
+        (comment
+          (number "7")
+          (value ""))
+        (comment
+          (number "8")
+          (value ""))
+        (comment
+          (number "9")
+          (value ""))))
+    (sheet
+      (number 14)
+      (name "/LNA_B/")
+      (tstamps "/706e8055-6dee-594e-b68f-f26eb2cd189c/")
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source "turboquant_mux_lna_skidl.py")
+        (comment
+          (number "1")
+          (value ""))
+        (comment
+          (number "2")
+          (value ""))
+        (comment
+          (number "3")
+          (value ""))
+        (comment
+          (number "4")
+          (value ""))
+        (comment
+          (number "5")
+          (value ""))
+        (comment
+          (number "6")
+          (value ""))
+        (comment
+          (number "7")
+          (value ""))
+        (comment
+          (number "8")
+          (value ""))
+        (comment
+          (number "9")
+          (value ""))))
+    (sheet
+      (number 15)
+      (name "/MUX_A/")
+      (tstamps "/70b5fc71-15d1-56e4-9c4d-d9ebfeb91883/")
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source "turboquant_mux_lna_skidl.py")
+        (comment
+          (number "1")
+          (value ""))
+        (comment
+          (number "2")
+          (value ""))
+        (comment
+          (number "3")
+          (value ""))
+        (comment
+          (number "4")
+          (value ""))
+        (comment
+          (number "5")
+          (value ""))
+        (comment
+          (number "6")
+          (value ""))
+        (comment
+          (number "7")
+          (value ""))
+        (comment
+          (number "8")
+          (value ""))
+        (comment
+          (number "9")
+          (value "")))))
+  (components
+    (comp
+      (ref "C1")
+      (value "100nF")
+      (description "Unpolarized capacitor")
+      (footprint "Capacitor_SMD:C_0805_2012Metric")
+      (fields
+        (field
+          (name "Description") "Unpolarized capacitor")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "wXGlgZtHz9")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:44"))
+      (libsource
+        (lib "Device")
+        (part "C"))
+      (sheetpath
+        (names "/PowerSupplies1/")
+        (tstamps "/cef0e8a6-4fbe-5cde-8ff5-0ab8f05d06d0/"))
+      (component_classes)
+      (tstamps "acac7cbc-399b-5e21-86ae-8c2a81b78e1d"))
+    (comp
+      (ref "C2")
+      (value "100nF")
+      (description "Unpolarized capacitor")
+      (footprint "Capacitor_SMD:C_0805_2012Metric")
+      (fields
+        (field
+          (name "Description") "Unpolarized capacitor")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "GfeNrYhJIE")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:45"))
+      (libsource
+        (lib "Device")
+        (part "C"))
+      (sheetpath
+        (names "/PowerSupplies1/")
+        (tstamps "/cef0e8a6-4fbe-5cde-8ff5-0ab8f05d06d0/"))
+      (component_classes)
+      (tstamps "06e12512-ef6f-5cc7-b14a-e553272f3749"))
+    (comp
+      (ref "C3")
+      (value "10uF")
+      (description "Unpolarized capacitor")
+      (footprint "Capacitor_SMD:C_0805_2012Metric")
+      (fields
+        (field
+          (name "Description") "Unpolarized capacitor")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "5lPVRTaEeG")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:46"))
+      (libsource
+        (lib "Device")
+        (part "C"))
+      (sheetpath
+        (names "/PowerSupplies1/")
+        (tstamps "/cef0e8a6-4fbe-5cde-8ff5-0ab8f05d06d0/"))
+      (component_classes)
+      (tstamps "e1929892-e493-580b-b29f-4ad5772aba4b"))
+    (comp
+      (ref "C4")
+      (value "100nF")
+      (description "Unpolarized capacitor")
+      (footprint "Capacitor_SMD:C_0805_2012Metric")
+      (fields
+        (field
+          (name "Description") "Unpolarized capacitor")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "8vu_l4i6td")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:47"))
+      (libsource
+        (lib "Device")
+        (part "C"))
+      (sheetpath
+        (names "/PowerSupplies1/")
+        (tstamps "/cef0e8a6-4fbe-5cde-8ff5-0ab8f05d06d0/"))
+      (component_classes)
+      (tstamps "ee474789-3575-522d-8e4f-ef485d5f9440"))
+    (comp
+      (ref "C5")
+      (value "10uF")
+      (description "Unpolarized capacitor")
+      (footprint "Capacitor_SMD:C_0805_2012Metric")
+      (fields
+        (field
+          (name "Description") "Unpolarized capacitor")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "4IyiCv7KZi")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:48"))
+      (libsource
+        (lib "Device")
+        (part "C"))
+      (sheetpath
+        (names "/PowerSupplies1/")
+        (tstamps "/cef0e8a6-4fbe-5cde-8ff5-0ab8f05d06d0/"))
+      (component_classes)
+      (tstamps "3f83153b-a0d1-5d41-92f2-e9e6c3164f43"))
+    (comp
+      (ref "C6")
+      (value "100nF")
+      (description "Unpolarized capacitor")
+      (footprint "Capacitor_SMD:C_0805_2012Metric")
+      (fields
+        (field
+          (name "Description") "Unpolarized capacitor")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "v_wYJ7rN1M")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:208"))
+      (libsource
+        (lib "Device")
+        (part "C"))
+      (sheetpath
+        (names "/LNA_A/")
+        (tstamps "/0ea4fd01-1e09-5517-9e52-801ec01553ce/"))
+      (component_classes)
+      (tstamps "b94feeb2-9b56-5a09-8994-001c64b4ad09"))
+    (comp
+      (ref "C7")
+      (value "100nF")
+      (description "Unpolarized capacitor")
+      (footprint "Capacitor_SMD:C_0805_2012Metric")
+      (fields
+        (field
+          (name "Description") "Unpolarized capacitor")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "oTUp92y1DV")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:209"))
+      (libsource
+        (lib "Device")
+        (part "C"))
+      (sheetpath
+        (names "/LNA_A/")
+        (tstamps "/0ea4fd01-1e09-5517-9e52-801ec01553ce/"))
+      (component_classes)
+      (tstamps "6ae0ed92-e3a1-544c-aa9e-6184cb26d159"))
+    (comp
+      (ref "C8")
+      (value "100nF")
+      (description "Unpolarized capacitor")
+      (footprint "Capacitor_SMD:C_0805_2012Metric")
+      (fields
+        (field
+          (name "Description") "Unpolarized capacitor")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "Mqkx9kUdN5")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:208"))
+      (libsource
+        (lib "Device")
+        (part "C"))
+      (sheetpath
+        (names "/LNA_B/")
+        (tstamps "/706e8055-6dee-594e-b68f-f26eb2cd189c/"))
+      (component_classes)
+      (tstamps "954075c4-c26b-5c5b-98ee-69f73fe31d2b"))
+    (comp
+      (ref "C9")
+      (value "100nF")
+      (description "Unpolarized capacitor")
+      (footprint "Capacitor_SMD:C_0805_2012Metric")
+      (fields
+        (field
+          (name "Description") "Unpolarized capacitor")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "7vDICQt27T")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:209"))
+      (libsource
+        (lib "Device")
+        (part "C"))
+      (sheetpath
+        (names "/LNA_B/")
+        (tstamps "/706e8055-6dee-594e-b68f-f26eb2cd189c/"))
+      (component_classes)
+      (tstamps "bc2dfb46-503e-5097-a31f-20abb7c51dd1"))
+    (comp
+      (ref "D1")
+      (value "1N4007")
+      (description "Schottky diode")
+      (footprint "Diode_SMD:D_SOD-123")
+      (fields
+        (field
+          (name "Description") "Schottky diode")
+        (field
+          (name "Footprint") "Diode_SMD:D_SOD-123")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "R5yFrpIVpl")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:35"))
+      (libsource
+        (lib "Device")
+        (part "D_Schottky"))
+      (sheetpath
+        (names "/PowerSupplies1/")
+        (tstamps "/cef0e8a6-4fbe-5cde-8ff5-0ab8f05d06d0/"))
+      (component_classes)
+      (tstamps "b0197dbd-ed93-5c6b-b64d-fc84e91c7208"))
+    (comp
+      (ref "F1")
+      (value "2A")
+      (description "Resettable fuse, polymeric positive temperature coefficient")
+      (footprint "Fuse:Fuse_1206_3216Metric")
+      (fields
+        (field
+          (name "Description") "Resettable fuse, polymeric positive temperature coefficient")
+        (field
+          (name "Footprint") "Fuse:Fuse_1206_3216Metric")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "10J43O0SzN")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:34"))
+      (libsource
+        (lib "Device")
+        (part "Polyfuse"))
+      (sheetpath
+        (names "/PowerSupplies1/")
+        (tstamps "/cef0e8a6-4fbe-5cde-8ff5-0ab8f05d06d0/"))
+      (component_classes)
+      (tstamps "cbac2832-cd35-534c-ac10-7537b8ab19a2"))
+    (comp
+      (ref "J1")
+      (value "Screw_Terminal_01x02")
+      (description "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
+      (footprint "TerminalBlock:TerminalBlock_bornier-2_P5.08mm")
+      (fields
+        (field
+          (name "Description") "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
+        (field
+          (name "Footprint") "TerminalBlock:TerminalBlock_bornier-2_P5.08mm")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "M3Oxg3ubqt")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:330"))
+      (libsource
+        (lib "Connector")
+        (part "Screw_Terminal_01x02"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "4e820032-2d16-52c3-9054-02aeac6c3949"))
+    (comp
+      (ref "J2")
+      (value "Conn_01x10_Pin")
+      (description "Generic connector, single row, 01x10, script generated")
+      (footprint "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical")
+      (fields
+        (field
+          (name "Description") "Generic connector, single row, 01x10, script generated")
+        (field
+          (name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "QAgGXMyiiE")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:336"))
+      (libsource
+        (lib "Connector")
+        (part "Conn_01x10_Pin"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "624d3685-055d-5740-b376-2eabb4526ce7"))
+    (comp
+      (ref "J3")
+      (value "Conn_01x10_Pin")
+      (description "Generic connector, single row, 01x10, script generated")
+      (footprint "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical")
+      (fields
+        (field
+          (name "Description") "Generic connector, single row, 01x10, script generated")
+        (field
+          (name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "pDnbhXLWbG")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:338"))
+      (libsource
+        (lib "Connector")
+        (part "Conn_01x10_Pin"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "c0dfe537-8fde-5ba7-bf63-dcedad36b2ba"))
+    (comp
+      (ref "J4")
+      (value "Conn_Coaxial")
+      (description "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)")
+      (footprint "Connector_Coaxial:SMA_Amphenol_132134-11_Vertical")
+      (fields
+        (field
+          (name "Description") "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)")
+        (field
+          (name "Footprint") "Connector_Coaxial:SMA_Amphenol_132134-11_Vertical")
+        (field
+          (name "Datasheet") " ~")
+        (field
+          (name "SKiDL Tag") "xob9guMiZV")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:375"))
+      (libsource
+        (lib "Connector")
+        (part "Conn_Coaxial"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "6a2e6525-2c19-5aec-a9ad-52093b001679"))
+    (comp
+      (ref "J5")
+      (value "Conn_Coaxial")
+      (description "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)")
+      (footprint "Connector_Coaxial:SMA_Amphenol_132134-11_Vertical")
+      (fields
+        (field
+          (name "Description") "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)")
+        (field
+          (name "Footprint") "Connector_Coaxial:SMA_Amphenol_132134-11_Vertical")
+        (field
+          (name "Datasheet") " ~")
+        (field
+          (name "SKiDL Tag") "9X9aIlKAVH")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:388"))
+      (libsource
+        (lib "Connector")
+        (part "Conn_Coaxial"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "e8f0dac2-bf54-5c91-aebd-9234ab700752"))
+    (comp
+      (ref "J6")
+      (value "Conn_Coaxial")
+      (description "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)")
+      (footprint "Connector_Coaxial:SMA_Amphenol_132134-11_Vertical")
+      (fields
+        (field
+          (name "Description") "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)")
+        (field
+          (name "Footprint") "Connector_Coaxial:SMA_Amphenol_132134-11_Vertical")
+        (field
+          (name "Datasheet") " ~")
+        (field
+          (name "SKiDL Tag") "Poi6fwKZ6K")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:394"))
+      (libsource
+        (lib "Connector")
+        (part "Conn_Coaxial"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "f724f71b-9f04-50b1-9222-c3bd22b3ea11"))
+    (comp
+      (ref "J7")
+      (value "Conn_01x06_Pin")
+      (description "Generic connector, single row, 01x06, script generated")
+      (footprint "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical")
+      (fields
+        (field
+          (name "Description") "Generic connector, single row, 01x06, script generated")
+        (field
+          (name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "MzB1eFBSBa")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:401"))
+      (libsource
+        (lib "Connector")
+        (part "Conn_01x06_Pin"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "36c9c9b2-9a87-5c91-8bcf-96b4227a0e32"))
+    (comp
+      (ref "Q1")
+      (value "Q_NMOS_GSD")
+      (description "N-MOSFET transistor, gate/source/drain")
+      (footprint "Package_TO_SOT_SMD:SOT-23")
+      (fields
+        (field
+          (name "Description") "N-MOSFET transistor, gate/source/drain")
+        (field
+          (name "Footprint") "Package_TO_SOT_SMD:SOT-23")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "mRBN5yi_VS")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:252"))
+      (libsource
+        (lib "Transistor_FET")
+        (part "Q_NMOS_GSD"))
+      (sheetpath
+        (names "/TX0/")
+        (tstamps "/03d8ed7e-2fea-540a-82b2-931f19d834a1/"))
+      (component_classes)
+      (tstamps "f870d738-b837-5ee4-9fe4-411e60ee612d"))
+    (comp
+      (ref "Q2")
+      (value "Q_NMOS_GSD")
+      (description "N-MOSFET transistor, gate/source/drain")
+      (footprint "Package_TO_SOT_SMD:SOT-23")
+      (fields
+        (field
+          (name "Description") "N-MOSFET transistor, gate/source/drain")
+        (field
+          (name "Footprint") "Package_TO_SOT_SMD:SOT-23")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "NFQZ9aoyf3")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:252"))
+      (libsource
+        (lib "Transistor_FET")
+        (part "Q_NMOS_GSD"))
+      (sheetpath
+        (names "/TX1/")
+        (tstamps "/021e19be-a4d5-5b94-87a4-27558ad65fa5/"))
+      (component_classes)
+      (tstamps "d3963be4-d7cb-59d0-8d37-7bf4d77be143"))
+    (comp
+      (ref "Q3")
+      (value "Q_NMOS_GSD")
+      (description "N-MOSFET transistor, gate/source/drain")
+      (footprint "Package_TO_SOT_SMD:SOT-23")
+      (fields
+        (field
+          (name "Description") "N-MOSFET transistor, gate/source/drain")
+        (field
+          (name "Footprint") "Package_TO_SOT_SMD:SOT-23")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "ZubMhpBrRW")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:252"))
+      (libsource
+        (lib "Transistor_FET")
+        (part "Q_NMOS_GSD"))
+      (sheetpath
+        (names "/TX2/")
+        (tstamps "/efcecec9-1ad2-5153-9325-42b39bea4ba3/"))
+      (component_classes)
+      (tstamps "776c598b-66d9-5825-8b13-5f01dd67b786"))
+    (comp
+      (ref "Q4")
+      (value "Q_NMOS_GSD")
+      (description "N-MOSFET transistor, gate/source/drain")
+      (footprint "Package_TO_SOT_SMD:SOT-23")
+      (fields
+        (field
+          (name "Description") "N-MOSFET transistor, gate/source/drain")
+        (field
+          (name "Footprint") "Package_TO_SOT_SMD:SOT-23")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "WAVcgU3ToU")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:252"))
+      (libsource
+        (lib "Transistor_FET")
+        (part "Q_NMOS_GSD"))
+      (sheetpath
+        (names "/TX3/")
+        (tstamps "/d75df8aa-1993-5bab-981e-949655bb0dc8/"))
+      (component_classes)
+      (tstamps "ac871ccc-0eb6-511a-8e43-1d510eb2ea59"))
+    (comp
+      (ref "Q5")
+      (value "Q_NMOS_GSD")
+      (description "N-MOSFET transistor, gate/source/drain")
+      (footprint "Package_TO_SOT_SMD:SOT-23")
+      (fields
+        (field
+          (name "Description") "N-MOSFET transistor, gate/source/drain")
+        (field
+          (name "Footprint") "Package_TO_SOT_SMD:SOT-23")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "RFwzwKMJq6")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:252"))
+      (libsource
+        (lib "Transistor_FET")
+        (part "Q_NMOS_GSD"))
+      (sheetpath
+        (names "/TX4/")
+        (tstamps "/93b8c274-e17d-5ecc-b9ea-ac95c16328cd/"))
+      (component_classes)
+      (tstamps "95f0cf8a-1eb4-59f3-a9f6-69163fa34809"))
+    (comp
+      (ref "Q6")
+      (value "Q_NMOS_GSD")
+      (description "N-MOSFET transistor, gate/source/drain")
+      (footprint "Package_TO_SOT_SMD:SOT-23")
+      (fields
+        (field
+          (name "Description") "N-MOSFET transistor, gate/source/drain")
+        (field
+          (name "Footprint") "Package_TO_SOT_SMD:SOT-23")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "_a5nlTYBb_")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:252"))
+      (libsource
+        (lib "Transistor_FET")
+        (part "Q_NMOS_GSD"))
+      (sheetpath
+        (names "/TX5/")
+        (tstamps "/90e29eca-1605-5b34-90ea-7e1fcf9d5748/"))
+      (component_classes)
+      (tstamps "908e2dad-f78b-5807-9bd2-0a5e740a3623"))
+    (comp
+      (ref "Q7")
+      (value "Q_NMOS_GSD")
+      (description "N-MOSFET transistor, gate/source/drain")
+      (footprint "Package_TO_SOT_SMD:SOT-23")
+      (fields
+        (field
+          (name "Description") "N-MOSFET transistor, gate/source/drain")
+        (field
+          (name "Footprint") "Package_TO_SOT_SMD:SOT-23")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "pgAARFBs1q")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:252"))
+      (libsource
+        (lib "Transistor_FET")
+        (part "Q_NMOS_GSD"))
+      (sheetpath
+        (names "/TX6/")
+        (tstamps "/e1aa1776-2844-5d4d-a4f0-24d3b688f6f2/"))
+      (component_classes)
+      (tstamps "a1128b76-cf59-5803-9580-97f4ef725b81"))
+    (comp
+      (ref "Q8")
+      (value "Q_NMOS_GSD")
+      (description "N-MOSFET transistor, gate/source/drain")
+      (footprint "Package_TO_SOT_SMD:SOT-23")
+      (fields
+        (field
+          (name "Description") "N-MOSFET transistor, gate/source/drain")
+        (field
+          (name "Footprint") "Package_TO_SOT_SMD:SOT-23")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "v6B1tdctfw")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:252"))
+      (libsource
+        (lib "Transistor_FET")
+        (part "Q_NMOS_GSD"))
+      (sheetpath
+        (names "/TX7/")
+        (tstamps "/39f47f43-a7f5-519f-b95d-ad013f4055dd/"))
+      (component_classes)
+      (tstamps "e753e5eb-20ee-5284-b055-24f9e7ef549c"))
+    (comp
+      (ref "R1")
+      (value "1000")
+      (description "Resistor")
+      (footprint "Resistor_SMD:R_0805_2012Metric")
+      (fields
+        (field
+          (name "Description") "Resistor")
+        (field
+          (name "Footprint") "Resistor_SMD:R_0805_2012Metric")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "FnEQoge9GU")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:204"))
+      (libsource
+        (lib "Device")
+        (part "R"))
+      (sheetpath
+        (names "/LNA_A/")
+        (tstamps "/0ea4fd01-1e09-5517-9e52-801ec01553ce/"))
+      (component_classes)
+      (tstamps "1987865c-96eb-573b-9c49-a79d190acd6f"))
+    (comp
+      (ref "R10")
+      (value "10k")
+      (description "Resistor")
+      (footprint "Resistor_SMD:R_0603_1608Metric")
+      (fields
+        (field
+          (name "Description") "Resistor")
+        (field
+          (name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "SMVoeQlpDI")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:255"))
+      (libsource
+        (lib "Device")
+        (part "R"))
+      (sheetpath
+        (names "/TX5/")
+        (tstamps "/90e29eca-1605-5b34-90ea-7e1fcf9d5748/"))
+      (component_classes)
+      (tstamps "ea16c9e0-48af-56c2-aea2-8e57ce1271ce"))
+    (comp
+      (ref "R11")
+      (value "10k")
+      (description "Resistor")
+      (footprint "Resistor_SMD:R_0603_1608Metric")
+      (fields
+        (field
+          (name "Description") "Resistor")
+        (field
+          (name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "UpCa_T513Q")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:255"))
+      (libsource
+        (lib "Device")
+        (part "R"))
+      (sheetpath
+        (names "/TX6/")
+        (tstamps "/e1aa1776-2844-5d4d-a4f0-24d3b688f6f2/"))
+      (component_classes)
+      (tstamps "8621fac7-7a68-5d09-bea0-7a7a0cb2693a"))
+    (comp
+      (ref "R12")
+      (value "10k")
+      (description "Resistor")
+      (footprint "Resistor_SMD:R_0603_1608Metric")
+      (fields
+        (field
+          (name "Description") "Resistor")
+        (field
+          (name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "ddhgUCOr4f")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:255"))
+      (libsource
+        (lib "Device")
+        (part "R"))
+      (sheetpath
+        (names "/TX7/")
+        (tstamps "/39f47f43-a7f5-519f-b95d-ad013f4055dd/"))
+      (component_classes)
+      (tstamps "670050ca-30be-551e-9883-ac698cc3d23f"))
+    (comp
+      (ref "R2")
+      (value "9k")
+      (description "Resistor")
+      (footprint "Resistor_SMD:R_0805_2012Metric")
+      (fields
+        (field
+          (name "Description") "Resistor")
+        (field
+          (name "Footprint") "Resistor_SMD:R_0805_2012Metric")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "foWT4DiGJn")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:205"))
+      (libsource
+        (lib "Device")
+        (part "R"))
+      (sheetpath
+        (names "/LNA_A/")
+        (tstamps "/0ea4fd01-1e09-5517-9e52-801ec01553ce/"))
+      (component_classes)
+      (tstamps "a526de39-51bb-5b88-9854-05587dbbe850"))
+    (comp
+      (ref "R3")
+      (value "1000")
+      (description "Resistor")
+      (footprint "Resistor_SMD:R_0805_2012Metric")
+      (fields
+        (field
+          (name "Description") "Resistor")
+        (field
+          (name "Footprint") "Resistor_SMD:R_0805_2012Metric")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "v3vD_6_C46")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:204"))
+      (libsource
+        (lib "Device")
+        (part "R"))
+      (sheetpath
+        (names "/LNA_B/")
+        (tstamps "/706e8055-6dee-594e-b68f-f26eb2cd189c/"))
+      (component_classes)
+      (tstamps "08598ace-2ea1-5a2c-945d-9ad5db2ef5c0"))
+    (comp
+      (ref "R4")
+      (value "9k")
+      (description "Resistor")
+      (footprint "Resistor_SMD:R_0805_2012Metric")
+      (fields
+        (field
+          (name "Description") "Resistor")
+        (field
+          (name "Footprint") "Resistor_SMD:R_0805_2012Metric")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "PXVNXD4Iqo")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:205"))
+      (libsource
+        (lib "Device")
+        (part "R"))
+      (sheetpath
+        (names "/LNA_B/")
+        (tstamps "/706e8055-6dee-594e-b68f-f26eb2cd189c/"))
+      (component_classes)
+      (tstamps "def83902-8336-5525-b411-17674018e376"))
+    (comp
+      (ref "R5")
+      (value "10k")
+      (description "Resistor")
+      (footprint "Resistor_SMD:R_0603_1608Metric")
+      (fields
+        (field
+          (name "Description") "Resistor")
+        (field
+          (name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "llwJOw7YlL")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:255"))
+      (libsource
+        (lib "Device")
+        (part "R"))
+      (sheetpath
+        (names "/TX0/")
+        (tstamps "/03d8ed7e-2fea-540a-82b2-931f19d834a1/"))
+      (component_classes)
+      (tstamps "4fe67e9e-9a14-570c-bc07-81cd61b48e13"))
+    (comp
+      (ref "R6")
+      (value "10k")
+      (description "Resistor")
+      (footprint "Resistor_SMD:R_0603_1608Metric")
+      (fields
+        (field
+          (name "Description") "Resistor")
+        (field
+          (name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "hiEhEaogBl")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:255"))
+      (libsource
+        (lib "Device")
+        (part "R"))
+      (sheetpath
+        (names "/TX1/")
+        (tstamps "/021e19be-a4d5-5b94-87a4-27558ad65fa5/"))
+      (component_classes)
+      (tstamps "94636b6b-96d3-5d43-9c84-a40dd6ddae1c"))
+    (comp
+      (ref "R7")
+      (value "10k")
+      (description "Resistor")
+      (footprint "Resistor_SMD:R_0603_1608Metric")
+      (fields
+        (field
+          (name "Description") "Resistor")
+        (field
+          (name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "QCTwE5HeqH")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:255"))
+      (libsource
+        (lib "Device")
+        (part "R"))
+      (sheetpath
+        (names "/TX2/")
+        (tstamps "/efcecec9-1ad2-5153-9325-42b39bea4ba3/"))
+      (component_classes)
+      (tstamps "55c4e3a9-51b1-58a3-ab15-d633f4025483"))
+    (comp
+      (ref "R8")
+      (value "10k")
+      (description "Resistor")
+      (footprint "Resistor_SMD:R_0603_1608Metric")
+      (fields
+        (field
+          (name "Description") "Resistor")
+        (field
+          (name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "cYyakoMyR_")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:255"))
+      (libsource
+        (lib "Device")
+        (part "R"))
+      (sheetpath
+        (names "/TX3/")
+        (tstamps "/d75df8aa-1993-5bab-981e-949655bb0dc8/"))
+      (component_classes)
+      (tstamps "4b6054a4-f7db-59fd-9cc0-0ac65c6e36af"))
+    (comp
+      (ref "R9")
+      (value "10k")
+      (description "Resistor")
+      (footprint "Resistor_SMD:R_0603_1608Metric")
+      (fields
+        (field
+          (name "Description") "Resistor")
+        (field
+          (name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+        (field
+          (name "Datasheet") "~")
+        (field
+          (name "SKiDL Tag") "v2VllKr0Pi")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:255"))
+      (libsource
+        (lib "Device")
+        (part "R"))
+      (sheetpath
+        (names "/TX4/")
+        (tstamps "/93b8c274-e17d-5ecc-b9ea-ac95c16328cd/"))
+      (component_classes)
+      (tstamps "c5416955-d14e-5138-a515-e774dd1c756b"))
+    (comp
+      (ref "U1")
+      (value "LM7805_TO220")
+      (description "Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220")
+      (footprint "Package_TO_SOT_THT:TO-220-3_Vertical")
+      (fields
+        (field
+          (name "Description") "Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220")
+        (field
+          (name "Footprint") "Package_TO_SOT_THT:TO-220-3_Vertical")
+        (field
+          (name "Datasheet") "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF")
+        (field
+          (name "SKiDL Tag") "XvCTtxhXRJ")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:38"))
+      (libsource
+        (lib "Regulator_Linear")
+        (part "LM7805_TO220"))
+      (sheetpath
+        (names "/PowerSupplies1/")
+        (tstamps "/cef0e8a6-4fbe-5cde-8ff5-0ab8f05d06d0/"))
+      (component_classes)
+      (tstamps "f839df6c-4bf3-5f87-9078-ab1fb5101164"))
+    (comp
+      (ref "U2")
+      (value "AMS1117-3.3")
+      (description "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223")
+      (footprint "Package_TO_SOT_SMD:SOT-223-3_TabPin2")
+      (fields
+        (field
+          (name "Description") "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223")
+        (field
+          (name "Footprint") "Package_TO_SOT_SMD:SOT-223-3_TabPin2")
+        (field
+          (name "Datasheet") "http://www.advanced-monolithic.com/pdf/ds1117.pdf")
+        (field
+          (name "SKiDL Tag") "cpctAnq7kz")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:41"))
+      (libsource
+        (lib "Regulator_Linear")
+        (part "AMS1117-3.3"))
+      (sheetpath
+        (names "/PowerSupplies1/")
+        (tstamps "/cef0e8a6-4fbe-5cde-8ff5-0ab8f05d06d0/"))
+      (component_classes)
+      (tstamps "d043cc24-11a7-5f3a-bf86-566e0ba60a44"))
+    (comp
+      (ref "U3")
+      (value "74HC595")
+      (description "8-bit serial in/out Shift Register 3-State Outputs")
+      (footprint "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm")
+      (fields
+        (field
+          (name "Description") "8-bit serial in/out Shift Register 3-State Outputs")
+        (field
+          (name "Footprint") "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm")
+        (field
+          (name "Datasheet") "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf")
+        (field
+          (name "SKiDL Tag") "pLoV8kmdFY")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:90"))
+      (libsource
+        (lib "74xx")
+        (part "74HC595"))
+      (sheetpath
+        (names "/DigitalControl1/")
+        (tstamps "/fd74cd59-89a3-5d81-b794-c44cad988d29/"))
+      (component_classes)
+      (tstamps "3b94ee4e-72e1-5e71-ad5a-c45823d6ae4d"))
+    (comp
+      (ref "U4")
+      (value "CD4051B")
+      (description "CMOS single 8-channel analog multiplexer demultiplexer, TSSOP-16/DIP-16/SOIC-16")
+      (footprint "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm")
+      (fields
+        (field
+          (name "Description") "CMOS single 8-channel analog multiplexer demultiplexer, TSSOP-16/DIP-16/SOIC-16")
+        (field
+          (name "Footprint") "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm")
+        (field
+          (name "Datasheet") "http://www.ti.com/lit/ds/symlink/cd4052b.pdf")
+        (field
+          (name "SKiDL Tag") "Y2U_izhhcc")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:142"))
+      (libsource
+        (lib "Analog_Switch")
+        (part "CD4051B"))
+      (sheetpath
+        (names "/MUX_A/")
+        (tstamps "/70b5fc71-15d1-56e4-9c4d-d9ebfeb91883/"))
+      (component_classes)
+      (tstamps "bbb49c5e-bcb8-524e-98e7-514bc41426e6"))
+    (comp
+      (ref "U5")
+      (value "CD4051B")
+      (description "CMOS single 8-channel analog multiplexer demultiplexer, TSSOP-16/DIP-16/SOIC-16")
+      (footprint "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm")
+      (fields
+        (field
+          (name "Description") "CMOS single 8-channel analog multiplexer demultiplexer, TSSOP-16/DIP-16/SOIC-16")
+        (field
+          (name "Footprint") "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm")
+        (field
+          (name "Datasheet") "http://www.ti.com/lit/ds/symlink/cd4052b.pdf")
+        (field
+          (name "SKiDL Tag") "3CCUG06SSO")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:142"))
+      (libsource
+        (lib "Analog_Switch")
+        (part "CD4051B"))
+      (sheetpath
+        (names "/MUX_B/")
+        (tstamps "/705ca3de-d1f7-57eb-a7e3-36b952da7a26/"))
+      (component_classes)
+      (tstamps "2bdc3ddd-eb6a-5f65-a0c5-49843fd7ea28"))
+    (comp
+      (ref "U6")
+      (value "OPA1641")
+      (description " JFET input, ultralow distortion, low-noise operational amplifier, SOIC-8/VSSOP-8")
+      (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
+      (fields
+        (field
+          (name "Description") " JFET input, ultralow distortion, low-noise operational amplifier, SOIC-8/VSSOP-8")
+        (field
+          (name "Footprint") "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
+        (field
+          (name "Datasheet") "http://www.ti.com/lit/ds/symlink/opa1641.pdf")
+        (field
+          (name "SKiDL Tag") "RNzsIQlENq")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:195"))
+      (libsource
+        (lib "Amplifier_Operational")
+        (part "OPA1641"))
+      (sheetpath
+        (names "/LNA_A/")
+        (tstamps "/0ea4fd01-1e09-5517-9e52-801ec01553ce/"))
+      (component_classes)
+      (tstamps "d192729e-d844-52cf-8853-7a9a1eded45f"))
+    (comp
+      (ref "U7")
+      (value "OPA1641")
+      (description " JFET input, ultralow distortion, low-noise operational amplifier, SOIC-8/VSSOP-8")
+      (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
+      (fields
+        (field
+          (name "Description") " JFET input, ultralow distortion, low-noise operational amplifier, SOIC-8/VSSOP-8")
+        (field
+          (name "Footprint") "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
+        (field
+          (name "Datasheet") "http://www.ti.com/lit/ds/symlink/opa1641.pdf")
+        (field
+          (name "SKiDL Tag") "5_jTZIbo4V")
+        (field
+          (name "SKiDL Line") "turboquant_mux_lna_skidl.py:195"))
+      (libsource
+        (lib "Amplifier_Operational")
+        (part "OPA1641"))
+      (sheetpath
+        (names "/LNA_B/")
+        (tstamps "/706e8055-6dee-594e-b68f-f26eb2cd189c/"))
+      (component_classes)
+      (tstamps "ad11851d-3b07-5def-977c-2e3cc704dc85")))
+  (nets
+    (net
+      (code 1)
+      (name "12V_IN")
+      (class "Default")
+      (node
+        (ref "F1")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J1")
+        (pin "1")
+        (pintype "PASSIVE")))
+    (net
+      (code 2)
+      (name "3V3")
+      (class "Default")
+      (node
+        (ref "C5")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J3")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U2")
+        (pin "2")
+        (pintype "POWER-OUT")))
+    (net
+      (code 3)
+      (name "5V4")
+      (class "Default")
+      (node
+        (ref "C3")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C4")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C6")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C8")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U1")
+        (pin "3")
+        (pintype "POWER-OUT"))
+      (node
+        (ref "U2")
+        (pin "3")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U3")
+        (pin "16")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U4")
+        (pin "16")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U5")
+        (pin "16")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U6")
+        (pin "7")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U7")
+        (pin "7")
+        (pintype "POWER-IN")))
+    (net
+      (code 4)
+      (name "GND10")
+      (class "Default")
+      (node
+        (ref "R8")
+        (pin "2")
+        (pintype "PASSIVE")))
+    (net
+      (code 5)
+      (name "GND11")
+      (class "Default")
+      (node
+        (ref "R9")
+        (pin "2")
+        (pintype "PASSIVE")))
+    (net
+      (code 6)
+      (name "GND12")
+      (class "Default")
+      (node
+        (ref "R10")
+        (pin "2")
+        (pintype "PASSIVE")))
+    (net
+      (code 7)
+      (name "GND13")
+      (class "Default")
+      (node
+        (ref "R11")
+        (pin "2")
+        (pintype "PASSIVE")))
+    (net
+      (code 8)
+      (name "GND14")
+      (class "Default")
+      (node
+        (ref "R12")
+        (pin "2")
+        (pintype "PASSIVE")))
+    (net
+      (code 9)
+      (name "GND6")
+      (class "Default")
+      (node
+        (ref "C1")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C2")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C3")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C4")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C5")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C6")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C7")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C8")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C9")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J1")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J2")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J2")
+        (pin "10")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J3")
+        (pin "10")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J4")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J5")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J6")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J7")
+        (pin "6")
+        (pintype "PASSIVE"))
+      (node
+        (ref "R1")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "R3")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U1")
+        (pin "2")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U2")
+        (pin "1")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U3")
+        (pin "8")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U4")
+        (pin "8")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U5")
+        (pin "8")
+        (pintype "POWER-IN")))
+    (net
+      (code 10)
+      (name "GND7")
+      (class "Default")
+      (node
+        (ref "R5")
+        (pin "2")
+        (pintype "PASSIVE")))
+    (net
+      (code 11)
+      (name "GND8")
+      (class "Default")
+      (node
+        (ref "R6")
+        (pin "2")
+        (pintype "PASSIVE")))
+    (net
+      (code 12)
+      (name "GND9")
+      (class "Default")
+      (node
+        (ref "R7")
+        (pin "2")
+        (pintype "PASSIVE")))
+    (net
+      (code 13)
+      (name "LNA_A_IN-")
+      (class "Default")
+      (node
+        (ref "R1")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "R2")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U6")
+        (pin "2")
+        (pintype "INPUT")))
+    (net
+      (code 14)
+      (name "LNA_A_OUT")
+      (class "Default")
+      (node
+        (ref "J5")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "R2")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U6")
+        (pin "6")
+        (pintype "OUTPUT")))
+    (net
+      (code 15)
+      (name "LNA_B_IN+")
+      (class "Default")
+      (node
+        (ref "U5")
+        (pin "3")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U7")
+        (pin "3")
+        (pintype "INPUT")))
+    (net
+      (code 16)
+      (name "LNA_B_IN-")
+      (class "Default")
+      (node
+        (ref "R3")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "R4")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U7")
+        (pin "2")
+        (pintype "INPUT")))
+    (net
+      (code 17)
+      (name "LNA_B_OUT")
+      (class "Default")
+      (node
+        (ref "J6")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "R4")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U7")
+        (pin "6")
+        (pintype "OUTPUT")))
+    (net
+      (code 18)
+      (name "MUX_A_A")
+      (class "Default")
+      (node
+        (ref "U4")
+        (pin "11")
+        (pintype "INPUT")))
+    (net
+      (code 19)
+      (name "MUX_A_B")
+      (class "Default")
+      (node
+        (ref "U4")
+        (pin "10")
+        (pintype "INPUT")))
+    (net
+      (code 20)
+      (name "MUX_A_C")
+      (class "Default")
+      (node
+        (ref "U4")
+        (pin "9")
+        (pintype "INPUT")))
+    (net
+      (code 21)
+      (name "MUX_A_IN0")
+      (class "Default")
+      (node
+        (ref "Q1")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "R5")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U4")
+        (pin "13")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U5")
+        (pin "13")
+        (pintype "BIDIRECTIONAL")))
+    (net
+      (code 22)
+      (name "MUX_A_INH")
+      (class "Default")
+      (node
+        (ref "U4")
+        (pin "6")
+        (pintype "INPUT")))
+    (net
+      (code 23)
+      (name "MUX_A_OUT")
+      (class "Default")
+      (node
+        (ref "U4")
+        (pin "3")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U6")
+        (pin "3")
+        (pintype "INPUT")))
+    (net
+      (code 24)
+      (name "MUX_B_A")
+      (class "Default")
+      (node
+        (ref "U5")
+        (pin "11")
+        (pintype "INPUT")))
+    (net
+      (code 25)
+      (name "MUX_B_B")
+      (class "Default")
+      (node
+        (ref "U5")
+        (pin "10")
+        (pintype "INPUT")))
+    (net
+      (code 26)
+      (name "MUX_B_C")
+      (class "Default")
+      (node
+        (ref "U5")
+        (pin "9")
+        (pintype "INPUT")))
+    (net
+      (code 27)
+      (name "MUX_B_IN1")
+      (class "Default")
+      (node
+        (ref "Q2")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "R6")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U4")
+        (pin "14")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U5")
+        (pin "14")
+        (pintype "BIDIRECTIONAL")))
+    (net
+      (code 28)
+      (name "MUX_B_IN3")
+      (class "Default")
+      (node
+        (ref "Q4")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "R8")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U4")
+        (pin "12")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U5")
+        (pin "12")
+        (pintype "BIDIRECTIONAL")))
+    (net
+      (code 29)
+      (name "MUX_B_IN5")
+      (class "Default")
+      (node
+        (ref "Q6")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "R10")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U4")
+        (pin "5")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U5")
+        (pin "5")
+        (pintype "BIDIRECTIONAL")))
+    (net
+      (code 30)
+      (name "MUX_B_INH")
+      (class "Default")
+      (node
+        (ref "U5")
+        (pin "6")
+        (pintype "INPUT")))
+    (net
+      (code 31)
+      (name "N$2")
+      (class "Default")
+      (node
+        (ref "D1")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "F1")
+        (pin "2")
+        (pintype "PASSIVE")))
+    (net
+      (code 32)
+      (name "N$3")
+      (class "Default")
+      (node
+        (ref "C1")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C2")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "D1")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U1")
+        (pin "1")
+        (pintype "POWER-IN")))
+    (net
+      (code 33)
+      (name "OE")
+      (class "Default")
+      (node
+        (ref "J3")
+        (pin "5")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J7")
+        (pin "5")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U3")
+        (pin "13")
+        (pintype "INPUT")))
+    (net
+      (code 34)
+      (name "RCLK")
+      (class "Default")
+      (node
+        (ref "J3")
+        (pin "4")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J7")
+        (pin "3")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U3")
+        (pin "12")
+        (pintype "INPUT")))
+    (net
+      (code 35)
+      (name "RP_TX_IN")
+      (class "Default")
+      (node
+        (ref "J4")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "Q1")
+        (pin "3")
+        (pintype "PASSIVE"))
+      (node
+        (ref "Q2")
+        (pin "3")
+        (pintype "PASSIVE"))
+      (node
+        (ref "Q3")
+        (pin "3")
+        (pintype "PASSIVE"))
+      (node
+        (ref "Q4")
+        (pin "3")
+        (pintype "PASSIVE"))
+      (node
+        (ref "Q5")
+        (pin "3")
+        (pintype "PASSIVE"))
+      (node
+        (ref "Q6")
+        (pin "3")
+        (pintype "PASSIVE"))
+      (node
+        (ref "Q7")
+        (pin "3")
+        (pintype "PASSIVE"))
+      (node
+        (ref "Q8")
+        (pin "3")
+        (pintype "PASSIVE")))
+    (net
+      (code 36)
+      (name "SER")
+      (class "Default")
+      (node
+        (ref "J3")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J7")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U3")
+        (pin "14")
+        (pintype "INPUT")))
+    (net
+      (code 37)
+      (name "SRCLK")
+      (class "Default")
+      (node
+        (ref "J3")
+        (pin "3")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J7")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U3")
+        (pin "11")
+        (pintype "INPUT")))
+    (net
+      (code 38)
+      (name "SRCLR")
+      (class "Default")
+      (node
+        (ref "J3")
+        (pin "6")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J7")
+        (pin "4")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U3")
+        (pin "10")
+        (pintype "INPUT")))
+    (net
+      (code 39)
+      (name "SR_QC")
+      (class "Default")
+      (node
+        (ref "Q3")
+        (pin "1")
+        (pintype "INPUT"))
+      (node
+        (ref "U3")
+        (pin "2")
+        (pintype "TRISTATE")))
+    (net
+      (code 40)
+      (name "SR_QE")
+      (class "Default")
+      (node
+        (ref "Q5")
+        (pin "1")
+        (pintype "INPUT"))
+      (node
+        (ref "U3")
+        (pin "4")
+        (pintype "TRISTATE")))
+    (net
+      (code 41)
+      (name "SR_QG")
+      (class "Default")
+      (node
+        (ref "Q7")
+        (pin "1")
+        (pintype "INPUT"))
+      (node
+        (ref "U3")
+        (pin "6")
+        (pintype "TRISTATE")))
+    (net
+      (code 42)
+      (name "TX0_EN")
+      (class "Default")
+      (node
+        (ref "Q1")
+        (pin "1")
+        (pintype "INPUT"))
+      (node
+        (ref "U3")
+        (pin "15")
+        (pintype "TRISTATE")))
+    (net
+      (code 43)
+      (name "TX1_EN")
+      (class "Default")
+      (node
+        (ref "Q2")
+        (pin "1")
+        (pintype "INPUT"))
+      (node
+        (ref "U3")
+        (pin "1")
+        (pintype "TRISTATE")))
+    (net
+      (code 44)
+      (name "TX2_OUT")
+      (class "Default")
+      (node
+        (ref "Q3")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "R7")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U4")
+        (pin "15")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U5")
+        (pin "15")
+        (pintype "BIDIRECTIONAL")))
+    (net
+      (code 45)
+      (name "TX3_EN")
+      (class "Default")
+      (node
+        (ref "Q4")
+        (pin "1")
+        (pintype "INPUT"))
+      (node
+        (ref "U3")
+        (pin "3")
+        (pintype "TRISTATE")))
+    (net
+      (code 46)
+      (name "TX4_OUT")
+      (class "Default")
+      (node
+        (ref "Q5")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "R9")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U4")
+        (pin "1")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U5")
+        (pin "1")
+        (pintype "BIDIRECTIONAL")))
+    (net
+      (code 47)
+      (name "TX5_EN")
+      (class "Default")
+      (node
+        (ref "Q6")
+        (pin "1")
+        (pintype "INPUT"))
+      (node
+        (ref "U3")
+        (pin "5")
+        (pintype "TRISTATE")))
+    (net
+      (code 48)
+      (name "TX6_OUT")
+      (class "Default")
+      (node
+        (ref "Q7")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "R11")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U4")
+        (pin "2")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U5")
+        (pin "2")
+        (pintype "BIDIRECTIONAL")))
+    (net
+      (code 49)
+      (name "TX7_EN")
+      (class "Default")
+      (node
+        (ref "Q8")
+        (pin "1")
+        (pintype "INPUT"))
+      (node
+        (ref "U3")
+        (pin "7")
+        (pintype "TRISTATE")))
+    (net
+      (code 50)
+      (name "TX7_OUT")
+      (class "Default")
+      (node
+        (ref "Q8")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "R12")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U4")
+        (pin "4")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U5")
+        (pin "4")
+        (pintype "BIDIRECTIONAL")))
+    (net
+      (code 51)
+      (name "VEE1")
+      (class "Default")
+      (node
+        (ref "C7")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C9")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U4")
+        (pin "7")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U5")
+        (pin "7")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U6")
+        (pin "4")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U7")
+        (pin "4")
+        (pintype "POWER-IN")))))

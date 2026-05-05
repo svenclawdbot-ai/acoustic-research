@@ -2,13 +2,15 @@
 """
 Morning Brief RSS Fetcher
 Fetches news from RSS feeds and outputs structured data.
+Uses stdlib only — no external dependencies.
 """
 
-import feedparser
+import xml.etree.ElementTree as ET
+import urllib.request
 import json
+import re
 from datetime import datetime, timedelta
 from html import unescape
-import re
 
 # RSS Feed Sources
 FEEDS = {
@@ -39,29 +41,32 @@ def clean_text(text):
 def fetch_feed(name, url):
     """Fetch and parse a single RSS feed."""
     try:
-        feed = feedparser.parse(url)
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req, timeout=10) as r:
+            xml_content = r.read()
+        
+        root = ET.fromstring(xml_content)
         articles = []
         
-        for entry in feed.entries[:15]:  # Get last 15 entries
-            # Parse published date
-            published = None
-            if hasattr(entry, 'published_parsed') and entry.published_parsed:
-                published = datetime(*entry.published_parsed[:6])
-            elif hasattr(entry, 'updated_parsed') and entry.updated_parsed:
-                published = datetime(*entry.updated_parsed[:6])
+        # Find all item elements (works for RSS 2.0)
+        for item in root.findall('.//item'):
+            title = item.find('title')
+            link = item.find('link')
+            desc = item.find('description')
+            pub_date = item.find('pubDate')
             
-            # Skip articles older than 24 hours
-            if published and published < datetime.now() - timedelta(hours=24):
-                continue
+            if title is not None and link is not None:
+                article = {
+                    "title": clean_text(title.text or ""),
+                    "link": link.text or "",
+                    "summary": clean_text(desc.text if desc is not None else "")[:300],
+                    "published": pub_date.text if pub_date is not None else None,
+                    "source": name
+                }
+                articles.append(article)
             
-            article = {
-                "title": clean_text(entry.get("title", "")),
-                "link": entry.get("link", ""),
-                "summary": clean_text(entry.get("summary", entry.get("description", "")))[:300],
-                "published": published.isoformat() if published else None,
-                "source": name
-            }
-            articles.append(article)
+            if len(articles) >= 15:  # Limit to last 15 entries
+                break
         
         return articles
     except Exception as e:
@@ -102,10 +107,6 @@ def main():
     for article in all_articles:
         category = categorize_article(article["title"], article["summary"])
         categorized[category].append(article)
-    
-    # Sort each category by date
-    for cat in categorized:
-        categorized[cat].sort(key=lambda x: x.get("published", ""), reverse=True)
     
     output = {
         "fetched_at": datetime.now().isoformat(),

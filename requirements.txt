@@ -1,0 +1,23 @@
+# Python dependencies for DMA acquisition tools
+
+# Serial communication
+pyserial>=3.5
+
+# Scientific computing
+numpy>=1.20.0
+scipy>=1.7.0
+
+# Plotting
+matplotlib>=3.3.0
+pyqtgraph>=0.12.0
+
+# GUI framework (PyQtGraph dependency)
+PyQt5>=5.15.0
+# Alternative: PyQt6 or PySide6
+
+# Network streaming
+pyzmq>=22.0.0
+
+# Data recording (optional)
+h5py>=3.0.0          # For HDF5 format
+nptdms>=0.30.0       # For TDMS format (NI compatible)

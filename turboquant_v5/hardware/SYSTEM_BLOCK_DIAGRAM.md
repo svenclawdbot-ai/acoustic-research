@@ -1,0 +1,153 @@
+# TurboQuant V5 - System Block Diagram
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                         TURBOQUANT V5 - SYSTEM OVERVIEW                      │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  ┌─────────────┐                                                            │
+│  │  RED PITAYA │                                                            │
+│  │  STEMlab    │                                                            │
+│  │  125-14     │                                                            │
+│  └──────┬──────┘                                                            │
+│         │ E1 GPIO (2×10 header)                                              │
+│         │ SPI: SER/SRCLK/RCLK + OE/SRCLR                                    │
+│         │ ADC: RX0, RX1 (differential)                                       │
+│         │ DAC: TX_OUT (±1V)                                                │
+│         └────────────────────────────────────────────────────────┐          │
+│                                                                  │          │
+│  ┌───────────────────────────────────────────────────────────────┘          │
+│  │                                                                          │
+│  │  ┌─────────────────────────────────────────────────────────────────────┐  │
+│  │  │                    DIGITAL CONTROL SHEET                         │  │
+│  │  │  ┌─────────────┐     ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐            │  │
+│  │  │  │  74HCT595   │────→│BSS138│ │BSS138│ │BSS138│ │BSS138│ ...×8  │  │
+│  │  │  │  Shift Reg  │     │ Q1  │ │ Q2  │ │ Q3  │ │ Q4  │            │  │
+│  │  │  │  (U5)       │     └─────┘ └─────┘ └─────┘ └─────┘            │  │
+│  │  │  └─────────────┘        │      │      │      │                   │  │
+│  │  │                         └──────┴──────┴──────┘                   │  │
+│  │  │                                │                                │  │
+│  │  └────────────────────────────────┼────────────────────────────────┘  │
+│  │                                   │ GATE0-GATE7                       │
+│  └───────────────────────────────────┼─────────────────────────────────────┘
+│                                      │
+│  ┌───────────────────────────────────┼─────────────────────────────────────┐
+│  │                                   │                                     │
+│  │  ┌────────────────────────────────┼──────────────────────────────────┐  │
+│  │  │                    TX SWITCH SHEET                                │  │
+│  │  │  ┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐      │  │
+│  │  │  │ TC4427  │───→│ IRF830  │    │ TC4427  │───→│ IRF830  │      │  │
+│  │  │  │ (U8)    │    │ (Q9)    │    │ (U9)    │    │ (Q10)   │ ...×8│  │
+│  │  │  └─────────┘    └────┬────┘    └─────────┘    └────┬────┘      │  │
+│  │  │                      │                            │              │  │
+│  │  │                      └────────────┬───────────────┘              │  │
+│  │  │                                   │ TX_BUS (±100V)              │  │
+│  │  └───────────────────────────────────┼──────────────────────────────┘  │
+│  │                                      │                                 │
+│  └──────────────────────────────────────┼─────────────────────────────────┘
+│                                         │
+│  ┌──────────────────────────────────────┼─────────────────────────────────┐
+│  │                                      │                                 │
+│  │  ┌───────────────────────────────────┼──────────────────────────────┐  │
+│  │  │                    ANALOG SHEET                                  │  │
+│  │  │                                                                   │  │
+│  │  │  ┌──────────┐   ┌──────────┐   ┌──────────┐   ┌──────────┐     │  │
+│  │  │  │  CH0     │   │  CH1     │   │  CH2     │   │  CH3     │     │  │
+│  │  │  │ T/R      │   │ T/R      │   │ T/R      │   │ T/R      │     │  │
+│  │  │  │ Bridge   │   │ Bridge   │   │ Bridge   │   │ Bridge   │ ...×8│  │
+│  │  │  │ (4×D)    │   │ (4×D)    │   │ (4×D)    │   │ (4×D)    │     │  │
+│  │  │  └────┬─────┘   └────┬─────┘   └────┬─────┘   └────┬─────┘     │  │
+│  │  │       │             │             │             │              │  │
+│  │  │       └─────────────┴─────────────┴─────────────┘              │  │
+│  │  │                         │                                      │  │
+│  │  │              ┌──────────┴──────────┐                           │  │
+│  │  │              │      DG408 ×2      │  8:1 MUX                  │  │
+│  │  │              │      (U1, U2)      │                           │  │
+│  │  │              └──────────┬──────────┘                           │  │
+│  │  │                         │                                      │  │
+│  │  │              ┌──────────┴──────────┐                           │  │
+│  │  │              │    OPA1641 ×2      │  LNA (gain=10)            │  │
+│  │  │              │    (U3, U4)        │                           │  │
+│  │  │              └──────────┬──────────┘                           │  │
+│  │  │                         │                                      │  │
+│  │  │                    RX0 / RX1 → Red Pitaya ADC                 │  │
+│  │  └──────────────────────────────────────────────────────────────────┘  │
+│  │                                                                       │
+│  └───────────────────────────────────────────────────────────────────────┘
+│
+│  ┌───────────────────────────────────────────────────────────────────────┐
+│  │                    POWER SHEET                                        │
+│  │                                                                       │
+│  │  12V_IN ──→ F1 ──→ D1 ──→ D2 ──→ U1(LM7805) ──→ +5V ──→ U2 ──→ +3V3│
+│  │           (fuse)  (Schottky) (TVS)  (5V reg)       (3.3V reg)        │
+│  │                                                                       │
+│  │  +12V ──→ DG408 VDD, TC4427 VDD                                    │
+│  │  +5V  ──→ 74HCT595, OPA1641, BSS138                                │
+│  │  +3V3 ──→ Red Pitaya reference (if needed)                         │
+│  │                                                                       │
+│  └───────────────────────────────────────────────────────────────────────┘
+│
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+## Signal Flow
+
+### Transmit Path
+```
+Red Pitaya DAC → TX_OUT → E1 connector → TX_SWITCH sheet → TX_BUS → 
+→ Analog T/R Bridge (selected channel) → CH0-CH7 SMA → Transducer
+```
+
+### Receive Path
+```
+Transducer → CH0-CH7 SMA → Analog T/R Bridge → DG408 MUX → 
+→ OPA1641 LNA → RX0/RX1 → Red Pitaya ADC
+```
+
+### Control Path
+```
+Red Pitaya GPIO → E1 connector → 74HCT595 → BSS138 → 
+→ TC4427 → IRF830 gate (TX switch) + DG408 select (MUX)
+```
+
+## Hierarchical Connections
+
+| From Sheet | To Sheet | Signals |
+|------------|----------|---------|
+| **Root** | Power | +12V_IN → +5V, +3V3, GND |
+| **Root** | Digital | +5V, GND → GATE0-GATE7 |
+| **Root** | Analog | +5V, +12V, GND, MUX_A/B/C/EN, TX_BUS → RX0/RX1, CH0-CH7 |
+| **Root** | TX Switch | +12V, GND, GATE0-GATE7 → TX_BUS |
+| **Digital** | TX Switch | GATE0-GATE7 (direct) |
+| **TX Switch** | Analog | TX_BUS (shared) |
+| **Analog** | Root | RX0, RX1 (to Red Pitaya) |
+
+## Critical Nets
+
+| Net Name | Voltage | Current | Notes |
+|----------|---------|---------|-------|
+| +12V | 12V DC | ~2A peak | Main input, fused |
+| +5V | 5V DC | ~200mA | Logic, op-amps |
+| +3V3 | 3.3V DC | ~50mA | Reference only |
+| TX_BUS | ±100V | 2A peak | HV pulser output |
+| GATE0-7 | 0-12V | 100mA peak | Gate drive |
+| RX0/RX1 | ±0.5V | µA | Sensitive analog |
+
+## Design Verification Checklist
+
+- [x] Power architecture defined
+- [x] Component selection complete
+- [x] Hierarchical structure defined
+- [x] Pin assignments verified
+- [ ] All sheets wired completely
+- [ ] ERC clean (0 errors, 0 warnings)
+- [ ] Footprints assigned to all components
+- [ ] BOM generated and verified
+- [ ] Design rules defined (clearances, widths)
+- [ ] Thermal analysis complete
+- [ ] Peer review completed
+
+---
+
+*Generated: 2026-05-02*
+*Status: Ready for wiring completion and review*

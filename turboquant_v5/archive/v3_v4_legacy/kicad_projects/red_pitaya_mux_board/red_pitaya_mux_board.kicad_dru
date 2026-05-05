@@ -1,0 +1,60 @@
+# KiCad Design Rules for Red Pitaya Mux Board
+# Optimized for 2-layer analog/digital mixed-signal design
+
+(version 1)
+# PCB constraints
+(rule "Board thickness"
+  (constraint physical thickness (min 1.6mm) (max 1.6mm)))
+
+# Clearance rules
+(rule "Default clearance"
+  (constraint clearance (min 0.2mm)))
+
+(rule "Analog signal clearance"
+  (constraint clearance (min 0.3mm))
+  (condition "A.NetClass == 'Analog' || B.NetClass == 'Analog'"))
+
+(rule "HV clearance (future proofing)"
+  (constraint clearance (min 0.5mm))
+  (condition "A.NetClass == 'HV' || B.NetClass == 'HV'"))
+
+# Track width rules
+(rule "Default track width"
+  (constraint track_width (min 0.25mm) (opt 0.25mm) (max 2mm)))
+
+(rule "Power track width"
+  (constraint track_width (min 0.5mm) (opt 0.8mm))
+  (condition "A.NetClass == 'Power'"))
+
+(rule "TX bus width (50Ω impedance)"
+  (constraint track_width (min 0.4mm) (opt 0.5mm))
+  (condition "A.NetClass == 'TX'"))
+
+# Via rules
+(rule "Default via"
+  (constraint via_diameter (min 0.6mm) (opt 0.8mm))
+  (constraint via_hole (min 0.3mm) (opt 0.4mm)))
+
+(rule "Power via"
+  (constraint via_diameter (min 0.8mm) (opt 1mm))
+  (constraint via_hole (min 0.4mm) (opt 0.6mm))
+  (condition "A.NetClass == 'Power'"))
+
+# Hole rules
+(rule "Mounting holes"
+  (constraint hole (min 2.2mm) (max 3.5mm)))
+
+# Silkscreen rules
+(rule "Silkscreen clearance"
+  (constraint silk_clearance (min 0.15mm)))
+
+(rule "Text height"
+  (constraint text_height (min 0.8mm)))
+
+# Edge clearance
+(rule "Edge clearance"
+  (constraint edge_clearance (min 0.5mm)))
+
+# Annular width
+(rule "Annular width"
+  (constraint annular_width (min 0.15mm)))

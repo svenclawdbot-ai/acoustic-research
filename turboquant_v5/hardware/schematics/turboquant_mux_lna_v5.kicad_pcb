@@ -1,0 +1,670 @@
+(kicad_pcb
+  (version 20221018)
+  (generator "pcbnew")
+  (generator_version "7.0")
+
+  (general
+    (thickness 1.6)
+    (legacy_teardrops no)
+  )
+
+  (paper "A4")
+  (title_block
+    (title "TurboQuant Mux LNA Board v5.0")
+    (date "2026-04-26")
+    (rev "5.0")
+    (company "TurboQuant")
+  )
+
+  (layers
+    (0 "F.Cu" signal)
+    (1 "In1.Cu" signal)
+    (2 "In2.Cu" signal)
+    (31 "B.Cu" signal)
+    (32 "B.Adhes" user "B.Adhesive")
+    (33 "F.Adhes" user "F.Adhesive")
+    (34 "B.Paste" user)
+    (35 "F.Paste" user)
+    (36 "B.SilkS" user "B.Silkscreen")
+    (37 "F.SilkS" user "F.Silkscreen")
+    (38 "B.Mask" user)
+    (39 "F.Mask" user)
+    (40 "Dwgs.User" user "User.Drawings")
+    (41 "Cmts.User" user "User.Comments")
+    (42 "Eco1.User" user "User.Eco1")
+    (43 "Eco2.User" user "User.Eco2")
+    (44 "Edge.Cuts" user)
+    (45 "Margin" user)
+    (46 "B.CrtYd" user "B.Courtyard")
+    (47 "F.CrtYd" user "F.Courtyard")
+    (48 "B.Fab" user "B.Fabrication")
+    (49 "F.Fab" user "F.Fabrication")
+  )
+
+  (setup
+    (pad_to_mask_clearance 0)
+    (pcbplotparams
+      (layerselection 0x00010fc_ffffffff)
+      (plot_on_all_layers_selection 0x0000000_00000000)
+      (disableapertmacros no)
+      (usegerberextensions no)
+      (usegerberattributes yes)
+      (usegerberadvancedattributes yes)
+      (creategerberjobfile yes)
+      (dashed_line_dash_ratio 12.000000)
+      (dashed_line_gap_ratio 3.000000)
+      (svgprecision 4)
+      (plotframeref no)
+      (viasonmask no)
+      (mode 1)
+      (useauxorigin no)
+      (hpglpennumber 1)
+      (hpglpenspeed 20)
+      (hpglpendiameter 15.000000)
+      (pdf_front_fp_property_popups yes)
+      (pdf_back_fp_property_popups yes)
+      (dxfpolygonmode yes)
+      (dxfimperialunits yes)
+      (dxfusepcbnewfont yes)
+      (psnegative no)
+      (psa4output no)
+      (plotreference yes)
+      (plotvalue yes)
+      (plotfptext yes)
+      (plotinvisibletext no)
+      (sketchpadsonfab no)
+      (subtractmaskfromsilk no)
+      (outputformat 1)
+      (mirror no)
+      (drillshape 1)
+      (scaleselection 1)
+      (outputdirectory "")
+    )
+  )
+
+  (net 0 "")
+  (net 1 "+12V")
+  (net 2 "+5V")
+  (net 3 "+3V3")
+  (net 4 "GND")
+  (net 5 "TX_BUS")
+  (net 6 "RX0_OUT")
+  (net 7 "RX1_OUT")
+  (net 8 "MUX_A")
+  (net 9 "MUX_B")
+  (net 10 "MUX_C")
+  (net 11 "MUX_EN")
+  (net 12 "GATE0")
+  (net 13 "GATE1")
+  (net 14 "GATE2")
+  (net 15 "GATE3")
+  (net 16 "GATE4")
+  (net 17 "GATE5")
+  (net 18 "GATE6")
+  (net 19 "GATE7")
+
+  (net_class Default "This is the default net class."
+    (clearance 0.2)
+    (trace_width 0.25)
+    (via_dia 0.8)
+    (via_drill 0.4)
+    (uvia_dia 0.3)
+    (uvia_drill 0.1)
+    (add_net "")
+    (add_net "+12V")
+    (add_net "+5V")
+    (add_net "+3V3")
+    (add_net "GND")
+    (add_net "RX0_OUT")
+    (add_net "RX1_OUT")
+    (add_net "MUX_A")
+    (add_net "MUX_B")
+    (add_net "MUX_C")
+    (add_net "MUX_EN")
+    (add_net "GATE0")
+    (add_net "GATE1")
+    (add_net "GATE2")
+    (add_net "GATE3")
+    (add_net "GATE4")
+    (add_net "GATE5")
+    (add_net "GATE6")
+    (add_net "GATE7")
+  )
+
+  (net_class HV "High voltage TX traces"
+    (clearance 2.0)
+    (trace_width 1.0)
+    (via_dia 1.2)
+    (via_drill 0.6)
+    (add_net "TX_BUS")
+  )
+
+  (gr_rect (start 0 0) (end 100 80) (layer "Edge.Cuts") (width 0.1))
+
+  ; === GND PLANE (In1.Cu) ===
+  (zone (net 4) (net_name "GND") (layer "In1.Cu") (tstamp 0) (hatch edge 0.508)
+    (connect_pads (clearance 0.2))
+    (min_thickness 0.254)
+    (filled_areas_thickness no)
+    (fill yes (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 0 0)
+        (xy 100 0)
+        (xy 100 80)
+        (xy 0 80)
+      )
+    )
+  )
+
+  ; === +5V PLANE (In2.Cu) ===
+  (zone (net 2) (net_name "+5V") (layer "In2.Cu") (tstamp 1) (hatch edge 0.508)
+    (connect_pads (clearance 0.2))
+    (min_thickness 0.254)
+    (filled_areas_thickness no)
+    (fill yes (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 0 0)
+        (xy 50 0)
+        (xy 50 80)
+        (xy 0 80)
+      )
+    )
+  )
+
+  ; === +12V PLANE (In2.Cu, TX zone) ===
+  (zone (net 1) (net_name "+12V") (layer "In2.Cu") (tstamp 2) (hatch edge 0.508)
+    (connect_pads (clearance 0.2))
+    (min_thickness 0.254)
+    (filled_areas_thickness no)
+    (fill yes (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 50 40)
+        (xy 100 40)
+        (xy 100 80)
+        (xy 50 80)
+      )
+    )
+  )
+
+  ; === STITCHING VIAS (every 10mm) ===
+  (via (at 10 10) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 20 10) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 30 10) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 40 10) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 50 10) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 60 10) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 70 10) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 80 10) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 90 10) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 10 20) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 20 20) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 30 20) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 40 20) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 50 20) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 60 20) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 70 20) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 80 20) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 90 20) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 10 30) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 20 30) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 30 30) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 40 30) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 50 30) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 60 30) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 70 30) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 80 30) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 90 30) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 10 40) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 20 40) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 30 40) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 40 40) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 50 40) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 60 40) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 70 40) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 80 40) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 90 40) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 10 50) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 20 50) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 30 50) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 40 50) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 50 50) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 60 50) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 70 50) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 80 50) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 90 50) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 10 60) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 20 60) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 30 60) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 40 60) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 50 60) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 60 60) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 70 60) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 80 60) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 90 60) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 10 70) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 20 70) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 30 70) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 40 70) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 50 70) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 60 70) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 70 70) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 80 70) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 90 70) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 10 80) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 20 80) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 30 80) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 40 80) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 50 80) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 60 80) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 70 80) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 80 80) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+  (via (at 90 80) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 4))
+
+  ; === POWER ROUTING ===
+  ; +12V from J1 pin 1 → F1 → U1 pin 1 (LM7805 input)
+  (segment (start 10 20) (end 15 20) (width 0.5) (layer "F.Cu") (net 1))
+  (segment (start 15 20) (end 15 32) (width 0.5) (layer "F.Cu") (net 1))
+  (segment (start 15 32) (end 12.7 32) (width 0.5) (layer "F.Cu") (net 1))
+  
+  ; +5V from U1 pin 3 → U2 pin 3 (AMS1117 input) → digital/analog zones
+  (segment (start 17.3 32) (end 22 32) (width 0.5) (layer "F.Cu") (net 2))
+  (segment (start 22 32) (end 22 28) (width 0.5) (layer "F.Cu") (net 2))
+  (segment (start 22 28) (end 35 28) (width 0.5) (layer "F.Cu") (net 2))
+  (segment (start 35 28) (end 35 55) (width 0.5) (layer "F.Cu") (net 2))
+  (segment (start 35 55) (end 15 55) (width 0.5) (layer "F.Cu") (net 2))
+  
+  ; +3V3 from U2 pin 2 → digital zone
+  (segment (start 22 34.8) (end 22 38) (width 0.25) (layer "F.Cu") (net 3))
+  (segment (start 22 38) (end 35 38) (width 0.25) (layer "F.Cu") (net 3))
+  
+  ; GND from J1 pin 2 → U1 pin 2 → U2 pin 1 → plane
+  (segment (start 10 20) (end 8 20) (width 0.5) (layer "F.Cu") (net 4))
+  (segment (start 8 20) (end 8 32) (width 0.5) (layer "F.Cu") (net 4))
+  (segment (start 8 32) (end 15 32) (width 0.5) (layer "F.Cu") (net 4))
+  (segment (start 15 32) (end 22 32) (width 0.5) (layer "F.Cu") (net 4))
+  (via (at 15 32) (size 0.8) (drill 0.4) (layers "F.Cu" "In1.Cu") (net 4))
+  (via (at 22 32) (size 0.8) (drill 0.4) (layers "F.Cu" "In1.Cu") (net 4))
+  
+  ; === GATE DRIVE ROUTING (Digital → TX Switch) ===
+  ; GATE0: U5 (74HCT595) → U8 (TC4427) → Q9 (IRF830)
+  (segment (start 35 25) (end 58 50) (width 0.25) (layer "F.Cu") (net 12))
+  (segment (start 58 50) (end 58 48) (width 0.25) (layer "F.Cu") (net 12))
+  (segment (start 58 48) (end 69.46 48) (width 0.25) (layer "F.Cu") (net 12))
+  
+  ; GATE1
+  (segment (start 35 27) (end 58 52) (width 0.25) (layer "F.Cu") (net 13))
+  (segment (start 58 52) (end 58 48) (width 0.25) (layer "F.Cu") (net 13))
+  (segment (start 58 48) (end 77.46 48) (width 0.25) (layer "F.Cu") (net 13))
+  
+  ; GATE2
+  (segment (start 35 29) (end 58 54) (width 0.25) (layer "F.Cu") (net 14))
+  (segment (start 58 54) (end 58 48) (width 0.25) (layer "F.Cu") (net 14))
+  (segment (start 58 48) (end 85.46 48) (width 0.25) (layer "F.Cu") (net 14))
+  
+  ; GATE3
+  (segment (start 35 31) (end 58 56) (width 0.25) (layer "F.Cu") (net 15))
+  (segment (start 58 56) (end 58 48) (width 0.25) (layer "F.Cu") (net 15))
+  (segment (start 58 48) (end 93.46 48) (width 0.25) (layer "F.Cu") (net 15))
+  
+  ; GATE4
+  (segment (start 35 33) (end 58 58) (width 0.25) (layer "F.Cu") (net 16))
+  (segment (start 58 58) (end 58 68) (width 0.25) (layer "F.Cu") (net 16))
+  (segment (start 58 68) (end 69.46 68) (width 0.25) (layer "F.Cu") (net 16))
+  
+  ; GATE5
+  (segment (start 35 35) (end 58 60) (width 0.25) (layer "F.Cu") (net 17))
+  (segment (start 58 60) (end 58 68) (width 0.25) (layer "F.Cu") (net 17))
+  (segment (start 58 68) (end 77.46 68) (width 0.25) (layer "F.Cu") (net 17))
+  
+  ; GATE6
+  (segment (start 35 37) (end 58 62) (width 0.25) (layer "F.Cu") (net 18))
+  (segment (start 58 62) (end 58 68) (width 0.25) (layer "F.Cu") (net 18))
+  (segment (start 58 68) (end 85.46 68) (width 0.25) (layer "F.Cu") (net 18))
+  
+  ; GATE7
+  (segment (start 35 39) (end 58 64) (width 0.25) (layer "F.Cu") (net 19))
+  (segment (start 58 64) (end 58 68) (width 0.25) (layer "F.Cu") (net 19))
+  (segment (start 58 68) (end 93.46 68) (width 0.25) (layer "F.Cu") (net 19))
+  
+  ; === MUX CONTROL ROUTING ===
+  ; MUX_A, B, C, EN from digital to analog zone
+  (segment (start 35 25) (end 15 55) (width 0.25) (layer "B.Cu") (net 8))
+  (segment (start 15 55) (end 13.46 55) (width 0.25) (layer "B.Cu") (net 8))
+  
+  (segment (start 35 27) (end 15 57) (width 0.25) (layer "B.Cu") (net 9))
+  (segment (start 15 57) (end 13.46 57) (width 0.25) (layer "B.Cu") (net 9))
+  
+  (segment (start 35 29) (end 15 59) (width 0.25) (layer "B.Cu") (net 10))
+  (segment (start 15 59) (end 13.46 59) (width 0.25) (layer "B.Cu") (net 10))
+  
+  (segment (start 35 31) (end 15 61) (width 0.25) (layer "B.Cu") (net 11))
+  (segment (start 15 61) (end 13.46 61) (width 0.25) (layer "B.Cu") (net 11))
+  
+  ; === TX_BUS ROUTING (HV) ===
+  ; TX_BUS from TX switch → J2 (SMA)
+  (segment (start 95 60) (end 80 60) (width 1.0) (layer "F.Cu") (net 5))
+  (segment (start 80 60) (end 80 48) (width 1.0) (layer "F.Cu") (net 5))
+  (segment (start 80 48) (end 72 48) (width 1.0) (layer "F.Cu") (net 5))
+  
+  ; === RX OUTPUT ROUTING ===
+  ; RX0_OUT from U6 → J4
+  (segment (start 35 55) (end 95 50) (width 0.25) (layer "B.Cu") (net 6))
+  
+  ; RX1_OUT from U7 → J5
+  (segment (start 35 65) (end 95 70) (width 0.25) (layer "B.Cu") (net 7))
+
+  ; === POWER ZONE COMPONENTS ===
+  (segment (start 58 52) (end 58 48) (width 0.25) (layer "F.Cu") (net 13))
+  (segment (start 58 48) (end 77.46 48) (width 0.25) (layer "F.Cu") (net 13))
+  
+  ; GATE2
+  (segment (start 35 29) (end 58 54) (width 0.25) (layer "F.Cu") (net 14))
+  (segment (start 58 54) (end 58 48) (width 0.25) (layer "F.Cu") (net 14))
+  (segment (start 58 48) (end 85.46 48) (width 0.25) (layer "F.Cu") (net 14))
+  
+  ; GATE3
+  (segment (start 35 31) (end 58 56) (width 0.25) (layer "F.Cu") (net 15))
+  (segment (start 58 56) (end 58 48) (width 0.25) (layer "F.Cu") (net 15))
+  (segment (start 58 48) (end 93.46 48) (width 0.25) (layer "F.Cu") (net 15))
+  
+  ; GATE4
+  (segment (start 35 33) (end 58 58) (width 0.25) (layer "F.Cu") (net 16))
+  (segment (start 58 58) (end 58 68) (width 0.25) (layer "F.Cu") (net 16))
+  (segment (start 58 68) (end 69.46 68) (width 0.25) (layer "F.Cu") (net 16))
+  
+  ; GATE5
+  (segment (start 35 35) (end 58 60) (width 0.25) (layer "F.Cu") (net 17))
+  (segment (start 58 60) (end 58 68) (width 0.25) (layer "F.Cu") (net 17))
+  (segment (start 58 68) (end 77.46 68) (width 0.25) (layer "F.Cu") (net 17))
+  
+  ; GATE6
+  (segment (start 35 37) (end 58 62) (width 0.25) (layer "F.Cu") (net 18))
+  (segment (start 58 62) (end 58 68) (width 0.25) (layer "F.Cu") (net 18))
+  (segment (start 58 68) (end 85.46 68) (width 0.25) (layer "F.Cu") (net 18))
+  
+  ; GATE7
+  (segment (start 35 39) (end 58 64) (width 0.25) (layer "F.Cu") (net 19))
+  (segment (start 58 64) (end 58 68) (width 0.25) (layer "F.Cu") (net 19))
+  (segment (start 58 68) (end 93.46 68) (width 0.25) (layer "F.Cu") (net 19))
+  
+  ; === MUX CONTROL ROUTING ===
+  ; MUX_A, B, C, EN from digital to analog zone
+  (segment (start 35 25) (end 15 55) (width 0.25) (layer "B.Cu") (net 8))
+  (segment (start 15 55) (end 13.46 55) (width 0.25) (layer "B.Cu") (net 8))
+  
+  (segment (start 35 27) (end 15 57) (width 0.25) (layer "B.Cu") (net 9))
+  (segment (start 15 57) (end 13.46 57) (width 0.25) (layer "B.Cu") (net 9))
+  
+  (segment (start 35 29) (end 15 59) (width 0.25) (layer "B.Cu") (net 10))
+  (segment (start 15 59) (end 13.46 59) (width 0.25) (layer "B.Cu") (net 10))
+  
+  (segment (start 35 31) (end 15 61) (width 0.25) (layer "B.Cu") (net 11))
+  (segment (start 15 61) (end 13.46 61) (width 0.25) (layer "B.Cu") (net 11))
+  
+  ; === TX_BUS ROUTING (HV) ===
+  ; TX_BUS from TX switch → J2 (SMA)
+  (segment (start 95 60) (end 80 60) (width 1.0) (layer "F.Cu") (net 5))
+  (segment (start 80 60) (end 80 48) (width 1.0) (layer "F.Cu") (net 5))
+  (segment (start 80 48) (end 72 48) (width 1.0) (layer "F.Cu") (net 5))
+  
+  ; === RX OUTPUT ROUTING ===
+  ; RX0_OUT from U6 → J4
+  (segment (start 35 55) (end 95 50) (width 0.25) (layer "B.Cu") (net 6))
+  
+  ; RX1_OUT from U7 → J5
+  (segment (start 35 65) (end 95 70) (width 0.25) (layer "B.Cu") (net 7))
+
+  ; === POWER ZONE COMPONENTS ===
+
+  ; 12V input terminal
+  (footprint "Connector_TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
+    (layer "F.Cu")
+    (at 10 20 0)
+    (descr "2-pin screw terminal")
+    (tags "screw terminal")
+    (property "Reference" "J1" (at 0 -3.5 0) (layer "F.SilkS"))
+    (property "Value" "12V_Input" (at 0 3.5 0) (layer "F.Fab"))
+    (pad "1" thru_hole circle (at -2.54 0) (size 2.5 2.5) (drill 1.2) (layers "*.Cu" "*.Mask") (net 1))
+    (pad "2" thru_hole circle (at 2.54 0) (size 2.5 2.5) (drill 1.2) (layers "*.Cu" "*.Mask") (net 4))
+  )
+
+  ; Polyfuse
+  (footprint "Fuse:Fuse_1206_3216Metric"
+    (layer "F.Cu")
+    (at 15 20 90)
+    (property "Reference" "F1" (at 0 -2 0) (layer "F.SilkS"))
+    (property "Value" "2A" (at 0 2 0) (layer "F.Fab"))
+    (pad "1" smd roundrect (at -1.5 0) (size 1.2 1.8) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 1))
+    (pad "2" smd roundrect (at 1.5 0) (size 1.2 1.8) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 1))
+  )
+
+  ; LM7805 DPAK
+  (footprint "Package_TO_SOT_SMD:TO-252-2"
+    (layer "F.Cu")
+    (at 15 32 0)
+    (property "Reference" "U1" (at 0 -4 0) (layer "F.SilkS"))
+    (property "Value" "LM7805" (at 0 4 0) (layer "F.Fab"))
+    (pad "1" smd roundrect (at -2.3 2.2) (size 1.2 1.5) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 1))
+    (pad "2" smd roundrect (at 0 -2.2) (size 2.5 3.2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 4))
+    (pad "3" smd roundrect (at 2.3 2.2) (size 1.2 1.5) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 2))
+  )
+
+  ; AMS1117-3.3 SOT-223
+  (footprint "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+    (layer "F.Cu")
+    (at 22 32 0)
+    (property "Reference" "U2" (at 0 -4 0) (layer "F.SilkS"))
+    (property "Value" "AMS1117-3.3" (at 0 4 0) (layer "F.Fab"))
+    (pad "1" smd roundrect (at -2.3 2.8) (size 1.2 1.8) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 4))
+    (pad "2" smd roundrect (at 0 -2.8) (size 3.6 2.2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 3))
+    (pad "3" smd roundrect (at 2.3 2.8) (size 1.2 1.8) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 2))
+  )
+
+  ; === DIGITAL ZONE COMPONENTS ===
+
+  ; E1 GPIO connector
+  (footprint "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical"
+    (layer "F.Cu")
+    (at 42 20 0)
+    (property "Reference" "J3" (at 0 -8 0) (layer "F.SilkS"))
+    (property "Value" "E1_GPIO" (at 0 8 0) (layer "F.Fab"))
+  )
+
+  ; 74HCT595
+  (footprint "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+    (layer "F.Cu")
+    (at 35 28 0)
+    (property "Reference" "U5" (at 0 -6 0) (layer "F.SilkS"))
+    (property "Value" "74HCT595" (at 0 6 0) (layer "F.Fab"))
+  )
+
+  ; === ANALOG ZONE COMPONENTS ===
+
+  ; DG408 MUX0
+  (footprint "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+    (layer "F.Cu")
+    (at 15 55 0)
+    (property "Reference" "U3" (at 0 -6 0) (layer "F.SilkS"))
+    (property "Value" "DG408" (at 0 6 0) (layer "F.Fab"))
+  )
+
+  ; DG408 MUX1
+  (footprint "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+    (layer "F.Cu")
+    (at 15 65 0)
+    (property "Reference" "U4" (at 0 -6 0) (layer "F.SilkS"))
+    (property "Value" "DG408" (at 0 6 0) (layer "F.Fab"))
+  )
+
+  ; OPA1641 LNA0
+  (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+    (layer "F.Cu")
+    (at 35 55 0)
+    (property "Reference" "U6" (at 0 -4 0) (layer "F.SilkS"))
+    (property "Value" "OPA1641" (at 0 4 0) (layer "F.Fab"))
+  )
+
+  ; OPA1641 LNA1
+  (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+    (layer "F.Cu")
+    (at 35 65 0)
+    (property "Reference" "U7" (at 0 -4 0) (layer "F.SilkS"))
+    (property "Value" "OPA1641" (at 0 4 0) (layer "F.Fab"))
+  )
+
+  ; === TX SWITCH ZONE COMPONENTS ===
+
+  ; TC4427 Gate Driver 0-1
+  (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+    (layer "F.Cu")
+    (at 58 50 0)
+    (property "Reference" "U8" (at 0 -4 0) (layer "F.SilkS"))
+    (property "Value" "TC4427" (at 0 4 0) (layer "F.Fab"))
+  )
+
+  ; TC4427 Gate Driver 2-3
+  (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+    (layer "F.Cu")
+    (at 58 58 0)
+    (property "Reference" "U9" (at 0 -4 0) (layer "F.SilkS"))
+    (property "Value" "TC4427" (at 0 4 0) (layer "F.Fab"))
+  )
+
+  ; TC4427 Gate Driver 4-5
+  (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+    (layer "F.Cu")
+    (at 58 66 0)
+    (property "Reference" "U10" (at 0 -4 0) (layer "F.SilkS"))
+    (property "Value" "TC4427" (at 0 4 0) (layer "F.Fab"))
+  )
+
+  ; TC4427 Gate Driver 6-7
+  (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+    (layer "F.Cu")
+    (at 58 74 0)
+    (property "Reference" "U11" (at 0 -4 0) (layer "F.SilkS"))
+    (property "Value" "TC4427" (at 0 4 0) (layer "F.Fab"))
+  )
+
+  ; IRF830 CH0
+  (footprint "Package_TO_SOT_THT:TO-220-3_Vertical"
+    (layer "F.Cu")
+    (at 72 48 0)
+    (property "Reference" "Q9" (at 0 -5 0) (layer "F.SilkS"))
+    (property "Value" "IRF830" (at 0 5 0) (layer "F.Fab"))
+    (pad "1" thru_hole circle (at -2.54 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+    (pad "2" thru_hole circle (at 0 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+    (pad "3" thru_hole circle (at 2.54 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+  )
+
+  ; IRF830 CH1
+  (footprint "Package_TO_SOT_THT:TO-220-3_Vertical"
+    (layer "F.Cu")
+    (at 80 48 0)
+    (property "Reference" "Q10" (at 0 -5 0) (layer "F.SilkS"))
+    (property "Value" "IRF830" (at 0 5 0) (layer "F.Fab"))
+    (pad "1" thru_hole circle (at -2.54 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+    (pad "2" thru_hole circle (at 0 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+    (pad "3" thru_hole circle (at 2.54 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+  )
+
+  ; IRF830 CH2
+  (footprint "Package_TO_SOT_THT:TO-220-3_Vertical"
+    (layer "F.Cu")
+    (at 88 48 0)
+    (property "Reference" "Q11" (at 0 -5 0) (layer "F.SilkS"))
+    (property "Value" "IRF830" (at 0 5 0) (layer "F.Fab"))
+    (pad "1" thru_hole circle (at -2.54 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+    (pad "2" thru_hole circle (at 0 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+    (pad "3" thru_hole circle (at 2.54 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+  )
+
+  ; IRF830 CH3
+  (footprint "Package_TO_SOT_THT:TO-220-3_Vertical"
+    (layer "F.Cu")
+    (at 96 48 0)
+    (property "Reference" "Q12" (at 0 -5 0) (layer "F.SilkS"))
+    (property "Value" "IRF830" (at 0 5 0) (layer "F.Fab"))
+    (pad "1" thru_hole circle (at -2.54 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+    (pad "2" thru_hole circle (at 0 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+    (pad "3" thru_hole circle (at 2.54 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+  )
+
+  ; IRF830 CH4
+  (footprint "Package_TO_SOT_THT:TO-220-3_Vertical"
+    (layer "F.Cu")
+    (at 72 68 0)
+    (property "Reference" "Q13" (at 0 -5 0) (layer "F.SilkS"))
+    (property "Value" "IRF830" (at 0 5 0) (layer "F.Fab"))
+    (pad "1" thru_hole circle (at -2.54 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+    (pad "2" thru_hole circle (at 0 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+    (pad "3" thru_hole circle (at 2.54 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+  )
+
+  ; IRF830 CH5
+  (footprint "Package_TO_SOT_THT:TO-220-3_Vertical"
+    (layer "F.Cu")
+    (at 80 68 0)
+    (property "Reference" "Q14" (at 0 -5 0) (layer "F.SilkS"))
+    (property "Value" "IRF830" (at 0 5 0) (layer "F.Fab"))
+    (pad "1" thru_hole circle (at -2.54 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+    (pad "2" thru_hole circle (at 0 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+    (pad "3" thru_hole circle (at 2.54 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+  )
+
+  ; IRF830 CH6
+  (footprint "Package_TO_SOT_THT:TO-220-3_Vertical"
+    (layer "F.Cu")
+    (at 88 68 0)
+    (property "Reference" "Q15" (at 0 -5 0) (layer "F.SilkS"))
+    (property "Value" "IRF830" (at 0 5 0) (layer "F.Fab"))
+    (pad "1" thru_hole circle (at -2.54 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+    (pad "2" thru_hole circle (at 0 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+    (pad "3" thru_hole circle (at 2.54 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+  )
+
+  ; IRF830 CH7
+  (footprint "Package_TO_SOT_THT:TO-220-3_Vertical"
+    (layer "F.Cu")
+    (at 96 68 0)
+    (property "Reference" "Q16" (at 0 -5 0) (layer "F.SilkS"))
+    (property "Value" "IRF830" (at 0 5 0) (layer "F.Fab"))
+    (pad "1" thru_hole circle (at -2.54 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+    (pad "2" thru_hole circle (at 0 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+    (pad "3" thru_hole circle (at 2.54 0) (size 2 2) (drill 1.2) (layers "*.Cu" "*.Mask"))
+  )
+
+  ; TX_BUS SMA connector
+  (footprint "Connector_Coaxial:SMA_EDGE"
+    (layer "F.Cu")
+    (at 95 60 0)
+    (property "Reference" "J2" (at 0 -4 0) (layer "F.SilkS"))
+    (property "Value" "TX_BUS" (at 0 4 0) (layer "F.Fab"))
+    (pad "1" smd roundrect (at 0 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 5))
+    (pad "2" smd roundrect (at 0 -2.5) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 4))
+  )
+
+  ; RX0_OUT SMA connector
+  (footprint "Connector_Coaxial:SMA_EDGE"
+    (layer "F.Cu")
+    (at 95 50 0)
+    (property "Reference" "J4" (at 0 -4 0) (layer "F.SilkS"))
+    (property "Value" "RX0_OUT" (at 0 4 0) (layer "F.Fab"))
+    (pad "1" smd roundrect (at 0 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 6))
+    (pad "2" smd roundrect (at 0 -2.5) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 4))
+  )
+
+  ; RX1_OUT SMA connector
+  (footprint "Connector_Coaxial:SMA_EDGE"
+    (layer "F.Cu")
+    (at 95 70 0)
+    (property "Reference" "J5" (at 0 -4 0) (layer "F.SilkS"))
+    (property "Value" "RX1_OUT" (at 0 4 0) (layer "F.Fab"))
+    (pad "1" smd roundrect (at 0 0) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 7))
+    (pad "2" smd roundrect (at 0 -2.5) (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (net 4))
+  )
+
+)

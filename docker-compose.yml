@@ -1,0 +1,127 @@
+# Docker Compose for TurboQuant
+# 
+# Usage:
+#   docker-compose up -d          # Start all services
+#   docker-compose up -d server   # Start only streaming server
+#   docker-compose up client      # Start client (interactive)
+#   docker-compose down           # Stop all services
+
+version: '3.8'
+
+services:
+  # ==========================================================================
+  # Streaming Server
+  # ==========================================================================
+  server:
+    build:
+      context: .
+      target: production
+    image: turboquant:latest
+    container_name: turboquant-server
+    command: python turboquant.py stream server --demo --bind tcp://0.0.0.0:5555
+    ports:
+      - "5555:5555"   # Data stream
+      - "5556:5556"   # Control
+    networks:
+      - turboquant-net
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import socket; socket.create_connection(('localhost', 5555))"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # ==========================================================================
+  # Streaming Client (GUI - requires X11)
+  # ==========================================================================
+  client:
+    build:
+      context: .
+      target: development
+    image: turboquant:dev
+    container_name: turboquant-client
+    command: python turboquant.py stream client --connect tcp://server:5555 --gui
+    environment:
+      - DISPLAY=${DISPLAY:-:0}
+      - QT_X11_NO_MITSHM=1
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    networks:
+      - turboquant-net
+    depends_on:
+      - server
+    profiles:
+      - gui  # Only start when explicitly requested
+
+  # ==========================================================================
+  # Jupyter Notebook for Analysis
+  # ==========================================================================
+  notebook:
+    build:
+      context: .
+      target: analysis
+    image: turboquant:analysis
+    container_name: turboquant-notebook
+    command: >
+      jupyter notebook
+      --ip=0.0.0.0
+      --port=8888
+      --no-browser
+      --allow-root
+      --NotebookApp.token=''
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./data:/data:rw
+      - ./notebooks:/notebooks:rw
+    networks:
+      - turboquant-net
+    working_dir: /notebooks
+
+  # ==========================================================================
+  # Data Acquisition (with hardware passthrough)
+  # ==========================================================================
+  acquire:
+    build:
+      context: .
+      target: production
+    image: turboquant:latest
+    container_name: turboquant-acquire
+    command: python turboquant.py acquire --duration 60 --output /data/recording.h5
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0  # Pass through serial device
+    volumes:
+      - ./data:/data:rw
+    networks:
+      - turboquant-net
+    profiles:
+      - hardware  # Only start when explicitly requested
+
+  # ==========================================================================
+  # Documentation Server
+  # ==========================================================================
+  docs:
+    build:
+      context: .
+      target: development
+    image: turboquant:dev
+    container_name: turboquant-docs
+    command: python -m http.server 8000 --directory docs
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./docs:/docs:ro
+    networks:
+      - turboquant-net
+    profiles:
+      - docs
+
+networks:
+  turboquant-net:
+    driver: bridge
+
+volumes:
+  data:
+    driver: local
+  notebooks:
+    driver: local

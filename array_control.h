@@ -38,6 +38,7 @@ extern "C" {
 #define ARRAY_PIN_HV_ENABLE         GPIO_NUM_7   // Global HV enable
 #define ARRAY_PIN_SYNC_OUT          GPIO_NUM_8   // Sync output for scope
 #define ARRAY_PIN_ADC_TRIGGER       GPIO_NUM_9   // ADC conversion trigger
+#define ARRAY_PIN_DMA_TRIGGER       GPIO_NUM_15  // DMA acquisition trigger (NEW)
 
 // SPI for HV pulser chips (MD1210/TC6320)
 #define ARRAY_SPI_HOST              SPI2_HOST

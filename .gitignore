@@ -1,3 +1,5 @@
+# Gitignore for TurboQuant
+
 # Python
 __pycache__/
 *.py[cod]
@@ -19,32 +21,105 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
 
-# Jupyter
-.ipynb_checkpoints
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
 
-# IDEs
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
-
-# OS
 .DS_Store
-Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Documentation
+docs/_build/
+site/
+
+# ESP-IDF
+build/
+sdkconfig
+sdkconfig.old
+*.bin
+*.elf
+*.map
+*.sym
+
+# Data files (recordings)
+*.h5
+*.hdf5
+*.npz
+*.csv
+*.wav
+*.tdms
+*.bin
+test_*.h5
+*.png
+*.jpg
+
+# Recordings directory (keep structure, ignore contents)
+recordings/*
+!recordings/.gitkeep
+data/*
+!data/.gitkeep
 
 # Logs
 *.log
+logs/
 
-# Data files (large)
-*.h5
-*.hdf5
-*.mat
-*.npy
-!test_data.npy
+# Environment
+.env
+.env.local
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
 # Temporary files
 *.tmp
+*.temp
 *.bak
-*.cache
+APPEND
+PYEOF
+SCHEMATIC
+
+# OpenClaw workspace state
+.openclaw/
+
+
+# KiCad generated/cache files
+fp-info-cache
+*-backups/
+*.kicad_prl
+*.kicad_sch-bak
+~*.lck
+
+# SKiDL generated artifacts
+*.erc
+*.log
+*-erc.rpt
+skidl_REPL.*
+
+# Nested repositories
+skidl/
