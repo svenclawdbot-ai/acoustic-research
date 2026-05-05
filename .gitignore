@@ -121,5 +121,13 @@ fp-info-cache
 *-erc.rpt
 skidl_REPL.*
 
+# OpenClaw runtime state
+.openclaw/
+memory/.dreams/
+
+# Archived projects
+solana_sniper_ARCHIVED/
+trading-bot/
+
 # Nested repositories
 skidl/
