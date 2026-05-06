@@ -219,16 +219,10 @@ add_image_slide(prs, "Product Vision: Portable Clinical Form Factor",
 add_section_divider(prs, 1, "The Physics")
 
 # SLIDE 5: Shear Wave Physics with image
-add_image_text_slide(prs, "Shear Wave Propagation in Viscoelastic Tissue",
-    f"{ws}/shear_wave_2d_zener_100Hz.png",
-    [
-        "Shear waves propagate at 1–10 m/s — 100–150× slower than compressional waves",
-        "Phase velocity exhibits frequency-dependent dispersion from complex modulus G*(ω)",
-        "Zener (Standard Linear Solid) model captures elastic + viscous tissue behavior",
-        "Clinical relevance: fibrotic liver tissue is 10–100× stiffer than healthy parenchyma",
-        "Fundamental measurement: cp(ω) = √(|G*(ω)|/ρ) connects wave speed to tissue stiffness",
-    ],
-    img_width=Inches(5.2))
+add_image_slide(prs, "Shear Wave Propagation in Viscoelastic Tissue",
+    f"{ws}/pitch_physics_shear_waves.png",
+    "A. Wave propagation in soft tissue (100 Hz, 2 m/s). B. Wavelength directly measures stiffness — fibrotic liver is 5× stiffer with visibly shorter wavelength. C. Phase velocity dispersion is the material signature used for inversion.",
+    layout="large")
 
 # SLIDE 6: The Inverse Problem
 add_content_slide(prs, "The Inverse Problem: Why Point Estimates Fail",
@@ -244,31 +238,19 @@ add_content_slide(prs, "The Inverse Problem: Why Point Estimates Fail",
 )
 
 # SLIDE 7: Validation Results with image
-add_image_text_slide(prs, "Validation: Robust Parameter Recovery at Realistic SNR",
-    f"{ws}/zener_2d_dispersion_validation.png",
-    [
-        "Synthetic data at 20 dB SNR: G₀ recovery within ±20% — sufficient for fibrosis staging",
-        "MCMC convergence: 24.3–25.1% acceptance across three chains (optimal 20–30%)",
-        "Posterior variance scales inversely with signal quality; minimum 25 dB SNR recommended",
-        "2D misfit landscapes quantify local curvature and guide phantom study protocols",
-        "Experimental guidelines: λ/4 receiver spacing, 300–1200 Hz bandwidth, 0.5–2× corner frequency",
-    ],
-    img_width=Inches(5.2))
+add_image_slide(prs, "Validation: Robust Parameter Recovery at Realistic SNR",
+    f"{ws}/pitch_physics_bayesian.png",
+    "A. Parameter misfit landscape reveals G₀ is 3,000× more identifiable than G∞. B. Bayesian posterior gives credible intervals, not point estimates. C. G₀ recovery within ±20% at 20 dB SNR — sufficient for clinical fibrosis staging.",
+    layout="large")
 
 # SECTION DIVIDER: Technology
 add_section_divider(prs, 2, "The Technology")
 
 # SLIDE 8: System Architecture with image
-add_image_text_slide(prs, "System Architecture: Every Component Justified",
-    f"{ws}/turboquant_v5/archive/v3_v4_legacy/turboquant_system_architecture.jpg",
-    [
-        "Red Pitaya STEMlab 125-14: dual 14-bit ADC @ 125 MSPS, FPGA, Linux SDR — programmable RF backbone",
-        "Digital: 74HCT595 shift register with TTL inputs (direct 3.3V compatible, no level translation)",
-        "TX Chain: BSS138 → TC4427 gate driver → IRF830 HV switch (500V, 4.5A) → ±100V pulse",
-        "T/R Protection: MUR120 diode bridge blocks 100–200V pulses from receive electronics",
-        "RX Chain: DG408 8:1 MUX (100V capable) → OPA1641 LNA (gain=10, JFET input) → ADC",
-    ],
-    img_width=Inches(5.5))
+add_image_slide(prs, "System Architecture: Every Component Justified",
+    f"{ws}/pitch_system_architecture.png",
+    "Red Pitaya SDR backbone → 74HCT595 digital control → TC4427/IRF830 HV TX switch → MUR120 T/R bridge → DG408 MUX → OPA1641 LNA → ADC. All components selected for performance, cost, and availability.",
+    layout="large")
 
 # SLIDE 9: PCB Render
 add_image_slide(prs, "PCB Layout: 4-Layer, 100×80 mm, Production-Ready",
