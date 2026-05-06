@@ -1,87 +1,121 @@
 #!/usr/bin/env python3
 """
-Morning Brief RSS - WORLD, TECH, FINANCE
+Morning Brief RSS Fetcher
+Fetches news from RSS feeds and outputs structured data.
+Uses stdlib only — no external dependencies.
 """
 
 import xml.etree.ElementTree as ET
 import urllib.request
-from datetime import datetime
+import json
+import re
+from datetime import datetime, timedelta
+from html import unescape
 
+# RSS Feed Sources
 FEEDS = {
-    # WORLD
+    # World News
     "BBC World": "http://feeds.bbci.co.uk/news/world/rss.xml",
-    "Reuters World": "http://feeds.reuters.com/reuters/worldnews",
-    "The Guardian World": "https://www.theguardian.com/world/rss",
+    "Reuters": "http://feeds.reuters.com/reuters/worldnews",
     
-    # TECH
-    "Hacker News": "https://news.ycombinator.com/rss",
+    # Tech
     "TechCrunch": "https://techcrunch.com/feed/",
     "Ars Technica": "http://feeds.arstechnica.com/arstechnica/index",
-    "The Verge": "https://www.theverge.com/rss/index.xml",
     
-    # FINANCE
-    "Financial Times": "https://www.ft.com/?format=rss",
-    "Bloomberg Markets": "https://feeds.bloomberg.com/markets/news.rss",
-    "Economist Finance": "https://www.economist.com/finance-and-economics/rss.xml",
+    # Finance
+    "Bloomberg": "https://feeds.bloomberg.com/bloomberg/news",
 }
 
-def fetch_feed(url, timeout=10):
+def clean_text(text):
+    """Clean HTML and extra whitespace from text."""
+    if not text:
+        return ""
+    # Remove HTML tags
+    text = re.sub(r'<[^>]+>', '', text)
+    # Unescape HTML entities
+    text = unescape(text)
+    # Clean whitespace
+    text = re.sub(r'\s+', ' ', text).strip()
+    return text
+
+def fetch_feed(name, url):
+    """Fetch and parse a single RSS feed."""
     try:
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-        with urllib.request.urlopen(req, timeout=timeout) as r:
-            return r.read()
-    except:
-        return None
-
-def parse_rss(xml_content, max_items=3):
-    if not xml_content:
-        return []
-    try:
+        with urllib.request.urlopen(req, timeout=10) as r:
+            xml_content = r.read()
+        
         root = ET.fromstring(xml_content)
-        items = []
+        articles = []
+        
+        # Find all item elements (works for RSS 2.0)
         for item in root.findall('.//item'):
             title = item.find('title')
             link = item.find('link')
+            desc = item.find('description')
+            pub_date = item.find('pubDate')
+            
             if title is not None and link is not None:
-                items.append({'title': title.text or '', 'link': link.text or ''})
-            if len(items) >= max_items:
+                article = {
+                    "title": clean_text(title.text or ""),
+                    "link": link.text or "",
+                    "summary": clean_text(desc.text if desc is not None else "")[:300],
+                    "published": pub_date.text if pub_date is not None else None,
+                    "source": name
+                }
+                articles.append(article)
+            
+            if len(articles) >= 15:  # Limit to last 15 entries
                 break
-        return items
-    except:
-        return []
+        
+        return articles
+    except Exception as e:
+        return [{"error": f"Failed to fetch {name}: {str(e)}"}]
 
-def fetch_category(feed_names, items_per=3):
-    stories = []
-    for name in feed_names:
-        if name in FEEDS:
-            xml = fetch_feed(FEEDS[name])
-            items = parse_rss(xml, max_items=items_per)
-            stories.extend(items)
-    return stories[:5]
+def categorize_article(title, summary):
+    """Categorize article based on content."""
+    text = (title + " " + summary).lower()
+    
+    if any(word in text for word in ["stock", "market", "economy", "fed", "trade", "tariff", "inflation", "interest rate", "gdp", "finance", "earnings", "investor", "bloomberg"]):
+        return "FINANCE"
+    elif any(word in text for word in ["ai", "software", "app", "iphone", "android", "google", "apple", "microsoft", "tesla", "tech", "startup", "cyber", "hack", "crypto", "bitcoin"]):
+        return "TECH"
+    elif any(word in text for word in ["war", "ukraine", "israel", "iran", "china", "trump", "election", "president", "minister", "government", "sanction", "embassy", "attack", "bomb", "missile"]):
+        return "WORLD"
+    else:
+        return "GENERAL"
 
 def main():
-    now = datetime.now().strftime('%A, %B %d, %Y')
+    all_articles = []
+    errors = []
     
-    world = fetch_category(["BBC World", "Reuters World", "The Guardian World"], 2)
-    tech = fetch_category(["Hacker News", "TechCrunch", "Ars Technica", "The Verge"], 2)
-    finance = fetch_category(["Financial Times", "Bloomberg Markets", "Economist Finance"], 2)
+    for name, url in FEEDS.items():
+        articles = fetch_feed(name, url)
+        if articles and "error" in articles[0]:
+            errors.append(articles[0]["error"])
+        else:
+            all_articles.extend(articles)
     
-    print(f"📰 Morning Brief — {now}")
-    print()
+    # Categorize articles
+    categorized = {
+        "WORLD": [],
+        "TECH": [],
+        "FINANCE": [],
+        "GENERAL": []
+    }
     
-    print("🌍 **WORLD**")
-    for i, s in enumerate(world, 1):
-        print(f"  {i}. {s['title'][:90]}{'...' if len(s['title']) > 90 else ''}")
-    print()
+    for article in all_articles:
+        category = categorize_article(article["title"], article["summary"])
+        categorized[category].append(article)
     
-    print("💻 **TECH**")
-    for i, s in enumerate(tech, 1):
-        print(f"  {i}. {s['title'][:90]}{'...' if len(s['title']) > 90 else ''}")
-    print()
+    output = {
+        "fetched_at": datetime.now().isoformat(),
+        "total_articles": len(all_articles),
+        "errors": errors,
+        "categories": categorized
+    }
     
-    print("💰 **FINANCE**")
-    for i, s in enumerate(finance, 1):
-        print(f"  {i}. {s['title'][:90]}{'...' if len(s['title']) > 90 else ''}")
+    print(json.dumps(output, indent=2))
 
 if __name__ == "__main__":
     main()

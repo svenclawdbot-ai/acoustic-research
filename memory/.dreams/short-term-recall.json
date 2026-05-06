@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-05T06:30:12.365Z",
+  "updatedAt": "2026-05-06T04:55:59.444Z",
   "entries": {
     "memory:memory/2026-04-12.md:132:156": {
       "key": "memory:memory/2026-04-12.md:132:156",
@@ -454,20 +454,22 @@
       "endLine": 10,
       "source": "memory",
       "snippet": "# 2026-03-28 — Saturday ## Morning Brief - RSS feed fetched: 39 articles across sources - Learning challenge generated: Open Research (weekend format) - Brief delivered at ~08:00 UTC ## Learning Challenge **Weekend Open Research** — free exploration, 2-3 hours focused work",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-30T06:05:46.492Z",
-      "lastRecalledAt": "2026-04-30T06:06:04.398Z",
+      "lastRecalledAt": "2026-05-06T04:55:59.444Z",
       "queryHashes": [
         "6722783fb565",
         "6b5af3fe85b3",
-        "7808c24e6ad1"
+        "7808c24e6ad1",
+        "c8e48b58ed1c"
       ],
       "recallDays": [
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-06"
       ],
       "conceptTags": [
         "2-3",
@@ -553,26 +555,28 @@
       "endLine": 35,
       "source": "memory",
       "snippet": "# Daily Log — 2026-04-24 ## Morning Brief - 07:00 GMT+1 — Automated morning brief triggered - Weather: London ⛅ +7°C (feels +5°C), ↙11km/h wind, 93% humidity - RSS issue diagnosed: `feedparser` module missing, backup script works - Friday learning challenge: Humanities — Ethics of surveillance technology ## RSS Issue - Main script `morning_brief_rss.py` fails due to missing `feedparser` dependency - Backup script `/scripts/morning_brief_rss.py` works (uses stdlib only) - Fix pending: install feedparser or rewrite main script ## TurboQuant V5 — Evening Session - **Ultrasound pulser voltage confirmed**: 100-200V range for steel NDE (100-400mm depth) - **T/R diode bridge validated**: 32× MUR",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6,
+      "totalScore": 7,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-30T06:05:54.053Z",
-      "lastRecalledAt": "2026-05-05T06:00:10.378Z",
+      "lastRecalledAt": "2026-05-06T04:55:59.444Z",
       "queryHashes": [
         "6b5af3fe85b3",
         "7808c24e6ad1",
         "13152ad8625c",
         "ca58d2d8a0b0",
         "b148806eb67a",
-        "ac0513f6779d"
+        "ac0513f6779d",
+        "c8e48b58ed1c"
       ],
       "recallDays": [
         "2026-04-30",
         "2026-05-02",
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ],
       "conceptTags": [
         "backup",
@@ -685,18 +689,20 @@
       "endLine": 37,
       "source": "memory",
       "snippet": "# Daily Log: 2026-03-17 ## Engineering Challenge (Thermal) **Status:** Not started **Focus:** Electronics cooling analysis — 500W/cm² thermal stack with heat pipe optimization ## Morning Brief Summary ### WORLD - **Iran conflict escalation:** UAE oil port and Dubai airport hit; global supply concerns - **South Sudan:** 50,000 displaced, military offensive in Jonglei state - **Ecuador:** 75,000 troops deployed against drug gangs - **India energy:** LPG squeeze concerns, potential piped gas impact ### TECH - **Nvidia GTC 2026:** Jensen Huang keynote today; $1T sales projection for Blackwell/Vera Rubin chips - **Nvidia NeMoClaw:** New enterprise AI agent platform (OpenClaw derivative) - *",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-30T06:06:04.398Z",
-      "lastRecalledAt": "2026-04-30T06:06:04.398Z",
+      "lastRecalledAt": "2026-05-06T04:55:59.444Z",
       "queryHashes": [
-        "7808c24e6ad1"
+        "7808c24e6ad1",
+        "c8e48b58ed1c"
       ],
       "recallDays": [
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-06"
       ],
       "conceptTags": [
         "500w/cm2",
@@ -1652,20 +1658,22 @@
       "endLine": 39,
       "source": "memory",
       "snippet": "# Daily Log — 2026-04-28 ## Morning Brief - 07:00 GMT+1 — Automated morning brief triggered - RSS feeds fetched successfully - Top stories: Jimmy Kimmel/White House, Mali insurgents, GTFOBins tech, Wall Street Treasury holdings ## Learning Challenge — Physics/Mathematics - **Topic:** Fourier Analysis of Ultrasonic Pulse Propagation - **Focus:** Pulse decomposition, dispersion in steel, sampling theory, Python modelling - **File:** `challenges/2026-04-28_learning.md` - **Status:** Generated, awaiting completion ## TurboQuant V5 — PCB Layout Status - **Board:** 100×80mm, 4-layer - **Placement:** All zones populated (Power, Digital, Analog, TX Switch) - **Planes:** GND (In1), +5V/+12V (In2)",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T21:05:02.065Z",
-      "lastRecalledAt": "2026-05-05T06:00:10.378Z",
+      "lastRecalledAt": "2026-05-06T04:55:59.444Z",
       "queryHashes": [
         "b148806eb67a",
-        "ac0513f6779d"
+        "ac0513f6779d",
+        "c8e48b58ed1c"
       ],
       "recallDays": [
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ],
       "conceptTags": [
         "kimmel/white",
@@ -1804,6 +1812,68 @@
         "phase",
         "carving",
         "foremost"
+      ]
+    },
+    "memory:memory/2026-04-30.md:1:43": {
+      "key": "memory:memory/2026-04-30.md:1:43",
+      "path": "memory/2026-04-30.md",
+      "startLine": 1,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "# Daily Log — 2026-04-30 ## Morning Brief - 07:00 GMT+1 — Automated morning brief triggered - RSS feeds fetched successfully (backup script works) - Top stories: Jewish agency warning, Hegseth Iran hearing, ABC/Disney vs Trump FCC ## Option B: Matched Filter Deep Dive - **Source:** Yesterday's (Apr 29) DSP Engineering Challenge, Option 3 - **File:** `challenges/2026-04-30_matched_filter.md` - **Focus:** Matched filter theory, pulse compression, SNR improvement for ultrasonic NDE - **Status:** Challenge document created, ready for deep work ### Challenge Structure | Part | Topic | Time | |------|-------|------| | 1 | Basic matched filter implementation | 1 hr | | 2 | Frequency-domain imple",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-06T04:55:59.444Z",
+      "lastRecalledAt": "2026-05-06T04:55:59.444Z",
+      "queryHashes": [
+        "c8e48b58ed1c"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "backup",
+        "abc/disney",
+        "frequency-domain",
+        "log",
+        "morning",
+        "brief",
+        "gmt",
+        "automated"
+      ]
+    },
+    "memory:memory/2026-04-30.md:31:60": {
+      "key": "memory:memory/2026-04-30.md:31:60",
+      "path": "memory/2026-04-30.md",
+      "startLine": 31,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "- `morning_brief_rss_enhanced.py` — Same fix, plus cleaned up feed list (removed dead sources) **Test Results:** - ✓ BBC World: 10 articles - ✓ New Scientist: 10 articles - ✓ TechCrunch: 10 articles - ✓ Ars Technica: 10 articles - ✓ IEEE Spectrum: 3 articles - ✓ Hackaday: 7 articles - ✓ Financial Times: 10 articles - ✓ MIT Tech Review: 3 articles - ✗ Reuters: DNS failure - ✗ Bloomberg: HTTP 404 - ✗ Nature News: No articles - ✗ Science Magazine: No articles - ✗ AI News: XML parse error ## Summary - Created matched filter challenge document for future deep work session - Fixed RSS parser dependency issues — both scripts now run without external packages - Morning brief operational again ##",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-06T04:55:59.444Z",
+      "lastRecalledAt": "2026-05-06T04:55:59.444Z",
+      "queryHashes": [
+        "c8e48b58ed1c"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "morning-brief-rss-enhanced.py",
+        "fix",
+        "plus",
+        "cleaned",
+        "feed",
+        "list",
+        "removed",
+        "dead"
       ]
     }
   }
