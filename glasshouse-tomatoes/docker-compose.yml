@@ -1,0 +1,92 @@
+services:
+  timescaledb:
+    image: timescale/timescaledb:latest-pg15
+    container_name: gh_timescaledb
+    restart: unless-stopped
+    volumes:
+      - tsdb_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: glasshouse
+      POSTGRES_USER: gh_user
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-changeme}
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U gh_user -d glasshouse"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  mqtt:
+    image: eclipse-mosquitto:2
+    container_name: gh_mqtt
+    restart: unless-stopped
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - ./backend/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+      - mosquitto_data:/mosquitto/data
+    healthcheck:
+      test: ["CMD", "mosquitto_pub", "-t", "health", "-m", "test", "-r"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build:
+      context: ./backend/api
+      dockerfile: Dockerfile
+    container_name: gh_api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql+asyncpg://gh_user:${DB_PASSWORD:-changeme}@timescaledb:5432/glasshouse
+      MQTT_HOST: mqtt
+      MQTT_PORT: 1883
+    depends_on:
+      timescaledb:
+        condition: service_healthy
+      mqtt:
+        condition: service_healthy
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: gh_grafana
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:-admin}
+      GF_INSTALL_PLUGINS: grafana-clock-panel
+      GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH: /etc/grafana/provisioning/dashboards/json/glasshouse_dashboard.json
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./backend/grafana_dashboards:/etc/grafana/provisioning/dashboards/json:ro
+      - ./backend/grafana_dashboards.yml:/etc/grafana/provisioning/dashboards/dashboards.yml:ro
+      - ./backend/grafana_datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml:ro
+    depends_on:
+      - timescaledb
+
+  mqtt-bridge:
+    build:
+      context: ./backend/mqtt_bridge
+      dockerfile: Dockerfile
+    container_name: gh_mqtt_bridge
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql://gh_user:${DB_PASSWORD:-changeme}@timescaledb:5432/glasshouse
+      MQTT_HOST: mqtt
+      MQTT_PORT: 1883
+    depends_on:
+      timescaledb:
+        condition: service_healthy
+      mqtt:
+        condition: service_healthy
+
+volumes:
+  tsdb_data:
+  mosquitto_data:
+  grafana_data:

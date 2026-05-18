@@ -1,0 +1,6050 @@
+[
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T17:21:32.037708Z",
+    "vwc_percent": 25.2,
+    "temp_c": 20.4,
+    "battery_mv": 4205,
+    "rssi_dbm": -63,
+    "seq": 1
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T17:36:32.037708Z",
+    "vwc_percent": 24.9,
+    "temp_c": 20.6,
+    "battery_mv": 4197,
+    "rssi_dbm": -63,
+    "seq": 2
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T17:51:32.037708Z",
+    "vwc_percent": 24.1,
+    "temp_c": 20.2,
+    "battery_mv": 4208,
+    "rssi_dbm": -66,
+    "seq": 3
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T18:06:32.037708Z",
+    "vwc_percent": 25.5,
+    "temp_c": 20.2,
+    "battery_mv": 4177,
+    "rssi_dbm": -67,
+    "seq": 4
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T18:21:32.037708Z",
+    "vwc_percent": 24.7,
+    "temp_c": 19.8,
+    "battery_mv": 4190,
+    "rssi_dbm": -61,
+    "seq": 5
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T18:36:32.037708Z",
+    "vwc_percent": 24.2,
+    "temp_c": 19.8,
+    "battery_mv": 4209,
+    "rssi_dbm": -62,
+    "seq": 6
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T18:51:32.037708Z",
+    "vwc_percent": 24.9,
+    "temp_c": 19.1,
+    "battery_mv": 4200,
+    "rssi_dbm": -62,
+    "seq": 7
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T19:06:32.037708Z",
+    "vwc_percent": 24.0,
+    "temp_c": 19.3,
+    "battery_mv": 4214,
+    "rssi_dbm": -63,
+    "seq": 8
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T19:21:32.037708Z",
+    "vwc_percent": 23.9,
+    "temp_c": 18.7,
+    "battery_mv": 4225,
+    "rssi_dbm": -63,
+    "seq": 9
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T19:36:32.037708Z",
+    "vwc_percent": 22.8,
+    "temp_c": 18.4,
+    "battery_mv": 4198,
+    "rssi_dbm": -65,
+    "seq": 10
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T19:51:32.037708Z",
+    "vwc_percent": 24.1,
+    "temp_c": 18.1,
+    "battery_mv": 4194,
+    "rssi_dbm": -63,
+    "seq": 11
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T20:06:32.037708Z",
+    "vwc_percent": 23.1,
+    "temp_c": 17.9,
+    "battery_mv": 4195,
+    "rssi_dbm": -63,
+    "seq": 12
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T20:21:32.037708Z",
+    "vwc_percent": 23.6,
+    "temp_c": 17.1,
+    "battery_mv": 4204,
+    "rssi_dbm": -60,
+    "seq": 13
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T20:36:32.037708Z",
+    "vwc_percent": 24.7,
+    "temp_c": 17.4,
+    "battery_mv": 4213,
+    "rssi_dbm": -60,
+    "seq": 14
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T20:51:32.037708Z",
+    "vwc_percent": 23.0,
+    "temp_c": 16.9,
+    "battery_mv": 4216,
+    "rssi_dbm": -64,
+    "seq": 15
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T21:06:32.037708Z",
+    "vwc_percent": 24.4,
+    "temp_c": 17.1,
+    "battery_mv": 4187,
+    "rssi_dbm": -60,
+    "seq": 16
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T21:21:32.037708Z",
+    "vwc_percent": 24.0,
+    "temp_c": 16.8,
+    "battery_mv": 4208,
+    "rssi_dbm": -63,
+    "seq": 17
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T21:36:32.037708Z",
+    "vwc_percent": 24.3,
+    "temp_c": 16.1,
+    "battery_mv": 4189,
+    "rssi_dbm": -66,
+    "seq": 18
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T21:51:32.037708Z",
+    "vwc_percent": 23.1,
+    "temp_c": 15.9,
+    "battery_mv": 4212,
+    "rssi_dbm": -63,
+    "seq": 19
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T22:06:32.037708Z",
+    "vwc_percent": 22.9,
+    "temp_c": 16.4,
+    "battery_mv": 4203,
+    "rssi_dbm": -61,
+    "seq": 20
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T22:21:32.037708Z",
+    "vwc_percent": 22.8,
+    "temp_c": 15.4,
+    "battery_mv": 4200,
+    "rssi_dbm": -61,
+    "seq": 21
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T22:36:32.037708Z",
+    "vwc_percent": 23.8,
+    "temp_c": 15.7,
+    "battery_mv": 4216,
+    "rssi_dbm": -63,
+    "seq": 22
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T22:51:32.037708Z",
+    "vwc_percent": 23.4,
+    "temp_c": 15.8,
+    "battery_mv": 4227,
+    "rssi_dbm": -63,
+    "seq": 23
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T23:06:32.037708Z",
+    "vwc_percent": 23.2,
+    "temp_c": 15.1,
+    "battery_mv": 4196,
+    "rssi_dbm": -66,
+    "seq": 24
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T23:21:32.037708Z",
+    "vwc_percent": 24.4,
+    "temp_c": 15.2,
+    "battery_mv": 4205,
+    "rssi_dbm": -59,
+    "seq": 25
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T23:36:32.037708Z",
+    "vwc_percent": 23.4,
+    "temp_c": 15.1,
+    "battery_mv": 4201,
+    "rssi_dbm": -69,
+    "seq": 26
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-03T23:51:32.037708Z",
+    "vwc_percent": 23.7,
+    "temp_c": 14.3,
+    "battery_mv": 4211,
+    "rssi_dbm": -68,
+    "seq": 27
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T00:06:32.037708Z",
+    "vwc_percent": 22.7,
+    "temp_c": 14.7,
+    "battery_mv": 4203,
+    "rssi_dbm": -65,
+    "seq": 28
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T00:21:32.037708Z",
+    "vwc_percent": 23.2,
+    "temp_c": 14.4,
+    "battery_mv": 4213,
+    "rssi_dbm": -68,
+    "seq": 29
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T00:36:32.037708Z",
+    "vwc_percent": 22.8,
+    "temp_c": 14.4,
+    "battery_mv": 4219,
+    "rssi_dbm": -66,
+    "seq": 30
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T00:51:32.037708Z",
+    "vwc_percent": 22.8,
+    "temp_c": 14.4,
+    "battery_mv": 4187,
+    "rssi_dbm": -64,
+    "seq": 31
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T01:06:32.037708Z",
+    "vwc_percent": 22.8,
+    "temp_c": 14.7,
+    "battery_mv": 4206,
+    "rssi_dbm": -65,
+    "seq": 32
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T01:21:32.037708Z",
+    "vwc_percent": 23.0,
+    "temp_c": 13.9,
+    "battery_mv": 4192,
+    "rssi_dbm": -59,
+    "seq": 33
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T01:36:32.037708Z",
+    "vwc_percent": 22.6,
+    "temp_c": 14.1,
+    "battery_mv": 4200,
+    "rssi_dbm": -62,
+    "seq": 34
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T01:51:32.037708Z",
+    "vwc_percent": 22.6,
+    "temp_c": 14.4,
+    "battery_mv": 4208,
+    "rssi_dbm": -70,
+    "seq": 35
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T02:06:32.037708Z",
+    "vwc_percent": 22.9,
+    "temp_c": 14.0,
+    "battery_mv": 4197,
+    "rssi_dbm": -67,
+    "seq": 36
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T02:21:32.037708Z",
+    "vwc_percent": 23.8,
+    "temp_c": 14.0,
+    "battery_mv": 4182,
+    "rssi_dbm": -67,
+    "seq": 37
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T02:36:32.037708Z",
+    "vwc_percent": 22.6,
+    "temp_c": 14.1,
+    "battery_mv": 4204,
+    "rssi_dbm": -68,
+    "seq": 38
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T02:51:32.037708Z",
+    "vwc_percent": 23.9,
+    "temp_c": 14.1,
+    "battery_mv": 4197,
+    "rssi_dbm": -68,
+    "seq": 39
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T03:06:32.037708Z",
+    "vwc_percent": 22.4,
+    "temp_c": 14.4,
+    "battery_mv": 4172,
+    "rssi_dbm": -60,
+    "seq": 40
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T03:21:32.037708Z",
+    "vwc_percent": 22.3,
+    "temp_c": 14.8,
+    "battery_mv": 4201,
+    "rssi_dbm": -61,
+    "seq": 41
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T03:36:32.037708Z",
+    "vwc_percent": 22.9,
+    "temp_c": 14.2,
+    "battery_mv": 4200,
+    "rssi_dbm": -64,
+    "seq": 42
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T03:51:32.037708Z",
+    "vwc_percent": 21.8,
+    "temp_c": 14.5,
+    "battery_mv": 4189,
+    "rssi_dbm": -66,
+    "seq": 43
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T04:06:32.037708Z",
+    "vwc_percent": 22.9,
+    "temp_c": 14.6,
+    "battery_mv": 4203,
+    "rssi_dbm": -65,
+    "seq": 44
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T04:21:32.037708Z",
+    "vwc_percent": 23.1,
+    "temp_c": 14.3,
+    "battery_mv": 4192,
+    "rssi_dbm": -64,
+    "seq": 45
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T04:36:32.037708Z",
+    "vwc_percent": 23.3,
+    "temp_c": 15.2,
+    "battery_mv": 4188,
+    "rssi_dbm": -64,
+    "seq": 46
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T04:51:32.037708Z",
+    "vwc_percent": 22.8,
+    "temp_c": 15.3,
+    "battery_mv": 4187,
+    "rssi_dbm": -59,
+    "seq": 47
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T05:06:32.037708Z",
+    "vwc_percent": 23.4,
+    "temp_c": 15.3,
+    "battery_mv": 4201,
+    "rssi_dbm": -67,
+    "seq": 48
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T05:21:32.037708Z",
+    "vwc_percent": 23.3,
+    "temp_c": 15.2,
+    "battery_mv": 4174,
+    "rssi_dbm": -66,
+    "seq": 49
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T05:36:32.037708Z",
+    "vwc_percent": 22.4,
+    "temp_c": 15.9,
+    "battery_mv": 4195,
+    "rssi_dbm": -66,
+    "seq": 50
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T05:51:32.037708Z",
+    "vwc_percent": 22.3,
+    "temp_c": 16.2,
+    "battery_mv": 4185,
+    "rssi_dbm": -68,
+    "seq": 51
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T06:06:32.037708Z",
+    "vwc_percent": 22.9,
+    "temp_c": 16.5,
+    "battery_mv": 4198,
+    "rssi_dbm": -66,
+    "seq": 52
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T06:21:32.037708Z",
+    "vwc_percent": 23.8,
+    "temp_c": 15.9,
+    "battery_mv": 4194,
+    "rssi_dbm": -69,
+    "seq": 53
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T06:36:32.037708Z",
+    "vwc_percent": 22.2,
+    "temp_c": 17.2,
+    "battery_mv": 4197,
+    "rssi_dbm": -60,
+    "seq": 54
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T06:51:32.037708Z",
+    "vwc_percent": 23.0,
+    "temp_c": 16.7,
+    "battery_mv": 4211,
+    "rssi_dbm": -65,
+    "seq": 55
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T07:06:32.037708Z",
+    "vwc_percent": 22.1,
+    "temp_c": 17.3,
+    "battery_mv": 4195,
+    "rssi_dbm": -61,
+    "seq": 56
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T07:21:32.037708Z",
+    "vwc_percent": 21.8,
+    "temp_c": 17.4,
+    "battery_mv": 4206,
+    "rssi_dbm": -61,
+    "seq": 57
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T07:36:32.037708Z",
+    "vwc_percent": 22.2,
+    "temp_c": 18.0,
+    "battery_mv": 4200,
+    "rssi_dbm": -67,
+    "seq": 58
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T07:51:32.037708Z",
+    "vwc_percent": 21.6,
+    "temp_c": 17.7,
+    "battery_mv": 4194,
+    "rssi_dbm": -66,
+    "seq": 59
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T08:06:32.037708Z",
+    "vwc_percent": 21.6,
+    "temp_c": 17.9,
+    "battery_mv": 4203,
+    "rssi_dbm": -68,
+    "seq": 60
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T08:21:32.037708Z",
+    "vwc_percent": 21.9,
+    "temp_c": 18.4,
+    "battery_mv": 4204,
+    "rssi_dbm": -62,
+    "seq": 61
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T08:36:32.037708Z",
+    "vwc_percent": 21.6,
+    "temp_c": 18.6,
+    "battery_mv": 4198,
+    "rssi_dbm": -62,
+    "seq": 62
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T08:51:32.037708Z",
+    "vwc_percent": 22.0,
+    "temp_c": 18.7,
+    "battery_mv": 4214,
+    "rssi_dbm": -65,
+    "seq": 63
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T09:06:32.037708Z",
+    "vwc_percent": 20.7,
+    "temp_c": 19.0,
+    "battery_mv": 4201,
+    "rssi_dbm": -64,
+    "seq": 64
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T09:21:32.037708Z",
+    "vwc_percent": 20.8,
+    "temp_c": 19.9,
+    "battery_mv": 4206,
+    "rssi_dbm": -64,
+    "seq": 65
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T09:36:32.037708Z",
+    "vwc_percent": 21.0,
+    "temp_c": 19.6,
+    "battery_mv": 4212,
+    "rssi_dbm": -67,
+    "seq": 66
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T09:51:32.037708Z",
+    "vwc_percent": 21.0,
+    "temp_c": 19.6,
+    "battery_mv": 4202,
+    "rssi_dbm": -62,
+    "seq": 67
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T10:06:32.037708Z",
+    "vwc_percent": 21.9,
+    "temp_c": 20.2,
+    "battery_mv": 4208,
+    "rssi_dbm": -62,
+    "seq": 68
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T10:21:32.037708Z",
+    "vwc_percent": 21.2,
+    "temp_c": 19.6,
+    "battery_mv": 4198,
+    "rssi_dbm": -72,
+    "seq": 69
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T10:36:32.037708Z",
+    "vwc_percent": 20.7,
+    "temp_c": 20.2,
+    "battery_mv": 4213,
+    "rssi_dbm": -66,
+    "seq": 70
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T10:51:32.037708Z",
+    "vwc_percent": 19.8,
+    "temp_c": 21.3,
+    "battery_mv": 4208,
+    "rssi_dbm": -66,
+    "seq": 71
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T11:06:32.037708Z",
+    "vwc_percent": 19.4,
+    "temp_c": 20.8,
+    "battery_mv": 4197,
+    "rssi_dbm": -69,
+    "seq": 72
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T11:21:32.037708Z",
+    "vwc_percent": 20.1,
+    "temp_c": 21.1,
+    "battery_mv": 4213,
+    "rssi_dbm": -68,
+    "seq": 73
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T11:36:32.037708Z",
+    "vwc_percent": 19.5,
+    "temp_c": 20.8,
+    "battery_mv": 4203,
+    "rssi_dbm": -62,
+    "seq": 74
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T11:51:32.037708Z",
+    "vwc_percent": 19.5,
+    "temp_c": 21.8,
+    "battery_mv": 4197,
+    "rssi_dbm": -64,
+    "seq": 75
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T12:06:32.037708Z",
+    "vwc_percent": 19.5,
+    "temp_c": 21.6,
+    "battery_mv": 4194,
+    "rssi_dbm": -65,
+    "seq": 76
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T12:21:32.037708Z",
+    "vwc_percent": 19.7,
+    "temp_c": 21.8,
+    "battery_mv": 4203,
+    "rssi_dbm": -60,
+    "seq": 77
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T12:36:32.037708Z",
+    "vwc_percent": 18.2,
+    "temp_c": 21.6,
+    "battery_mv": 4203,
+    "rssi_dbm": -64,
+    "seq": 78
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T12:51:32.037708Z",
+    "vwc_percent": 19.3,
+    "temp_c": 21.3,
+    "battery_mv": 4199,
+    "rssi_dbm": -69,
+    "seq": 79
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T13:06:32.037708Z",
+    "vwc_percent": 18.7,
+    "temp_c": 21.5,
+    "battery_mv": 4218,
+    "rssi_dbm": -65,
+    "seq": 80
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T13:21:32.037708Z",
+    "vwc_percent": 19.1,
+    "temp_c": 21.5,
+    "battery_mv": 4199,
+    "rssi_dbm": -63,
+    "seq": 81
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T13:36:32.037708Z",
+    "vwc_percent": 18.9,
+    "temp_c": 21.9,
+    "battery_mv": 4210,
+    "rssi_dbm": -68,
+    "seq": 82
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T13:51:32.037708Z",
+    "vwc_percent": 18.8,
+    "temp_c": 21.8,
+    "battery_mv": 4195,
+    "rssi_dbm": -64,
+    "seq": 83
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T14:06:32.037708Z",
+    "vwc_percent": 18.8,
+    "temp_c": 21.8,
+    "battery_mv": 4183,
+    "rssi_dbm": -67,
+    "seq": 84
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T14:21:32.037708Z",
+    "vwc_percent": 18.6,
+    "temp_c": 22.1,
+    "battery_mv": 4208,
+    "rssi_dbm": -68,
+    "seq": 85
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T14:36:32.037708Z",
+    "vwc_percent": 17.3,
+    "temp_c": 21.9,
+    "battery_mv": 4214,
+    "rssi_dbm": -59,
+    "seq": 86
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T14:51:32.037708Z",
+    "vwc_percent": 17.2,
+    "temp_c": 21.9,
+    "battery_mv": 4171,
+    "rssi_dbm": -63,
+    "seq": 87
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T15:06:32.037708Z",
+    "vwc_percent": 17.6,
+    "temp_c": 21.6,
+    "battery_mv": 4192,
+    "rssi_dbm": -64,
+    "seq": 88
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T15:21:32.037708Z",
+    "vwc_percent": 17.6,
+    "temp_c": 21.8,
+    "battery_mv": 4202,
+    "rssi_dbm": -69,
+    "seq": 89
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T15:36:32.037708Z",
+    "vwc_percent": 17.0,
+    "temp_c": 21.5,
+    "battery_mv": 4205,
+    "rssi_dbm": -64,
+    "seq": 90
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T15:51:32.037708Z",
+    "vwc_percent": 17.1,
+    "temp_c": 21.5,
+    "battery_mv": 4180,
+    "rssi_dbm": -70,
+    "seq": 91
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T16:06:32.037708Z",
+    "vwc_percent": 16.3,
+    "temp_c": 21.2,
+    "battery_mv": 4216,
+    "rssi_dbm": -68,
+    "seq": 92
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T16:21:32.037708Z",
+    "vwc_percent": 17.1,
+    "temp_c": 20.6,
+    "battery_mv": 4193,
+    "rssi_dbm": -67,
+    "seq": 93
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T16:36:32.037708Z",
+    "vwc_percent": 16.3,
+    "temp_c": 21.0,
+    "battery_mv": 4199,
+    "rssi_dbm": -58,
+    "seq": 94
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T16:51:32.037708Z",
+    "vwc_percent": 16.8,
+    "temp_c": 21.1,
+    "battery_mv": 4176,
+    "rssi_dbm": -73,
+    "seq": 95
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T17:06:32.037708Z",
+    "vwc_percent": 16.5,
+    "temp_c": 20.9,
+    "battery_mv": 4195,
+    "rssi_dbm": -59,
+    "seq": 96
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T17:21:32.037708Z",
+    "vwc_percent": 16.1,
+    "temp_c": 20.7,
+    "battery_mv": 4203,
+    "rssi_dbm": -66,
+    "seq": 97
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T17:36:32.037708Z",
+    "vwc_percent": 16.5,
+    "temp_c": 21.0,
+    "battery_mv": 4181,
+    "rssi_dbm": -59,
+    "seq": 98
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T17:51:32.037708Z",
+    "vwc_percent": 16.1,
+    "temp_c": 20.2,
+    "battery_mv": 4201,
+    "rssi_dbm": -66,
+    "seq": 99
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T18:06:32.037708Z",
+    "vwc_percent": 15.8,
+    "temp_c": 19.9,
+    "battery_mv": 4202,
+    "rssi_dbm": -71,
+    "seq": 100
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T18:21:32.037708Z",
+    "vwc_percent": 17.2,
+    "temp_c": 19.4,
+    "battery_mv": 4198,
+    "rssi_dbm": -65,
+    "seq": 101
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T18:36:32.037708Z",
+    "vwc_percent": 16.0,
+    "temp_c": 19.3,
+    "battery_mv": 4188,
+    "rssi_dbm": -65,
+    "seq": 102
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T18:51:32.037708Z",
+    "vwc_percent": 15.1,
+    "temp_c": 19.3,
+    "battery_mv": 4201,
+    "rssi_dbm": -64,
+    "seq": 103
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T19:06:32.037708Z",
+    "vwc_percent": 16.2,
+    "temp_c": 19.2,
+    "battery_mv": 4201,
+    "rssi_dbm": -66,
+    "seq": 104
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T19:21:32.037708Z",
+    "vwc_percent": 13.8,
+    "temp_c": 18.7,
+    "battery_mv": 4190,
+    "rssi_dbm": -61,
+    "seq": 105
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T19:36:32.037708Z",
+    "vwc_percent": 15.0,
+    "temp_c": 18.3,
+    "battery_mv": 4189,
+    "rssi_dbm": -64,
+    "seq": 106
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T19:51:32.037708Z",
+    "vwc_percent": 15.2,
+    "temp_c": 18.1,
+    "battery_mv": 4194,
+    "rssi_dbm": -68,
+    "seq": 107
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T20:06:32.037708Z",
+    "vwc_percent": 14.7,
+    "temp_c": 18.7,
+    "battery_mv": 4210,
+    "rssi_dbm": -63,
+    "seq": 108
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T20:21:32.037708Z",
+    "vwc_percent": 15.0,
+    "temp_c": 17.6,
+    "battery_mv": 4203,
+    "rssi_dbm": -61,
+    "seq": 109
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T20:36:32.037708Z",
+    "vwc_percent": 14.9,
+    "temp_c": 17.5,
+    "battery_mv": 4186,
+    "rssi_dbm": -69,
+    "seq": 110
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T20:51:32.037708Z",
+    "vwc_percent": 14.9,
+    "temp_c": 17.1,
+    "battery_mv": 4198,
+    "rssi_dbm": -64,
+    "seq": 111
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T21:06:32.037708Z",
+    "vwc_percent": 14.9,
+    "temp_c": 17.0,
+    "battery_mv": 4196,
+    "rssi_dbm": -67,
+    "seq": 112
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T21:21:32.037708Z",
+    "vwc_percent": 15.5,
+    "temp_c": 16.4,
+    "battery_mv": 4183,
+    "rssi_dbm": -57,
+    "seq": 113
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T21:36:32.037708Z",
+    "vwc_percent": 15.4,
+    "temp_c": 16.3,
+    "battery_mv": 4205,
+    "rssi_dbm": -62,
+    "seq": 114
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T21:51:32.037708Z",
+    "vwc_percent": 15.5,
+    "temp_c": 16.2,
+    "battery_mv": 4203,
+    "rssi_dbm": -60,
+    "seq": 115
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T22:06:32.037708Z",
+    "vwc_percent": 14.7,
+    "temp_c": 16.1,
+    "battery_mv": 4193,
+    "rssi_dbm": -65,
+    "seq": 116
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T22:21:32.037708Z",
+    "vwc_percent": 15.0,
+    "temp_c": 16.1,
+    "battery_mv": 4203,
+    "rssi_dbm": -63,
+    "seq": 117
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T22:36:32.037708Z",
+    "vwc_percent": 15.0,
+    "temp_c": 15.4,
+    "battery_mv": 4196,
+    "rssi_dbm": -68,
+    "seq": 118
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T22:51:32.037708Z",
+    "vwc_percent": 15.8,
+    "temp_c": 15.3,
+    "battery_mv": 4206,
+    "rssi_dbm": -63,
+    "seq": 119
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T23:06:32.037708Z",
+    "vwc_percent": 15.7,
+    "temp_c": 15.4,
+    "battery_mv": 4198,
+    "rssi_dbm": -62,
+    "seq": 120
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T23:21:32.037708Z",
+    "vwc_percent": 15.0,
+    "temp_c": 15.0,
+    "battery_mv": 4188,
+    "rssi_dbm": -62,
+    "seq": 121
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T23:36:32.037708Z",
+    "vwc_percent": 15.2,
+    "temp_c": 14.7,
+    "battery_mv": 4189,
+    "rssi_dbm": -61,
+    "seq": 122
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-04T23:51:32.037708Z",
+    "vwc_percent": 15.8,
+    "temp_c": 14.3,
+    "battery_mv": 4212,
+    "rssi_dbm": -68,
+    "seq": 123
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T00:06:32.037708Z",
+    "vwc_percent": 14.4,
+    "temp_c": 14.5,
+    "battery_mv": 4210,
+    "rssi_dbm": -64,
+    "seq": 124
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T00:21:32.037708Z",
+    "vwc_percent": 13.7,
+    "temp_c": 15.1,
+    "battery_mv": 4203,
+    "rssi_dbm": -64,
+    "seq": 125
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T00:36:32.037708Z",
+    "vwc_percent": 14.5,
+    "temp_c": 13.6,
+    "battery_mv": 4181,
+    "rssi_dbm": -69,
+    "seq": 126
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T00:51:32.037708Z",
+    "vwc_percent": 14.6,
+    "temp_c": 13.8,
+    "battery_mv": 4196,
+    "rssi_dbm": -69,
+    "seq": 127
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T01:06:32.037708Z",
+    "vwc_percent": 13.7,
+    "temp_c": 13.8,
+    "battery_mv": 4199,
+    "rssi_dbm": -61,
+    "seq": 128
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T01:21:32.037708Z",
+    "vwc_percent": 14.6,
+    "temp_c": 14.2,
+    "battery_mv": 4180,
+    "rssi_dbm": -66,
+    "seq": 129
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T01:36:32.037708Z",
+    "vwc_percent": 15.0,
+    "temp_c": 14.3,
+    "battery_mv": 4193,
+    "rssi_dbm": -62,
+    "seq": 130
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T01:51:32.037708Z",
+    "vwc_percent": 14.6,
+    "temp_c": 14.1,
+    "battery_mv": 4190,
+    "rssi_dbm": -66,
+    "seq": 131
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T02:06:32.037708Z",
+    "vwc_percent": 14.6,
+    "temp_c": 14.2,
+    "battery_mv": 4192,
+    "rssi_dbm": -64,
+    "seq": 132
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T02:21:32.037708Z",
+    "vwc_percent": 15.0,
+    "temp_c": 14.4,
+    "battery_mv": 4201,
+    "rssi_dbm": -68,
+    "seq": 133
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T02:36:32.037708Z",
+    "vwc_percent": 14.8,
+    "temp_c": 14.4,
+    "battery_mv": 4192,
+    "rssi_dbm": -65,
+    "seq": 134
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T02:51:32.037708Z",
+    "vwc_percent": 14.4,
+    "temp_c": 13.7,
+    "battery_mv": 4186,
+    "rssi_dbm": -64,
+    "seq": 135
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T03:06:32.037708Z",
+    "vwc_percent": 13.8,
+    "temp_c": 14.1,
+    "battery_mv": 4192,
+    "rssi_dbm": -65,
+    "seq": 136
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T03:21:32.037708Z",
+    "vwc_percent": 14.3,
+    "temp_c": 13.8,
+    "battery_mv": 4188,
+    "rssi_dbm": -64,
+    "seq": 137
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T03:36:32.037708Z",
+    "vwc_percent": 14.6,
+    "temp_c": 14.4,
+    "battery_mv": 4205,
+    "rssi_dbm": -66,
+    "seq": 138
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T03:51:32.037708Z",
+    "vwc_percent": 14.8,
+    "temp_c": 14.4,
+    "battery_mv": 4209,
+    "rssi_dbm": -69,
+    "seq": 139
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T04:06:32.037708Z",
+    "vwc_percent": 14.6,
+    "temp_c": 15.4,
+    "battery_mv": 4204,
+    "rssi_dbm": -63,
+    "seq": 140
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T04:21:32.037708Z",
+    "vwc_percent": 13.8,
+    "temp_c": 14.3,
+    "battery_mv": 4209,
+    "rssi_dbm": -63,
+    "seq": 141
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T04:36:32.037708Z",
+    "vwc_percent": 14.8,
+    "temp_c": 15.4,
+    "battery_mv": 4203,
+    "rssi_dbm": -67,
+    "seq": 142
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T04:51:32.037708Z",
+    "vwc_percent": 14.2,
+    "temp_c": 15.0,
+    "battery_mv": 4195,
+    "rssi_dbm": -70,
+    "seq": 143
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T05:06:32.037708Z",
+    "vwc_percent": 15.2,
+    "temp_c": 14.9,
+    "battery_mv": 4185,
+    "rssi_dbm": -66,
+    "seq": 144
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T05:21:32.037708Z",
+    "vwc_percent": 13.9,
+    "temp_c": 15.2,
+    "battery_mv": 4200,
+    "rssi_dbm": -65,
+    "seq": 145
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T05:36:32.037708Z",
+    "vwc_percent": 14.0,
+    "temp_c": 15.7,
+    "battery_mv": 4199,
+    "rssi_dbm": -69,
+    "seq": 146
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T05:51:32.037708Z",
+    "vwc_percent": 13.1,
+    "temp_c": 16.3,
+    "battery_mv": 4200,
+    "rssi_dbm": -58,
+    "seq": 147
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T06:06:32.037708Z",
+    "vwc_percent": 13.7,
+    "temp_c": 16.0,
+    "battery_mv": 4216,
+    "rssi_dbm": -64,
+    "seq": 148
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T06:21:32.037708Z",
+    "vwc_percent": 13.9,
+    "temp_c": 16.1,
+    "battery_mv": 4194,
+    "rssi_dbm": -65,
+    "seq": 149
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T06:36:32.037708Z",
+    "vwc_percent": 13.5,
+    "temp_c": 16.2,
+    "battery_mv": 4182,
+    "rssi_dbm": -65,
+    "seq": 150
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T06:51:32.037708Z",
+    "vwc_percent": 14.0,
+    "temp_c": 17.4,
+    "battery_mv": 4207,
+    "rssi_dbm": -61,
+    "seq": 151
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T07:06:32.037708Z",
+    "vwc_percent": 12.9,
+    "temp_c": 17.0,
+    "battery_mv": 4208,
+    "rssi_dbm": -65,
+    "seq": 152
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T07:21:32.037708Z",
+    "vwc_percent": 13.1,
+    "temp_c": 18.2,
+    "battery_mv": 4204,
+    "rssi_dbm": -62,
+    "seq": 153
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T07:36:32.037708Z",
+    "vwc_percent": 13.9,
+    "temp_c": 17.4,
+    "battery_mv": 4190,
+    "rssi_dbm": -59,
+    "seq": 154
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T07:51:32.037708Z",
+    "vwc_percent": 13.6,
+    "temp_c": 17.6,
+    "battery_mv": 4201,
+    "rssi_dbm": -64,
+    "seq": 155
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T08:06:32.037708Z",
+    "vwc_percent": 13.2,
+    "temp_c": 18.2,
+    "battery_mv": 4187,
+    "rssi_dbm": -64,
+    "seq": 156
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T08:21:32.037708Z",
+    "vwc_percent": 12.7,
+    "temp_c": 18.8,
+    "battery_mv": 4184,
+    "rssi_dbm": -64,
+    "seq": 157
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T08:36:32.037708Z",
+    "vwc_percent": 13.4,
+    "temp_c": 18.6,
+    "battery_mv": 4197,
+    "rssi_dbm": -69,
+    "seq": 158
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T08:51:32.037708Z",
+    "vwc_percent": 12.2,
+    "temp_c": 19.0,
+    "battery_mv": 4203,
+    "rssi_dbm": -61,
+    "seq": 159
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T09:06:32.037708Z",
+    "vwc_percent": 12.2,
+    "temp_c": 19.3,
+    "battery_mv": 4191,
+    "rssi_dbm": -61,
+    "seq": 160
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T09:21:32.037708Z",
+    "vwc_percent": 12.8,
+    "temp_c": 19.2,
+    "battery_mv": 4200,
+    "rssi_dbm": -64,
+    "seq": 161
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T09:36:32.037708Z",
+    "vwc_percent": 12.7,
+    "temp_c": 20.1,
+    "battery_mv": 4193,
+    "rssi_dbm": -67,
+    "seq": 162
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T09:51:32.037708Z",
+    "vwc_percent": 12.5,
+    "temp_c": 20.3,
+    "battery_mv": 4198,
+    "rssi_dbm": -62,
+    "seq": 163
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T10:06:32.037708Z",
+    "vwc_percent": 11.7,
+    "temp_c": 20.0,
+    "battery_mv": 4191,
+    "rssi_dbm": -64,
+    "seq": 164
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T10:21:32.037708Z",
+    "vwc_percent": 12.3,
+    "temp_c": 20.1,
+    "battery_mv": 4179,
+    "rssi_dbm": -66,
+    "seq": 165
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T10:36:32.037708Z",
+    "vwc_percent": 11.1,
+    "temp_c": 20.4,
+    "battery_mv": 4202,
+    "rssi_dbm": -64,
+    "seq": 166
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T10:51:32.037708Z",
+    "vwc_percent": 11.7,
+    "temp_c": 20.4,
+    "battery_mv": 4196,
+    "rssi_dbm": -64,
+    "seq": 167
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T11:06:32.037708Z",
+    "vwc_percent": 11.6,
+    "temp_c": 21.1,
+    "battery_mv": 4209,
+    "rssi_dbm": -68,
+    "seq": 168
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T11:21:32.037708Z",
+    "vwc_percent": 11.2,
+    "temp_c": 20.9,
+    "battery_mv": 4201,
+    "rssi_dbm": -65,
+    "seq": 169
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T11:36:32.037708Z",
+    "vwc_percent": 10.7,
+    "temp_c": 21.4,
+    "battery_mv": 4217,
+    "rssi_dbm": -65,
+    "seq": 170
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T11:51:32.037708Z",
+    "vwc_percent": 11.5,
+    "temp_c": 21.4,
+    "battery_mv": 4205,
+    "rssi_dbm": -59,
+    "seq": 171
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T12:06:32.037708Z",
+    "vwc_percent": 10.6,
+    "temp_c": 21.8,
+    "battery_mv": 4190,
+    "rssi_dbm": -66,
+    "seq": 172
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T12:21:32.037708Z",
+    "vwc_percent": 10.2,
+    "temp_c": 21.4,
+    "battery_mv": 4189,
+    "rssi_dbm": -65,
+    "seq": 173
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T12:36:32.037708Z",
+    "vwc_percent": 11.4,
+    "temp_c": 22.0,
+    "battery_mv": 4199,
+    "rssi_dbm": -66,
+    "seq": 174
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T12:51:32.037708Z",
+    "vwc_percent": 10.4,
+    "temp_c": 21.6,
+    "battery_mv": 4200,
+    "rssi_dbm": -67,
+    "seq": 175
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T13:06:32.037708Z",
+    "vwc_percent": 9.9,
+    "temp_c": 22.0,
+    "battery_mv": 4206,
+    "rssi_dbm": -58,
+    "seq": 176
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T13:21:32.037708Z",
+    "vwc_percent": 10.3,
+    "temp_c": 21.7,
+    "battery_mv": 4181,
+    "rssi_dbm": -61,
+    "seq": 177
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T13:36:32.037708Z",
+    "vwc_percent": 9.5,
+    "temp_c": 22.2,
+    "battery_mv": 4181,
+    "rssi_dbm": -70,
+    "seq": 178
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T13:51:32.037708Z",
+    "vwc_percent": 9.1,
+    "temp_c": 21.6,
+    "battery_mv": 4206,
+    "rssi_dbm": -67,
+    "seq": 179
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T14:06:32.037708Z",
+    "vwc_percent": 9.7,
+    "temp_c": 21.8,
+    "battery_mv": 4210,
+    "rssi_dbm": -63,
+    "seq": 180
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T14:21:32.037708Z",
+    "vwc_percent": 9.8,
+    "temp_c": 22.3,
+    "battery_mv": 4203,
+    "rssi_dbm": -62,
+    "seq": 181
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T14:36:32.037708Z",
+    "vwc_percent": 10.5,
+    "temp_c": 21.9,
+    "battery_mv": 4168,
+    "rssi_dbm": -62,
+    "seq": 182
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T14:51:32.037708Z",
+    "vwc_percent": 9.7,
+    "temp_c": 22.3,
+    "battery_mv": 4193,
+    "rssi_dbm": -62,
+    "seq": 183
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T15:06:32.037708Z",
+    "vwc_percent": 9.1,
+    "temp_c": 22.0,
+    "battery_mv": 4219,
+    "rssi_dbm": -63,
+    "seq": 184
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T15:21:32.037708Z",
+    "vwc_percent": 9.4,
+    "temp_c": 21.2,
+    "battery_mv": 4193,
+    "rssi_dbm": -63,
+    "seq": 185
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T15:36:32.037708Z",
+    "vwc_percent": 8.9,
+    "temp_c": 21.7,
+    "battery_mv": 4203,
+    "rssi_dbm": -67,
+    "seq": 186
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T15:51:32.037708Z",
+    "vwc_percent": 9.1,
+    "temp_c": 21.0,
+    "battery_mv": 4196,
+    "rssi_dbm": -62,
+    "seq": 187
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T16:06:32.037708Z",
+    "vwc_percent": 9.3,
+    "temp_c": 21.5,
+    "battery_mv": 4205,
+    "rssi_dbm": -62,
+    "seq": 188
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T16:21:32.037708Z",
+    "vwc_percent": 8.6,
+    "temp_c": 21.2,
+    "battery_mv": 4189,
+    "rssi_dbm": -68,
+    "seq": 189
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T16:36:32.037708Z",
+    "vwc_percent": 9.1,
+    "temp_c": 20.9,
+    "battery_mv": 4181,
+    "rssi_dbm": -63,
+    "seq": 190
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T16:51:32.037708Z",
+    "vwc_percent": 8.3,
+    "temp_c": 20.8,
+    "battery_mv": 4191,
+    "rssi_dbm": -65,
+    "seq": 191
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T17:06:32.037708Z",
+    "vwc_percent": 9.6,
+    "temp_c": 20.4,
+    "battery_mv": 4191,
+    "rssi_dbm": -65,
+    "seq": 192
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T17:21:32.037708Z",
+    "vwc_percent": 7.7,
+    "temp_c": 20.3,
+    "battery_mv": 4194,
+    "rssi_dbm": -67,
+    "seq": 193
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T17:36:32.037708Z",
+    "vwc_percent": 9.0,
+    "temp_c": 19.9,
+    "battery_mv": 4197,
+    "rssi_dbm": -65,
+    "seq": 194
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T17:51:32.037708Z",
+    "vwc_percent": 7.2,
+    "temp_c": 19.7,
+    "battery_mv": 4198,
+    "rssi_dbm": -64,
+    "seq": 195
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T18:06:32.037708Z",
+    "vwc_percent": 8.2,
+    "temp_c": 20.3,
+    "battery_mv": 4189,
+    "rssi_dbm": -64,
+    "seq": 196
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T18:21:32.037708Z",
+    "vwc_percent": 8.1,
+    "temp_c": 20.0,
+    "battery_mv": 4185,
+    "rssi_dbm": -66,
+    "seq": 197
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T18:36:32.037708Z",
+    "vwc_percent": 8.3,
+    "temp_c": 19.5,
+    "battery_mv": 4205,
+    "rssi_dbm": -65,
+    "seq": 198
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T18:51:32.037708Z",
+    "vwc_percent": 7.6,
+    "temp_c": 19.4,
+    "battery_mv": 4181,
+    "rssi_dbm": -67,
+    "seq": 199
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T19:06:32.037708Z",
+    "vwc_percent": 6.9,
+    "temp_c": 19.5,
+    "battery_mv": 4195,
+    "rssi_dbm": -73,
+    "seq": 200
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T19:21:32.037708Z",
+    "vwc_percent": 7.1,
+    "temp_c": 17.8,
+    "battery_mv": 4185,
+    "rssi_dbm": -67,
+    "seq": 201
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T19:36:32.037708Z",
+    "vwc_percent": 7.4,
+    "temp_c": 18.5,
+    "battery_mv": 4195,
+    "rssi_dbm": -70,
+    "seq": 202
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T19:51:32.037708Z",
+    "vwc_percent": 7.3,
+    "temp_c": 18.7,
+    "battery_mv": 4192,
+    "rssi_dbm": -58,
+    "seq": 203
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T20:06:32.037708Z",
+    "vwc_percent": 7.1,
+    "temp_c": 17.6,
+    "battery_mv": 4210,
+    "rssi_dbm": -60,
+    "seq": 204
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T20:21:32.037708Z",
+    "vwc_percent": 7.2,
+    "temp_c": 18.5,
+    "battery_mv": 4195,
+    "rssi_dbm": -61,
+    "seq": 205
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T20:36:32.037708Z",
+    "vwc_percent": 7.4,
+    "temp_c": 16.8,
+    "battery_mv": 4187,
+    "rssi_dbm": -66,
+    "seq": 206
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T20:51:32.037708Z",
+    "vwc_percent": 6.8,
+    "temp_c": 17.1,
+    "battery_mv": 4194,
+    "rssi_dbm": -64,
+    "seq": 207
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T21:06:32.037708Z",
+    "vwc_percent": 6.8,
+    "temp_c": 16.3,
+    "battery_mv": 4199,
+    "rssi_dbm": -66,
+    "seq": 208
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T21:21:32.037708Z",
+    "vwc_percent": 7.1,
+    "temp_c": 16.6,
+    "battery_mv": 4204,
+    "rssi_dbm": -61,
+    "seq": 209
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T21:36:32.037708Z",
+    "vwc_percent": 7.4,
+    "temp_c": 15.9,
+    "battery_mv": 4207,
+    "rssi_dbm": -65,
+    "seq": 210
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T21:51:32.037708Z",
+    "vwc_percent": 7.6,
+    "temp_c": 16.9,
+    "battery_mv": 4210,
+    "rssi_dbm": -65,
+    "seq": 211
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T22:06:32.037708Z",
+    "vwc_percent": 7.1,
+    "temp_c": 15.5,
+    "battery_mv": 4200,
+    "rssi_dbm": -63,
+    "seq": 212
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T22:21:32.037708Z",
+    "vwc_percent": 6.3,
+    "temp_c": 15.5,
+    "battery_mv": 4185,
+    "rssi_dbm": -64,
+    "seq": 213
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T22:36:32.037708Z",
+    "vwc_percent": 6.8,
+    "temp_c": 15.8,
+    "battery_mv": 4193,
+    "rssi_dbm": -71,
+    "seq": 214
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T22:51:32.037708Z",
+    "vwc_percent": 6.8,
+    "temp_c": 15.3,
+    "battery_mv": 4206,
+    "rssi_dbm": -63,
+    "seq": 215
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T23:06:32.037708Z",
+    "vwc_percent": 7.6,
+    "temp_c": 15.1,
+    "battery_mv": 4212,
+    "rssi_dbm": -64,
+    "seq": 216
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T23:21:32.037708Z",
+    "vwc_percent": 7.4,
+    "temp_c": 15.5,
+    "battery_mv": 4183,
+    "rssi_dbm": -66,
+    "seq": 217
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T23:36:32.037708Z",
+    "vwc_percent": 7.6,
+    "temp_c": 14.7,
+    "battery_mv": 4187,
+    "rssi_dbm": -66,
+    "seq": 218
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-05T23:51:32.037708Z",
+    "vwc_percent": 6.7,
+    "temp_c": 14.8,
+    "battery_mv": 4212,
+    "rssi_dbm": -64,
+    "seq": 219
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T00:06:32.037708Z",
+    "vwc_percent": 6.7,
+    "temp_c": 14.8,
+    "battery_mv": 4196,
+    "rssi_dbm": -64,
+    "seq": 220
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T00:21:32.037708Z",
+    "vwc_percent": 6.8,
+    "temp_c": 14.3,
+    "battery_mv": 4212,
+    "rssi_dbm": -62,
+    "seq": 221
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T00:36:32.037708Z",
+    "vwc_percent": 6.8,
+    "temp_c": 13.5,
+    "battery_mv": 4189,
+    "rssi_dbm": -68,
+    "seq": 222
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T00:51:32.037708Z",
+    "vwc_percent": 7.0,
+    "temp_c": 13.9,
+    "battery_mv": 4207,
+    "rssi_dbm": -65,
+    "seq": 223
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T01:06:32.037708Z",
+    "vwc_percent": 7.2,
+    "temp_c": 13.5,
+    "battery_mv": 4208,
+    "rssi_dbm": -66,
+    "seq": 224
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T01:21:32.037708Z",
+    "vwc_percent": 7.5,
+    "temp_c": 14.4,
+    "battery_mv": 4202,
+    "rssi_dbm": -62,
+    "seq": 225
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T01:36:32.037708Z",
+    "vwc_percent": 6.8,
+    "temp_c": 13.9,
+    "battery_mv": 4197,
+    "rssi_dbm": -62,
+    "seq": 226
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T01:51:32.037708Z",
+    "vwc_percent": 6.1,
+    "temp_c": 13.9,
+    "battery_mv": 4196,
+    "rssi_dbm": -68,
+    "seq": 227
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T02:06:32.037708Z",
+    "vwc_percent": 7.3,
+    "temp_c": 13.9,
+    "battery_mv": 4191,
+    "rssi_dbm": -64,
+    "seq": 228
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T02:21:32.037708Z",
+    "vwc_percent": 6.7,
+    "temp_c": 14.0,
+    "battery_mv": 4186,
+    "rssi_dbm": -66,
+    "seq": 229
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T02:36:32.037708Z",
+    "vwc_percent": 6.4,
+    "temp_c": 13.9,
+    "battery_mv": 4199,
+    "rssi_dbm": -72,
+    "seq": 230
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T02:51:32.037708Z",
+    "vwc_percent": 6.7,
+    "temp_c": 14.2,
+    "battery_mv": 4203,
+    "rssi_dbm": -69,
+    "seq": 231
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T03:06:32.037708Z",
+    "vwc_percent": 6.5,
+    "temp_c": 14.6,
+    "battery_mv": 4187,
+    "rssi_dbm": -64,
+    "seq": 232
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T03:21:32.037708Z",
+    "vwc_percent": 6.4,
+    "temp_c": 14.2,
+    "battery_mv": 4193,
+    "rssi_dbm": -69,
+    "seq": 233
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T03:36:32.037708Z",
+    "vwc_percent": 5.5,
+    "temp_c": 14.5,
+    "battery_mv": 4201,
+    "rssi_dbm": -65,
+    "seq": 234
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T03:51:32.037708Z",
+    "vwc_percent": 6.1,
+    "temp_c": 14.2,
+    "battery_mv": 4184,
+    "rssi_dbm": -65,
+    "seq": 235
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T04:06:32.037708Z",
+    "vwc_percent": 6.8,
+    "temp_c": 14.8,
+    "battery_mv": 4207,
+    "rssi_dbm": -71,
+    "seq": 236
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T04:21:32.037708Z",
+    "vwc_percent": 6.6,
+    "temp_c": 14.2,
+    "battery_mv": 4193,
+    "rssi_dbm": -70,
+    "seq": 237
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T04:36:32.037708Z",
+    "vwc_percent": 6.4,
+    "temp_c": 14.7,
+    "battery_mv": 4196,
+    "rssi_dbm": -62,
+    "seq": 238
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T04:51:32.037708Z",
+    "vwc_percent": 6.7,
+    "temp_c": 14.8,
+    "battery_mv": 4190,
+    "rssi_dbm": -66,
+    "seq": 239
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T05:06:32.037708Z",
+    "vwc_percent": 6.3,
+    "temp_c": 15.6,
+    "battery_mv": 4219,
+    "rssi_dbm": -64,
+    "seq": 240
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T05:21:32.037708Z",
+    "vwc_percent": 6.0,
+    "temp_c": 15.2,
+    "battery_mv": 4183,
+    "rssi_dbm": -67,
+    "seq": 241
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T05:36:32.037708Z",
+    "vwc_percent": 5.9,
+    "temp_c": 15.7,
+    "battery_mv": 4200,
+    "rssi_dbm": -66,
+    "seq": 242
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T05:51:32.037708Z",
+    "vwc_percent": 6.0,
+    "temp_c": 15.9,
+    "battery_mv": 4185,
+    "rssi_dbm": -68,
+    "seq": 243
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T06:06:32.037708Z",
+    "vwc_percent": 5.0,
+    "temp_c": 16.3,
+    "battery_mv": 4171,
+    "rssi_dbm": -61,
+    "seq": 244
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T06:21:32.037708Z",
+    "vwc_percent": 5.9,
+    "temp_c": 16.6,
+    "battery_mv": 4172,
+    "rssi_dbm": -65,
+    "seq": 245
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T06:36:32.037708Z",
+    "vwc_percent": 4.5,
+    "temp_c": 16.9,
+    "battery_mv": 4177,
+    "rssi_dbm": -67,
+    "seq": 246
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T06:51:32.037708Z",
+    "vwc_percent": 5.2,
+    "temp_c": 17.1,
+    "battery_mv": 4213,
+    "rssi_dbm": -67,
+    "seq": 247
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T07:06:32.037708Z",
+    "vwc_percent": 23.1,
+    "temp_c": 16.9,
+    "battery_mv": 4205,
+    "rssi_dbm": -65,
+    "seq": 248
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T07:21:32.037708Z",
+    "vwc_percent": 22.5,
+    "temp_c": 17.4,
+    "battery_mv": 4190,
+    "rssi_dbm": -66,
+    "seq": 249
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T07:36:32.037708Z",
+    "vwc_percent": 23.3,
+    "temp_c": 17.8,
+    "battery_mv": 4199,
+    "rssi_dbm": -64,
+    "seq": 250
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T07:51:32.037708Z",
+    "vwc_percent": 22.4,
+    "temp_c": 18.5,
+    "battery_mv": 4200,
+    "rssi_dbm": -63,
+    "seq": 251
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T08:06:32.037708Z",
+    "vwc_percent": 22.9,
+    "temp_c": 17.7,
+    "battery_mv": 4195,
+    "rssi_dbm": -63,
+    "seq": 252
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T08:21:32.037708Z",
+    "vwc_percent": 22.4,
+    "temp_c": 18.5,
+    "battery_mv": 4196,
+    "rssi_dbm": -68,
+    "seq": 253
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T08:36:32.037708Z",
+    "vwc_percent": 22.3,
+    "temp_c": 18.9,
+    "battery_mv": 4201,
+    "rssi_dbm": -62,
+    "seq": 254
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T08:51:32.037708Z",
+    "vwc_percent": 22.8,
+    "temp_c": 18.1,
+    "battery_mv": 4174,
+    "rssi_dbm": -70,
+    "seq": 255
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T09:06:32.037708Z",
+    "vwc_percent": 22.1,
+    "temp_c": 19.2,
+    "battery_mv": 4199,
+    "rssi_dbm": -61,
+    "seq": 256
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T09:21:32.037708Z",
+    "vwc_percent": 22.0,
+    "temp_c": 19.1,
+    "battery_mv": 4203,
+    "rssi_dbm": -64,
+    "seq": 257
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T09:36:32.037708Z",
+    "vwc_percent": 21.8,
+    "temp_c": 19.2,
+    "battery_mv": 4200,
+    "rssi_dbm": -68,
+    "seq": 258
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T09:51:32.037708Z",
+    "vwc_percent": 21.5,
+    "temp_c": 20.2,
+    "battery_mv": 4184,
+    "rssi_dbm": -66,
+    "seq": 259
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T10:06:32.037708Z",
+    "vwc_percent": 20.9,
+    "temp_c": 20.1,
+    "battery_mv": 4181,
+    "rssi_dbm": -60,
+    "seq": 260
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T10:21:32.037708Z",
+    "vwc_percent": 19.7,
+    "temp_c": 20.6,
+    "battery_mv": 4203,
+    "rssi_dbm": -57,
+    "seq": 261
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T10:36:32.037708Z",
+    "vwc_percent": 21.8,
+    "temp_c": 20.8,
+    "battery_mv": 4200,
+    "rssi_dbm": -59,
+    "seq": 262
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T10:51:32.037708Z",
+    "vwc_percent": 21.5,
+    "temp_c": 20.9,
+    "battery_mv": 4209,
+    "rssi_dbm": -65,
+    "seq": 263
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T11:06:32.037708Z",
+    "vwc_percent": 20.9,
+    "temp_c": 20.8,
+    "battery_mv": 4208,
+    "rssi_dbm": -64,
+    "seq": 264
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T11:21:32.037708Z",
+    "vwc_percent": 20.0,
+    "temp_c": 21.0,
+    "battery_mv": 4192,
+    "rssi_dbm": -66,
+    "seq": 265
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T11:36:32.037708Z",
+    "vwc_percent": 20.4,
+    "temp_c": 20.4,
+    "battery_mv": 4192,
+    "rssi_dbm": -57,
+    "seq": 266
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T11:51:32.037708Z",
+    "vwc_percent": 20.3,
+    "temp_c": 21.4,
+    "battery_mv": 4232,
+    "rssi_dbm": -60,
+    "seq": 267
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T12:06:32.037708Z",
+    "vwc_percent": 20.6,
+    "temp_c": 21.6,
+    "battery_mv": 4204,
+    "rssi_dbm": -65,
+    "seq": 268
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T12:21:32.037708Z",
+    "vwc_percent": 20.7,
+    "temp_c": 22.4,
+    "battery_mv": 4194,
+    "rssi_dbm": -61,
+    "seq": 269
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T12:36:32.037708Z",
+    "vwc_percent": 19.8,
+    "temp_c": 22.0,
+    "battery_mv": 4181,
+    "rssi_dbm": -67,
+    "seq": 270
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T12:51:32.037708Z",
+    "vwc_percent": 19.3,
+    "temp_c": 21.6,
+    "battery_mv": 4210,
+    "rssi_dbm": -64,
+    "seq": 271
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T13:06:32.037708Z",
+    "vwc_percent": 19.4,
+    "temp_c": 21.4,
+    "battery_mv": 4194,
+    "rssi_dbm": -63,
+    "seq": 272
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T13:21:32.037708Z",
+    "vwc_percent": 19.8,
+    "temp_c": 21.7,
+    "battery_mv": 4178,
+    "rssi_dbm": -64,
+    "seq": 273
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T13:36:32.037708Z",
+    "vwc_percent": 19.1,
+    "temp_c": 22.4,
+    "battery_mv": 4207,
+    "rssi_dbm": -64,
+    "seq": 274
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T13:51:32.037708Z",
+    "vwc_percent": 19.6,
+    "temp_c": 21.7,
+    "battery_mv": 4201,
+    "rssi_dbm": -67,
+    "seq": 275
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T14:06:32.037708Z",
+    "vwc_percent": 19.0,
+    "temp_c": 21.8,
+    "battery_mv": 4201,
+    "rssi_dbm": -62,
+    "seq": 276
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T14:21:32.037708Z",
+    "vwc_percent": 18.8,
+    "temp_c": 22.2,
+    "battery_mv": 4193,
+    "rssi_dbm": -64,
+    "seq": 277
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T14:36:32.037708Z",
+    "vwc_percent": 18.8,
+    "temp_c": 22.2,
+    "battery_mv": 4202,
+    "rssi_dbm": -64,
+    "seq": 278
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T14:51:32.037708Z",
+    "vwc_percent": 18.2,
+    "temp_c": 21.9,
+    "battery_mv": 4208,
+    "rssi_dbm": -65,
+    "seq": 279
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T15:06:32.037708Z",
+    "vwc_percent": 18.6,
+    "temp_c": 22.1,
+    "battery_mv": 4172,
+    "rssi_dbm": -61,
+    "seq": 280
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T15:21:32.037708Z",
+    "vwc_percent": 18.7,
+    "temp_c": 21.8,
+    "battery_mv": 4208,
+    "rssi_dbm": -61,
+    "seq": 281
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T15:36:32.037708Z",
+    "vwc_percent": 17.2,
+    "temp_c": 21.7,
+    "battery_mv": 4208,
+    "rssi_dbm": -62,
+    "seq": 282
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T15:51:32.037708Z",
+    "vwc_percent": 18.0,
+    "temp_c": 21.3,
+    "battery_mv": 4200,
+    "rssi_dbm": -68,
+    "seq": 283
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T16:06:32.037708Z",
+    "vwc_percent": 17.1,
+    "temp_c": 21.7,
+    "battery_mv": 4195,
+    "rssi_dbm": -63,
+    "seq": 284
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T16:21:32.037708Z",
+    "vwc_percent": 16.5,
+    "temp_c": 21.1,
+    "battery_mv": 4191,
+    "rssi_dbm": -62,
+    "seq": 285
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T16:36:32.037708Z",
+    "vwc_percent": 17.6,
+    "temp_c": 21.2,
+    "battery_mv": 4180,
+    "rssi_dbm": -63,
+    "seq": 286
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T16:51:32.037708Z",
+    "vwc_percent": 17.3,
+    "temp_c": 20.5,
+    "battery_mv": 4201,
+    "rssi_dbm": -66,
+    "seq": 287
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T17:06:32.037708Z",
+    "vwc_percent": 16.3,
+    "temp_c": 20.7,
+    "battery_mv": 4199,
+    "rssi_dbm": -68,
+    "seq": 288
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T17:21:32.037708Z",
+    "vwc_percent": 17.3,
+    "temp_c": 20.1,
+    "battery_mv": 4200,
+    "rssi_dbm": -67,
+    "seq": 289
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T17:36:32.037708Z",
+    "vwc_percent": 16.7,
+    "temp_c": 20.8,
+    "battery_mv": 4199,
+    "rssi_dbm": -67,
+    "seq": 290
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T17:51:32.037708Z",
+    "vwc_percent": 16.8,
+    "temp_c": 19.8,
+    "battery_mv": 4196,
+    "rssi_dbm": -60,
+    "seq": 291
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T18:06:32.037708Z",
+    "vwc_percent": 16.7,
+    "temp_c": 20.0,
+    "battery_mv": 4191,
+    "rssi_dbm": -62,
+    "seq": 292
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T18:21:32.037708Z",
+    "vwc_percent": 15.8,
+    "temp_c": 19.5,
+    "battery_mv": 4202,
+    "rssi_dbm": -67,
+    "seq": 293
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T18:36:32.037708Z",
+    "vwc_percent": 17.4,
+    "temp_c": 19.8,
+    "battery_mv": 4191,
+    "rssi_dbm": -61,
+    "seq": 294
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T18:51:32.037708Z",
+    "vwc_percent": 16.4,
+    "temp_c": 19.3,
+    "battery_mv": 4193,
+    "rssi_dbm": -64,
+    "seq": 295
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T19:06:32.037708Z",
+    "vwc_percent": 16.6,
+    "temp_c": 19.1,
+    "battery_mv": 4215,
+    "rssi_dbm": -69,
+    "seq": 296
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T19:21:32.037708Z",
+    "vwc_percent": 16.5,
+    "temp_c": 19.2,
+    "battery_mv": 4191,
+    "rssi_dbm": -62,
+    "seq": 297
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T19:36:32.037708Z",
+    "vwc_percent": 16.2,
+    "temp_c": 17.9,
+    "battery_mv": 4184,
+    "rssi_dbm": -64,
+    "seq": 298
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T19:51:32.037708Z",
+    "vwc_percent": 15.6,
+    "temp_c": 18.4,
+    "battery_mv": 4186,
+    "rssi_dbm": -68,
+    "seq": 299
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T20:06:32.037708Z",
+    "vwc_percent": 16.1,
+    "temp_c": 17.6,
+    "battery_mv": 4196,
+    "rssi_dbm": -62,
+    "seq": 300
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T20:21:32.037708Z",
+    "vwc_percent": 16.3,
+    "temp_c": 18.0,
+    "battery_mv": 4178,
+    "rssi_dbm": -62,
+    "seq": 301
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T20:36:32.037708Z",
+    "vwc_percent": 16.7,
+    "temp_c": 17.4,
+    "battery_mv": 4185,
+    "rssi_dbm": -67,
+    "seq": 302
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T20:51:32.037708Z",
+    "vwc_percent": 15.6,
+    "temp_c": 17.2,
+    "battery_mv": 4201,
+    "rssi_dbm": -64,
+    "seq": 303
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T21:06:32.037708Z",
+    "vwc_percent": 16.1,
+    "temp_c": 16.6,
+    "battery_mv": 4214,
+    "rssi_dbm": -65,
+    "seq": 304
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T21:21:32.037708Z",
+    "vwc_percent": 16.6,
+    "temp_c": 16.2,
+    "battery_mv": 4202,
+    "rssi_dbm": -63,
+    "seq": 305
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T21:36:32.037708Z",
+    "vwc_percent": 15.2,
+    "temp_c": 16.5,
+    "battery_mv": 4202,
+    "rssi_dbm": -62,
+    "seq": 306
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T21:51:32.037708Z",
+    "vwc_percent": 15.1,
+    "temp_c": 16.4,
+    "battery_mv": 4193,
+    "rssi_dbm": -67,
+    "seq": 307
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T22:06:32.037708Z",
+    "vwc_percent": 15.9,
+    "temp_c": 16.3,
+    "battery_mv": 4200,
+    "rssi_dbm": -64,
+    "seq": 308
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T22:21:32.037708Z",
+    "vwc_percent": 15.9,
+    "temp_c": 15.9,
+    "battery_mv": 4219,
+    "rssi_dbm": -67,
+    "seq": 309
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T22:36:32.037708Z",
+    "vwc_percent": 16.4,
+    "temp_c": 15.2,
+    "battery_mv": 4189,
+    "rssi_dbm": -63,
+    "seq": 310
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T22:51:32.037708Z",
+    "vwc_percent": 16.4,
+    "temp_c": 15.1,
+    "battery_mv": 4204,
+    "rssi_dbm": -71,
+    "seq": 311
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T23:06:32.037708Z",
+    "vwc_percent": 15.6,
+    "temp_c": 14.7,
+    "battery_mv": 4203,
+    "rssi_dbm": -62,
+    "seq": 312
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T23:21:32.037708Z",
+    "vwc_percent": 15.2,
+    "temp_c": 14.9,
+    "battery_mv": 4211,
+    "rssi_dbm": -68,
+    "seq": 313
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T23:36:32.037708Z",
+    "vwc_percent": 16.5,
+    "temp_c": 14.8,
+    "battery_mv": 4184,
+    "rssi_dbm": -67,
+    "seq": 314
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-06T23:51:32.037708Z",
+    "vwc_percent": 16.7,
+    "temp_c": 14.8,
+    "battery_mv": 4203,
+    "rssi_dbm": -70,
+    "seq": 315
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T00:06:32.037708Z",
+    "vwc_percent": 15.5,
+    "temp_c": 15.2,
+    "battery_mv": 4191,
+    "rssi_dbm": -55,
+    "seq": 316
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T00:21:32.037708Z",
+    "vwc_percent": 16.7,
+    "temp_c": 14.1,
+    "battery_mv": 4203,
+    "rssi_dbm": -61,
+    "seq": 317
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T00:36:32.037708Z",
+    "vwc_percent": 15.7,
+    "temp_c": 14.1,
+    "battery_mv": 4191,
+    "rssi_dbm": -67,
+    "seq": 318
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T00:51:32.037708Z",
+    "vwc_percent": 15.1,
+    "temp_c": 14.2,
+    "battery_mv": 4180,
+    "rssi_dbm": -65,
+    "seq": 319
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T01:06:32.037708Z",
+    "vwc_percent": 15.5,
+    "temp_c": 14.4,
+    "battery_mv": 4204,
+    "rssi_dbm": -60,
+    "seq": 320
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T01:21:32.037708Z",
+    "vwc_percent": 15.1,
+    "temp_c": 14.7,
+    "battery_mv": 4187,
+    "rssi_dbm": -67,
+    "seq": 321
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T01:36:32.037708Z",
+    "vwc_percent": 15.1,
+    "temp_c": 14.1,
+    "battery_mv": 4193,
+    "rssi_dbm": -67,
+    "seq": 322
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T01:51:32.037708Z",
+    "vwc_percent": 15.4,
+    "temp_c": 14.1,
+    "battery_mv": 4181,
+    "rssi_dbm": -65,
+    "seq": 323
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T02:06:32.037708Z",
+    "vwc_percent": 13.9,
+    "temp_c": 14.2,
+    "battery_mv": 4197,
+    "rssi_dbm": -59,
+    "seq": 324
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T02:21:32.037708Z",
+    "vwc_percent": 15.6,
+    "temp_c": 14.3,
+    "battery_mv": 4206,
+    "rssi_dbm": -62,
+    "seq": 325
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T02:36:32.037708Z",
+    "vwc_percent": 15.5,
+    "temp_c": 13.8,
+    "battery_mv": 4208,
+    "rssi_dbm": -64,
+    "seq": 326
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T02:51:32.037708Z",
+    "vwc_percent": 14.9,
+    "temp_c": 13.6,
+    "battery_mv": 4218,
+    "rssi_dbm": -64,
+    "seq": 327
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T03:06:32.037708Z",
+    "vwc_percent": 15.0,
+    "temp_c": 13.8,
+    "battery_mv": 4200,
+    "rssi_dbm": -71,
+    "seq": 328
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T03:21:32.037708Z",
+    "vwc_percent": 14.9,
+    "temp_c": 14.0,
+    "battery_mv": 4185,
+    "rssi_dbm": -65,
+    "seq": 329
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T03:36:32.037708Z",
+    "vwc_percent": 15.0,
+    "temp_c": 14.0,
+    "battery_mv": 4204,
+    "rssi_dbm": -69,
+    "seq": 330
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T03:51:32.037708Z",
+    "vwc_percent": 15.2,
+    "temp_c": 14.7,
+    "battery_mv": 4198,
+    "rssi_dbm": -65,
+    "seq": 331
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T04:06:32.037708Z",
+    "vwc_percent": 14.9,
+    "temp_c": 14.6,
+    "battery_mv": 4192,
+    "rssi_dbm": -66,
+    "seq": 332
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T04:21:32.037708Z",
+    "vwc_percent": 15.3,
+    "temp_c": 15.2,
+    "battery_mv": 4189,
+    "rssi_dbm": -66,
+    "seq": 333
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T04:36:32.037708Z",
+    "vwc_percent": 15.2,
+    "temp_c": 15.2,
+    "battery_mv": 4197,
+    "rssi_dbm": -66,
+    "seq": 334
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T04:51:32.037708Z",
+    "vwc_percent": 15.1,
+    "temp_c": 15.1,
+    "battery_mv": 4186,
+    "rssi_dbm": -68,
+    "seq": 335
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T05:06:32.037708Z",
+    "vwc_percent": 14.9,
+    "temp_c": 15.4,
+    "battery_mv": 4190,
+    "rssi_dbm": -61,
+    "seq": 336
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T05:21:32.037708Z",
+    "vwc_percent": 15.9,
+    "temp_c": 15.0,
+    "battery_mv": 4194,
+    "rssi_dbm": -63,
+    "seq": 337
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T05:36:32.037708Z",
+    "vwc_percent": 14.7,
+    "temp_c": 15.6,
+    "battery_mv": 4185,
+    "rssi_dbm": -66,
+    "seq": 338
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T05:51:32.037708Z",
+    "vwc_percent": 14.4,
+    "temp_c": 16.3,
+    "battery_mv": 4199,
+    "rssi_dbm": -65,
+    "seq": 339
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T06:06:32.037708Z",
+    "vwc_percent": 14.9,
+    "temp_c": 16.1,
+    "battery_mv": 4177,
+    "rssi_dbm": -62,
+    "seq": 340
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T06:21:32.037708Z",
+    "vwc_percent": 15.2,
+    "temp_c": 16.2,
+    "battery_mv": 4201,
+    "rssi_dbm": -62,
+    "seq": 341
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T06:36:32.037708Z",
+    "vwc_percent": 14.2,
+    "temp_c": 16.4,
+    "battery_mv": 4184,
+    "rssi_dbm": -66,
+    "seq": 342
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T06:51:32.037708Z",
+    "vwc_percent": 14.1,
+    "temp_c": 17.1,
+    "battery_mv": 4196,
+    "rssi_dbm": -57,
+    "seq": 343
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T07:06:32.037708Z",
+    "vwc_percent": 26.9,
+    "temp_c": 16.9,
+    "battery_mv": 4202,
+    "rssi_dbm": -63,
+    "seq": 344
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T07:21:32.037708Z",
+    "vwc_percent": 27.6,
+    "temp_c": 17.2,
+    "battery_mv": 4171,
+    "rssi_dbm": -62,
+    "seq": 345
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T07:36:32.037708Z",
+    "vwc_percent": 28.7,
+    "temp_c": 17.9,
+    "battery_mv": 4191,
+    "rssi_dbm": -68,
+    "seq": 346
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T07:51:32.037708Z",
+    "vwc_percent": 27.1,
+    "temp_c": 17.9,
+    "battery_mv": 4184,
+    "rssi_dbm": -65,
+    "seq": 347
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T08:06:32.037708Z",
+    "vwc_percent": 27.4,
+    "temp_c": 18.6,
+    "battery_mv": 4197,
+    "rssi_dbm": -59,
+    "seq": 348
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T08:21:32.037708Z",
+    "vwc_percent": 26.9,
+    "temp_c": 18.2,
+    "battery_mv": 4189,
+    "rssi_dbm": -67,
+    "seq": 349
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T08:36:32.037708Z",
+    "vwc_percent": 26.8,
+    "temp_c": 18.7,
+    "battery_mv": 4198,
+    "rssi_dbm": -63,
+    "seq": 350
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T08:51:32.037708Z",
+    "vwc_percent": 26.6,
+    "temp_c": 19.2,
+    "battery_mv": 4198,
+    "rssi_dbm": -65,
+    "seq": 351
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T09:06:32.037708Z",
+    "vwc_percent": 26.6,
+    "temp_c": 19.0,
+    "battery_mv": 4197,
+    "rssi_dbm": -68,
+    "seq": 352
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T09:21:32.037708Z",
+    "vwc_percent": 26.7,
+    "temp_c": 19.3,
+    "battery_mv": 4182,
+    "rssi_dbm": -58,
+    "seq": 353
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T09:36:32.037708Z",
+    "vwc_percent": 27.1,
+    "temp_c": 19.9,
+    "battery_mv": 4211,
+    "rssi_dbm": -56,
+    "seq": 354
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T09:51:32.037708Z",
+    "vwc_percent": 25.8,
+    "temp_c": 20.0,
+    "battery_mv": 4187,
+    "rssi_dbm": -65,
+    "seq": 355
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T10:06:32.037708Z",
+    "vwc_percent": 25.4,
+    "temp_c": 20.4,
+    "battery_mv": 4186,
+    "rssi_dbm": -67,
+    "seq": 356
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T10:21:32.037708Z",
+    "vwc_percent": 25.9,
+    "temp_c": 20.5,
+    "battery_mv": 4216,
+    "rssi_dbm": -64,
+    "seq": 357
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T10:36:32.037708Z",
+    "vwc_percent": 25.6,
+    "temp_c": 20.7,
+    "battery_mv": 4207,
+    "rssi_dbm": -67,
+    "seq": 358
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T10:51:32.037708Z",
+    "vwc_percent": 25.4,
+    "temp_c": 21.2,
+    "battery_mv": 4221,
+    "rssi_dbm": -64,
+    "seq": 359
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T11:06:32.037708Z",
+    "vwc_percent": 25.3,
+    "temp_c": 21.4,
+    "battery_mv": 4199,
+    "rssi_dbm": -58,
+    "seq": 360
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T11:21:32.037708Z",
+    "vwc_percent": 25.7,
+    "temp_c": 20.8,
+    "battery_mv": 4186,
+    "rssi_dbm": -65,
+    "seq": 361
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T11:36:32.037708Z",
+    "vwc_percent": 25.7,
+    "temp_c": 20.9,
+    "battery_mv": 4194,
+    "rssi_dbm": -64,
+    "seq": 362
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T11:51:32.037708Z",
+    "vwc_percent": 25.0,
+    "temp_c": 21.2,
+    "battery_mv": 4192,
+    "rssi_dbm": -64,
+    "seq": 363
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T12:06:32.037708Z",
+    "vwc_percent": 25.1,
+    "temp_c": 21.3,
+    "battery_mv": 4199,
+    "rssi_dbm": -64,
+    "seq": 364
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T12:21:32.037708Z",
+    "vwc_percent": 24.5,
+    "temp_c": 21.3,
+    "battery_mv": 4183,
+    "rssi_dbm": -59,
+    "seq": 365
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T12:36:32.037708Z",
+    "vwc_percent": 24.2,
+    "temp_c": 21.8,
+    "battery_mv": 4214,
+    "rssi_dbm": -69,
+    "seq": 366
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T12:51:32.037708Z",
+    "vwc_percent": 24.7,
+    "temp_c": 22.1,
+    "battery_mv": 4181,
+    "rssi_dbm": -70,
+    "seq": 367
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T13:06:32.037708Z",
+    "vwc_percent": 23.3,
+    "temp_c": 22.3,
+    "battery_mv": 4185,
+    "rssi_dbm": -69,
+    "seq": 368
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T13:21:32.037708Z",
+    "vwc_percent": 23.6,
+    "temp_c": 21.9,
+    "battery_mv": 4194,
+    "rssi_dbm": -66,
+    "seq": 369
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T13:36:32.037708Z",
+    "vwc_percent": 23.4,
+    "temp_c": 22.3,
+    "battery_mv": 4182,
+    "rssi_dbm": -65,
+    "seq": 370
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T13:51:32.037708Z",
+    "vwc_percent": 24.0,
+    "temp_c": 21.8,
+    "battery_mv": 4215,
+    "rssi_dbm": -68,
+    "seq": 371
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T14:06:32.037708Z",
+    "vwc_percent": 24.3,
+    "temp_c": 22.1,
+    "battery_mv": 4203,
+    "rssi_dbm": -65,
+    "seq": 372
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T14:21:32.037708Z",
+    "vwc_percent": 22.7,
+    "temp_c": 21.9,
+    "battery_mv": 4219,
+    "rssi_dbm": -66,
+    "seq": 373
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T14:36:32.037708Z",
+    "vwc_percent": 23.6,
+    "temp_c": 21.7,
+    "battery_mv": 4194,
+    "rssi_dbm": -67,
+    "seq": 374
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T14:51:32.037708Z",
+    "vwc_percent": 23.5,
+    "temp_c": 22.3,
+    "battery_mv": 4186,
+    "rssi_dbm": -63,
+    "seq": 375
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T15:06:32.037708Z",
+    "vwc_percent": 23.1,
+    "temp_c": 21.5,
+    "battery_mv": 4205,
+    "rssi_dbm": -67,
+    "seq": 376
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T15:21:32.037708Z",
+    "vwc_percent": 22.5,
+    "temp_c": 22.0,
+    "battery_mv": 4189,
+    "rssi_dbm": -66,
+    "seq": 377
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T15:36:32.037708Z",
+    "vwc_percent": 22.6,
+    "temp_c": 21.4,
+    "battery_mv": 4200,
+    "rssi_dbm": -66,
+    "seq": 378
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T15:51:32.037708Z",
+    "vwc_percent": 22.0,
+    "temp_c": 21.2,
+    "battery_mv": 4220,
+    "rssi_dbm": -65,
+    "seq": 379
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T16:06:32.037708Z",
+    "vwc_percent": 23.1,
+    "temp_c": 20.9,
+    "battery_mv": 4189,
+    "rssi_dbm": -63,
+    "seq": 380
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T16:21:32.037708Z",
+    "vwc_percent": 22.4,
+    "temp_c": 21.4,
+    "battery_mv": 4205,
+    "rssi_dbm": -61,
+    "seq": 381
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T16:36:32.037708Z",
+    "vwc_percent": 21.4,
+    "temp_c": 20.6,
+    "battery_mv": 4196,
+    "rssi_dbm": -65,
+    "seq": 382
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T16:51:32.037708Z",
+    "vwc_percent": 21.4,
+    "temp_c": 20.9,
+    "battery_mv": 4186,
+    "rssi_dbm": -60,
+    "seq": 383
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T17:06:32.037708Z",
+    "vwc_percent": 21.9,
+    "temp_c": 20.8,
+    "battery_mv": 4174,
+    "rssi_dbm": -62,
+    "seq": 384
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T17:21:32.037708Z",
+    "vwc_percent": 22.5,
+    "temp_c": 20.6,
+    "battery_mv": 4202,
+    "rssi_dbm": -69,
+    "seq": 385
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T17:36:32.037708Z",
+    "vwc_percent": 22.1,
+    "temp_c": 20.6,
+    "battery_mv": 4197,
+    "rssi_dbm": -61,
+    "seq": 386
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T17:51:32.037708Z",
+    "vwc_percent": 22.0,
+    "temp_c": 19.6,
+    "battery_mv": 4183,
+    "rssi_dbm": -64,
+    "seq": 387
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T18:06:32.037708Z",
+    "vwc_percent": 20.9,
+    "temp_c": 20.5,
+    "battery_mv": 4194,
+    "rssi_dbm": -70,
+    "seq": 388
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T18:21:32.037708Z",
+    "vwc_percent": 20.8,
+    "temp_c": 19.8,
+    "battery_mv": 4191,
+    "rssi_dbm": -67,
+    "seq": 389
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T18:36:32.037708Z",
+    "vwc_percent": 22.3,
+    "temp_c": 19.6,
+    "battery_mv": 4200,
+    "rssi_dbm": -59,
+    "seq": 390
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T18:51:32.037708Z",
+    "vwc_percent": 21.0,
+    "temp_c": 18.8,
+    "battery_mv": 4207,
+    "rssi_dbm": -64,
+    "seq": 391
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T19:06:32.037708Z",
+    "vwc_percent": 20.5,
+    "temp_c": 19.3,
+    "battery_mv": 4180,
+    "rssi_dbm": -62,
+    "seq": 392
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T19:21:32.037708Z",
+    "vwc_percent": 21.5,
+    "temp_c": 18.5,
+    "battery_mv": 4208,
+    "rssi_dbm": -65,
+    "seq": 393
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T19:36:32.037708Z",
+    "vwc_percent": 21.7,
+    "temp_c": 18.5,
+    "battery_mv": 4201,
+    "rssi_dbm": -67,
+    "seq": 394
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T19:51:32.037708Z",
+    "vwc_percent": 20.1,
+    "temp_c": 18.3,
+    "battery_mv": 4197,
+    "rssi_dbm": -61,
+    "seq": 395
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T20:06:32.037708Z",
+    "vwc_percent": 21.1,
+    "temp_c": 18.1,
+    "battery_mv": 4210,
+    "rssi_dbm": -69,
+    "seq": 396
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T20:21:32.037708Z",
+    "vwc_percent": 20.4,
+    "temp_c": 18.0,
+    "battery_mv": 4193,
+    "rssi_dbm": -57,
+    "seq": 397
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T20:36:32.037708Z",
+    "vwc_percent": 19.7,
+    "temp_c": 17.8,
+    "battery_mv": 4181,
+    "rssi_dbm": -72,
+    "seq": 398
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T20:51:32.037708Z",
+    "vwc_percent": 20.7,
+    "temp_c": 16.9,
+    "battery_mv": 4188,
+    "rssi_dbm": -59,
+    "seq": 399
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T21:06:32.037708Z",
+    "vwc_percent": 21.1,
+    "temp_c": 17.3,
+    "battery_mv": 4205,
+    "rssi_dbm": -61,
+    "seq": 400
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T21:21:32.037708Z",
+    "vwc_percent": 19.7,
+    "temp_c": 16.4,
+    "battery_mv": 4200,
+    "rssi_dbm": -64,
+    "seq": 401
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T21:36:32.037708Z",
+    "vwc_percent": 20.4,
+    "temp_c": 15.8,
+    "battery_mv": 4213,
+    "rssi_dbm": -73,
+    "seq": 402
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T21:51:32.037708Z",
+    "vwc_percent": 20.6,
+    "temp_c": 15.6,
+    "battery_mv": 4191,
+    "rssi_dbm": -65,
+    "seq": 403
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T22:06:32.037708Z",
+    "vwc_percent": 20.9,
+    "temp_c": 15.3,
+    "battery_mv": 4185,
+    "rssi_dbm": -68,
+    "seq": 404
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T22:21:32.037708Z",
+    "vwc_percent": 20.1,
+    "temp_c": 15.7,
+    "battery_mv": 4187,
+    "rssi_dbm": -63,
+    "seq": 405
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T22:36:32.037708Z",
+    "vwc_percent": 20.8,
+    "temp_c": 15.7,
+    "battery_mv": 4186,
+    "rssi_dbm": -68,
+    "seq": 406
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T22:51:32.037708Z",
+    "vwc_percent": 20.7,
+    "temp_c": 15.7,
+    "battery_mv": 4204,
+    "rssi_dbm": -63,
+    "seq": 407
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T23:06:32.037708Z",
+    "vwc_percent": 21.3,
+    "temp_c": 15.2,
+    "battery_mv": 4188,
+    "rssi_dbm": -66,
+    "seq": 408
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T23:21:32.037708Z",
+    "vwc_percent": 18.9,
+    "temp_c": 14.7,
+    "battery_mv": 4200,
+    "rssi_dbm": -64,
+    "seq": 409
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T23:36:32.037708Z",
+    "vwc_percent": 20.8,
+    "temp_c": 14.7,
+    "battery_mv": 4196,
+    "rssi_dbm": -60,
+    "seq": 410
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-07T23:51:32.037708Z",
+    "vwc_percent": 20.6,
+    "temp_c": 14.6,
+    "battery_mv": 4191,
+    "rssi_dbm": -67,
+    "seq": 411
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T00:06:32.037708Z",
+    "vwc_percent": 21.1,
+    "temp_c": 15.1,
+    "battery_mv": 4207,
+    "rssi_dbm": -63,
+    "seq": 412
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T00:21:32.037708Z",
+    "vwc_percent": 20.2,
+    "temp_c": 14.0,
+    "battery_mv": 4188,
+    "rssi_dbm": -67,
+    "seq": 413
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T00:36:32.037708Z",
+    "vwc_percent": 19.8,
+    "temp_c": 14.7,
+    "battery_mv": 4200,
+    "rssi_dbm": -67,
+    "seq": 414
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T00:51:32.037708Z",
+    "vwc_percent": 20.7,
+    "temp_c": 14.9,
+    "battery_mv": 4199,
+    "rssi_dbm": -66,
+    "seq": 415
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T01:06:32.037708Z",
+    "vwc_percent": 20.5,
+    "temp_c": 13.5,
+    "battery_mv": 4177,
+    "rssi_dbm": -63,
+    "seq": 416
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T01:21:32.037708Z",
+    "vwc_percent": 20.2,
+    "temp_c": 14.4,
+    "battery_mv": 4192,
+    "rssi_dbm": -62,
+    "seq": 417
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T01:36:32.037708Z",
+    "vwc_percent": 20.2,
+    "temp_c": 13.8,
+    "battery_mv": 4209,
+    "rssi_dbm": -60,
+    "seq": 418
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T01:51:32.037708Z",
+    "vwc_percent": 21.0,
+    "temp_c": 13.9,
+    "battery_mv": 4190,
+    "rssi_dbm": -62,
+    "seq": 419
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T02:06:32.037708Z",
+    "vwc_percent": 20.0,
+    "temp_c": 13.7,
+    "battery_mv": 4185,
+    "rssi_dbm": -64,
+    "seq": 420
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T02:21:32.037708Z",
+    "vwc_percent": 20.5,
+    "temp_c": 14.0,
+    "battery_mv": 4198,
+    "rssi_dbm": -67,
+    "seq": 421
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T02:36:32.037708Z",
+    "vwc_percent": 19.9,
+    "temp_c": 13.6,
+    "battery_mv": 4192,
+    "rssi_dbm": -66,
+    "seq": 422
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T02:51:32.037708Z",
+    "vwc_percent": 19.7,
+    "temp_c": 14.1,
+    "battery_mv": 4181,
+    "rssi_dbm": -64,
+    "seq": 423
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T03:06:32.037708Z",
+    "vwc_percent": 20.6,
+    "temp_c": 13.4,
+    "battery_mv": 4195,
+    "rssi_dbm": -64,
+    "seq": 424
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T03:21:32.037708Z",
+    "vwc_percent": 19.0,
+    "temp_c": 14.6,
+    "battery_mv": 4223,
+    "rssi_dbm": -66,
+    "seq": 425
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T03:36:32.037708Z",
+    "vwc_percent": 19.4,
+    "temp_c": 14.4,
+    "battery_mv": 4216,
+    "rssi_dbm": -63,
+    "seq": 426
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T03:51:32.037708Z",
+    "vwc_percent": 19.7,
+    "temp_c": 14.9,
+    "battery_mv": 4201,
+    "rssi_dbm": -65,
+    "seq": 427
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T04:06:32.037708Z",
+    "vwc_percent": 20.0,
+    "temp_c": 15.0,
+    "battery_mv": 4194,
+    "rssi_dbm": -65,
+    "seq": 428
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T04:21:32.037708Z",
+    "vwc_percent": 19.8,
+    "temp_c": 14.4,
+    "battery_mv": 4189,
+    "rssi_dbm": -64,
+    "seq": 429
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T04:36:32.037708Z",
+    "vwc_percent": 20.8,
+    "temp_c": 14.9,
+    "battery_mv": 4182,
+    "rssi_dbm": -61,
+    "seq": 430
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T04:51:32.037708Z",
+    "vwc_percent": 19.5,
+    "temp_c": 14.9,
+    "battery_mv": 4209,
+    "rssi_dbm": -68,
+    "seq": 431
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T05:06:32.037708Z",
+    "vwc_percent": 19.7,
+    "temp_c": 15.4,
+    "battery_mv": 4165,
+    "rssi_dbm": -64,
+    "seq": 432
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T05:21:32.037708Z",
+    "vwc_percent": 19.9,
+    "temp_c": 15.9,
+    "battery_mv": 4190,
+    "rssi_dbm": -70,
+    "seq": 433
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T05:36:32.037708Z",
+    "vwc_percent": 18.9,
+    "temp_c": 15.3,
+    "battery_mv": 4190,
+    "rssi_dbm": -61,
+    "seq": 434
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T05:51:32.037708Z",
+    "vwc_percent": 20.2,
+    "temp_c": 15.4,
+    "battery_mv": 4175,
+    "rssi_dbm": -57,
+    "seq": 435
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T06:06:32.037708Z",
+    "vwc_percent": 19.5,
+    "temp_c": 15.7,
+    "battery_mv": 4208,
+    "rssi_dbm": -64,
+    "seq": 436
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T06:21:32.037708Z",
+    "vwc_percent": 19.0,
+    "temp_c": 16.1,
+    "battery_mv": 4185,
+    "rssi_dbm": -63,
+    "seq": 437
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T06:36:32.037708Z",
+    "vwc_percent": 18.2,
+    "temp_c": 16.7,
+    "battery_mv": 4192,
+    "rssi_dbm": -65,
+    "seq": 438
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T06:51:32.037708Z",
+    "vwc_percent": 18.9,
+    "temp_c": 17.0,
+    "battery_mv": 4194,
+    "rssi_dbm": -62,
+    "seq": 439
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T07:06:32.037708Z",
+    "vwc_percent": 19.4,
+    "temp_c": 17.2,
+    "battery_mv": 4193,
+    "rssi_dbm": -66,
+    "seq": 440
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T07:21:32.037708Z",
+    "vwc_percent": 20.7,
+    "temp_c": 16.8,
+    "battery_mv": 4191,
+    "rssi_dbm": -63,
+    "seq": 441
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T07:36:32.037708Z",
+    "vwc_percent": 18.9,
+    "temp_c": 18.0,
+    "battery_mv": 4201,
+    "rssi_dbm": -63,
+    "seq": 442
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T07:51:32.037708Z",
+    "vwc_percent": 19.1,
+    "temp_c": 18.1,
+    "battery_mv": 4191,
+    "rssi_dbm": -62,
+    "seq": 443
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T08:06:32.037708Z",
+    "vwc_percent": 18.7,
+    "temp_c": 17.5,
+    "battery_mv": 4201,
+    "rssi_dbm": -68,
+    "seq": 444
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T08:21:32.037708Z",
+    "vwc_percent": 19.3,
+    "temp_c": 18.3,
+    "battery_mv": 4201,
+    "rssi_dbm": -65,
+    "seq": 445
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T08:36:32.037708Z",
+    "vwc_percent": 17.9,
+    "temp_c": 18.5,
+    "battery_mv": 4215,
+    "rssi_dbm": -63,
+    "seq": 446
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T08:51:32.037708Z",
+    "vwc_percent": 17.5,
+    "temp_c": 18.9,
+    "battery_mv": 4199,
+    "rssi_dbm": -64,
+    "seq": 447
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T09:06:32.037708Z",
+    "vwc_percent": 18.3,
+    "temp_c": 18.9,
+    "battery_mv": 4202,
+    "rssi_dbm": -62,
+    "seq": 448
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T09:21:32.037708Z",
+    "vwc_percent": 17.3,
+    "temp_c": 19.4,
+    "battery_mv": 4180,
+    "rssi_dbm": -61,
+    "seq": 449
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T09:36:32.037708Z",
+    "vwc_percent": 18.0,
+    "temp_c": 19.2,
+    "battery_mv": 4188,
+    "rssi_dbm": -72,
+    "seq": 450
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T09:51:32.037708Z",
+    "vwc_percent": 18.0,
+    "temp_c": 19.9,
+    "battery_mv": 4185,
+    "rssi_dbm": -63,
+    "seq": 451
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T10:06:32.037708Z",
+    "vwc_percent": 18.1,
+    "temp_c": 19.8,
+    "battery_mv": 4182,
+    "rssi_dbm": -61,
+    "seq": 452
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T10:21:32.037708Z",
+    "vwc_percent": 17.1,
+    "temp_c": 20.5,
+    "battery_mv": 4194,
+    "rssi_dbm": -64,
+    "seq": 453
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T10:36:32.037708Z",
+    "vwc_percent": 16.8,
+    "temp_c": 20.3,
+    "battery_mv": 4183,
+    "rssi_dbm": -65,
+    "seq": 454
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T10:51:32.037708Z",
+    "vwc_percent": 16.2,
+    "temp_c": 21.1,
+    "battery_mv": 4187,
+    "rssi_dbm": -67,
+    "seq": 455
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T11:06:32.037708Z",
+    "vwc_percent": 17.3,
+    "temp_c": 20.7,
+    "battery_mv": 4200,
+    "rssi_dbm": -59,
+    "seq": 456
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T11:21:32.037708Z",
+    "vwc_percent": 17.8,
+    "temp_c": 21.0,
+    "battery_mv": 4183,
+    "rssi_dbm": -65,
+    "seq": 457
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T11:36:32.037708Z",
+    "vwc_percent": 16.8,
+    "temp_c": 21.5,
+    "battery_mv": 4205,
+    "rssi_dbm": -66,
+    "seq": 458
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T11:51:32.037708Z",
+    "vwc_percent": 17.0,
+    "temp_c": 21.0,
+    "battery_mv": 4209,
+    "rssi_dbm": -62,
+    "seq": 459
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T12:06:32.037708Z",
+    "vwc_percent": 16.3,
+    "temp_c": 21.4,
+    "battery_mv": 4206,
+    "rssi_dbm": -64,
+    "seq": 460
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T12:21:32.037708Z",
+    "vwc_percent": 15.8,
+    "temp_c": 21.4,
+    "battery_mv": 4183,
+    "rssi_dbm": -66,
+    "seq": 461
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T12:36:32.037708Z",
+    "vwc_percent": 15.8,
+    "temp_c": 22.1,
+    "battery_mv": 4199,
+    "rssi_dbm": -64,
+    "seq": 462
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T12:51:32.037708Z",
+    "vwc_percent": 16.1,
+    "temp_c": 22.0,
+    "battery_mv": 4189,
+    "rssi_dbm": -71,
+    "seq": 463
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T13:06:32.037708Z",
+    "vwc_percent": 14.4,
+    "temp_c": 21.4,
+    "battery_mv": 4182,
+    "rssi_dbm": -65,
+    "seq": 464
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T13:21:32.037708Z",
+    "vwc_percent": 15.9,
+    "temp_c": 22.0,
+    "battery_mv": 4189,
+    "rssi_dbm": -67,
+    "seq": 465
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T13:36:32.037708Z",
+    "vwc_percent": 15.3,
+    "temp_c": 21.6,
+    "battery_mv": 4189,
+    "rssi_dbm": -65,
+    "seq": 466
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T13:51:32.037708Z",
+    "vwc_percent": 15.4,
+    "temp_c": 22.1,
+    "battery_mv": 4195,
+    "rssi_dbm": -59,
+    "seq": 467
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T14:06:32.037708Z",
+    "vwc_percent": 15.0,
+    "temp_c": 21.8,
+    "battery_mv": 4198,
+    "rssi_dbm": -66,
+    "seq": 468
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T14:21:32.037708Z",
+    "vwc_percent": 13.8,
+    "temp_c": 21.9,
+    "battery_mv": 4201,
+    "rssi_dbm": -67,
+    "seq": 469
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T14:36:32.037708Z",
+    "vwc_percent": 14.9,
+    "temp_c": 22.2,
+    "battery_mv": 4200,
+    "rssi_dbm": -71,
+    "seq": 470
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T14:51:32.037708Z",
+    "vwc_percent": 14.5,
+    "temp_c": 22.2,
+    "battery_mv": 4203,
+    "rssi_dbm": -59,
+    "seq": 471
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T15:06:32.037708Z",
+    "vwc_percent": 15.0,
+    "temp_c": 21.4,
+    "battery_mv": 4199,
+    "rssi_dbm": -62,
+    "seq": 472
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T15:21:32.037708Z",
+    "vwc_percent": 13.7,
+    "temp_c": 21.9,
+    "battery_mv": 4196,
+    "rssi_dbm": -65,
+    "seq": 473
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T15:36:32.037708Z",
+    "vwc_percent": 13.8,
+    "temp_c": 21.5,
+    "battery_mv": 4197,
+    "rssi_dbm": -64,
+    "seq": 474
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T15:51:32.037708Z",
+    "vwc_percent": 14.2,
+    "temp_c": 22.1,
+    "battery_mv": 4187,
+    "rssi_dbm": -63,
+    "seq": 475
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T16:06:32.037708Z",
+    "vwc_percent": 13.4,
+    "temp_c": 21.4,
+    "battery_mv": 4193,
+    "rssi_dbm": -66,
+    "seq": 476
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T16:21:32.037708Z",
+    "vwc_percent": 14.1,
+    "temp_c": 21.2,
+    "battery_mv": 4181,
+    "rssi_dbm": -60,
+    "seq": 477
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T16:36:32.037708Z",
+    "vwc_percent": 13.6,
+    "temp_c": 21.5,
+    "battery_mv": 4197,
+    "rssi_dbm": -62,
+    "seq": 478
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T16:51:32.037708Z",
+    "vwc_percent": 13.7,
+    "temp_c": 21.0,
+    "battery_mv": 4174,
+    "rssi_dbm": -63,
+    "seq": 479
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T17:06:32.037708Z",
+    "vwc_percent": 13.8,
+    "temp_c": 20.5,
+    "battery_mv": 4192,
+    "rssi_dbm": -68,
+    "seq": 480
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T17:21:32.037708Z",
+    "vwc_percent": 13.4,
+    "temp_c": 20.2,
+    "battery_mv": 4183,
+    "rssi_dbm": -65,
+    "seq": 481
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T17:36:32.037708Z",
+    "vwc_percent": 12.6,
+    "temp_c": 20.5,
+    "battery_mv": 4212,
+    "rssi_dbm": -63,
+    "seq": 482
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T17:51:32.037708Z",
+    "vwc_percent": 13.5,
+    "temp_c": 20.3,
+    "battery_mv": 4197,
+    "rssi_dbm": -63,
+    "seq": 483
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T18:06:32.037708Z",
+    "vwc_percent": 12.7,
+    "temp_c": 20.0,
+    "battery_mv": 4190,
+    "rssi_dbm": -61,
+    "seq": 484
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T18:21:32.037708Z",
+    "vwc_percent": 13.1,
+    "temp_c": 19.5,
+    "battery_mv": 4199,
+    "rssi_dbm": -65,
+    "seq": 485
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T18:36:32.037708Z",
+    "vwc_percent": 12.4,
+    "temp_c": 19.6,
+    "battery_mv": 4175,
+    "rssi_dbm": -70,
+    "seq": 486
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T18:51:32.037708Z",
+    "vwc_percent": 12.9,
+    "temp_c": 19.9,
+    "battery_mv": 4177,
+    "rssi_dbm": -60,
+    "seq": 487
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T19:06:32.037708Z",
+    "vwc_percent": 12.4,
+    "temp_c": 19.0,
+    "battery_mv": 4210,
+    "rssi_dbm": -62,
+    "seq": 488
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T19:21:32.037708Z",
+    "vwc_percent": 12.5,
+    "temp_c": 18.8,
+    "battery_mv": 4203,
+    "rssi_dbm": -70,
+    "seq": 489
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T19:36:32.037708Z",
+    "vwc_percent": 12.1,
+    "temp_c": 18.7,
+    "battery_mv": 4210,
+    "rssi_dbm": -70,
+    "seq": 490
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T19:51:32.037708Z",
+    "vwc_percent": 12.5,
+    "temp_c": 18.0,
+    "battery_mv": 4202,
+    "rssi_dbm": -70,
+    "seq": 491
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T20:06:32.037708Z",
+    "vwc_percent": 11.8,
+    "temp_c": 17.9,
+    "battery_mv": 4191,
+    "rssi_dbm": -68,
+    "seq": 492
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T20:21:32.037708Z",
+    "vwc_percent": 12.2,
+    "temp_c": 17.4,
+    "battery_mv": 4185,
+    "rssi_dbm": -63,
+    "seq": 493
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T20:36:32.037708Z",
+    "vwc_percent": 12.8,
+    "temp_c": 17.3,
+    "battery_mv": 4181,
+    "rssi_dbm": -65,
+    "seq": 494
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T20:51:32.037708Z",
+    "vwc_percent": 11.6,
+    "temp_c": 17.7,
+    "battery_mv": 4198,
+    "rssi_dbm": -68,
+    "seq": 495
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T21:06:32.037708Z",
+    "vwc_percent": 13.1,
+    "temp_c": 16.9,
+    "battery_mv": 4181,
+    "rssi_dbm": -62,
+    "seq": 496
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T21:21:32.037708Z",
+    "vwc_percent": 12.3,
+    "temp_c": 16.8,
+    "battery_mv": 4190,
+    "rssi_dbm": -63,
+    "seq": 497
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T21:36:32.037708Z",
+    "vwc_percent": 10.6,
+    "temp_c": 16.6,
+    "battery_mv": 4194,
+    "rssi_dbm": -62,
+    "seq": 498
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T21:51:32.037708Z",
+    "vwc_percent": 12.1,
+    "temp_c": 16.1,
+    "battery_mv": 4193,
+    "rssi_dbm": -63,
+    "seq": 499
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T22:06:32.037708Z",
+    "vwc_percent": 12.0,
+    "temp_c": 15.4,
+    "battery_mv": 4206,
+    "rssi_dbm": -67,
+    "seq": 500
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T22:21:32.037708Z",
+    "vwc_percent": 11.9,
+    "temp_c": 15.5,
+    "battery_mv": 4187,
+    "rssi_dbm": -60,
+    "seq": 501
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T22:36:32.037708Z",
+    "vwc_percent": 12.3,
+    "temp_c": 15.2,
+    "battery_mv": 4189,
+    "rssi_dbm": -68,
+    "seq": 502
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T22:51:32.037708Z",
+    "vwc_percent": 11.8,
+    "temp_c": 15.7,
+    "battery_mv": 4198,
+    "rssi_dbm": -66,
+    "seq": 503
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T23:06:32.037708Z",
+    "vwc_percent": 11.6,
+    "temp_c": 14.8,
+    "battery_mv": 4196,
+    "rssi_dbm": -66,
+    "seq": 504
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T23:21:32.037708Z",
+    "vwc_percent": 11.4,
+    "temp_c": 15.1,
+    "battery_mv": 4206,
+    "rssi_dbm": -67,
+    "seq": 505
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T23:36:32.037708Z",
+    "vwc_percent": 11.8,
+    "temp_c": 14.8,
+    "battery_mv": 4179,
+    "rssi_dbm": -61,
+    "seq": 506
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-08T23:51:32.037708Z",
+    "vwc_percent": 11.8,
+    "temp_c": 14.4,
+    "battery_mv": 4192,
+    "rssi_dbm": -65,
+    "seq": 507
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T00:06:32.037708Z",
+    "vwc_percent": 11.7,
+    "temp_c": 14.8,
+    "battery_mv": 4184,
+    "rssi_dbm": -67,
+    "seq": 508
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T00:21:32.037708Z",
+    "vwc_percent": 11.9,
+    "temp_c": 14.6,
+    "battery_mv": 4212,
+    "rssi_dbm": -65,
+    "seq": 509
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T00:36:32.037708Z",
+    "vwc_percent": 11.4,
+    "temp_c": 14.4,
+    "battery_mv": 4199,
+    "rssi_dbm": -63,
+    "seq": 510
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T00:51:32.037708Z",
+    "vwc_percent": 12.2,
+    "temp_c": 14.2,
+    "battery_mv": 4194,
+    "rssi_dbm": -65,
+    "seq": 511
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T01:06:32.037708Z",
+    "vwc_percent": 12.1,
+    "temp_c": 14.1,
+    "battery_mv": 4189,
+    "rssi_dbm": -61,
+    "seq": 512
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T01:21:32.037708Z",
+    "vwc_percent": 11.2,
+    "temp_c": 14.3,
+    "battery_mv": 4185,
+    "rssi_dbm": -64,
+    "seq": 513
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T01:36:32.037708Z",
+    "vwc_percent": 12.2,
+    "temp_c": 13.9,
+    "battery_mv": 4208,
+    "rssi_dbm": -69,
+    "seq": 514
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T01:51:32.037708Z",
+    "vwc_percent": 11.4,
+    "temp_c": 14.5,
+    "battery_mv": 4201,
+    "rssi_dbm": -64,
+    "seq": 515
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T02:06:32.037708Z",
+    "vwc_percent": 11.2,
+    "temp_c": 13.7,
+    "battery_mv": 4200,
+    "rssi_dbm": -64,
+    "seq": 516
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T02:21:32.037708Z",
+    "vwc_percent": 11.7,
+    "temp_c": 13.1,
+    "battery_mv": 4204,
+    "rssi_dbm": -65,
+    "seq": 517
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T02:36:32.037708Z",
+    "vwc_percent": 11.6,
+    "temp_c": 14.1,
+    "battery_mv": 4185,
+    "rssi_dbm": -64,
+    "seq": 518
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T02:51:32.037708Z",
+    "vwc_percent": 11.6,
+    "temp_c": 14.0,
+    "battery_mv": 4201,
+    "rssi_dbm": -64,
+    "seq": 519
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T03:06:32.037708Z",
+    "vwc_percent": 11.2,
+    "temp_c": 14.5,
+    "battery_mv": 4186,
+    "rssi_dbm": -64,
+    "seq": 520
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T03:21:32.037708Z",
+    "vwc_percent": 11.2,
+    "temp_c": 14.0,
+    "battery_mv": 4206,
+    "rssi_dbm": -65,
+    "seq": 521
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T03:36:32.037708Z",
+    "vwc_percent": 10.6,
+    "temp_c": 14.6,
+    "battery_mv": 4189,
+    "rssi_dbm": -72,
+    "seq": 522
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T03:51:32.037708Z",
+    "vwc_percent": 10.7,
+    "temp_c": 14.6,
+    "battery_mv": 4186,
+    "rssi_dbm": -66,
+    "seq": 523
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T04:06:32.037708Z",
+    "vwc_percent": 11.1,
+    "temp_c": 14.8,
+    "battery_mv": 4187,
+    "rssi_dbm": -65,
+    "seq": 524
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T04:21:32.037708Z",
+    "vwc_percent": 11.0,
+    "temp_c": 14.8,
+    "battery_mv": 4207,
+    "rssi_dbm": -64,
+    "seq": 525
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T04:36:32.037708Z",
+    "vwc_percent": 11.0,
+    "temp_c": 14.3,
+    "battery_mv": 4203,
+    "rssi_dbm": -63,
+    "seq": 526
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T04:51:32.037708Z",
+    "vwc_percent": 11.2,
+    "temp_c": 15.1,
+    "battery_mv": 4178,
+    "rssi_dbm": -63,
+    "seq": 527
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T05:06:32.037708Z",
+    "vwc_percent": 11.1,
+    "temp_c": 15.8,
+    "battery_mv": 4179,
+    "rssi_dbm": -62,
+    "seq": 528
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T05:21:32.037708Z",
+    "vwc_percent": 11.2,
+    "temp_c": 15.5,
+    "battery_mv": 4198,
+    "rssi_dbm": -63,
+    "seq": 529
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T05:36:32.037708Z",
+    "vwc_percent": 12.1,
+    "temp_c": 16.0,
+    "battery_mv": 4201,
+    "rssi_dbm": -65,
+    "seq": 530
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T05:51:32.037708Z",
+    "vwc_percent": 10.9,
+    "temp_c": 15.7,
+    "battery_mv": 4186,
+    "rssi_dbm": -66,
+    "seq": 531
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T06:06:32.037708Z",
+    "vwc_percent": 11.6,
+    "temp_c": 15.8,
+    "battery_mv": 4191,
+    "rssi_dbm": -62,
+    "seq": 532
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T06:21:32.037708Z",
+    "vwc_percent": 11.8,
+    "temp_c": 16.7,
+    "battery_mv": 4183,
+    "rssi_dbm": -64,
+    "seq": 533
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T06:36:32.037708Z",
+    "vwc_percent": 10.3,
+    "temp_c": 16.5,
+    "battery_mv": 4199,
+    "rssi_dbm": -68,
+    "seq": 534
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T06:51:32.037708Z",
+    "vwc_percent": 10.9,
+    "temp_c": 16.8,
+    "battery_mv": 4211,
+    "rssi_dbm": -61,
+    "seq": 535
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T07:06:32.037708Z",
+    "vwc_percent": 10.5,
+    "temp_c": 17.5,
+    "battery_mv": 4199,
+    "rssi_dbm": -58,
+    "seq": 536
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T07:21:32.037708Z",
+    "vwc_percent": 10.3,
+    "temp_c": 17.5,
+    "battery_mv": 4211,
+    "rssi_dbm": -66,
+    "seq": 537
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T07:36:32.037708Z",
+    "vwc_percent": 10.4,
+    "temp_c": 17.6,
+    "battery_mv": 4207,
+    "rssi_dbm": -67,
+    "seq": 538
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T07:51:32.037708Z",
+    "vwc_percent": 10.0,
+    "temp_c": 17.9,
+    "battery_mv": 4182,
+    "rssi_dbm": -68,
+    "seq": 539
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T08:06:32.037708Z",
+    "vwc_percent": 9.8,
+    "temp_c": 17.9,
+    "battery_mv": 4180,
+    "rssi_dbm": -64,
+    "seq": 540
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T08:21:32.037708Z",
+    "vwc_percent": 9.5,
+    "temp_c": 18.4,
+    "battery_mv": 4188,
+    "rssi_dbm": -66,
+    "seq": 541
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T08:36:32.037708Z",
+    "vwc_percent": 10.6,
+    "temp_c": 19.1,
+    "battery_mv": 4191,
+    "rssi_dbm": -60,
+    "seq": 542
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T08:51:32.037708Z",
+    "vwc_percent": 9.7,
+    "temp_c": 18.8,
+    "battery_mv": 4214,
+    "rssi_dbm": -58,
+    "seq": 543
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T09:06:32.037708Z",
+    "vwc_percent": 9.9,
+    "temp_c": 18.6,
+    "battery_mv": 4188,
+    "rssi_dbm": -66,
+    "seq": 544
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T09:21:32.037708Z",
+    "vwc_percent": 9.9,
+    "temp_c": 19.4,
+    "battery_mv": 4197,
+    "rssi_dbm": -61,
+    "seq": 545
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T09:36:32.037708Z",
+    "vwc_percent": 9.7,
+    "temp_c": 19.2,
+    "battery_mv": 4201,
+    "rssi_dbm": -64,
+    "seq": 546
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T09:51:32.037708Z",
+    "vwc_percent": 9.9,
+    "temp_c": 19.9,
+    "battery_mv": 4194,
+    "rssi_dbm": -67,
+    "seq": 547
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T10:06:32.037708Z",
+    "vwc_percent": 9.2,
+    "temp_c": 19.7,
+    "battery_mv": 4199,
+    "rssi_dbm": -66,
+    "seq": 548
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T10:21:32.037708Z",
+    "vwc_percent": 9.3,
+    "temp_c": 20.3,
+    "battery_mv": 4189,
+    "rssi_dbm": -65,
+    "seq": 549
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T10:36:32.037708Z",
+    "vwc_percent": 8.3,
+    "temp_c": 20.9,
+    "battery_mv": 4192,
+    "rssi_dbm": -68,
+    "seq": 550
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T10:51:32.037708Z",
+    "vwc_percent": 9.3,
+    "temp_c": 21.2,
+    "battery_mv": 4180,
+    "rssi_dbm": -62,
+    "seq": 551
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T11:06:32.037708Z",
+    "vwc_percent": 8.4,
+    "temp_c": 20.5,
+    "battery_mv": 4211,
+    "rssi_dbm": -66,
+    "seq": 552
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T11:21:32.037708Z",
+    "vwc_percent": 8.0,
+    "temp_c": 21.0,
+    "battery_mv": 4187,
+    "rssi_dbm": -65,
+    "seq": 553
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T11:36:32.037708Z",
+    "vwc_percent": 7.7,
+    "temp_c": 21.1,
+    "battery_mv": 4177,
+    "rssi_dbm": -60,
+    "seq": 554
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T11:51:32.037708Z",
+    "vwc_percent": 8.9,
+    "temp_c": 21.4,
+    "battery_mv": 4186,
+    "rssi_dbm": -71,
+    "seq": 555
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T12:06:32.037708Z",
+    "vwc_percent": 8.2,
+    "temp_c": 21.6,
+    "battery_mv": 4179,
+    "rssi_dbm": -67,
+    "seq": 556
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T12:21:32.037708Z",
+    "vwc_percent": 7.6,
+    "temp_c": 21.3,
+    "battery_mv": 4178,
+    "rssi_dbm": -66,
+    "seq": 557
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T12:36:32.037708Z",
+    "vwc_percent": 8.7,
+    "temp_c": 21.9,
+    "battery_mv": 4187,
+    "rssi_dbm": -66,
+    "seq": 558
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T12:51:32.037708Z",
+    "vwc_percent": 7.7,
+    "temp_c": 21.9,
+    "battery_mv": 4189,
+    "rssi_dbm": -71,
+    "seq": 559
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T13:06:32.037708Z",
+    "vwc_percent": 8.2,
+    "temp_c": 22.0,
+    "battery_mv": 4183,
+    "rssi_dbm": -64,
+    "seq": 560
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T13:21:32.037708Z",
+    "vwc_percent": 8.1,
+    "temp_c": 21.9,
+    "battery_mv": 4194,
+    "rssi_dbm": -63,
+    "seq": 561
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T13:36:32.037708Z",
+    "vwc_percent": 7.6,
+    "temp_c": 22.0,
+    "battery_mv": 4198,
+    "rssi_dbm": -66,
+    "seq": 562
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T13:51:32.037708Z",
+    "vwc_percent": 8.5,
+    "temp_c": 22.0,
+    "battery_mv": 4171,
+    "rssi_dbm": -65,
+    "seq": 563
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T14:06:32.037708Z",
+    "vwc_percent": 6.6,
+    "temp_c": 21.9,
+    "battery_mv": 4182,
+    "rssi_dbm": -61,
+    "seq": 564
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T14:21:32.037708Z",
+    "vwc_percent": 8.5,
+    "temp_c": 22.0,
+    "battery_mv": 4211,
+    "rssi_dbm": -66,
+    "seq": 565
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T14:36:32.037708Z",
+    "vwc_percent": 7.1,
+    "temp_c": 21.9,
+    "battery_mv": 4192,
+    "rssi_dbm": -59,
+    "seq": 566
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T14:51:32.037708Z",
+    "vwc_percent": 6.1,
+    "temp_c": 22.1,
+    "battery_mv": 4212,
+    "rssi_dbm": -61,
+    "seq": 567
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T15:06:32.037708Z",
+    "vwc_percent": 6.5,
+    "temp_c": 22.2,
+    "battery_mv": 4187,
+    "rssi_dbm": -67,
+    "seq": 568
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T15:21:32.037708Z",
+    "vwc_percent": 6.4,
+    "temp_c": 21.3,
+    "battery_mv": 4186,
+    "rssi_dbm": -67,
+    "seq": 569
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T15:36:32.037708Z",
+    "vwc_percent": 6.5,
+    "temp_c": 21.7,
+    "battery_mv": 4191,
+    "rssi_dbm": -70,
+    "seq": 570
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T15:51:32.037708Z",
+    "vwc_percent": 5.9,
+    "temp_c": 21.5,
+    "battery_mv": 4198,
+    "rssi_dbm": -67,
+    "seq": 571
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T16:06:32.037708Z",
+    "vwc_percent": 5.7,
+    "temp_c": 21.0,
+    "battery_mv": 4200,
+    "rssi_dbm": -64,
+    "seq": 572
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T16:21:32.037708Z",
+    "vwc_percent": 5.8,
+    "temp_c": 20.6,
+    "battery_mv": 4177,
+    "rssi_dbm": -62,
+    "seq": 573
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T16:36:32.037708Z",
+    "vwc_percent": 4.6,
+    "temp_c": 20.8,
+    "battery_mv": 4201,
+    "rssi_dbm": -69,
+    "seq": 574
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T16:51:32.037708Z",
+    "vwc_percent": 6.8,
+    "temp_c": 20.8,
+    "battery_mv": 4193,
+    "rssi_dbm": -63,
+    "seq": 575
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T17:06:32.037708Z",
+    "vwc_percent": 5.3,
+    "temp_c": 20.7,
+    "battery_mv": 4193,
+    "rssi_dbm": -63,
+    "seq": 576
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T17:21:32.037708Z",
+    "vwc_percent": 5.7,
+    "temp_c": 20.5,
+    "battery_mv": 4196,
+    "rssi_dbm": -65,
+    "seq": 577
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T17:36:32.037708Z",
+    "vwc_percent": 4.9,
+    "temp_c": 20.9,
+    "battery_mv": 4178,
+    "rssi_dbm": -57,
+    "seq": 578
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T17:51:32.037708Z",
+    "vwc_percent": 4.8,
+    "temp_c": 21.0,
+    "battery_mv": 4199,
+    "rssi_dbm": -63,
+    "seq": 579
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T18:06:32.037708Z",
+    "vwc_percent": 5.7,
+    "temp_c": 19.6,
+    "battery_mv": 4210,
+    "rssi_dbm": -64,
+    "seq": 580
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T18:21:32.037708Z",
+    "vwc_percent": 4.6,
+    "temp_c": 20.0,
+    "battery_mv": 4180,
+    "rssi_dbm": -61,
+    "seq": 581
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T18:36:32.037708Z",
+    "vwc_percent": 4.9,
+    "temp_c": 19.5,
+    "battery_mv": 4183,
+    "rssi_dbm": -65,
+    "seq": 582
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T18:51:32.037708Z",
+    "vwc_percent": 5.5,
+    "temp_c": 19.1,
+    "battery_mv": 4200,
+    "rssi_dbm": -67,
+    "seq": 583
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T19:06:32.037708Z",
+    "vwc_percent": 5.5,
+    "temp_c": 18.9,
+    "battery_mv": 4190,
+    "rssi_dbm": -68,
+    "seq": 584
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T19:21:32.037708Z",
+    "vwc_percent": 5.3,
+    "temp_c": 18.3,
+    "battery_mv": 4172,
+    "rssi_dbm": -67,
+    "seq": 585
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T19:36:32.037708Z",
+    "vwc_percent": 5.7,
+    "temp_c": 18.5,
+    "battery_mv": 4189,
+    "rssi_dbm": -58,
+    "seq": 586
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T19:51:32.037708Z",
+    "vwc_percent": 4.7,
+    "temp_c": 17.8,
+    "battery_mv": 4196,
+    "rssi_dbm": -65,
+    "seq": 587
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T20:06:32.037708Z",
+    "vwc_percent": 5.0,
+    "temp_c": 18.2,
+    "battery_mv": 4193,
+    "rssi_dbm": -69,
+    "seq": 588
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T20:21:32.037708Z",
+    "vwc_percent": 4.7,
+    "temp_c": 17.7,
+    "battery_mv": 4183,
+    "rssi_dbm": -65,
+    "seq": 589
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T20:36:32.037708Z",
+    "vwc_percent": 5.2,
+    "temp_c": 17.2,
+    "battery_mv": 4177,
+    "rssi_dbm": -62,
+    "seq": 590
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T20:51:32.037708Z",
+    "vwc_percent": 4.9,
+    "temp_c": 16.9,
+    "battery_mv": 4179,
+    "rssi_dbm": -69,
+    "seq": 591
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T21:06:32.037708Z",
+    "vwc_percent": 5.7,
+    "temp_c": 17.1,
+    "battery_mv": 4174,
+    "rssi_dbm": -62,
+    "seq": 592
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T21:21:32.037708Z",
+    "vwc_percent": 4.6,
+    "temp_c": 16.3,
+    "battery_mv": 4188,
+    "rssi_dbm": -66,
+    "seq": 593
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T21:36:32.037708Z",
+    "vwc_percent": 4.5,
+    "temp_c": 15.5,
+    "battery_mv": 4191,
+    "rssi_dbm": -63,
+    "seq": 594
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T21:51:32.037708Z",
+    "vwc_percent": 5.5,
+    "temp_c": 16.3,
+    "battery_mv": 4180,
+    "rssi_dbm": -63,
+    "seq": 595
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T22:06:32.037708Z",
+    "vwc_percent": 5.0,
+    "temp_c": 15.9,
+    "battery_mv": 4199,
+    "rssi_dbm": -71,
+    "seq": 596
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T22:21:32.037708Z",
+    "vwc_percent": 5.1,
+    "temp_c": 15.4,
+    "battery_mv": 4194,
+    "rssi_dbm": -61,
+    "seq": 597
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T22:36:32.037708Z",
+    "vwc_percent": 4.8,
+    "temp_c": 15.4,
+    "battery_mv": 4177,
+    "rssi_dbm": -68,
+    "seq": 598
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T22:51:32.037708Z",
+    "vwc_percent": 4.3,
+    "temp_c": 15.1,
+    "battery_mv": 4188,
+    "rssi_dbm": -65,
+    "seq": 599
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T23:06:32.037708Z",
+    "vwc_percent": 5.0,
+    "temp_c": 15.2,
+    "battery_mv": 4181,
+    "rssi_dbm": -59,
+    "seq": 600
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T23:21:32.037708Z",
+    "vwc_percent": 5.4,
+    "temp_c": 15.3,
+    "battery_mv": 4183,
+    "rssi_dbm": -63,
+    "seq": 601
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T23:36:32.037708Z",
+    "vwc_percent": 5.2,
+    "temp_c": 14.4,
+    "battery_mv": 4200,
+    "rssi_dbm": -63,
+    "seq": 602
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-09T23:51:32.037708Z",
+    "vwc_percent": 5.4,
+    "temp_c": 15.5,
+    "battery_mv": 4187,
+    "rssi_dbm": -64,
+    "seq": 603
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T00:06:32.037708Z",
+    "vwc_percent": 4.8,
+    "temp_c": 14.4,
+    "battery_mv": 4173,
+    "rssi_dbm": -64,
+    "seq": 604
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T00:21:32.037708Z",
+    "vwc_percent": 5.1,
+    "temp_c": 14.8,
+    "battery_mv": 4171,
+    "rssi_dbm": -68,
+    "seq": 605
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T00:36:32.037708Z",
+    "vwc_percent": 5.2,
+    "temp_c": 14.4,
+    "battery_mv": 4202,
+    "rssi_dbm": -65,
+    "seq": 606
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T00:51:32.037708Z",
+    "vwc_percent": 6.2,
+    "temp_c": 13.7,
+    "battery_mv": 4207,
+    "rssi_dbm": -67,
+    "seq": 607
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T01:06:32.037708Z",
+    "vwc_percent": 4.7,
+    "temp_c": 14.4,
+    "battery_mv": 4210,
+    "rssi_dbm": -64,
+    "seq": 608
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T01:21:32.037708Z",
+    "vwc_percent": 6.2,
+    "temp_c": 14.2,
+    "battery_mv": 4204,
+    "rssi_dbm": -67,
+    "seq": 609
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T01:36:32.037708Z",
+    "vwc_percent": 5.2,
+    "temp_c": 13.8,
+    "battery_mv": 4194,
+    "rssi_dbm": -67,
+    "seq": 610
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T01:51:32.037708Z",
+    "vwc_percent": 4.5,
+    "temp_c": 13.7,
+    "battery_mv": 4179,
+    "rssi_dbm": -63,
+    "seq": 611
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T02:06:32.037708Z",
+    "vwc_percent": 4.6,
+    "temp_c": 13.6,
+    "battery_mv": 4192,
+    "rssi_dbm": -66,
+    "seq": 612
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T02:21:32.037708Z",
+    "vwc_percent": 3.6,
+    "temp_c": 13.7,
+    "battery_mv": 4196,
+    "rssi_dbm": -62,
+    "seq": 613
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T02:36:32.037708Z",
+    "vwc_percent": 5.2,
+    "temp_c": 14.1,
+    "battery_mv": 4200,
+    "rssi_dbm": -60,
+    "seq": 614
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T02:51:32.037708Z",
+    "vwc_percent": 4.7,
+    "temp_c": 14.2,
+    "battery_mv": 4189,
+    "rssi_dbm": -66,
+    "seq": 615
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T03:06:32.037708Z",
+    "vwc_percent": 4.6,
+    "temp_c": 14.4,
+    "battery_mv": 4192,
+    "rssi_dbm": -64,
+    "seq": 616
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T03:21:32.037708Z",
+    "vwc_percent": 5.2,
+    "temp_c": 14.1,
+    "battery_mv": 4199,
+    "rssi_dbm": -68,
+    "seq": 617
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T03:36:32.037708Z",
+    "vwc_percent": 5.4,
+    "temp_c": 13.8,
+    "battery_mv": 4188,
+    "rssi_dbm": -64,
+    "seq": 618
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T03:51:32.037708Z",
+    "vwc_percent": 4.6,
+    "temp_c": 14.6,
+    "battery_mv": 4177,
+    "rssi_dbm": -68,
+    "seq": 619
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T04:06:32.037708Z",
+    "vwc_percent": 4.7,
+    "temp_c": 14.2,
+    "battery_mv": 4192,
+    "rssi_dbm": -61,
+    "seq": 620
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T04:21:32.037708Z",
+    "vwc_percent": 6.4,
+    "temp_c": 14.6,
+    "battery_mv": 4194,
+    "rssi_dbm": -64,
+    "seq": 621
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T04:36:32.037708Z",
+    "vwc_percent": 4.6,
+    "temp_c": 13.9,
+    "battery_mv": 4195,
+    "rssi_dbm": -67,
+    "seq": 622
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T04:51:32.037708Z",
+    "vwc_percent": 4.3,
+    "temp_c": 15.1,
+    "battery_mv": 4200,
+    "rssi_dbm": -68,
+    "seq": 623
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T05:06:32.037708Z",
+    "vwc_percent": 5.0,
+    "temp_c": 15.5,
+    "battery_mv": 4200,
+    "rssi_dbm": -62,
+    "seq": 624
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T05:21:32.037708Z",
+    "vwc_percent": 5.2,
+    "temp_c": 15.5,
+    "battery_mv": 4190,
+    "rssi_dbm": -60,
+    "seq": 625
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T05:36:32.037708Z",
+    "vwc_percent": 5.7,
+    "temp_c": 15.1,
+    "battery_mv": 4194,
+    "rssi_dbm": -63,
+    "seq": 626
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T05:51:32.037708Z",
+    "vwc_percent": 5.4,
+    "temp_c": 16.0,
+    "battery_mv": 4191,
+    "rssi_dbm": -66,
+    "seq": 627
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T06:06:32.037708Z",
+    "vwc_percent": 4.4,
+    "temp_c": 16.3,
+    "battery_mv": 4178,
+    "rssi_dbm": -68,
+    "seq": 628
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T06:21:32.037708Z",
+    "vwc_percent": 5.4,
+    "temp_c": 15.9,
+    "battery_mv": 4189,
+    "rssi_dbm": -59,
+    "seq": 629
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T06:36:32.037708Z",
+    "vwc_percent": 4.2,
+    "temp_c": 16.6,
+    "battery_mv": 4185,
+    "rssi_dbm": -66,
+    "seq": 630
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T06:51:32.037708Z",
+    "vwc_percent": 4.6,
+    "temp_c": 16.6,
+    "battery_mv": 4190,
+    "rssi_dbm": -66,
+    "seq": 631
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T07:06:32.037708Z",
+    "vwc_percent": 4.7,
+    "temp_c": 17.3,
+    "battery_mv": 4174,
+    "rssi_dbm": -68,
+    "seq": 632
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T07:21:32.037708Z",
+    "vwc_percent": 4.8,
+    "temp_c": 17.8,
+    "battery_mv": 4187,
+    "rssi_dbm": -62,
+    "seq": 633
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T07:36:32.037708Z",
+    "vwc_percent": 5.2,
+    "temp_c": 17.6,
+    "battery_mv": 4197,
+    "rssi_dbm": -62,
+    "seq": 634
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T07:51:32.037708Z",
+    "vwc_percent": 4.5,
+    "temp_c": 18.0,
+    "battery_mv": 4202,
+    "rssi_dbm": -63,
+    "seq": 635
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T08:06:32.037708Z",
+    "vwc_percent": 4.9,
+    "temp_c": 18.2,
+    "battery_mv": 4177,
+    "rssi_dbm": -67,
+    "seq": 636
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T08:21:32.037708Z",
+    "vwc_percent": 4.4,
+    "temp_c": 18.1,
+    "battery_mv": 4214,
+    "rssi_dbm": -67,
+    "seq": 637
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T08:36:32.037708Z",
+    "vwc_percent": 4.2,
+    "temp_c": 18.8,
+    "battery_mv": 4181,
+    "rssi_dbm": -60,
+    "seq": 638
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T08:51:32.037708Z",
+    "vwc_percent": 4.4,
+    "temp_c": 19.2,
+    "battery_mv": 4198,
+    "rssi_dbm": -64,
+    "seq": 639
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T09:06:32.037708Z",
+    "vwc_percent": 5.1,
+    "temp_c": 18.9,
+    "battery_mv": 4206,
+    "rssi_dbm": -64,
+    "seq": 640
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T09:21:32.037708Z",
+    "vwc_percent": 4.0,
+    "temp_c": 19.1,
+    "battery_mv": 4201,
+    "rssi_dbm": -65,
+    "seq": 641
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T09:36:32.037708Z",
+    "vwc_percent": 5.1,
+    "temp_c": 19.8,
+    "battery_mv": 4184,
+    "rssi_dbm": -67,
+    "seq": 642
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T09:51:32.037708Z",
+    "vwc_percent": 4.4,
+    "temp_c": 19.5,
+    "battery_mv": 4178,
+    "rssi_dbm": -66,
+    "seq": 643
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T10:06:32.037708Z",
+    "vwc_percent": 5.6,
+    "temp_c": 19.9,
+    "battery_mv": 4170,
+    "rssi_dbm": -65,
+    "seq": 644
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T10:21:32.037708Z",
+    "vwc_percent": 5.8,
+    "temp_c": 20.0,
+    "battery_mv": 4188,
+    "rssi_dbm": -62,
+    "seq": 645
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T10:36:32.037708Z",
+    "vwc_percent": 4.7,
+    "temp_c": 21.1,
+    "battery_mv": 4185,
+    "rssi_dbm": -60,
+    "seq": 646
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T10:51:32.037708Z",
+    "vwc_percent": 5.0,
+    "temp_c": 20.7,
+    "battery_mv": 4194,
+    "rssi_dbm": -58,
+    "seq": 647
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T11:06:32.037708Z",
+    "vwc_percent": 5.2,
+    "temp_c": 20.7,
+    "battery_mv": 4193,
+    "rssi_dbm": -71,
+    "seq": 648
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T11:21:32.037708Z",
+    "vwc_percent": 5.0,
+    "temp_c": 21.1,
+    "battery_mv": 4210,
+    "rssi_dbm": -60,
+    "seq": 649
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T11:36:32.037708Z",
+    "vwc_percent": 5.3,
+    "temp_c": 21.4,
+    "battery_mv": 4188,
+    "rssi_dbm": -68,
+    "seq": 650
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T11:51:32.037708Z",
+    "vwc_percent": 4.7,
+    "temp_c": 21.8,
+    "battery_mv": 4181,
+    "rssi_dbm": -64,
+    "seq": 651
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T12:06:32.037708Z",
+    "vwc_percent": 5.4,
+    "temp_c": 21.7,
+    "battery_mv": 4199,
+    "rssi_dbm": -65,
+    "seq": 652
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T12:21:32.037708Z",
+    "vwc_percent": 4.5,
+    "temp_c": 21.3,
+    "battery_mv": 4189,
+    "rssi_dbm": -67,
+    "seq": 653
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T12:36:32.037708Z",
+    "vwc_percent": 4.8,
+    "temp_c": 21.5,
+    "battery_mv": 4200,
+    "rssi_dbm": -64,
+    "seq": 654
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T12:51:32.037708Z",
+    "vwc_percent": 5.3,
+    "temp_c": 21.8,
+    "battery_mv": 4177,
+    "rssi_dbm": -66,
+    "seq": 655
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T13:06:32.037708Z",
+    "vwc_percent": 4.5,
+    "temp_c": 21.2,
+    "battery_mv": 4206,
+    "rssi_dbm": -62,
+    "seq": 656
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T13:21:32.037708Z",
+    "vwc_percent": 5.0,
+    "temp_c": 21.8,
+    "battery_mv": 4187,
+    "rssi_dbm": -66,
+    "seq": 657
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T13:36:32.037708Z",
+    "vwc_percent": 4.7,
+    "temp_c": 22.3,
+    "battery_mv": 4196,
+    "rssi_dbm": -65,
+    "seq": 658
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T13:51:32.037708Z",
+    "vwc_percent": 5.0,
+    "temp_c": 21.6,
+    "battery_mv": 4182,
+    "rssi_dbm": -66,
+    "seq": 659
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T14:06:32.037708Z",
+    "vwc_percent": 4.6,
+    "temp_c": 22.1,
+    "battery_mv": 4181,
+    "rssi_dbm": -67,
+    "seq": 660
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T14:21:32.037708Z",
+    "vwc_percent": 5.3,
+    "temp_c": 22.3,
+    "battery_mv": 4193,
+    "rssi_dbm": -67,
+    "seq": 661
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T14:36:32.037708Z",
+    "vwc_percent": 4.1,
+    "temp_c": 22.4,
+    "battery_mv": 4181,
+    "rssi_dbm": -64,
+    "seq": 662
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T14:51:32.037708Z",
+    "vwc_percent": 5.8,
+    "temp_c": 22.2,
+    "battery_mv": 4196,
+    "rssi_dbm": -63,
+    "seq": 663
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T15:06:32.037708Z",
+    "vwc_percent": 5.2,
+    "temp_c": 22.2,
+    "battery_mv": 4192,
+    "rssi_dbm": -68,
+    "seq": 664
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T15:21:32.037708Z",
+    "vwc_percent": 5.0,
+    "temp_c": 21.8,
+    "battery_mv": 4183,
+    "rssi_dbm": -69,
+    "seq": 665
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T15:36:32.037708Z",
+    "vwc_percent": 4.9,
+    "temp_c": 22.2,
+    "battery_mv": 4175,
+    "rssi_dbm": -65,
+    "seq": 666
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T15:51:32.037708Z",
+    "vwc_percent": 4.7,
+    "temp_c": 21.3,
+    "battery_mv": 4186,
+    "rssi_dbm": -59,
+    "seq": 667
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T16:06:32.037708Z",
+    "vwc_percent": 4.5,
+    "temp_c": 21.9,
+    "battery_mv": 4181,
+    "rssi_dbm": -63,
+    "seq": 668
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T16:21:32.037708Z",
+    "vwc_percent": 5.3,
+    "temp_c": 21.2,
+    "battery_mv": 4188,
+    "rssi_dbm": -61,
+    "seq": 669
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T16:36:32.037708Z",
+    "vwc_percent": 5.7,
+    "temp_c": 21.2,
+    "battery_mv": 4197,
+    "rssi_dbm": -65,
+    "seq": 670
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T16:51:32.037708Z",
+    "vwc_percent": 5.0,
+    "temp_c": 20.9,
+    "battery_mv": 4187,
+    "rssi_dbm": -63,
+    "seq": 671
+  },
+  {
+    "node_id": "gh-n01",
+    "timestamp": "2026-05-10T17:06:32.037708Z",
+    "vwc_percent": 5.2,
+    "temp_c": 20.5,
+    "battery_mv": 4179,
+    "rssi_dbm": -63,
+    "seq": 672
+  }
+]

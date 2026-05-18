@@ -1,0 +1,294 @@
+;; External 400V Ultrasound Pulser — ASCII Schematic
+;; TurboQuant NDE Module
+;; Build time: 4–6 hours | Cost: ~£35 | Output: 50–400V adjustable
+;;
+;; POWER SECTION
+;; ============
+;;
+;;                    +7.4V (2S LiPo)
+;;                        |
+;;                   +------+------+
+;;                   |             |
+;;              [10µF]        BMS (2S 3A)
+;;                   |             |
+;;                   |         +---+---+
+;;                   |         |       |
+;;                   +---------+       +---[FUSE 3A]---→ 7.4V RAIL
+;;                   |
+;;              +----v----+
+;;              | MT3608  |  ← 7.4V → 12V pre-boost (for gate drivers)
+;;              | Boost   |
+;;              +----+----+
+;;                   |
+;;              +----v----+
+;;              |  12V    |
+;;              |  RAIL   |----+----[10µF 25V]----GND
+;;              +---------+    |
+;;                            |
+;;              +-------------v-------------+
+;;              |                             |
+;;         +----v----+                   +----v----+
+;;         | LM7805  |                   | UC3843  |
+;;         | 5V LDO  |                   | Flyback |
+;;         | (1A)    |                   | Ctrl    |
+;;         +----+----+                   +----+----+
+;;              |                             |
+;;         +----v----+                   +----v----+    +---------+
+;;         |  5V     |                   | Gate    |--→| IRF840  |
+;;         |  RAIL   |----+              | Drive   |    | 500V 8A |
+;;         +---------+    |              | (12V)   |    +----+----+
+;;                        |              +---------+         |
+;;                   +----v----+                          |
+;;                   | TC4427  |←-------------------------+
+;;                   | (spare  |←── Trigger (BNC from RP)
+;;                   | channel) |
+;;                   +---------+
+;;
+;; FLYBACK HV SUPPLY
+;; =================
+;;
+;;         +12V RAIL
+;;            |
+;;       +----v-------------------------+
+;;       |                             |
+;;       |    UC3843 Pinout:           |
+;;       |    1: COMP (feedback)        |
+;;       |    2: VFB (voltage feedback) ←──[10MΩ]──→ HV RAIL
+;;       |    3: ISENSE (current)       ←──[0.1Ω]──→ SOURCE
+;;       |    4: RT/CT (timing)         ←──[10kΩ]──→ [1nF]──GND
+;;       |    5: GND                    ←──GND
+;;       |    6: OUTPUT                ──→ IRF840 GATE
+;;       |    7: VCC                   ←──+12V (10µF decoupling)
+;;       |    8: VREF                  ──→ 5V ref
+;;       |                             |
+;;       +-----------------------------+
+;;
+;;         IRF840 (N-ch, 500V, 8A)
+;;         D = DRAIN ──→ Flyback primary dot
+;;         G = GATE ───→ UC3843 pin 6 (via 10Ω + 12V zener to GND)
+;;         S = SOURCE ─→ [0.1Ω 1W] ──→ GND
+;;                           |
+;;                           +──→ UC3843 pin 3 (current sense)
+;;
+;;         Flyback Transformer (DIY or Coilcraft DA2034)
+;;         =============================================
+;;         Core: EE25 or EPCOS E25 (N87 ferrite)
+;;         Primary:   6 turns, 0.5mm magnet wire
+;;         Secondary: 180 turns, 0.15mm triple-insulated wire
+;;         Aux:       6 turns, 0.3mm (for UC3843 VCC if needed)
+;;         Gap:       0.1mm paper spacer (for energy storage)
+;;         Inductance: ~200µH primary
+;;
+;;         Primary circuit:
+;;         +12V ──→ Primary (non-dot) ──→ IRF840 DRAIN
+;;                                        |
+;;                                   Primary (dot) ──→ GND
+;;
+;;         Secondary circuit:
+;;         Secondary (dot) ──→ [MUR460] ──→ +HV RAIL
+;;         Secondary (non-dot) ──→ GND
+;;
+;;         Snubber (critical for flyback):
+;;         Across primary: [100pF 1kV] + [10kΩ] in series + [UF4007]
+;;         (or RCD snubber: 47kΩ + 1nF + UF4007)
+;;
+;;         +HV RAIL
+;;            |
+;;       +----v----+
+;;       | 10µF    |  ← 450V or 630V electrolytic, LOW ESR
+;;       | 450V    |
+;;       +----+----+
+;;            |
+;;       +----v----+    +---------+
+;;       | 100kΩ   |    |  LED    |  ← HV indicator (with 100kΩ + 5V zener)
+;;       | 2W      |    | (red)   |
+;;       +----+----+    +----+----+
+;;            |              |
+;;            +--------------+──→ GND (bleeder + indicator)
+;;
+;;         Expected HV: 100V–500V adjustable via feedback divider
+;;         (use potentiometer in feedback for tuning)
+;;
+;; PULSE GENERATION SECTION
+;; =======================
+;;
+;;         TRIGGER INPUT (BNC, from Red Pitaya DIO or function generator)
+;;              |
+;;         +----v----+
+;;         | 50Ω     |  ← Termination
+;;         | RTERM   |
+;;         +----+----+
+;;              |
+;;         +----v--------+
+;;         |              |
+;;         |  TC4427CPA   |  ← Dual gate driver, 1.5A output
+;;         |  (using     |
+;;         |   channel A) |
+;;         |  Pin 2: IN A ←── TRIGGER
+;;         |  Pin 7: OUT A──→ [10Ω] ──→ IRF830 GATE
+;;         |  Pin 1: VDD  ←── +12V
+;;         |  Pin 3: GND  ←── GND
+;;         +--------------+
+;;
+;;         IRF830PBF (N-ch, 500V, 4.5A) — SAME PART AS V5!
+;;         ================================================
+;;         G = GATE ←── [10Ω] ──→ TC4427 OUT A
+;;                      |
+;;                 [12V zener] ←──→ GND (gate protection, clamps to 12V)
+;;                      |
+;;                 [100kΩ] ←──→ GND (pull-down, ensures OFF when idle)
+;;         D = DRAIN ──→ Pulse transformer PRIMARY (dot)
+;;         S = SOURCE ──→ GND
+;;
+;;         Pulse Transformer (same as V5, but uprated insulation)
+;;         =======================================================
+;;         Core: T68-2 toroid (Amidon #68 material, red/yellow paint)
+;;         Primary:   12 turns, 26 AWG triple-insulated
+;;         Secondary: 12 turns, 26 AWG triple-insulated
+;;         Insulation: 2 layers Kapton tape between windings
+;;         Hi-pot test: 1kV DC, 1 minute, <1µA
+;;
+;;         +HV RAIL (100–400V)
+;;              |
+;;         +----v-----------------+
+;;         |                      |
+;;         |   Pulse Xfmr         |
+;;         |   Primary (dot)    |←── IRF830 DRAIN
+;;         |   Primary (GND)    |──→ [10µF 450V] ──→ +HV (damping cap)
+;;         |                      |
+;;         |   Secondary (dot)    |──→ [MUR460] ──→ BNC CENTER (OUTPUT)
+;;         |   Secondary (GND)  |──→ BNC SHIELD ──→ GND
+;;         |                      |
+;;         +----------------------+
+;;
+;;         Damping / Protection on Output:
+;;         BNC CENTER ──→ [MUR460] ──→ GND (reverse biased, catches negative spikes)
+;;         BNC CENTER ──→ [100pF 1kV] ──→ GND (RF suppression)
+;;
+;; OUTPUT
+;; ======
+;;
+;;         BNC CONNECTOR (female, panel mount)
+;;         Center: Pulse transformer secondary (via MUR460)
+;;         Shield: GND
+;;         ↓
+;;         50Ω coax (RG58 or RG174) to V5 TX_IN SMA
+;;
+;; CONTROL INTERFACE
+;; =================
+;;
+;;         Arduino Nano (optional, for pulse parameter control)
+;;         ================================================
+;;         D9  (PWM) ──→ TC4427 IN A (via 1kΩ)
+;;         D13 (LED) ──→ Status LED
+;;         A0  (ADC) ──→ HV rail monitor (via 1000:1 divider: 10MΩ + 10kΩ)
+;;         5V  ──→ TC4427 VDD (or separate 12V from MT3608)
+;;         GND ──→ Common ground
+;;
+;;         Serial commands (115200 baud):
+;;         p100   → pulse width = 100 µs
+;;         f100   → PRF = 100 Hz
+;;         b10    → burst = 10 pulses
+;;         v200   → set voltage = 200V (adjusts flyback feedback if digital pot fitted)
+;;         s      → single burst
+;;         r      → run continuous
+;;         x      → stop
+;;         h      → read HV rail voltage
+;;
+;; SAFETY CIRCUITS
+;; ===============
+;;
+;;         1. BLEEDER (always connected across HV cap)
+;;            +HV ──→ [100kΩ 2W] ──→ GND
+;;            Time constant: τ = RC = 100kΩ × 10µF = 1 second
+;;            Discharge to <50V: ~5 seconds
+;;
+;;         2. HV INDICATOR
+;;            +HV ──→ [1MΩ] ──→ [5V zener] ──→ [LED 2mA] ──→ GND
+;;            LED lights when HV > 5V + LED drop (~7V total)
+;;            Visible warning that cap is charged
+;;
+;;         3. INTERLOCK (optional)
+;;            Enclosure lid switch ──→ UC3843 VCC
+;;            Lid open = UC3843 unpowered = no HV generation
+;;            (Does NOT discharge cap — bleeder does that)
+;;
+;;         4. FUSE
+;;            +7.4V ──→ [FUSE 3A fast] ──→ rest of circuit
+;;
+;;         5. TVS (on TX output, protects against transducer kickback)
+;;            BNC CENTER ──→ [P6KE400A] ──→ GND
+;;            (400V TVS, clamps transients)
+;;
+;; BUILD OF MATERIALS (BOM)
+;; ========================
+;;
+;; | Ref | Value              | Package    | Qty | Est. Cost |
+;; |-----|--------------------|------------|-----|-----------|
+;; | U1  | UC3843             | SOIC-8     | 1   | £2.50     |
+;; | U2  | TC4427CPA          | DIP-8      | 1   | £2.50     |
+;; | Q1  | IRF840             | TO-220     | 1   | £2.00     |
+;; | Q2  | IRF830             | TO-220     | 1   | £3.20     |
+;; | D1  | MUR460             | DO-41      | 3   | £1.50     |
+;; | D2  | UF4007             | DO-41      | 2   | £0.60     |
+;; | D3  | 12V Zener (1W)     | DO-41      | 1   | £0.30     |
+;; | D4  | 5V Zener (500mW)   | SOD-123    | 1   | £0.20     |
+;; | D5  | P6KE400A TVS       | DO-15      | 1   | £0.80     |
+;; | T1  | Flyback transformer  | EE25 DIY   | 1   | £8.00     |
+;; | T2  | Pulse transformer    | T68-2 DIY  | 1   | £4.00     |
+;; | C1  | 10µF 450V          | 12.5×20mm  | 2   | £6.00     |
+;; | C2  | 10µF 25V           | 5×11mm     | 2   | £0.60     |
+;; | C3  | 100nF 50V          | 0805       | 4   | £0.20     |
+;; | C4  | 1nF 100V           | 0805       | 1   | £0.10     |
+;; | C5  | 100pF 1kV          | 1206       | 1   | £0.20     |
+;; | R1  | 10MΩ 1/4W          | 1206       | 2   | £0.20     |
+;; | R2  | 10kΩ 1/4W          | 0805       | 4   | £0.20     |
+;; | R3  | 100kΩ 2W           | 1206/axial | 1   | £0.30     |
+;; | R4  | 1MΩ 1/4W           | 1206       | 1   | £0.10     |
+;; | R5  | 0.1Ω 1W            | 2512       | 1   | £0.30     |
+;; | R6  | 47kΩ 1/4W          | 0805       | 1   | £0.10     |
+;; | L1  | MT3608 module      | Module     | 1   | £2.00     |
+;; | F1  | Fuse 3A            | 5×20mm     | 1   | £0.30     |
+;; | B1  | BNC female         | Panel      | 1   | £1.50     |
+;; | B2  | 2S LiPo 2000mAh    | Pouch      | 1   | £12.00    |
+;; | H1  | Hammond 1591XX     | Enclosure  | 1   | £5.00     |
+;; |     | Misc (wire, headers, etc)         |     | £3.00     |
+;; |-----|-----------------------------------|-----|-----------|
+;; |     | TOTAL                             |     | **~£45**  |
+;;
+;; PCB LAYOUT HINTS
+;; ================
+;; - Flyback transformer: Place near board edge, away from logic
+;; - HV cap: Right next to transformer secondary diode
+;; - IRF840: Heat sink or copper pour, near transformer
+;; - Bleeder resistor: Physically large, clearly visible (safety)
+;; - BNC output: Board edge, isolated from logic section by 5mm slot
+;; - TC4427: Near IRF830, short gate trace (<20mm)
+;; - UC3843: Near IRF840, short traces to gate and current sense
+;; - 12V pre-boost (MT3608): Corner of board, feeds UC3843 and TC4427
+;; - No sensitive traces under flyback or HV cap
+;; - Ground: Star point at UC3843 GND pin. Separate HV_GND and LOGIC_GND joined at one point.
+;;
+;; TEST POINTS
+;; ===========
+;; TP1: +12V (MT3608 output) — verify pre-boost
+;; TP2: UC3843 VCC — verify controller powered
+;; TP3: IRF840 GATE — verify gate drive (scope)
+;; TP4: IRF840 DRAIN — verify switching (scope, HV probe or 100:1 divider)
+;; TP5: +HV RAIL — verify output voltage (DMM, 1000V rated)
+;; TP6: BNC OUTPUT — verify pulse shape (scope with 100:1 probe or attenuator)
+;;
+;; ASSEMBLY ORDER
+;; =============
+;; 1. Solder low-voltage section first (UC3843, TC4427, MT3608, resistors, small caps)
+;; 2. Power on, verify 12V rail, verify 5V rail
+;; 3. Solder IRF840 (no transformer yet), verify gate drive
+;; 4. Solder flyback transformer, HV diode, HV cap
+;; 5. First power-on with HV: use current-limited supply (500mA), verify ~100V output
+;; 6. Gradually increase load, tune feedback divider for desired voltage
+;; 7. Solder IRF830 pulse section, pulse transformer, output BNC
+;; 8. Test pulse output into 50Ω load (start at low voltage, work up)
+;; 9. Final test: 400V pulse, verify shape, verify no ringing
+;; 10. Safety check: bleeder, LED, interlock all functional
+;;
+;; END OF SCHEMATIC

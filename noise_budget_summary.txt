@@ -1,0 +1,14 @@
+NOISE BUDGET ANALYSIS SUMMARY
+==================================================
+
+Hardware: STM32 + AD9833 + Switchable TIA (1k/10k)
+Target: Soil impedance spectroscopy, 1 Hz – 1 MHz
+
+KEY FINDINGS:
+- 12-bit ADC is sufficient for 1% accuracy
+- System is quantization-noise limited
+- TIA gain of 1-10 kΩ optimal
+- Total sweep time: ~40-60 seconds for 50 points
+- Cost: ~£15 (MCU) + £5 (DDS) + £3 (TIA) = ~£23
+
+GO/NO-GO: ✓ PROCEED with Phase 1 prototype

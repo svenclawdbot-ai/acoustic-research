@@ -1,0 +1,115 @@
+======================================================================
+MORNING BRIEF — Thursday, May 7, 2026
+======================================================================
+Sources: 10 feeds | Articles: 45 | Fetched: 09:40 UTC
+
+🌤️ WEATHER — London
+   +12°C (feels like +12°C), ↖5km/h wind, 71% humidity
+
+📰 TOP STORIES
+----------------------------------------------------------------------
+
+[WORLD] BBC World
+→ Iran considering US proposal as Trump says war will be 'over quickly'
+  Mediator Pakistan says it is "endeavouring to convert this ceasefire into a permanent end to this war".
+  🔗 https://www.bbc.com/news/articles/cj0pq2q8221o
+
+[WORLD] BBC World
+→ Shell latest oil giant to see profits surge due to Iran war impact
+  The energy giant's profits jump by nearly a quarter as it benefits from the recent volatility in the oil price.
+  🔗 https://www.bbc.com/news/articles/ce3p0x54drwo
+
+[WORLD] BBC World
+→ Israel strikes Beirut for first time since Hezbollah ceasefire
+  Israel says it targeted a senior Hezbollah figure in the capital, the first strike of its kind since mid-April.
+  🔗 https://www.bbc.com/news/articles/crmpjjl02l2o
+
+[TECH] TechCrunch
+→ Snap says its $400M deal with Perplexity 'amicably ended'
+  The deal, announced last November, would have seen Perplexity's AI search engine integrated directly into Snapchat.
+  🔗 https://techcrunch.com/2026/05/06/snap-says-its-400m-deal-with-perplexity-amicably-ended/
+
+[TECH] Ars Technica
+→ FDA vaccine studies censored by Trump admin after finding benefits of shots
+  FDA has suppressed studies on COVID-19 vaccines and Shingrix, a shingles vaccine.
+  🔗 https://arstechnica.com/health/2026/05/trump-admin-censors-more-studies-conflicting-with-rfk-jr-s-anti-vaccine-views/
+
+[AI/ML] TechCrunch
+→ DeepSeek could hit $45B valuation from its first investment round
+  The Chinese AI lab came to prominence in early 2025 after launching a large language model that trained on a fraction of the compute power and at a fraction of the cost of the big U.S. models.
+  🔗 https://techcrunch.com/2026/05/06/deepseek-could-hit-45b-valuation-from-its-first-investment-round/
+
+[AI/ML] Ars Technica
+→ Anthropic raises Claude Code usage limits, credits new deal with SpaceX
+  Deal follows others with Microsoft, Amazon, and more.
+  🔗 https://arstechnica.com/ai/2026/05/anthropic-raises-claude-code-usage-limits-credits-new-deal-with-spacex/
+
+[AI/ML] Ars Technica
+→ Google's Gemma 4 AI models get 3x speed boost by predicting future tokens
+  Up to 3x the speed with no loss of quality—is it too good to be true?
+  🔗 https://arstechnica.com/ai/2026/05/googles-gemma-4-open-ai-models-use-speculative-decoding-to-get-up-to-3x-faster/
+
+[FINANCE] TechCrunch
+→ Robinhood's venture fund IPO attracted 150,000+ retail investors, CEO says
+  More than 150,000 retail investors joined the fintech's new venture fund, which offers exposure to private tech companies like OpenAI, Stripe, Databricks, and Oura before they go public.
+  🔗 https://techcrunch.com/2026/05/06/robinhoods-venture-fund-ipo-attracted-150000-retail-investors-ceo-says/
+
+[FINANCE] Ars Technica
+→ Report: SpaceX IPO gives Musk unchecked power and forbids investor lawsuits
+  Anyone who buys into SpaceX IPO must waive right to sue the firm, report says.
+  🔗 https://arstechnica.com/tech-policy/2026/05/report-spacex-ipo-gives-musk-unchecked-power-and-forbids-investor-lawsuits/
+
+[GENERAL] BBC World
+→ Ted Turner, media mogul who revolutionised TV news by launching CNN, dies at 87
+  The media mogul pioneered the modern 24-hour news culture when he launched the Cable News Network in 1980.
+  🔗 https://www.bbc.com/news/articles/c1k2jnx8gmlo
+
+======================================================================
+📊 CATEGORY BREAKDOWN
+======================================================================
+  WORLD     :  4 articles
+  TECH      :  8 articles
+  AI/ML     :  7 articles
+  FINANCE   :  4 articles
+  GENERAL   :  7 articles
+
+📌 WORLD HIGHLIGHTS
+----------------------------------------------------------------------
+• Iran considering US proposal; Pakistan mediating permanent ceasefire efforts
+• Shell profits surge ~25% on Iran war oil volatility
+• Israel strikes Beirut for first time since Hezbollah ceasefire (mid-April)
+• German police raid neo-Nazi criminal youth groups across 12 states
+
+📌 TECH HIGHLIGHTS
+----------------------------------------------------------------------
+• Braintrust AI startup breached—customers told to rotate all API keys
+• xAI pivoting toward data center infrastructure (neocloud model)
+• Chrome Android now supports approximate location sharing
+• Google AI search now includes quotes from Reddit and web forums
+• Microsoft AI data center expansion colliding with clean power goals
+
+📌 AI/ML HIGHLIGHTS
+----------------------------------------------------------------------
+• DeepSeek seeking $45B valuation in first investment round
+• Anthropic Claude Code limits raised; new SpaceX partnership
+• Google Gemma 4 models: 3x speed boost via speculative decoding
+• TSMC turning to wind power as Taiwan faces AI-driven energy crunch
+• Google DeepMind partners with EVE Online for AI model testing
+
+📌 FINANCE HIGHLIGHTS
+----------------------------------------------------------------------
+• Robinhood venture fund: 150k+ retail investors for pre-IPO access
+• SpaceX IPO structure reportedly waives investor right to sue
+• Insurance startup Corgi hits $1.3B valuation (4 months post-Series A)
+• Five AI economy architects discuss supply chain risks at Milken Conference
+
+📌 GENERAL HIGHLIGHTS
+----------------------------------------------------------------------
+• Ted Turner (CNN founder) dies at 87
+• Hantavirus-hit cruise ship heading to Canary Islands after evacuations
+• Alaska megatsunami was second largest ever recorded—climate link
+• SpaceX may spend up to $119B on 'Terafab' chip factory in Texas
+
+======================================================================
+End of Brief
+======================================================================

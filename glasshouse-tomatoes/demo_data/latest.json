@@ -1,0 +1,9 @@
+{
+  "node_id": "gh-n01",
+  "timestamp": "2026-05-10T17:06:32.037708Z",
+  "vwc_percent": 5.2,
+  "temp_c": 20.5,
+  "battery_mv": 4179,
+  "rssi_dbm": -63,
+  "seq": 672
+}

@@ -1,0 +1,112 @@
+name: GlassHouse CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  simulation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install numpy matplotlib
+
+      - name: Run simulations
+        run: |
+          cd simulation
+          python soil_impedance_model.py
+          python lockin_spectrometer.py
+
+      - name: Upload plots
+        uses: actions/upload-artifact@v4
+        with:
+          name: simulation-plots
+          path: simulation/*.png
+
+  firmware:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Arduino CLI
+        uses: arduino/setup-arduino-cli@v1
+
+      - name: Install ESP32 core
+        run: |
+          arduino-cli core update-index
+          arduino-cli core install esp32:esp32
+
+      - name: Compile firmware
+        run: |
+          arduino-cli compile --fqbn esp32:esp32:esp32s3 \
+            firmware/glasshouse_node_v1/
+
+  backend:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: timescale/timescaledb:latest-pg15
+        env:
+          POSTGRES_DB: glasshouse_test
+          POSTGRES_USER: gh_user
+          POSTGRES_PASSWORD: testpass
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r backend/api/requirements.txt
+
+      - name: Run tests
+        run: |
+          pytest backend/tests/ -v --tb=short
+        env:
+          DATABASE_URL: postgresql+asyncpg://gh_user:testpass@localhost:5432/glasshouse_test
+
+  mobile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          cd mobile
+          npm ci
+
+      - name: Lint
+        run: |
+          cd mobile
+          npx eslint . --ext .js,.jsx
+
+      - name: Test
+        run: |
+          cd mobile
+          npx jest --coverage --passWithNoTests
