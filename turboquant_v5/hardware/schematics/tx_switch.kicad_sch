@@ -419,7 +419,7 @@
     (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
     (uuid "r1-ch3")
     (property "Reference" "R10" (at 54.61 57.15 0) (effects (font (size 1.27 1.27)) (justify left)))
-    (property "Value" "100R" (at 47.01 58.42 0) (effects (font (size 1.27 1.27)) (justify right)))
+    (property "Value" "10R" (at 47.01 58.42 0) (effects (font (size 1.27 1.27)) (justify right)))
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 50.8 25.4 0) (effects (font (size 1.27 1.27)) hide))
     (pin "1" (uuid "r1-ch3-p1")) (pin "2" (uuid "r1-ch3-p2")))
 
@@ -452,7 +452,7 @@
     (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
     (uuid "r1-ch4")
     (property "Reference" "R13" (at 54.61 59.69 0) (effects (font (size 1.27 1.27)) (justify left)))
-    (property "Value" "100R" (at 47.01 60.96 0) (effects (font (size 1.27 1.27)) (justify right)))
+    (property "Value" "10R" (at 47.01 60.96 0) (effects (font (size 1.27 1.27)) (justify right)))
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 50.8 25.4 0) (effects (font (size 1.27 1.27)) hide))
     (pin "1" (uuid "r1-ch4-p1")) (pin "2" (uuid "r1-ch4-p2")))
 
@@ -485,7 +485,7 @@
     (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
     (uuid "r1-ch5")
     (property "Reference" "R16" (at 54.61 62.23 0) (effects (font (size 1.27 1.27)) (justify left)))
-    (property "Value" "100R" (at 47.01 63.5 0) (effects (font (size 1.27 1.27)) (justify right)))
+    (property "Value" "10R" (at 47.01 63.5 0) (effects (font (size 1.27 1.27)) (justify right)))
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 50.8 25.4 0) (effects (font (size 1.27 1.27)) hide))
     (pin "1" (uuid "r1-ch5-p1")) (pin "2" (uuid "r1-ch5-p2")))
 

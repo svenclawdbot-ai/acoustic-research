@@ -33,24 +33,26 @@
 
 | Qty | Reference | Value | Footprint | Description | Est. Price |
 |-----|-----------|-------|-----------|-------------|------------|
-| 16 | R41-R48, R1-R8 (digital) | 10Ω | 0603 | Gate series damping | £0.16 |
-| 8 | R49-R56 | 1kΩ | 0603 | Gate pull-down | £0.08 |
-| 16 | R9-R24 | 10kΩ | 0603 | T/R bridge bias | £0.16 |
-| 16 | R25-R40 | 100kΩ | 0603 | T/R bridge bias | £0.16 |
+| 8 | R1, R4, R7, R10, R13, R16, R19, R22 (tx) | 10Ω | 0603 | Gate series damping — **ALL 10Ω per your spec** | £0.08 |
+| 8 | R2, R5, R8, R11, R14, R17, R20, R23 (tx) | 1kΩ | 0603 | Gate pull-down | £0.08 |
+| 8 | R9-R16 | 1kΩ | 0603 | T/R bridge bias (pull-up) | £0.08 |
+| 8 | R17-R24 | 100kΩ | 0603 | T/R bridge bias (pull-down) | £0.08 |
 | 2 | R33-R34 | 9.09kΩ | 0603 | Attenuator (10:1) | £0.02 |
 | 2 | R35-R36 | 1kΩ | 0603 | Attenuator | £0.02 |
-| 8 | R1-R8 (digital) | 100Ω | 0603 | Level shift series | £0.08 |
-| **68** | | | | | **£0.68** |
+| 1 | R3 (digital) | 100Ω | 0603 | Level shift series | £0.01 |
+| **31** | | | | | **£0.35** |
 
 ## Capacitors
 
 | Qty | Reference | Value | Footprint | Description | Est. Price |
 |-----|-----------|-------|-----------|-------------|------------|
-| 4 | C1-C4 | 100nF | 0603 | TC4427 decoupling | £0.04 |
-| 2 | C7-C8 | 100nF | 0603 | MUX DC block | £0.02 |
-| 4 | C1-C4 (power) | 100nF | 0603 | Regulator input | £0.04 |
-| 2 | C5-C6 | 10µF | 0805 | Regulator output | £0.20 |
-| **12** | | | | | **£0.30** |
+| 4 | C1-C4 (tx) | 100nF | 0603 | TC4427 decoupling | £0.04 |
+| 2 | C7-C8 (analog) | 100nF | 0603 | MUX DC block | £0.02 |
+| 3 | C1-C3 (analog) | 100nF | 0603 | LNA + MUX decoupling | £0.03 |
+| 1 | C2 (power) | 100nF | 0805 | Regulator input | £0.01 |
+| 1 | C3 (power) | 10µF | 0805 | Regulator output (5V) | £0.10 |
+| 1 | C1 (power) | 100µF | Radial | Input bulk capacitor | £0.30 |
+| **12** | | | | | **£0.50** |
 
 ## Passives / Other
 
@@ -70,26 +72,31 @@
 |----------|-----|-----------|
 | ICs & Semiconductors | 19 | £20.30 |
 | Diodes | 51 | £8.40 |
-| Resistors | 68 | £0.68 |
-| Capacitors | 12 | £0.30 |
+| Resistors | 31 | £0.35 |
+| Capacitors | 12 | £0.50 |
 | Passives / Other | 6 | £4.00 |
-| **TOTAL** | **156** | **£33.68** |
+| **TOTAL** | **119** | **£33.55** |
 
 ---
 
-## Procurement Notes
+## ⚠️ Known BOM Issues
 
-### ✅ Confirmed in Design
-- All component values match schematic
-- Footprints assigned and verified
-- Reference designators consistent across sheets
+### 1. Digital Sheet Incomplete
+The `digital.kicad_sch` is missing:
+- **R1-R2, R4-R5**: 74HCT595 pull-down resistors (should be ~5× 10kΩ)
+- **C7**: 74HCT595 VCC decoupling capacitor (100nF)
+- These were listed in `docs/bom/BOM_v5.md` but don't exist in the schematic file yet
 
-### ⚠️ Items to Verify
-- **IRF830**: Confirm TO-220 vs TO-220FP (isolated tab) — tab connects to drain (HV)
-- **DG408**: Check if DG408DY (SOIC-16) or DG408DJ (DIP) — SOIC-16 specified
-- **MUR120**: DO-41 package — verify lead spacing for PCB layout
+### 2. Power Sheet Capacitors
+- Only C1 (100µF), C2 (100nF), C3 (10µF) exist in `power.kicad_sch`
+- `BOM_v5.md` lists C4-C6 for 3.3V regulator decoupling — not yet placed
 
-*Updated: 2026-04-28 07:06 UTC*
+### 3. Resistor Count Reduced
+- **Gate series resistors**: Fixed from mixed 10R/100R → **all 10Ω** (8 qty)
+- **T/R bridge bias**: BOM_v5 says 16× 10kΩ + 16× 100kΩ, but schematic shows **8× 1kΩ + 8× 100kΩ**
+- The 10kΩ resistors may be for digital pull-downs (missing from schematic)
+
+**Recommendation**: Complete digital sheet in KiCad GUI tonight, then re-run BOM extraction.
 
 ## Procurement Status
 
