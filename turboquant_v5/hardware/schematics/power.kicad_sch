@@ -119,7 +119,7 @@
   )
   
   ; Hierarchical pins
-  (hierarchical_label "+12V_IN" (shape input) (at 25.4 25.4 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "hier-12v-in"))
+  (hierarchical_label "+12V" (shape input) (at 25.4 25.4 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "hier-12v-in"))
   (hierarchical_label "+5V" (shape output) (at 152.4 50.8 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "hier-5v-out"))
   (hierarchical_label "+3V3" (shape output) (at 152.4 63.5 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "hier-3v3-out"))
   (hierarchical_label "GND" (shape input) (at 152.4 76.2 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "hier-gnd"))
