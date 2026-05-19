@@ -353,7 +353,7 @@
     (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
     (uuid "r1-ch1")
     (property "Reference" "R4" (at 54.61 52.07 0) (effects (font (size 1.27 1.27)) (justify left)))
-    (property "Value" "100R" (at 47.01 53.34 0) (effects (font (size 1.27 1.27)) (justify right)))
+    (property "Value" "10R" (at 47.01 53.34 0) (effects (font (size 1.27 1.27)) (justify right)))
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 50.8 25.4 0) (effects (font (size 1.27 1.27)) hide))
     (pin "1" (uuid "r1-ch1-p1")) (pin "2" (uuid "r1-ch1-p2")))
 
@@ -386,7 +386,7 @@
     (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
     (uuid "r1-ch2")
     (property "Reference" "R7" (at 54.61 54.61 0) (effects (font (size 1.27 1.27)) (justify left)))
-    (property "Value" "100R" (at 47.01 55.88 0) (effects (font (size 1.27 1.27)) (justify right)))
+    (property "Value" "10R" (at 47.01 55.88 0) (effects (font (size 1.27 1.27)) (justify right)))
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 50.8 25.4 0) (effects (font (size 1.27 1.27)) hide))
     (pin "1" (uuid "r1-ch2-p1")) (pin "2" (uuid "r1-ch2-p2")))
 
@@ -518,7 +518,7 @@
     (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
     (uuid "r1-ch6")
     (property "Reference" "R19" (at 54.61 64.77000000000001 0) (effects (font (size 1.27 1.27)) (justify left)))
-    (property "Value" "100R" (at 47.01 66.04 0) (effects (font (size 1.27 1.27)) (justify right)))
+    (property "Value" "10R" (at 47.01 66.04 0) (effects (font (size 1.27 1.27)) (justify right)))
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 50.8 25.4 0) (effects (font (size 1.27 1.27)) hide))
     (pin "1" (uuid "r1-ch6-p1")) (pin "2" (uuid "r1-ch6-p2")))
 
@@ -551,7 +551,7 @@
     (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
     (uuid "r1-ch7")
     (property "Reference" "R22" (at 54.61 67.31 0) (effects (font (size 1.27 1.27)) (justify left)))
-    (property "Value" "100R" (at 47.01 68.58 0) (effects (font (size 1.27 1.27)) (justify right)))
+    (property "Value" "10R" (at 47.01 68.58 0) (effects (font (size 1.27 1.27)) (justify right)))
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 50.8 25.4 0) (effects (font (size 1.27 1.27)) hide))
     (pin "1" (uuid "r1-ch7-p1")) (pin "2" (uuid "r1-ch7-p2")))
 
@@ -686,5 +686,57 @@
   (wire (pts (xy 96.52 50.8) (xy 96.52 81.28)) (stroke (width 0)) (uuid "w-tx-bus-v"))
   (wire (pts (xy 96.52 81.28) (xy 182.88 81.28)) (stroke (width 0)) (uuid "w-tx-bus-h"))
   (wire (pts (xy 182.88 81.28) (xy 200.66 81.28)) (stroke (width 0)) (uuid "w-tx-bus-out"))
+
+  ;; TC4427 Power Distribution
+  ;; U1 VDD (+12V)
+  (wire (pts (xy 38.1 43.18) (xy 35.56 43.18)) (stroke (width 0)) (uuid "w-12v-u1-vdd"))
+  (wire (pts (xy 35.56 43.18) (xy 35.56 57.15)) (stroke (width 0)) (uuid "w-12v-u1-vdd-v"))
+  (junction (at 35.56 43.18) (diameter 0.762) (color 0 0 0 0) (uuid "junc-12v-u1"))
+  ;; U1 GND
+  (wire (pts (xy 38.1 114.3) (xy 35.56 114.3)) (stroke (width 0)) (uuid "w-gnd-u1"))
+  (wire (pts (xy 35.56 114.3) (xy 35.56 44.45)) (stroke (width 0)) (uuid "w-gnd-u1-v"))
+  (junction (at 35.56 114.3) (diameter 0.762) (color 0 0 0 0) (uuid "junc-gnd-u1"))
+  (wire (pts (xy 31.75 114.3) (xy 31.75 44.45)) (stroke (width 0)) (uuid "w-gnd-u1-p2"))
+  (wire (pts (xy 39.37 114.3) (xy 39.37 44.45)) (stroke (width 0)) (uuid "w-gnd-u1-p6"))
+
+  ;; U2 VDD (+12V)
+  (wire (pts (xy 38.1 43.18) (xy 35.56 43.18)) (stroke (width 0)) (uuid "w-12v-u2-vdd"))
+  (wire (pts (xy 35.56 43.18) (xy 35.56 67.31)) (stroke (width 0)) (uuid "w-12v-u2-vdd-v"))
+  ;; U2 GND
+  (wire (pts (xy 35.56 114.3) (xy 35.56 54.61)) (stroke (width 0)) (uuid "w-gnd-u2-v"))
+  (wire (pts (xy 31.75 114.3) (xy 31.75 54.61)) (stroke (width 0)) (uuid "w-gnd-u2-p2"))
+  (wire (pts (xy 39.37 114.3) (xy 39.37 54.61)) (stroke (width 0)) (uuid "w-gnd-u2-p6"))
+
+  ;; U3 VDD (+12V)
+  (wire (pts (xy 38.1 43.18) (xy 35.56 43.18)) (stroke (width 0)) (uuid "w-12v-u3-vdd"))
+  (wire (pts (xy 35.56 43.18) (xy 35.56 77.47)) (stroke (width 0)) (uuid "w-12v-u3-vdd-v"))
+  ;; U3 GND
+  (wire (pts (xy 35.56 114.3) (xy 35.56 64.77)) (stroke (width 0)) (uuid "w-gnd-u3-v"))
+  (wire (pts (xy 31.75 114.3) (xy 31.75 64.77)) (stroke (width 0)) (uuid "w-gnd-u3-p2"))
+  (wire (pts (xy 39.37 114.3) (xy 39.37 64.77)) (stroke (width 0)) (uuid "w-gnd-u3-p6"))
+
+  ;; U4 VDD (+12V)
+  (wire (pts (xy 38.1 43.18) (xy 35.56 43.18)) (stroke (width 0)) (uuid "w-12v-u4-vdd"))
+  (wire (pts (xy 35.56 43.18) (xy 35.56 87.63)) (stroke (width 0)) (uuid "w-12v-u4-vdd-v"))
+  ;; U4 GND
+  (wire (pts (xy 35.56 114.3) (xy 35.56 74.93)) (stroke (width 0)) (uuid "w-gnd-u4-v"))
+  (wire (pts (xy 31.75 114.3) (xy 31.75 74.93)) (stroke (width 0)) (uuid "w-gnd-u4-p2"))
+  (wire (pts (xy 39.37 114.3) (xy 39.37 74.93)) (stroke (width 0)) (uuid "w-gnd-u4-p6"))
+
+  ;; Decoupling Caps C1-C4
+  ;; C1 across U1 VDD-GND
+  (wire (pts (xy 43.18 43.18) (xy 43.18 44.45)) (stroke (width 0)) (uuid "w-c1-vdd"))
+  (wire (pts (xy 43.18 114.3) (xy 43.18 52.07)) (stroke (width 0)) (uuid "w-c1-gnd"))
+  (junction (at 43.18 43.18) (diameter 0.762) (color 0 0 0 0) (uuid "junc-c1-12v"))
+  (junction (at 43.18 114.3) (diameter 0.762) (color 0 0 0 0) (uuid "junc-c1-gnd"))
+  ;; C2 across U2 VDD-GND
+  (wire (pts (xy 43.18 43.18) (xy 43.18 54.61)) (stroke (width 0)) (uuid "w-c2-vdd"))
+  (wire (pts (xy 43.18 114.3) (xy 43.18 62.23)) (stroke (width 0)) (uuid "w-c2-gnd"))
+  ;; C3 across U3 VDD-GND
+  (wire (pts (xy 43.18 43.18) (xy 43.18 64.77)) (stroke (width 0)) (uuid "w-c3-vdd"))
+  (wire (pts (xy 43.18 114.3) (xy 43.18 72.39)) (stroke (width 0)) (uuid "w-c3-gnd"))
+  ;; C4 across U4 VDD-GND
+  (wire (pts (xy 43.18 43.18) (xy 43.18 74.93)) (stroke (width 0)) (uuid "w-c4-vdd"))
+  (wire (pts (xy 43.18 114.3) (xy 43.18 82.55)) (stroke (width 0)) (uuid "w-c4-gnd"))
 
 )
