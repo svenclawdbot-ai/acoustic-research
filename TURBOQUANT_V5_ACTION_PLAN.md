@@ -77,8 +77,32 @@ To:
 
 ## 📋 Next Steps After Schematic
 
-### 4. PCB Layout
-**Priority:** MEDIUM
+### C. Root Schematic — Reviewed
+**Status:** Mostly wired, 2 issues found and 1 fixed
+
+**✅ Verified connections:**
+- Power +5V/GND → Digital + Analog
+- Digital GATE0-7 → TX Switch
+- Digital MUX_A/B/C/EN → Analog
+- TX Switch TX_BUS → Analog
+- Analog RX0/1 → SMA connectors
+- Power +12V → Analog + TX Switch
+
+**❌ Issues found:**
+1. ~~Power sheet pin name mismatch~~ — **FIXED** (`+12V_IN` → `+12V` in power.kicad_sch)
+2. **Digital sheet missing hierarchical labels:** SER, SRCLK, RCLK, ~OE, SRCLR, MUX_A/B/C/EN not declared
+3. **J1 RP connector pin mapping** — verify pin numbers match your intended GPIO mapping
+
+**Fix #2 requires KiCad GUI:** Add hierarchical labels to digital.kicad_sch for:
+- `SER`, `SRCLK`, `RCLK`, `~OE`, `SRCLR` (input labels on left side)
+- `MUX_A`, `MUX_B`, `MUX_C`, `MUX_EN` (output labels on right side)
+
+---
+
+## 🔧 Remaining Schematic Work
+
+### 1. TX Switch — Signal Path Fix (KiCad GUI Required)
+**Priority:** HIGH
 
 - Update PCB from schematic (F8 in KiCad)
 - Component placement per `PCB_LAYOUT_PLAN.md`
